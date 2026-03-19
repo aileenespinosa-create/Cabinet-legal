@@ -36,22 +36,26 @@ export default function HomePage() {
       </section>
 
       <section className="py-16 md:py-24">
-        <div className="container-legal grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+        <div className="container-legal grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
             <div className="eyebrow">Cabinet Legal</div>
-            <h1 className="mt-4 max-w-4xl text-5xl font-semibold leading-tight text-[#0f2740] md:text-7xl">
+
+            <h1 className="mt-4 max-w-3xl text-5xl font-semibold leading-[1.05] text-[#0f2740] md:text-6xl">
               Firma de abogados en República Dominicana con enfoque corporativo y estratégico.
             </h1>
+
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[#5f6b76]">
-              Asesoramos empresas, inversionistas y clientes privados en asuntos corporativos,
-              propiedad intelectual, litigios y decisiones empresariales de alto impacto,
-              con atención directa de socios y criterio orientado a resultados.
+              Asesoramos empresas, inversionistas y clientes privados en asuntos
+              corporativos, propiedad intelectual, litigios y decisiones
+              empresariales de alto impacto, con atención directa de socios y
+              criterio orientado a resultados.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
               <Link href="/consulta" className="btn-primary-legal">
                 Solicitar consulta
               </Link>
+
               <Link href="/servicios" className="btn-secondary-legal">
                 Ver servicios
               </Link>
@@ -66,7 +70,7 @@ export default function HomePage() {
           </div>
 
           <div className="card-legal overflow-hidden">
-            <div className="relative h-[460px]">
+            <div className="relative h-[520px]">
               <Image
                 src="/hero-legal.jpg"
                 alt="Cabinet Legal - Asesoría legal premium"
@@ -74,6 +78,7 @@ export default function HomePage() {
                 className="object-cover"
               />
               <div className="hero-image-overlay absolute inset-0" />
+
               <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                 <div className="text-xs uppercase tracking-[0.28em] text-[#e9d3ab]">
                   Cabinet Legal
@@ -87,14 +92,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-10 md:py-16">
+      <section className="py-16 md:py-20">
         <div className="container-legal grid gap-6 md:grid-cols-3">
           <div className="card-legal p-8">
             <div className="eyebrow">Servicios</div>
-            <h2 className="mt-4 text-2xl font-semibold text-[#0f2740]">Derecho corporativo</h2>
+            <h2 className="mt-4 text-2xl font-semibold text-[#0f2740]">
+              Derecho corporativo
+            </h2>
             <p className="mt-4 leading-8 text-[#5f6b76]">
-              Estructuración de negocios, gobierno corporativo, contratos y acompañamiento
-              jurídico en decisiones empresariales relevantes.
+              Estructuración de negocios, gobierno corporativo, contratos y
+              acompañamiento jurídico en decisiones empresariales relevantes.
             </p>
           </div>
 
@@ -104,17 +111,19 @@ export default function HomePage() {
               Marcas y propiedad intelectual
             </h2>
             <p className="mt-4 leading-8 text-[#5f6b76]">
-              Registro, estrategia de protección y defensa de activos intangibles ante
-              riesgos legales y comerciales.
+              Registro, estrategia de protección y defensa de activos
+              intangibles ante riesgos legales y comerciales.
             </p>
           </div>
 
           <div className="card-legal p-8">
             <div className="eyebrow">Representación</div>
-            <h2 className="mt-4 text-2xl font-semibold text-[#0f2740]">Litigios y disputas</h2>
+            <h2 className="mt-4 text-2xl font-semibold text-[#0f2740]">
+              Litigios y disputas
+            </h2>
             <p className="mt-4 leading-8 text-[#5f6b76]">
-              Manejo de controversias civiles y comerciales con enfoque estratégico,
-              claridad técnica y ejecución rigurosa.
+              Manejo de controversias civiles y comerciales con enfoque
+              estratégico, claridad técnica y ejecución rigurosa.
             </p>
           </div>
         </div>
@@ -132,15 +141,17 @@ export default function HomePage() {
 
           <div className="space-y-6 text-lg leading-8 text-[#5f6b76]">
             <p>
-              Cabinet Legal es una firma legal independiente diseñada para ofrecer
-              asesoría sofisticada con atención directa de socios.
+              Cabinet Legal es una firma legal independiente diseñada para
+              ofrecer asesoría sofisticada con atención directa de socios.
             </p>
             <p>
-              Nuestra práctica integra derecho, estrategia y operación para acompañar
-              decisiones empresariales relevantes y proteger intereses de alto valor.
+              Nuestra práctica integra derecho, estrategia y operación para
+              acompañar decisiones empresariales relevantes y proteger intereses
+              de alto valor.
             </p>
             <p>
-              Priorizamos claridad, discreción, precisión técnica y una comunicación impecable.
+              Priorizamos claridad, discreción, precisión técnica y una
+              comunicación impecable.
             </p>
           </div>
         </div>
@@ -165,7 +176,8 @@ export default function HomePage() {
                 Cómo registrar una marca en República Dominicana (2026)
               </h3>
               <p className="mt-4 leading-8 text-[#5f6b76]">
-                Guía práctica sobre requisitos, proceso en ONAPI, tiempos y recomendaciones clave.
+                Guía práctica sobre requisitos, proceso en ONAPI, tiempos y
+                recomendaciones clave.
               </p>
             </Link>
 
@@ -178,8 +190,8 @@ export default function HomePage() {
                 Cuánto cuesta registrar una marca en República Dominicana
               </h3>
               <p className="mt-4 leading-8 text-[#5f6b76]">
-                Lo que debes evaluar antes de solicitar presupuesto y por qué el costo
-                depende del tipo de marca y las clases.
+                Lo que debes evaluar antes de solicitar presupuesto y por qué el
+                costo depende del tipo de marca y las clases.
               </p>
             </Link>
           </div>
@@ -193,8 +205,8 @@ export default function HomePage() {
             ¿Necesitas acompañamiento legal?
           </h2>
           <p className="mt-4 max-w-2xl text-lg leading-8 text-[#5f6b76]">
-            Podemos evaluar tu caso y orientarte sobre la mejor vía jurídica según tus
-            objetivos y la naturaleza de tu negocio.
+            Podemos evaluar tu caso y orientarte sobre la mejor vía jurídica
+            según tus objetivos y la naturaleza de tu negocio.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
