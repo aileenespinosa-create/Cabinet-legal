@@ -4,7 +4,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Cabinet Legal | Firma de Abogados en República Dominicana",
   description:
-    "Firma de abogados en República Dominicana especializada en derecho corporativo, inmobiliario, litigios, propiedad intelectual y servicios empresariales.",
+    "Firma de abogados en República Dominicana especializada en derecho corporativo, inmobiliario, litigios y propiedad intelectual.",
+  verification: {
+    google: "AQUI_TU_CODIGO",
+  },
 };
 
 export default function RootLayout({
@@ -13,10 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-  <html lang="es">
-    <head>
-      <meta name="google-site-verification" content="AQUI_TU_CODIGO" />
-    </head>
-    <body>{children}</body>
-  </html>
-);
+    <html lang="es">
+      <body>{children}</body>
+    </html>
+  );
+}
