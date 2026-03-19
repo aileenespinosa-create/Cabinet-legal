@@ -34,5 +34,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://www.cabinetlegal.com.do/firma",
       lastModified: new Date(),
     },
+    {
+  url: "https://www.cabinetlegal.com.do/blog/cuanto-cuesta-registrar-una-marca",
+  lastModified: new Date(),
+},
   ];
 }
