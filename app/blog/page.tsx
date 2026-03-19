@@ -17,12 +17,14 @@ const articles = [
     title: "Cómo registrar una marca en República Dominicana (2026)",
     description:
       "Guía práctica sobre requisitos, proceso en ONAPI, tiempos, errores comunes y recomendaciones clave.",
+    image: "/blog-legal.jpg",
   },
   {
     href: "/blog/cuanto-cuesta-registrar-una-marca",
     title: "Cuánto cuesta registrar una marca en República Dominicana",
     description:
       "Explicamos por qué el costo depende del tipo de marca, la cantidad de clases y la estructura del expediente.",
+    image: "/blog-legal.jpg",
   },
 ];
 
@@ -59,7 +61,7 @@ export default function BlogPage() {
             <Link key={article.href} href={article.href} className="card-legal overflow-hidden">
               <div className="relative h-[220px]">
                 <Image
-                  src="/blog-legal.jpg"
+                  src={article.image}
                   alt={article.title}
                   fill
                   className="object-cover"
