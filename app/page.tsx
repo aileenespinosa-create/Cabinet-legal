@@ -7,20 +7,20 @@ export default function HomePage() {
     <main className="min-h-screen">
       <SiteHeader />
 
+      {/* HERO */}
       <section className="py-12 md:py-24">
         <div className="container-legal grid items-center gap-8 md:gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
             <div className="eyebrow">Cabinet Legal</div>
 
-            <h1 className="mt-4 max-w-3xl text-[30px] font-semibold leading-[1.1] text-[#0f2740] sm:text-[38px] md:text-6xl">
-              Firma de abogados en República Dominicana con enfoque corporativo y estratégico.
+            <h1 className="mt-4 max-w-3xl text-[30px] font-semibold leading-[1.08] text-[#0f2740] sm:text-[38px] md:text-6xl">
+              Asesoría legal estratégica para proteger tu negocio y tomar decisiones con seguridad.
             </h1>
 
-            <p className="mt-4 max-w-xl text-[15px] leading-6 text-[#5f6b76] md:mt-6 md:max-w-2xl md:text-lg md:leading-8">
-              Asesoramos empresas, inversionistas y clientes privados en asuntos
-              corporativos, propiedad intelectual, litigios y decisiones
-              empresariales de alto impacto, con atención directa de socios y
-              criterio orientado a resultados.
+            <p className="mt-4 max-w-2xl text-[15px] leading-6 text-[#5f6b76] md:mt-6 md:text-lg md:leading-8">
+              Acompañamos empresas, inversionistas y clientes privados en derecho
+              corporativo, registro de marcas, propiedad intelectual y asuntos
+              legales de alto impacto en República Dominicana.
             </p>
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap md:mt-8">
@@ -28,16 +28,21 @@ export default function HomePage() {
                 Solicitar consulta
               </Link>
 
-              <Link href="/servicios" className="btn-secondary-legal">
-                Ver servicios
-              </Link>
+              <a
+                href="https://wa.me/18095551234?text=Hola%2C%20visité%20Cabinet%20Legal%20y%20me%20gustaría%20recibir%20orientación."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary-legal"
+              >
+                Escribir por WhatsApp
+              </a>
             </div>
 
             <div className="mt-8 flex flex-wrap gap-x-4 gap-y-2 text-sm text-[#66717c] md:mt-10 md:gap-6">
-              <div>Corporativo</div>
-              <div>Litigios</div>
-              <div>Propiedad intelectual</div>
+              <div>Derecho corporativo</div>
               <div>Registro de marcas</div>
+              <div>Propiedad intelectual</div>
+              <div>Litigios</div>
             </div>
           </div>
 
@@ -56,7 +61,7 @@ export default function HomePage() {
                   Cabinet Legal
                 </div>
                 <div className="mt-2 text-lg font-semibold leading-tight sm:text-xl md:mt-3 md:text-2xl">
-                  Asesoría legal precisa para decisiones de alto impacto.
+                  Atención directa, precisión técnica y visión estratégica.
                 </div>
               </div>
             </div>
@@ -64,77 +69,170 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-12 md:py-20">
-        <div className="container-legal grid gap-4 sm:gap-6 md:grid-cols-3">
+      {/* PROBLEMA / SOLUCIÓN */}
+      <section className="pb-12 md:pb-20">
+        <div className="container-legal grid gap-6 md:grid-cols-2">
           <div className="card-legal p-6 md:p-8">
-            <div className="eyebrow">Servicios</div>
-            <h2 className="mt-4 text-xl font-semibold text-[#0f2740] md:text-2xl">
-              Derecho corporativo
+            <div className="eyebrow">Problema frecuente</div>
+            <h2 className="mt-4 text-2xl font-semibold text-[#0f2740] md:text-3xl">
+              Muchos negocios operan sin la protección legal adecuada.
             </h2>
             <p className="mt-4 leading-7 text-[#5f6b76] md:leading-8">
-              Estructuración de negocios, gobierno corporativo, contratos y
-              acompañamiento jurídico en decisiones empresariales relevantes.
+              Contratos mal estructurados, marcas sin registrar o decisiones
+              empresariales sin soporte jurídico pueden generar conflictos,
+              pérdidas económicas y riesgos innecesarios.
             </p>
           </div>
 
           <div className="card-legal p-6 md:p-8">
-            <div className="eyebrow">Protección</div>
-            <h2 className="mt-4 text-xl font-semibold text-[#0f2740] md:text-2xl">
-              Marcas y propiedad intelectual
+            <div className="eyebrow">Nuestra propuesta</div>
+            <h2 className="mt-4 text-2xl font-semibold text-[#0f2740] md:text-3xl">
+              Asesoría clara, ejecutiva y enfocada en resultados.
             </h2>
             <p className="mt-4 leading-7 text-[#5f6b76] md:leading-8">
-              Registro, estrategia de protección y defensa de activos
-              intangibles ante riesgos legales y comerciales.
-            </p>
-          </div>
-
-          <div className="card-legal p-6 md:p-8">
-            <div className="eyebrow">Representación</div>
-            <h2 className="mt-4 text-xl font-semibold text-[#0f2740] md:text-2xl">
-              Litigios y disputas
-            </h2>
-            <p className="mt-4 leading-7 text-[#5f6b76] md:leading-8">
-              Manejo de controversias civiles y comerciales con enfoque
-              estratégico, claridad técnica y ejecución rigurosa.
+              En Cabinet Legal combinamos estrategia, técnica y acompañamiento
+              directo para ayudarte a proteger tu negocio y actuar con seguridad
+              jurídica desde el inicio.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-12 md:py-20">
-        <div className="container-legal card-legal grid gap-8 p-6 md:grid-cols-[0.9fr_1.1fr] md:p-12">
-          <div>
-            <div className="eyebrow">La firma</div>
+      {/* SERVICIOS */}
+      <section className="pb-12 md:pb-20">
+        <div className="container-legal">
+          <div className="mb-8">
+            <div className="eyebrow">Servicios clave</div>
             <h2 className="mt-4 text-3xl font-semibold text-[#0f2740] md:text-4xl">
-              Atención boutique, ejecución rigurosa.
+              Áreas donde podemos ayudarte
+            </h2>
+          </div>
+
+          <div className="grid gap-4 sm:gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <div className="card-legal p-6 md:p-8">
+              <div className="eyebrow">Corporativo</div>
+              <h3 className="mt-4 text-xl font-semibold text-[#0f2740]">
+                Derecho corporativo
+              </h3>
+              <p className="mt-4 leading-7 text-[#5f6b76]">
+                Estructuración de negocios, contratos y acompañamiento legal empresarial.
+              </p>
+            </div>
+
+            <div className="card-legal p-6 md:p-8">
+              <div className="eyebrow">Marcas</div>
+              <h3 className="mt-4 text-xl font-semibold text-[#0f2740]">
+                Registro de marcas
+              </h3>
+              <p className="mt-4 leading-7 text-[#5f6b76]">
+                Evaluación, estrategia y gestión completa del proceso ante ONAPI.
+              </p>
+            </div>
+
+            <div className="card-legal p-6 md:p-8">
+              <div className="eyebrow">Protección</div>
+              <h3 className="mt-4 text-xl font-semibold text-[#0f2740]">
+                Propiedad intelectual
+              </h3>
+              <p className="mt-4 leading-7 text-[#5f6b76]">
+                Protección y defensa de activos intangibles con enfoque estratégico.
+              </p>
+            </div>
+
+            <div className="card-legal p-6 md:p-8">
+              <div className="eyebrow">Representación</div>
+              <h3 className="mt-4 text-xl font-semibold text-[#0f2740]">
+                Litigios y disputas
+              </h3>
+              <p className="mt-4 leading-7 text-[#5f6b76]">
+                Manejo de controversias civiles y comerciales con rigor técnico.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* REGISTRO DE MARCAS DESTACADO */}
+      <section className="pb-12 md:pb-20">
+        <div className="container-legal card-legal grid gap-8 p-6 md:grid-cols-[0.95fr_1.05fr] md:p-12">
+          <div>
+            <div className="eyebrow">Servicio destacado</div>
+            <h2 className="mt-4 text-3xl font-semibold text-[#0f2740] md:text-4xl">
+              Registro de marcas en República Dominicana
             </h2>
             <div className="gold-line mt-6" />
           </div>
 
-          <div className="space-y-5 text-base leading-7 text-[#5f6b76] md:space-y-6 md:text-lg md:leading-8">
+          <div className="space-y-5 text-base leading-7 text-[#5f6b76] md:text-lg md:leading-8">
             <p>
-              Cabinet Legal es una firma legal independiente diseñada para
-              ofrecer asesoría sofisticada con atención directa de socios.
+              Registrar tu marca correctamente desde el inicio puede evitar
+              rechazos, conflictos y pérdida de derechos sobre tu identidad comercial.
             </p>
             <p>
-              Nuestra práctica integra derecho, estrategia y operación para
-              acompañar decisiones empresariales relevantes y proteger intereses
-              de alto valor.
+              Evaluamos la viabilidad legal de tu marca, definimos la estrategia
+              adecuada y gestionamos el proceso completo ante ONAPI.
             </p>
-            <p>
-              Priorizamos claridad, discreción, precisión técnica y una
-              comunicación impecable.
-            </p>
+
+            <div className="pt-2 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <Link href="/registro-de-marcas" className="btn-primary-legal">
+                Ver servicio
+              </Link>
+              <Link href="/consulta" className="btn-secondary-legal">
+                Solicitar evaluación
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="py-12 md:py-20">
+      {/* POR QUÉ ELEGIRNOS */}
+      <section className="pb-12 md:pb-20">
         <div className="container-legal">
           <div className="mb-8">
-            <div className="eyebrow">Publicaciones</div>
+            <div className="eyebrow">Cabinet Legal</div>
             <h2 className="mt-4 text-3xl font-semibold text-[#0f2740] md:text-4xl">
-              Recursos legales recientes
+              ¿Por qué trabajar con nosotros?
+            </h2>
+          </div>
+
+          <div className="grid gap-4 md:grid-cols-3">
+            <div className="card-legal p-6 md:p-8">
+              <h3 className="text-xl font-semibold text-[#0f2740]">
+                Atención directa
+              </h3>
+              <p className="mt-4 leading-7 text-[#5f6b76]">
+                Recibes acompañamiento cercano y estratégico, sin procesos impersonales.
+              </p>
+            </div>
+
+            <div className="card-legal p-6 md:p-8">
+              <h3 className="text-xl font-semibold text-[#0f2740]">
+                Visión empresarial
+              </h3>
+              <p className="mt-4 leading-7 text-[#5f6b76]">
+                Entendemos el contexto de negocio detrás de cada decisión jurídica.
+              </p>
+            </div>
+
+            <div className="card-legal p-6 md:p-8">
+              <h3 className="text-xl font-semibold text-[#0f2740]">
+                Ejecución rigurosa
+              </h3>
+              <p className="mt-4 leading-7 text-[#5f6b76]">
+                Priorizamos claridad, estructura y seguimiento en cada asunto legal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* BLOG */}
+      <section className="pb-12 md:pb-20">
+        <div className="container-legal">
+          <div className="mb-8">
+            <div className="eyebrow">Recursos legales</div>
+            <h2 className="mt-4 text-3xl font-semibold text-[#0f2740] md:text-4xl">
+              Publicaciones recientes
             </h2>
           </div>
 
@@ -148,8 +246,7 @@ export default function HomePage() {
                 Cómo registrar una marca en República Dominicana (2026)
               </h3>
               <p className="mt-4 leading-7 text-[#5f6b76] md:leading-8">
-                Guía práctica sobre requisitos, proceso en ONAPI, tiempos y
-                recomendaciones clave.
+                Guía práctica sobre requisitos, proceso en ONAPI, tiempos y recomendaciones clave.
               </p>
             </Link>
 
@@ -162,32 +259,37 @@ export default function HomePage() {
                 Cuánto cuesta registrar una marca en República Dominicana
               </h3>
               <p className="mt-4 leading-7 text-[#5f6b76] md:leading-8">
-                Lo que debes evaluar antes de solicitar presupuesto y por qué el
-                costo depende del tipo de marca y las clases.
+                Lo que debes evaluar antes de solicitar presupuesto y por qué el costo depende del tipo de marca y las clases.
               </p>
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="pb-16 pt-6 md:pb-20 md:pt-8">
+      {/* CTA FINAL */}
+      <section className="pb-16 md:pb-20">
         <div className="container-legal card-legal p-6 md:p-12">
-          <div className="eyebrow">Contacto</div>
+          <div className="eyebrow">Consulta</div>
           <h2 className="mt-4 text-3xl font-semibold text-[#0f2740] md:text-4xl">
-            ¿Necesitas acompañamiento legal?
+            ¿Necesitas orientación legal?
           </h2>
           <p className="mt-4 max-w-2xl text-base leading-7 text-[#5f6b76] md:text-lg md:leading-8">
-            Podemos evaluar tu caso y orientarte sobre la mejor vía jurídica
-            según tus objetivos y la naturaleza de tu negocio.
+            Podemos evaluar tu situación y orientarte sobre la mejor estrategia
+            según tu caso, tu negocio y tus objetivos.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap md:gap-4">
             <Link href="/consulta" className="btn-primary-legal">
               Solicitar consulta
             </Link>
-            <Link href="/blog" className="btn-secondary-legal">
-              Ir al blog
-            </Link>
+            <a
+              href="https://wa.me/18095551234?text=Hola%2C%20visité%20Cabinet%20Legal%20y%20me%20gustaría%20recibir%20orientación."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary-legal"
+            >
+              Escribir por WhatsApp
+            </a>
           </div>
         </div>
       </section>
