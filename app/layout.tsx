@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Firma de abogados en República Dominicana especializada en derecho corporativo, inmobiliario, litigios y propiedad intelectual.",
   verification: {
-    google: "AQUI_TU_CODIGO",
+    google: "aRneS0zQiLj_e1PFnuaE3LZuclfwWyeXtRLPu8w174Q",
   },
 };
 
