@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Cabinet Legal | Firma de abogados en República Dominicana",
-  description:
-    "Firma de abogados en República Dominicana con enfoque corporativo, propiedad intelectual, litigios y asesoría estratégica.",
+  title: "Cabinet Legal",
+  description: "Firma de abogados en República Dominicana",
 };
 
 export default function RootLayout({
@@ -14,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body>{children}</body>
+      <body>
+        {children}
+        <WhatsAppButton />
+      </body>
     </html>
   );
 }

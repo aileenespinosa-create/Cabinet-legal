@@ -28,8 +28,8 @@ const partners = [
     ],
   },
   {
-    name: "Ellis",
-    role: "Partner",
+    name: "Ellis Beato",
+    role: "Founding Partner",
     image: "/ellis.jpg",
     bio: "Ellis desarrolla una práctica enfocada en asuntos corporativos, comerciales y en el acompañamiento legal de operaciones empresariales. Su trabajo se distingue por un enfoque práctico, analítico y orientado a la ejecución rigurosa de estrategias jurídicas.",
     focus:
