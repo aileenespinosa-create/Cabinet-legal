@@ -1,3 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7f4ee;
+  --surface: #ffffff;
+  --foreground: #16202a;
+  --muted: #5f6b76;
+  --border: #e8dfd0;
+  --navy: #0f2740;
+  --gold: #c8a46a;
+  --gold-soft: #efe2c8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, #fbf8f3 0%, #f6f2ea 100%);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  transition: all 0.25s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.container-legal {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .card-legal {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -9,4 +62,88 @@
 .card-legal:hover {
   transform: translateY(-2px);
   box-shadow: 0 18px 54px rgba(15, 39, 64, 0.12);
+}
+
+.section-soft {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(2px);
+}
+
+.gold-line {
+  width: 72px;
+  height: 2px;
+  background: var(--gold);
+  border-radius: 999px;
+}
+
+.eyebrow {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.btn-primary-legal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 12px 22px;
+  background: var(--navy);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 10px 24px rgba(15, 39, 64, 0.15);
+}
+
+.btn-primary-legal:hover {
+  transform: translateY(-1px);
+}
+
+.btn-secondary-legal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 12px 22px;
+  border: 1px solid var(--border);
+  background: white;
+  color: var(--foreground);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-secondary-legal:hover {
+  border-color: var(--gold);
+  color: var(--navy);
+}
+
+.article-content h2 {
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--navy);
+  font-size: 1.65rem;
+  font-weight: 700;
+}
+
+.article-content p,
+.article-content li {
+  color: var(--muted);
+  line-height: 1.95;
+  font-size: 1.03rem;
+}
+
+.article-content ul,
+.article-content ol {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.hero-image-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(15, 39, 64, 0.08) 0%,
+    rgba(15, 39, 64, 0.28) 100%
+  );
 }
