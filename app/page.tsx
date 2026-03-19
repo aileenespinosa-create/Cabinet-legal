@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -28,6 +28,7 @@ export default function HomePage() {
             <Link href="/firma">La Firma</Link>
             <Link href="/socios">Socios</Link>
             <Link href="/servicios">Servicios</Link>
+            <Link href="/registro-de-marcas">Marcas</Link>
             <Link href="/blog">Blog</Link>
             <Link href="/consulta">Consulta</Link>
           </nav>
@@ -43,8 +44,8 @@ export default function HomePage() {
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[#5f6b76]">
               Asesoramos empresas, inversionistas y clientes privados en asuntos corporativos,
-              inmobiliarios, litigiosos, propiedad intelectual y servicios empresariales, con
-              atención directa de socios y visión orientada a resultados.
+              propiedad intelectual, litigios y decisiones empresariales de alto impacto,
+              con atención directa de socios y criterio orientado a resultados.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -58,17 +59,17 @@ export default function HomePage() {
 
             <div className="mt-10 flex flex-wrap gap-6 text-sm text-[#66717c]">
               <div>Corporativo</div>
-              <div>Inmobiliario</div>
               <div>Litigios</div>
               <div>Propiedad intelectual</div>
+              <div>Registro de marcas</div>
             </div>
           </div>
 
           <div className="card-legal overflow-hidden">
             <div className="relative h-[460px]">
               <Image
-                src="/legal-hero.jpg"
-                alt="Despacho legal"
+                src="/hero-legal.jpg"
+                alt="Cabinet Legal - Asesoría legal premium"
                 fill
                 className="object-cover"
               />
@@ -92,15 +93,19 @@ export default function HomePage() {
             <div className="eyebrow">Servicios</div>
             <h2 className="mt-4 text-2xl font-semibold text-[#0f2740]">Derecho corporativo</h2>
             <p className="mt-4 leading-8 text-[#5f6b76]">
-              Estructuración, gobierno corporativo, contratos y acompañamiento legal empresarial.
+              Estructuración de negocios, gobierno corporativo, contratos y acompañamiento
+              jurídico en decisiones empresariales relevantes.
             </p>
           </div>
 
           <div className="card-legal p-8">
             <div className="eyebrow">Protección</div>
-            <h2 className="mt-4 text-2xl font-semibold text-[#0f2740]">Marcas y propiedad intelectual</h2>
+            <h2 className="mt-4 text-2xl font-semibold text-[#0f2740]">
+              Marcas y propiedad intelectual
+            </h2>
             <p className="mt-4 leading-8 text-[#5f6b76]">
-              Registro, estrategia de protección, vigilancia y defensa de activos intangibles.
+              Registro, estrategia de protección y defensa de activos intangibles ante
+              riesgos legales y comerciales.
             </p>
           </div>
 
@@ -108,7 +113,8 @@ export default function HomePage() {
             <div className="eyebrow">Representación</div>
             <h2 className="mt-4 text-2xl font-semibold text-[#0f2740]">Litigios y disputas</h2>
             <p className="mt-4 leading-8 text-[#5f6b76]">
-              Manejo de conflictos civiles y comerciales con criterio técnico y estrategia procesal.
+              Manejo de controversias civiles y comerciales con enfoque estratégico,
+              claridad técnica y ejecución rigurosa.
             </p>
           </div>
         </div>
@@ -126,12 +132,12 @@ export default function HomePage() {
 
           <div className="space-y-6 text-lg leading-8 text-[#5f6b76]">
             <p>
-              Cabinet Legal es una firma legal independiente, diseñada para ofrecer asesoría
-              sofisticada con atención directa de socios.
+              Cabinet Legal es una firma legal independiente diseñada para ofrecer
+              asesoría sofisticada con atención directa de socios.
             </p>
             <p>
-              Nuestra práctica integra derecho, estrategia y operación para acompañar decisiones
-              empresariales relevantes y proteger intereses de alto valor.
+              Nuestra práctica integra derecho, estrategia y operación para acompañar
+              decisiones empresariales relevantes y proteger intereses de alto valor.
             </p>
             <p>
               Priorizamos claridad, discreción, precisión técnica y una comunicación impecable.
@@ -144,7 +150,9 @@ export default function HomePage() {
         <div className="container-legal">
           <div className="mb-8">
             <div className="eyebrow">Publicaciones</div>
-            <h2 className="mt-4 text-4xl font-semibold text-[#0f2740]">Recursos legales recientes</h2>
+            <h2 className="mt-4 text-4xl font-semibold text-[#0f2740]">
+              Recursos legales recientes
+            </h2>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2">
@@ -170,7 +178,8 @@ export default function HomePage() {
                 Cuánto cuesta registrar una marca en República Dominicana
               </h3>
               <p className="mt-4 leading-8 text-[#5f6b76]">
-                Costos oficiales, honorarios y factores que influyen en el valor del proceso.
+                Lo que debes evaluar antes de solicitar presupuesto y por qué el costo
+                depende del tipo de marca y las clases.
               </p>
             </Link>
           </div>
@@ -184,7 +193,8 @@ export default function HomePage() {
             ¿Necesitas acompañamiento legal?
           </h2>
           <p className="mt-4 max-w-2xl text-lg leading-8 text-[#5f6b76]">
-            Podemos evaluar tu caso y orientarte sobre la mejor vía jurídica según tus objetivos.
+            Podemos evaluar tu caso y orientarte sobre la mejor vía jurídica según tus
+            objetivos y la naturaleza de tu negocio.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">

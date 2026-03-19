@@ -78,15 +78,15 @@ export default function Article() {
               </p>
 
               <p>
-                El registro te otorga derechos exclusivos de uso en República
-                Dominicana y te permite impedir que terceros utilicen signos similares.
+                El registro te otorga derechos exclusivos de uso en República Dominicana
+                y te permite impedir que terceros utilicen signos similares.
               </p>
 
               <h2>¿Dónde se registra una marca en República Dominicana?</h2>
               <p>
-                El registro se realiza ante la Oficina Nacional de la Propiedad
-                Industrial (ONAPI), entidad encargada de administrar los derechos de
-                propiedad industrial en el país.
+                El registro se realiza ante la Oficina Nacional de la Propiedad Industrial
+                (ONAPI), entidad encargada de administrar los derechos de propiedad industrial
+                en el país.
               </p>
 
               <h2>Requisitos para registrar una marca</h2>
@@ -115,15 +115,13 @@ export default function Article() {
               </ul>
 
               <p>
-                Estos errores pueden provocar rechazo o retrasos importantes en el
-                proceso.
+                Estos errores pueden provocar rechazo o retrasos importantes en el proceso.
               </p>
 
               <h2>¿Necesitas asesoría legal?</h2>
               <p>
-                Aunque el proceso puede iniciarse sin abogado, una asesoría adecuada
-                reduce riesgos, evita conflictos y aumenta las probabilidades de éxito
-                desde el inicio.
+                Aunque el proceso puede iniciarse sin abogado, una asesoría adecuada reduce
+                riesgos, evita conflictos y aumenta las probabilidades de éxito desde el inicio.
               </p>
 
               <div className="mt-12 rounded-2xl bg-[#0f2740] p-8 text-white">

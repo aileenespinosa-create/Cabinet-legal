@@ -1,68 +1,86 @@
-import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import SiteHeader from "@/components/SiteHeader";
-import SiteFooter from "@/components/SiteFooter";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Legal | Cabinet Legal",
+  title: "Blog legal | Cabinet Legal",
   description:
-    "Artículos legales de Cabinet Legal sobre marcas, empresas, litigios y derecho empresarial en República Dominicana.",
+    "Artículos legales de Cabinet Legal sobre marcas, propiedad intelectual, asuntos corporativos y decisiones jurídicas relevantes en República Dominicana.",
+  alternates: {
+    canonical: "https://www.cabinetlegal.com.do/blog",
+  },
 };
 
-const posts = [
+const articles = [
   {
-    title: "Cómo registrar una marca en República Dominicana",
     href: "/blog/como-registrar-una-marca-republica-dominicana",
-    excerpt:
-      "Guía práctica sobre el proceso de registro de marcas ante ONAPI, requisitos, tiempos y recomendaciones legales.",
+    title: "Cómo registrar una marca en República Dominicana (2026)",
+    description:
+      "Guía práctica sobre requisitos, proceso en ONAPI, tiempos, errores comunes y recomendaciones clave.",
+  },
+  {
+    href: "/blog/cuanto-cuesta-registrar-una-marca",
+    title: "Cuánto cuesta registrar una marca en República Dominicana",
+    description:
+      "Explicamos por qué el costo depende del tipo de marca, la cantidad de clases y la estructura del expediente.",
   },
 ];
 
 export default function BlogPage() {
   return (
-    <main className="min-h-screen bg-white">
-      <SiteHeader />
-
-      <section className="bg-white py-24 md:py-32">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="max-w-3xl">
-            <div className="text-xs uppercase tracking-[0.28em] text-[#D9BE3F]">Cabinet Legal</div>
-            <h1 className="mt-4 text-4xl font-serif font-semibold text-[#0A3A5A]">
-              Blog Legal
-            </h1>
-            <p className="mt-6 text-lg leading-8 text-slate-600">
-              Publicamos contenido jurídico útil para empresas, inversionistas y clientes que
-              necesitan tomar decisiones legales informadas en República Dominicana.
-            </p>
-          </div>
-
-          <div className="mt-16 grid gap-8">
-            {posts.map((post) => (
-              <article
-                key={post.href}
-                className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
-              >
-                <h2 className="text-2xl font-serif font-semibold text-[#0A3A5A]">
-                  <Link href={post.href} className="hover:underline">
-                    {post.title}
-                  </Link>
-                </h2>
-                <p className="mt-4 leading-8 text-slate-600">{post.excerpt}</p>
-                <div className="mt-6">
-                  <Link
-                    href={post.href}
-                    className="inline-flex rounded-full bg-[#0A3A5A] px-5 py-2 text-sm font-medium text-white"
-                  >
-                    Leer artículo
-                  </Link>
-                </div>
-              </article>
-            ))}
+    <main className="min-h-screen">
+      <section className="container-legal py-16 md:py-20">
+        <div className="card-legal overflow-hidden">
+          <div className="relative h-[260px] md:h-[320px]">
+            <Image
+              src="/hero-legal.jpg"
+              alt="Blog legal Cabinet Legal"
+              fill
+              className="object-cover"
+            />
+            <div className="hero-image-overlay absolute inset-0" />
+            <div className="absolute inset-x-0 bottom-0 p-6 md:p-10">
+              <div className="eyebrow text-white/80">Cabinet Legal</div>
+              <h1 className="mt-3 max-w-4xl text-4xl font-semibold leading-tight text-white md:text-5xl">
+                Blog legal
+              </h1>
+              <p className="mt-4 max-w-2xl text-base leading-7 text-white/85 md:text-lg">
+                Publicaciones sobre marcas, propiedad intelectual y decisiones jurídicas
+                relevantes para proteger y fortalecer tu negocio.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <SiteFooter />
+      <section className="pb-20">
+        <div className="container-legal grid gap-6 md:grid-cols-2">
+          {articles.map((article) => (
+            <Link key={article.href} href={article.href} className="card-legal overflow-hidden">
+              <div className="relative h-[220px]">
+                <Image
+                  src="/blog-legal.jpg"
+                  alt={article.title}
+                  fill
+                  className="object-cover"
+                />
+                <div className="hero-image-overlay absolute inset-0" />
+              </div>
+
+              <div className="p-8">
+                <div className="eyebrow">Artículo</div>
+                <h2 className="mt-4 text-2xl font-semibold text-[#0f2740]">
+                  {article.title}
+                </h2>
+                <p className="mt-4 leading-8 text-[#5f6b76]">{article.description}</p>
+                <div className="mt-6 text-sm font-semibold text-[#0f2740]">
+                  Leer artículo →
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </main>
   );
 }
