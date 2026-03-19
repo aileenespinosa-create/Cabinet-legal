@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function RegistroPage() {
   return (
     <main className="min-h-screen overflow-x-hidden">
-      <SiteHeader internal />
+      <SiteHeader />
 
       <section className="container-legal py-12 md:py-20">
         <h1 className="text-4xl font-semibold text-[#0f2740] mb-6">

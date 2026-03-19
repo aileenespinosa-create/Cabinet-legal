@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function FirmaPage() {
   return (
     <main className="min-h-screen overflow-x-hidden">
-      <SiteHeader internal />
+      <SiteHeader />
 
       <section className="container-legal py-10 md:py-20">
         <div className="card-legal overflow-hidden">
