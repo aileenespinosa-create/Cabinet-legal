@@ -1,172 +1,129 @@
-"use client";
+import Image from "next/image";
+import type { Metadata } from "next";
 
-import { useState } from "react";
-import SiteHeader from "@/components/SiteHeader";
-import SiteFooter from "@/components/SiteFooter";
+export const metadata: Metadata = {
+  title: "Consulta | Cabinet Legal",
+  description:
+    "Solicita una consulta con Cabinet Legal para evaluar tu caso y definir la mejor estrategia legal en República Dominicana.",
+  alternates: {
+    canonical: "https://www.cabinetlegal.com.do/consulta",
+  },
+};
 
 export default function ConsultaPage() {
-  const [formSubmitted, setFormSubmitted] = useState(false);
-  const [formError, setFormError] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleConsultationSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setFormError("");
-    setIsSubmitting(true);
-
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-    formData.append("_subject", "Nueva consulta - Cabinet Legal");
-
-    try {
-      const response = await fetch("https://formspree.io/f/mlgpavya", {
-        method: "POST",
-        body: formData,
-        headers: { Accept: "application/json" },
-      });
-
-      if (response.ok) {
-        setFormSubmitted(true);
-        form.reset();
-      } else {
-        setFormError(
-          "No se pudo enviar la solicitud. Verifica tu conexión o la activación del formulario en Formspree."
-        );
-      }
-    } catch {
-      setFormError(
-        "No se pudo enviar la solicitud. Verifica tu conexión o la activación del formulario en Formspree."
-      );
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   return (
-    <main className="min-h-screen bg-white">
-      <SiteHeader />
-
-      <section className="bg-white py-24 md:py-32">
-        <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[0.85fr_1.15fr]">
-          <div>
-            <div className="text-xs uppercase tracking-[0.28em] text-[#D9BE3F]">Cabinet Legal</div>
-            <h1 className="mt-4 text-4xl font-serif font-semibold text-[#0A3A5A]">
-              Solicitar una consulta
-            </h1>
-            <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
-              Compártenos una breve descripción de tu asunto y nuestro equipo se pondrá en contacto
-              para coordinar la mejor vía de atención.
-            </p>
-
-            <div className="mt-10 rounded-[28px] bg-[#0A3A5A] p-8 text-white shadow-sm">
-              <div className="text-xs uppercase tracking-[0.28em] text-[#D9BE3F]">Cabinet Legal</div>
-              <p className="mt-4 text-sm leading-7 text-slate-200">
-                La información enviada será tratada con discreción profesional.
+    <main className="min-h-screen overflow-x-hidden">
+      <section className="container-legal py-10 md:py-20">
+        <div className="card-legal overflow-hidden">
+          <div className="relative h-[200px] sm:h-[260px] md:h-[360px]">
+            <Image
+              src="/hero-legal.jpg"
+              alt="Consulta legal Cabinet Legal"
+              fill
+              className="object-cover"
+              sizes="100vw"
+            />
+            <div className="hero-image-overlay absolute inset-0" />
+            <div className="absolute inset-x-0 bottom-0 p-5 md:p-10">
+              <div className="eyebrow text-white/80">Cabinet Legal</div>
+              <h1 className="mt-2 text-3xl font-semibold leading-tight text-white sm:text-4xl md:mt-3 md:text-5xl">
+                Consulta
+              </h1>
+              <p className="mt-3 max-w-2xl text-sm leading-6 text-white/85 md:mt-4 md:text-lg md:leading-7">
+                Evaluamos tu caso y te orientamos sobre la estrategia legal más adecuada.
               </p>
-              <div className="mt-8 space-y-3 text-sm text-slate-200">
-                <div>info@cabinetlegal.com.do</div>
-                <div>809 221 7768</div>
-                <div>Av. Pedro Henríquez Ureña No. 138, Torre Empresarial Reyna II, Suite 203</div>
-              </div>
             </div>
-          </div>
-
-          <div className="rounded-[32px] border border-slate-200 bg-[#FBFBF8] p-8 shadow-sm">
-            {formSubmitted ? (
-              <div className="flex min-h-[540px] flex-col items-center justify-center text-center">
-                <div className="text-xs uppercase tracking-[0.28em] text-[#D9BE3F]">Cabinet Legal</div>
-                <h2 className="mt-4 text-3xl font-serif font-semibold text-[#0A3A5A]">
-                  Solicitar una consulta
-                </h2>
-                <p className="mt-4 max-w-md text-sm leading-7 text-slate-600">
-                  Tu solicitud fue enviada correctamente. Te contactaremos pronto.
-                </p>
-                <button
-                  onClick={() => setFormSubmitted(false)}
-                  className="mt-8 rounded-full bg-[#0A3A5A] px-5 py-3 text-sm font-medium text-white"
-                >
-                  Nueva consulta
-                </button>
-              </div>
-            ) : (
-              <form className="grid gap-6" onSubmit={handleConsultationSubmit}>
-                <div className="grid gap-6 md:grid-cols-2">
-                  <label className="grid gap-2 text-sm text-slate-600">
-                    <span>Nombre completo</span>
-                    <input
-                      name="nombre"
-                      className="rounded-2xl border border-slate-200 bg-white px-4 py-3 outline-none transition focus:border-[#0A3A5A]"
-                      type="text"
-                      required
-                    />
-                  </label>
-
-                  <label className="grid gap-2 text-sm text-slate-600">
-                    <span>Correo electrónico</span>
-                    <input
-                      name="email"
-                      className="rounded-2xl border border-slate-200 bg-white px-4 py-3 outline-none transition focus:border-[#0A3A5A]"
-                      type="email"
-                      required
-                    />
-                  </label>
-                </div>
-
-                <div className="grid gap-6 md:grid-cols-2">
-                  <label className="grid gap-2 text-sm text-slate-600">
-                    <span>Teléfono</span>
-                    <input
-                      name="telefono"
-                      className="rounded-2xl border border-slate-200 bg-white px-4 py-3 outline-none transition focus:border-[#0A3A5A]"
-                      type="tel"
-                    />
-                  </label>
-
-                  <label className="grid gap-2 text-sm text-slate-600">
-                    <span>Empresa</span>
-                    <input
-                      name="empresa"
-                      className="rounded-2xl border border-slate-200 bg-white px-4 py-3 outline-none transition focus:border-[#0A3A5A]"
-                      type="text"
-                    />
-                  </label>
-                </div>
-
-                <label className="grid gap-2 text-sm text-slate-600">
-                  <span>Tipo de asunto</span>
-                  <input
-                    name="asunto"
-                    className="rounded-2xl border border-slate-200 bg-white px-4 py-3 outline-none transition focus:border-[#0A3A5A]"
-                    type="text"
-                    required
-                  />
-                </label>
-
-                <label className="grid gap-2 text-sm text-slate-600">
-                  <span>Mensaje</span>
-                  <textarea
-                    name="mensaje"
-                    className="min-h-[180px] rounded-2xl border border-slate-200 bg-white px-4 py-3 outline-none transition focus:border-[#0A3A5A]"
-                    required
-                  />
-                </label>
-
-                {formError ? <p className="text-sm text-red-600">{formError}</p> : null}
-
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="mt-2 inline-flex w-fit rounded-full bg-[#0A3A5A] px-6 py-3 text-sm font-medium text-white transition duration-300 hover:-translate-y-0.5 hover:shadow-lg disabled:cursor-not-allowed disabled:opacity-70"
-                >
-                  {isSubmitting ? "Enviando..." : "Enviar solicitud"}
-                </button>
-              </form>
-            )}
           </div>
         </div>
       </section>
 
-      <SiteFooter />
+      <section className="pb-16 md:pb-20">
+        <div className="container-legal grid gap-6 md:grid-cols-[0.9fr_1.1fr]">
+          <div className="card-legal p-6 md:p-10">
+            <div className="eyebrow">Cabinet Legal</div>
+            <h2 className="mt-4 text-3xl font-semibold leading-tight text-[#0f2740] md:text-4xl">
+              Hablemos de tu caso.
+            </h2>
+            <p className="mt-4 text-base leading-7 text-[#5f6b76] md:text-lg md:leading-8">
+              Si necesitas orientación legal, estructuración de una operación,
+              acompañamiento corporativo, registro de marca o evaluación de un conflicto,
+              podemos ayudarte a definir la mejor vía.
+            </p>
+
+            <div className="gold-line mt-6" />
+
+            <div className="mt-8 space-y-4 text-sm leading-7 text-[#5f6b76] md:text-base md:leading-8">
+              <p>• Atención directa y estratégica</p>
+              <p>• Evaluación inicial del caso</p>
+              <p>• Orientación clara sobre próximos pasos</p>
+              <p>• Enfoque práctico y ejecutivo</p>
+            </div>
+          </div>
+
+          <div className="card-legal p-6 md:p-10">
+            <form className="grid gap-4">
+              <div>
+                <label className="mb-2 block text-sm font-medium text-[#0f2740]">
+                  Nombre
+                </label>
+                <input
+                  type="text"
+                  className="w-full rounded-2xl border border-[#e8dfd0] bg-white px-4 py-3 text-sm text-[#16202a] outline-none"
+                  placeholder="Tu nombre"
+                />
+              </div>
+
+              <div>
+                <label className="mb-2 block text-sm font-medium text-[#0f2740]">
+                  Correo electrónico
+                </label>
+                <input
+                  type="email"
+                  className="w-full rounded-2xl border border-[#e8dfd0] bg-white px-4 py-3 text-sm text-[#16202a] outline-none"
+                  placeholder="tunombre@correo.com"
+                />
+              </div>
+
+              <div>
+                <label className="mb-2 block text-sm font-medium text-[#0f2740]">
+                  Teléfono
+                </label>
+                <input
+                  type="text"
+                  className="w-full rounded-2xl border border-[#e8dfd0] bg-white px-4 py-3 text-sm text-[#16202a] outline-none"
+                  placeholder="Tu número"
+                />
+              </div>
+
+              <div>
+                <label className="mb-2 block text-sm font-medium text-[#0f2740]">
+                  Asunto
+                </label>
+                <input
+                  type="text"
+                  className="w-full rounded-2xl border border-[#e8dfd0] bg-white px-4 py-3 text-sm text-[#16202a] outline-none"
+                  placeholder="¿En qué podemos ayudarte?"
+                />
+              </div>
+
+              <div>
+                <label className="mb-2 block text-sm font-medium text-[#0f2740]">
+                  Mensaje
+                </label>
+                <textarea
+                  rows={6}
+                  className="w-full rounded-2xl border border-[#e8dfd0] bg-white px-4 py-3 text-sm text-[#16202a] outline-none"
+                  placeholder="Cuéntanos brevemente tu caso"
+                />
+              </div>
+
+              <button type="submit" className="btn-primary-legal mt-2">
+                Enviar consulta
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

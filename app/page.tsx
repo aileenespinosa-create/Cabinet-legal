@@ -5,35 +5,37 @@ export default function HomePage() {
   return (
     <main className="min-h-screen">
       <section className="border-b border-[#e8dfd0] bg-transparent">
-        <div className="container-legal flex flex-col gap-4 py-5 md:flex-row md:items-center md:justify-between">
-          <div className="flex items-center gap-3">
-            <Image
-              src="/logo-cabinet-legal.jpg"
-              alt="Cabinet Legal"
-              width={54}
-              height={54}
-              className="h-11 w-auto rounded-md object-contain md:h-12"
-            />
-            <div>
-              <div className="text-xs font-semibold tracking-[0.18em] text-[#0f2740] md:text-sm md:tracking-[0.22em]">
-                CABINET LEGAL
-              </div>
-              <div className="text-[10px] uppercase tracking-[0.18em] text-[#8b94a0] md:text-[11px] md:tracking-[0.22em]">
-                Attorneys at law
-              </div>
-            </div>
+  <div className="container-legal py-4 md:py-5">
+    <div className="flex items-center justify-between gap-3">
+      <div className="flex min-w-0 items-center gap-3">
+        <Image
+          src="/logo-cabinet-legal.jpg"
+          alt="Cabinet Legal"
+          width={54}
+          height={54}
+          className="h-10 w-auto rounded-md object-contain md:h-12"
+        />
+        <div className="min-w-0">
+          <div className="truncate text-[11px] font-semibold tracking-[0.16em] text-[#0f2740] md:text-sm md:tracking-[0.22em]">
+            CABINET LEGAL
           </div>
-
-          <nav className="flex flex-wrap gap-x-4 gap-y-2 text-xs text-[#48525d] md:gap-6 md:text-sm">
-            <Link href="/firma">La Firma</Link>
-            <Link href="/socios">Socios</Link>
-            <Link href="/servicios">Servicios</Link>
-            <Link href="/registro-de-marcas">Marcas</Link>
-            <Link href="/blog">Blog</Link>
-            <Link href="/consulta">Consulta</Link>
-          </nav>
+          <div className="truncate text-[9px] uppercase tracking-[0.16em] text-[#8b94a0] md:text-[11px] md:tracking-[0.22em]">
+            Attorneys at law
+          </div>
         </div>
-      </section>
+      </div>
+    </div>
+
+    <nav className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-[11px] text-[#48525d] sm:text-xs md:mt-0 md:flex md:gap-6 md:text-sm">
+      <Link href="/firma">La Firma</Link>
+      <Link href="/socios">Socios</Link>
+      <Link href="/servicios">Servicios</Link>
+      <Link href="/registro-de-marcas">Marcas</Link>
+      <Link href="/blog">Blog</Link>
+      <Link href="/consulta">Consulta</Link>
+    </nav>
+  </div>
+</section>
 
       <section className="py-12 md:py-24">
         <div className="container-legal grid items-center gap-8 md:gap-12 lg:grid-cols-[1.05fr_0.95fr]">
