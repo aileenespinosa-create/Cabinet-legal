@@ -1,107 +1,118 @@
-export default function BlogPost() {
+import Image from "next/image";
+import Link from "next/link";
+
+export default function Article() {
   return (
-    <main className="min-h-screen bg-white">
-      <article className="mx-auto max-w-3xl px-6 py-20">
-        <h1 className="text-4xl font-serif font-semibold text-[#0A3A5A]">
-          Cuánto cuesta registrar una marca en República Dominicana (2026)
-        </h1>
+    <main className="min-h-screen">
+      <article className="container-legal py-16 md:py-20">
+        <div className="card-legal overflow-hidden">
 
-        <p className="mt-6 text-lg text-slate-600">
-          Registrar una marca en República Dominicana es una inversión esencial para
-          proteger tu negocio. Sin embargo, una de las preguntas más frecuentes es:
-          ¿cuánto cuesta realmente registrar una marca en ONAPI?
-        </p>
+          {/* Imagen */}
+          <div className="relative h-[280px] md:h-[360px]">
+            <Image
+              src="/legal-hero.jpg"
+              alt="Costo de registrar una marca en República Dominicana"
+              fill
+              className="object-cover"
+            />
+            <div className="hero-image-overlay absolute inset-0" />
+          </div>
 
-        <div className="mt-10 space-y-6 text-slate-700 leading-8">
-          <h2 className="text-2xl font-semibold text-[#0A3A5A]">
-            Costos oficiales en ONAPI
-          </h2>
-          <p>
-            El registro de una marca en la Oficina Nacional de la Propiedad Industrial
-            (ONAPI) implica el pago de tasas oficiales que pueden variar según el tipo
-            de solicitud y la cantidad de clases.
-          </p>
+          {/* Contenido */}
+          <div className="px-6 py-10 md:px-10 md:py-12">
+            <div className="eyebrow">Cabinet Legal</div>
 
-          <ul className="list-disc pl-6">
-            <li>Solicitud de registro de marca</li>
-            <li>Publicación en la Gaceta Oficial</li>
-            <li>Certificado de registro</li>
-          </ul>
+            <h1 className="mt-4 text-4xl font-semibold text-[#0f2740] md:text-5xl">
+              Cuánto cuesta registrar una marca en República Dominicana
+            </h1>
 
-          <p>
-            En términos generales, el costo base suele oscilar entre RD$8,000 y RD$15,000
-            por clase, sin incluir honorarios profesionales.
-          </p>
+            <div className="article-content mt-8">
 
-          <h2 className="text-2xl font-semibold text-[#0A3A5A]">
-            Honorarios legales
-          </h2>
-          <p>
-            Aunque no es obligatorio contar con un abogado, hacerlo reduce significativamente
-            el riesgo de rechazo o conflictos legales. Los honorarios pueden variar según
-            la complejidad del caso.
-          </p>
+              <p>
+                Una de las preguntas más frecuentes al iniciar el proceso de registro de una marca en República Dominicana es cuánto cuesta. Sin embargo, a diferencia de otros trámites, el costo no es fijo.
+              </p>
 
-          <p>
-            Un servicio legal completo suele incluir:
-          </p>
+              <p>
+                El valor del registro depende de varios factores específicos de cada caso, por lo que es importante analizar correctamente la situación antes de iniciar el proceso.
+              </p>
 
-          <ul className="list-disc pl-6">
-            <li>Búsqueda de disponibilidad</li>
-            <li>Asesoría en clasificación</li>
-            <li>Preparación y presentación de la solicitud</li>
-            <li>Seguimiento del proceso</li>
-          </ul>
+              <h2>¿De qué depende el costo del registro?</h2>
 
-          <h2 className="text-2xl font-semibold text-[#0A3A5A]">
-            Factores que pueden aumentar el costo
-          </h2>
-          <ul className="list-disc pl-6">
-            <li>Registro en múltiples clases</li>
-            <li>Oposiciones de terceros</li>
-            <li>Correcciones o requerimientos de ONAPI</li>
-          </ul>
+              <p>
+                El costo de registrar una marca ante la Oficina Nacional de la Propiedad Industrial (ONAPI) varía principalmente en función de los siguientes elementos:
+              </p>
 
-          <h2 className="text-2xl font-semibold text-[#0A3A5A]">
-            ¿Vale la pena registrar una marca?
-          </h2>
-          <p>
-            Sí. Registrar tu marca te otorga derechos exclusivos sobre su uso, evita que
-            terceros la utilicen y aumenta el valor de tu empresa.
-          </p>
+              <ul>
+                <li>
+                  <strong>Tipo de marca:</strong> si se trata de una marca denominativa, mixta o figurativa.
+                </li>
+                <li>
+                  <strong>Cantidad de clases:</strong> cada clase adicional implica un costo independiente.
+                </li>
+                <li>
+                  <strong>Actividad comercial:</strong> la clasificación correcta influye directamente en el alcance del registro.
+                </li>
+                <li>
+                  <strong>Complejidad del caso:</strong> posibles oposiciones o requerimientos de ONAPI pueden generar costos adicionales.
+                </li>
+              </ul>
 
-          <h2 className="text-2xl font-semibold text-[#0A3A5A]">
-            Recomendación final
-          </h2>
-          <p>
-            Antes de iniciar el proceso, es recomendable realizar una búsqueda legal para
-            verificar disponibilidad y evitar conflictos futuros.
-          </p>
-        </div>
+              <h2>Costos oficiales y consideraciones</h2>
 
-        <div className="mt-16 rounded-2xl bg-[#0A3A5A] p-8 text-white">
-          <h3 className="text-xl font-semibold">
-            ¿Quieres registrar tu marca correctamente?
-          </h3>
-          <p className="mt-2 text-slate-200">
-            En Cabinet Legal te asesoramos en todo el proceso para asegurar que tu marca
-            esté protegida desde el inicio.
-          </p>
+              <p>
+                ONAPI establece tasas oficiales para la solicitud, publicación y emisión del certificado de registro. No obstante, el costo total del proceso dependerá de cómo se estructure la solicitud y del número de clases involucradas.
+              </p>
 
-          <div className="mt-6 flex gap-4">
-            <a
-              href="/consulta"
-              className="rounded-full bg-white px-5 py-2 text-sm font-medium text-[#0A3A5A]"
-            >
-              Solicitar consulta
-            </a>
+              <p>
+                Una estrategia mal definida puede generar gastos adicionales o incluso el rechazo del registro.
+              </p>
 
-            <a
-              href="/blog/como-registrar-una-marca-republica-dominicana"
-              className="rounded-full border border-white px-5 py-2 text-sm font-medium text-white"
-            >
-              Ver guía completa
-            </a>
+              <h2>¿Por qué no es recomendable estimar el costo sin evaluación?</h2>
+
+              <p>
+                Intentar determinar el costo sin una revisión previa puede llevar a errores en la clasificación, duplicidad de registros o conflictos con marcas existentes.
+              </p>
+
+              <p>
+                Por esta razón, es recomendable realizar una evaluación legal antes de iniciar el proceso.
+              </p>
+
+              <h2>Recomendación profesional</h2>
+
+              <p>
+                Cada marca requiere un análisis individual. Evaluar correctamente el tipo de marca, la actividad comercial y el alcance de protección es lo que permite determinar el costo real del registro.
+              </p>
+
+              {/* BLOQUE DE CONVERSIÓN */}
+              <div className="mt-12 rounded-2xl bg-[#0f2740] p-8 text-white">
+
+                <h3 className="text-xl font-semibold">
+                  ¿Quieres conocer el costo exacto de registrar tu marca?
+                </h3>
+
+                <p className="mt-3 text-slate-200">
+                  En Cabinet Legal analizamos tu caso, verificamos la disponibilidad de tu marca y te indicamos el costo real del proceso según tu actividad y el alcance de protección que necesitas.
+                </p>
+
+                <div className="mt-6 flex gap-4">
+                  <Link
+                    href="/consulta"
+                    className="rounded-full bg-white px-5 py-2 text-sm font-medium text-[#0f2740]"
+                  >
+                    Solicitar evaluación
+                  </Link>
+
+                  <Link
+                    href="/blog/como-registrar-una-marca-republica-dominicana"
+                    className="rounded-full border border-white px-5 py-2 text-sm font-medium text-white"
+                  >
+                    Ver guía completa
+                  </Link>
+                </div>
+
+              </div>
+
+            </div>
           </div>
         </div>
       </article>

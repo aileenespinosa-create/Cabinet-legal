@@ -1,141 +1,119 @@
-import type { Metadata } from "next";
-import SiteHeader from "@/components/SiteHeader";
-import SiteFooter from "@/components/SiteFooter";
+import Image from "next/image";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Cómo registrar una marca en República Dominicana (2026) | Cabinet Legal",
-  description:
-    "Guía completa para registrar una marca en República Dominicana: requisitos, proceso en ONAPI, tiempos y recomendaciones legales.",
-  alternates: {
-    canonical:
-      "https://www.cabinetlegal.com.do/blog/como-registrar-una-marca-republica-dominicana",
-  },
-  openGraph: {
-    title: "Cómo registrar una marca en República Dominicana (2026) | Cabinet Legal",
-    description:
-      "Guía completa para registrar una marca en República Dominicana: requisitos, proceso en ONAPI, tiempos y recomendaciones legales.",
-    url: "https://www.cabinetlegal.com.do/blog/como-registrar-una-marca-republica-dominicana",
-    siteName: "Cabinet Legal",
-    images: [
-      {
-        url: "https://www.cabinetlegal.com.do/logo-cabinet-legal.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Cabinet Legal",
-      },
-    ],
-    locale: "es_DO",
-    type: "article",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Cómo registrar una marca en República Dominicana (2026) | Cabinet Legal",
-    description:
-      "Guía completa para registrar una marca en República Dominicana: requisitos, proceso en ONAPI, tiempos y recomendaciones legales.",
-    images: ["https://www.cabinetlegal.com.do/logo-cabinet-legal.jpg"],
-  },
-};
-
-export default function BlogPost() {
+export default function Article() {
   return (
-    <main className="min-h-screen bg-white">
-      <SiteHeader />
+    <main className="min-h-screen">
+      <article className="container-legal py-16 md:py-20">
+        <div className="card-legal overflow-hidden">
 
-      <article className="mx-auto max-w-3xl px-6 py-20">
-        <h1 className="text-4xl font-serif font-semibold text-[#0A3A5A]">
-          Cómo registrar una marca en República Dominicana (2026)
-        </h1>
+          {/* Imagen */}
+          <div className="relative h-[280px] md:h-[360px]">
+            <Image
+              src="/legal-hero.jpg"
+              alt="Registro de marca en República Dominicana"
+              fill
+              className="object-cover"
+            />
+            <div className="hero-image-overlay absolute inset-0" />
+          </div>
 
-        <p className="mt-6 text-lg text-slate-600">
-          Registrar una marca en República Dominicana es un paso esencial para proteger
-          tu negocio, tu identidad comercial y tu posicionamiento en el mercado.
-        </p>
+          {/* Contenido */}
+          <div className="px-6 py-10 md:px-10 md:py-12">
+            <div className="eyebrow">Cabinet Legal</div>
 
-        <div className="mt-10 space-y-6 text-slate-700 leading-8">
-          <h2 className="text-2xl font-semibold text-[#0A3A5A]">
-            ¿Qué es una marca registrada?
-          </h2>
-          <p>
-            Una marca es cualquier signo distintivo que identifica productos o servicios
-            en el mercado. Puede ser un nombre, logo, combinación de palabras, o incluso
-            elementos gráficos.
-          </p>
+            <h1 className="mt-4 text-4xl font-semibold text-[#0f2740] md:text-5xl">
+              Cómo registrar una marca en República Dominicana (2026)
+            </h1>
 
-          <h2 className="text-2xl font-semibold text-[#0A3A5A]">
-            ¿Dónde se registra una marca?
-          </h2>
-          <p>
-            En República Dominicana, el registro se realiza ante la Oficina Nacional de
-            la Propiedad Industrial (ONAPI).
-          </p>
+            <div className="article-content mt-8">
 
-          <h2 className="text-2xl font-semibold text-[#0A3A5A]">
-            Requisitos para registrar una marca
-          </h2>
-          <ul className="list-disc pl-6">
-            <li>Nombre o signo distintivo</li>
-            <li>Clasificación de productos o servicios</li>
-            <li>Datos del titular</li>
-            <li>Pago de tasas oficiales</li>
-          </ul>
+              <p>
+                Si tienes un negocio o estás construyendo una marca, registrarla en República Dominicana no es opcional: es lo que evita que terceros utilicen tu nombre, tu identidad o incluso tu reputación.
+              </p>
 
-          <h2 className="text-2xl font-semibold text-[#0A3A5A]">
-            Proceso de registro
-          </h2>
-          <ol className="list-decimal pl-6">
-            <li>Búsqueda de disponibilidad</li>
-            <li>Solicitud ante ONAPI</li>
-            <li>Examen formal</li>
-            <li>Publicación</li>
-            <li>Oposición (si aplica)</li>
-            <li>Concesión del registro</li>
-          </ol>
+              <p>
+                En la práctica, muchos negocios operan sin protección legal y descubren el problema cuando ya es tarde. Registrar tu marca a tiempo te permite asegurar exclusividad y evitar conflictos.
+              </p>
 
-          <h2 className="text-2xl font-semibold text-[#0A3A5A]">
-            ¿Cuánto tiempo tarda?
-          </h2>
-          <p>
-            El proceso puede tardar entre 4 y 6 meses, dependiendo de si existen
-            oposiciones o requerimientos.
-          </p>
+              <h2>¿Qué es una marca y por qué debes registrarla?</h2>
+              <p>
+                Una marca es el signo que identifica tus productos o servicios en el mercado. Puede ser un nombre, un logo o una combinación de ambos.
+              </p>
 
-          <h2 className="text-2xl font-semibold text-[#0A3A5A]">
-            Importancia de una asesoría legal
-          </h2>
-          <p>
-            Un registro mal realizado puede ser rechazado o impugnado. Contar con
-            asesoría legal reduce riesgos y asegura una protección efectiva.
-          </p>
-        </div>
+              <p>
+                El registro te otorga derechos exclusivos de uso en República Dominicana y te permite impedir que terceros utilicen signos similares.
+              </p>
 
-        <div className="mt-16 rounded-2xl bg-[#0A3A5A] p-8 text-white">
-          <h3 className="text-xl font-semibold">
-            ¿Necesitas registrar tu marca?
-          </h3>
-          <p className="mt-2 text-slate-200">
-            Nuestro equipo puede ayudarte durante todo el proceso.
-          </p>
+              <h2>¿Dónde se registra una marca en República Dominicana?</h2>
+              <p>
+                El registro se realiza ante la Oficina Nacional de la Propiedad Industrial (ONAPI), entidad encargada de administrar los derechos de propiedad industrial en el país.
+              </p>
 
-          <div className="mt-6 flex gap-4">
-            <Link
-              href="/registro-de-marcas"
-              className="rounded-full bg-white px-5 py-2 text-sm font-medium text-[#0A3A5A]"
-            >
-              Ver servicio
-            </Link>
+              <h2>Requisitos para registrar una marca</h2>
+              <ul>
+                <li>Nombre o signo distintivo</li>
+                <li>Clasificación de productos o servicios</li>
+                <li>Datos del titular</li>
+                <li>Pago de tasas oficiales</li>
+              </ul>
 
-            <Link
-              href="/consulta"
-              className="rounded-full border border-white px-5 py-2 text-sm font-medium text-white"
-            >
-              Solicitar consulta
-            </Link>
+              <h2>Proceso de registro paso a paso</h2>
+              <ol>
+                <li>Búsqueda de disponibilidad</li>
+                <li>Presentación de solicitud en ONAPI</li>
+                <li>Examen formal</li>
+                <li>Publicación en boletín oficial</li>
+                <li>Periodo de oposición</li>
+                <li>Emisión del certificado</li>
+              </ol>
+
+              <h2>Errores comunes al registrar una marca</h2>
+              <ul>
+                <li>No verificar disponibilidad previamente</li>
+                <li>Elegir mal la clasificación</li>
+                <li>No responder requerimientos de ONAPI</li>
+              </ul>
+
+              <p>
+                Estos errores pueden provocar rechazo o retrasos importantes en el proceso.
+              </p>
+
+              <h2>¿Necesitas asesoría legal?</h2>
+              <p>
+                Aunque el proceso puede iniciarse sin abogado, una asesoría adecuada reduce riesgos, evita conflictos y aumenta las probabilidades de éxito desde el inicio.
+              </p>
+
+              <div className="mt-12 rounded-2xl bg-[#0f2740] p-8 text-white">
+                <h3 className="text-xl font-semibold">
+                  ¿Quieres registrar tu marca correctamente desde el inicio?
+                </h3>
+
+                <p className="mt-3 text-slate-200">
+                  En Cabinet Legal evaluamos tu caso, verificamos disponibilidad y gestionamos todo el proceso ante ONAPI para que tu marca esté protegida sin riesgos.
+                </p>
+
+                <div className="mt-6 flex gap-4">
+                  <Link
+                    href="/consulta"
+                    className="rounded-full bg-white px-5 py-2 text-sm font-medium text-[#0f2740]"
+                  >
+                    Solicitar consulta
+                  </Link>
+
+                  <Link
+                    href="/blog/cuanto-cuesta-registrar-una-marca"
+                    className="rounded-full border border-white px-5 py-2 text-sm font-medium text-white"
+                  >
+                    Ver costos del registro
+                  </Link>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </article>
-
-      <SiteFooter />
     </main>
   );
 }
