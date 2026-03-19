@@ -1,105 +1,135 @@
-import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import SiteHeader from "@/components/SiteHeader";
-import SiteFooter from "@/components/SiteFooter";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Registro de Marcas en República Dominicana | Cabinet Legal",
+  title: "Registro de marcas | Cabinet Legal",
   description:
-    "Protege tu marca en República Dominicana con acompañamiento legal ante ONAPI. Registro de marcas, oposiciones, cancelaciones y defensa de derechos.",
+    "Acompañamiento legal en registro de marcas en República Dominicana: evaluación, clasificación, presentación y seguimiento ante ONAPI.",
+  alternates: {
+    canonical: "https://www.cabinetlegal.com.do/registro-de-marcas",
+  },
 };
 
 export default function RegistroDeMarcasPage() {
   return (
-    <main className="min-h-screen bg-white">
-      <SiteHeader />
-
-      <section className="bg-white py-24 md:py-32">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="max-w-4xl">
-            <div className="text-xs uppercase tracking-[0.28em] text-[#D9BE3F]">Cabinet Legal</div>
-            <h1 className="mt-4 text-4xl font-serif font-semibold text-[#0A3A5A] md:text-5xl">
-              Registro de marcas en República Dominicana
-            </h1>
-            <p className="mt-6 text-lg leading-8 text-slate-600">
-              Protege tu marca legalmente y evita conflictos futuros. Te acompañamos en todo el proceso
-              ante ONAPI con un enfoque estratégico, no solo operativo.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Link
-                href="/consulta"
-                className="rounded-full bg-[#0A3A5A] px-6 py-3 text-sm font-medium text-white transition duration-300 hover:-translate-y-0.5 hover:shadow-lg"
-              >
-                Agendar consulta
-              </Link>
-            </div>
-          </div>
-
-          <div className="mt-20 grid gap-10 lg:grid-cols-2">
-            <div className="rounded-[28px] border border-slate-200 bg-[#FBFBF8] p-8 shadow-sm">
-              <h2 className="text-2xl font-serif font-semibold text-[#0A3A5A]">¿Por qué registrar tu marca?</h2>
-              <p className="mt-4 leading-8 text-slate-600">
-                Muchas empresas operan sin registrar su marca y descubren demasiado tarde que un tercero ya
-                solicitó o registró un signo similar. Registrar tu marca protege uno de los activos más
-                importantes de tu negocio.
+    <main className="min-h-screen overflow-x-hidden">
+      <section className="container-legal py-10 md:py-20">
+        <div className="card-legal overflow-hidden">
+          <div className="relative h-[200px] sm:h-[260px] md:h-[360px]">
+            <Image
+              src="/hero-legal.jpg"
+              alt="Registro de marcas en República Dominicana"
+              fill
+              className="object-cover"
+              sizes="100vw"
+            />
+            <div className="hero-image-overlay absolute inset-0" />
+            <div className="absolute inset-x-0 bottom-0 p-5 md:p-10">
+              <div className="eyebrow text-white/80">Cabinet Legal</div>
+              <h1 className="mt-2 text-3xl font-semibold leading-tight text-white sm:text-4xl md:mt-3 md:text-5xl">
+                Registro de marcas
+              </h1>
+              <p className="mt-3 max-w-2xl text-sm leading-6 text-white/85 md:mt-4 md:text-lg md:leading-7">
+                Protegemos la identidad comercial de tu negocio con estrategia,
+                precisión técnica y acompañamiento integral.
               </p>
             </div>
-
-            <div className="rounded-[28px] border border-slate-200 bg-white p-8 shadow-sm">
-              <h2 className="text-2xl font-serif font-semibold text-[#0A3A5A]">
-                Protección legal con visión estratégica
-              </h2>
-              <p className="mt-4 leading-8 text-slate-600">
-                No solo gestionamos solicitudes: ayudamos a reducir riesgos, prevenir conflictos y fortalecer
-                la protección jurídica de tu negocio en el mercado dominicano.
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-16 grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
-            <div className="rounded-[28px] border border-slate-200 bg-white p-8 shadow-sm">
-              <h2 className="text-2xl font-serif font-semibold text-[#0A3A5A]">¿Cómo te ayudamos?</h2>
-              <p className="mt-4 leading-8 text-slate-600">
-                En Cabinet Legal acompañamos a nuestros clientes en todas las etapas relacionadas con
-                protección marcaria en República Dominicana.
-              </p>
-              <ul className="mt-6 space-y-4 text-slate-700">
-                <li>• Búsqueda de disponibilidad de marca</li>
-                <li>• Solicitud de registro ante ONAPI</li>
-                <li>• Oposición a solicitudes conflictivas</li>
-                <li>• Cancelación de marcas o nombres comerciales</li>
-                <li>• Defensa de derechos de propiedad intelectual</li>
-              </ul>
-            </div>
-
-            <div className="rounded-[28px] bg-[#0A3A5A] p-8 text-white shadow-sm">
-              <div className="text-xs uppercase tracking-[0.28em] text-[#D9BE3F]">ONAPI</div>
-              <h2 className="mt-4 text-2xl font-serif font-semibold">Proceso de registro</h2>
-              <div className="mt-6 space-y-4 text-sm leading-7 text-slate-200">
-                <div>1. Evaluación inicial de la marca</div>
-                <div>2. Búsqueda de antecedentes y viabilidad</div>
-                <div>3. Presentación de solicitud ante ONAPI</div>
-                <div>4. Publicación y período de oposición</div>
-                <div>5. Emisión del certificado de registro</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-16 rounded-[32px] border border-[#D9BE3F]/30 bg-[#D9BE3F]/10 p-10 text-center">
-            <h2 className="text-2xl font-serif font-semibold text-[#0A3A5A]">
-              Protege tu marca hoy. Agenda una consulta y recibe acompañamiento legal en todo el proceso.
-            </h2>
-            <Link
-              href="/consulta"
-              className="mt-6 inline-block rounded-full bg-[#0A3A5A] px-6 py-3 text-sm font-medium text-white transition duration-300 hover:-translate-y-0.5 hover:shadow-lg"
-            >
-              Agendar consulta
-            </Link>
           </div>
         </div>
       </section>
 
-      <SiteFooter />
+      <section className="pb-12 md:pb-20">
+        <div className="container-legal grid gap-6 md:grid-cols-[0.95fr_1.05fr]">
+          <div className="card-legal p-6 md:p-10">
+            <div className="eyebrow">¿Qué hacemos?</div>
+            <h2 className="mt-4 text-3xl font-semibold leading-tight text-[#0f2740] md:text-4xl">
+              Acompañamos todo el proceso de registro ante ONAPI.
+            </h2>
+            <div className="gold-line mt-6" />
+          </div>
+
+          <div className="card-legal p-6 md:p-10">
+            <div className="space-y-5 text-base leading-7 text-[#5f6b76] md:text-lg md:leading-8">
+              <p>
+                El registro de una marca exige una evaluación correcta del signo,
+                la clasificación adecuada y una estrategia que reduzca riesgos de
+                rechazo o conflicto.
+              </p>
+              <p>
+                En Cabinet Legal ofrecemos acompañamiento integral para que el
+                proceso se gestione con claridad y seguridad desde el inicio.
+              </p>
+              <p>
+                Analizamos disponibilidad, alcance de protección y estructura del
+                expediente antes de presentar la solicitud.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="pb-12 md:pb-20">
+        <div className="container-legal grid gap-4 md:grid-cols-3">
+          <article className="card-legal p-6 md:p-8">
+            <div className="eyebrow">Paso 1</div>
+            <h3 className="mt-4 text-xl font-semibold text-[#0f2740] md:text-2xl">
+              Evaluación inicial
+            </h3>
+            <p className="mt-4 text-sm leading-7 text-[#5f6b76] md:text-base md:leading-8">
+              Revisamos la marca, tu actividad comercial y el alcance de protección
+              que realmente necesitas.
+            </p>
+          </article>
+
+          <article className="card-legal p-6 md:p-8">
+            <div className="eyebrow">Paso 2</div>
+            <h3 className="mt-4 text-xl font-semibold text-[#0f2740] md:text-2xl">
+              Clasificación y estrategia
+            </h3>
+            <p className="mt-4 text-sm leading-7 text-[#5f6b76] md:text-base md:leading-8">
+              Definimos la clasificación correcta y estructuramos la solicitud de
+              forma clara y técnicamente sólida.
+            </p>
+          </article>
+
+          <article className="card-legal p-6 md:p-8">
+            <div className="eyebrow">Paso 3</div>
+            <h3 className="mt-4 text-xl font-semibold text-[#0f2740] md:text-2xl">
+              Presentación y seguimiento
+            </h3>
+            <p className="mt-4 text-sm leading-7 text-[#5f6b76] md:text-base md:leading-8">
+              Presentamos el expediente ante ONAPI y damos seguimiento al proceso
+              hasta su conclusión.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section className="pb-16 md:pb-20">
+        <div className="container-legal card-legal p-6 md:p-12">
+          <div className="eyebrow">Consulta</div>
+          <h2 className="mt-4 text-3xl font-semibold text-[#0f2740] md:text-4xl">
+            ¿Quieres registrar tu marca con estrategia legal?
+          </h2>
+          <p className="mt-4 max-w-2xl text-base leading-7 text-[#5f6b76] md:text-lg md:leading-8">
+            Podemos revisar tu caso, evaluar disponibilidad y orientarte sobre la
+            mejor vía para proteger tu marca en República Dominicana.
+          </p>
+
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap md:gap-4">
+            <Link href="/consulta" className="btn-primary-legal">
+              Solicitar consulta
+            </Link>
+            <Link
+              href="/blog/como-registrar-una-marca-republica-dominicana"
+              className="btn-secondary-legal"
+            >
+              Ver guía completa
+            </Link>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
