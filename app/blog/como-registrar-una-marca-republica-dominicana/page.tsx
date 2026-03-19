@@ -6,7 +6,35 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Cómo registrar una marca en República Dominicana (2026) | Cabinet Legal",
   description:
-    "Guía completa para registrar una marca en República Dominicana: requisitos, proceso en ONAPI, tiempos y costos.",
+    "Guía completa para registrar una marca en República Dominicana: requisitos, proceso en ONAPI, tiempos y recomendaciones legales.",
+  alternates: {
+    canonical:
+      "https://www.cabinetlegal.com.do/blog/como-registrar-una-marca-republica-dominicana",
+  },
+  openGraph: {
+    title: "Cómo registrar una marca en República Dominicana (2026) | Cabinet Legal",
+    description:
+      "Guía completa para registrar una marca en República Dominicana: requisitos, proceso en ONAPI, tiempos y recomendaciones legales.",
+    url: "https://www.cabinetlegal.com.do/blog/como-registrar-una-marca-republica-dominicana",
+    siteName: "Cabinet Legal",
+    images: [
+      {
+        url: "https://www.cabinetlegal.com.do/logo-cabinet-legal.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Cabinet Legal",
+      },
+    ],
+    locale: "es_DO",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cómo registrar una marca en República Dominicana (2026) | Cabinet Legal",
+    description:
+      "Guía completa para registrar una marca en República Dominicana: requisitos, proceso en ONAPI, tiempos y recomendaciones legales.",
+    images: ["https://www.cabinetlegal.com.do/logo-cabinet-legal.jpg"],
+  },
 };
 
 export default function BlogPost() {
@@ -81,7 +109,6 @@ export default function BlogPost() {
           </p>
         </div>
 
-        {/* CTA */}
         <div className="mt-16 rounded-2xl bg-[#0A3A5A] p-8 text-white">
           <h3 className="text-xl font-semibold">
             ¿Necesitas registrar tu marca?
