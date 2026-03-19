@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
   title: "Socios | Cabinet Legal",
@@ -46,7 +47,9 @@ const partners = [
 export default function SociosPage() {
   return (
     <main className="min-h-screen overflow-x-hidden">
-      <section className="container-legal py-10 md:py-20">
+      <SiteHeader internal />
+
+      <section className="container-legal py-10 md:py-16">
         <div className="mb-10 md:mb-14">
           <div className="eyebrow">Cabinet Legal</div>
           <h1 className="mt-4 text-4xl font-semibold text-[#0f2740] md:text-5xl">
@@ -60,25 +63,22 @@ export default function SociosPage() {
 
         <div className="space-y-8 md:space-y-10">
           {partners.map((partner) => (
-            <article
-              key={partner.name}
-              className="card-legal overflow-hidden"
-            >
-              <div className="grid md:grid-cols-[0.42fr_0.58fr]">
-                <div className="relative aspect-[4/5] w-full">
+            <article key={partner.name} className="card-legal overflow-hidden">
+              <div className="grid lg:grid-cols-[320px_minmax(0,1fr)]">
+                <div className="relative h-[360px] sm:h-[420px] lg:h-full">
                   <Image
                     src={partner.image}
                     alt={partner.name}
                     fill
                     className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 42vw"
+                    sizes="(max-width: 1024px) 100vw, 320px"
                   />
                 </div>
 
-                <div className="p-6 md:p-10">
+                <div className="p-6 md:p-8 lg:p-10">
                   <div className="eyebrow">Cabinet Legal</div>
 
-                  <h2 className="mt-4 text-3xl font-semibold leading-tight text-[#0f2740] md:text-4xl">
+                  <h2 className="mt-4 text-2xl font-semibold leading-tight text-[#0f2740] md:text-3xl">
                     {partner.name}
                   </h2>
 
@@ -86,20 +86,20 @@ export default function SociosPage() {
                     {partner.role}
                   </p>
 
-                  <p className="mt-6 text-base leading-8 text-[#5f6b76] md:text-lg">
+                  <p className="mt-5 text-base leading-7 text-[#5f6b76] md:text-lg md:leading-8">
                     {partner.bio}
                   </p>
 
-                  <div className="mt-8">
+                  <div className="mt-7">
                     <h3 className="text-lg font-semibold text-[#0f2740] md:text-xl">
                       Enfoque profesional
                     </h3>
-                    <p className="mt-3 text-base leading-8 text-[#5f6b76]">
+                    <p className="mt-3 text-base leading-7 text-[#5f6b76] md:leading-8">
                       {partner.focus}
                     </p>
                   </div>
 
-                  <div className="mt-8">
+                  <div className="mt-7">
                     <h3 className="text-lg font-semibold text-[#0f2740] md:text-xl">
                       Áreas de práctica
                     </h3>
