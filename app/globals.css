@@ -147,3 +147,15 @@ a {
     rgba(15, 39, 64, 0.28) 100%
   );
 }
+
+@media (max-width: 767px) {
+  .container-legal {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .btn-primary-legal,
+  .btn-secondary-legal {
+    width: 100%;
+  }
+}

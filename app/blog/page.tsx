@@ -31,9 +31,9 @@ const articles = [
 export default function BlogPage() {
   return (
     <main className="min-h-screen">
-      <section className="container-legal py-16 md:py-20">
+      <section className="container-legal py-12 md:py-20">
         <div className="card-legal overflow-hidden">
-          <div className="relative h-[260px] md:h-[320px]">
+          <div className="relative h-[220px] sm:h-[260px] md:h-[320px]">
             <Image
               src="/hero-legal.jpg"
               alt="Blog legal Cabinet Legal"
@@ -41,12 +41,12 @@ export default function BlogPage() {
               className="object-cover"
             />
             <div className="hero-image-overlay absolute inset-0" />
-            <div className="absolute inset-x-0 bottom-0 p-6 md:p-10">
+            <div className="absolute inset-x-0 bottom-0 p-5 md:p-10">
               <div className="eyebrow text-white/80">Cabinet Legal</div>
-              <h1 className="mt-3 max-w-4xl text-4xl font-semibold leading-tight text-white md:text-5xl">
+              <h1 className="mt-3 max-w-4xl text-3xl font-semibold leading-tight text-white md:text-5xl">
                 Blog legal
               </h1>
-              <p className="mt-4 max-w-2xl text-base leading-7 text-white/85 md:text-lg">
+              <p className="mt-3 max-w-2xl text-sm leading-6 text-white/85 md:mt-4 md:text-lg md:leading-7">
                 Publicaciones sobre marcas, propiedad intelectual y decisiones jurídicas
                 relevantes para proteger y fortalecer tu negocio.
               </p>
@@ -55,11 +55,11 @@ export default function BlogPage() {
         </div>
       </section>
 
-      <section className="pb-20">
-        <div className="container-legal grid gap-6 md:grid-cols-2">
+      <section className="pb-16 md:pb-20">
+        <div className="container-legal grid gap-4 sm:gap-6 md:grid-cols-2">
           {articles.map((article) => (
             <Link key={article.href} href={article.href} className="card-legal overflow-hidden">
-              <div className="relative h-[220px]">
+              <div className="relative h-[200px] sm:h-[220px]">
                 <Image
                   src={article.image}
                   alt={article.title}
@@ -69,12 +69,14 @@ export default function BlogPage() {
                 <div className="hero-image-overlay absolute inset-0" />
               </div>
 
-              <div className="p-8">
+              <div className="p-6 md:p-8">
                 <div className="eyebrow">Artículo</div>
-                <h2 className="mt-4 text-2xl font-semibold text-[#0f2740]">
+                <h2 className="mt-4 text-xl font-semibold text-[#0f2740] md:text-2xl">
                   {article.title}
                 </h2>
-                <p className="mt-4 leading-8 text-[#5f6b76]">{article.description}</p>
+                <p className="mt-4 leading-7 text-[#5f6b76] md:leading-8">
+                  {article.description}
+                </p>
                 <div className="mt-6 text-sm font-semibold text-[#0f2740]">
                   Leer artículo →
                 </div>
