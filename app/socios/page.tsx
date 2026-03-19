@@ -14,16 +14,23 @@ const partners = [
   {
     name: "Aileen Espinosa",
     role: "Managing Partner",
-    image: "/aileen-espinosa.jpg",
+    image: "/aileen.jpg",
     description:
       "Abogada enfocada en asesoría corporativa, estructuración de negocios y estrategia legal empresarial.",
+  },
+  {
+    name: "Ellis",
+    role: "Partner",
+    image: "/ellis.jpg",
+    description:
+      "Abogado con enfoque en estrategia legal, asuntos corporativos y acompañamiento empresarial.",
   },
 ];
 
 export default function SociosPage() {
   return (
     <main className="min-h-screen overflow-x-hidden">
-      <section className="container-legal py-12 md:py-20">
+      <section className="container-legal py-10 md:py-20">
         <div className="mb-10 md:mb-14">
           <div className="eyebrow">Cabinet Legal</div>
           <h1 className="mt-4 text-4xl font-semibold text-[#0f2740] md:text-5xl">
@@ -35,19 +42,16 @@ export default function SociosPage() {
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-2">
           {partners.map((partner) => (
-            <article
-              key={partner.name}
-              className="card-legal overflow-hidden"
-            >
+            <article key={partner.name} className="card-legal overflow-hidden">
               <div className="relative aspect-[4/5] w-full">
                 <Image
                   src={partner.image}
                   alt={partner.name}
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
 
