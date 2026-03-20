@@ -5,28 +5,50 @@ import { usePathname } from "next/navigation";
 export default function WhatsAppButton() {
   const pathname = usePathname();
 
-  const getMessage = () => {
+  const getConfig = () => {
     if (pathname === "/consulta") {
-      return "Hola, visité Cabinet Legal y me gustaría agendar una consulta.";
+      return {
+        text: "Agendar consulta",
+        message:
+          "Hola, visité Cabinet Legal y me gustaría agendar una consulta.",
+      };
     }
 
     if (pathname === "/registro-de-marcas") {
-      return "Hola, visité Cabinet Legal y me gustaría recibir orientación sobre registro de marcas.";
+      return {
+        text: "Consultar marca",
+        message:
+          "Hola, visité Cabinet Legal y me gustaría recibir orientación sobre registro de marcas.",
+      };
     }
 
     if (pathname === "/servicios") {
-      return "Hola, visité Cabinet Legal y me gustaría recibir orientación sobre sus servicios legales.";
+      return {
+        text: "Consultar servicios",
+        message:
+          "Hola, visité Cabinet Legal y me gustaría recibir orientación sobre sus servicios legales.",
+      };
     }
 
     if (pathname === "/blog") {
-      return "Hola, visité Cabinet Legal y me gustaría recibir orientación legal.";
+      return {
+        text: "Hacer consulta",
+        message:
+          "Hola, visité Cabinet Legal y me gustaría recibir orientación legal.",
+      };
     }
 
-    return "Hola, visité Cabinet Legal y me gustaría recibir orientación.";
+    return {
+      text: "Escríbenos",
+      message:
+        "Hola, visité Cabinet Legal y me gustaría recibir orientación.",
+    };
   };
 
+  const { text, message } = getConfig();
+
   const whatsappUrl = `https://wa.me/18093302232?text=${encodeURIComponent(
-    getMessage()
+    message
   )}`;
 
   return (
@@ -37,9 +59,13 @@ export default function WhatsAppButton() {
       className="fixed bottom-6 right-6 z-50"
     >
       <div className="relative flex items-center gap-3 rounded-full bg-gradient-to-r from-green-500 to-green-600 px-5 py-3 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+        
+        {/* pulse */}
         <span className="absolute inset-0 rounded-full bg-green-500 opacity-30 animate-ping"></span>
 
         <div className="relative flex items-center gap-3">
+          
+          {/* icono */}
           <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -51,12 +77,13 @@ export default function WhatsAppButton() {
             </svg>
           </div>
 
+          {/* texto dinámico */}
           <div className="flex flex-col leading-tight">
             <span className="text-[10px] uppercase tracking-[0.25em] text-white/80">
               CABINET LEGAL
             </span>
             <span className="text-sm font-semibold text-white">
-              Escríbenos
+              {text}
             </span>
           </div>
         </div>
