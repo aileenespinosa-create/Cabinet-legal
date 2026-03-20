@@ -1,37 +1,44 @@
 "use client";
 
 export default function WhatsAppButton() {
-  const phone = "18093302232"; // cambia esto por tu número real
-  const message = encodeURIComponent(
-    "Hola, visité Cabinet Legal y me gustaría agendar una consulta."
-  );
-
   return (
     <a
-      href={`https://wa.me/${phone}?text=${message}`}
+      href="https://wa.me/18093302232?text=Hola%2C%20visité%20Cabinet%20Legal%20y%20me%20gustaría%20recibir%20orientación."
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Escríbenos por WhatsApp"
-      className="fixed bottom-5 right-5 z-50 flex items-center gap-3 rounded-full bg-[#25D366] px-4 py-3 text-white shadow-[0_14px_34px_rgba(0,0,0,0.18)] transition duration-300 hover:scale-[1.03]"
+      className="fixed bottom-6 right-6 z-50"
     >
-      <span className="relative flex h-10 w-10 items-center justify-center rounded-full bg-white/18">
-        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white/20" />
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 32 32"
-          className="relative h-5 w-5 fill-current"
-        >
-          <path d="M19.11 17.21c-.28-.14-1.64-.81-1.9-.9-.25-.09-.44-.14-.62.14-.18.28-.71.9-.87 1.08-.16.19-.32.21-.6.07-.28-.14-1.16-.43-2.2-1.37-.81-.72-1.35-1.6-1.51-1.88-.16-.28-.02-.43.12-.57.13-.13.28-.32.41-.48.14-.16.18-.28.28-.46.09-.19.05-.35-.02-.48-.07-.14-.62-1.5-.85-2.06-.22-.52-.45-.45-.62-.46h-.53c-.18 0-.48.07-.73.35-.25.28-.96.94-.96 2.29 0 1.35.98 2.65 1.12 2.83.14.19 1.92 2.93 4.65 4.11.65.28 1.16.45 1.56.57.65.21 1.24.18 1.71.11.52-.08 1.64-.67 1.87-1.32.23-.65.23-1.21.16-1.32-.07-.11-.25-.18-.53-.32z" />
-          <path d="M16.03 3C8.85 3 3 8.72 3 15.79c0 2.26.61 4.46 1.78 6.39L3 29l6.99-1.82a13.18 13.18 0 0 0 6.04 1.46h.01C23.2 28.64 29 22.92 29 15.85 29 8.78 23.2 3 16.03 3zm0 23.43h-.01a10.94 10.94 0 0 1-5.57-1.52l-.4-.24-4.15 1.08 1.11-4.02-.26-.41a10.68 10.68 0 0 1-1.65-5.67c0-5.94 4.91-10.77 10.94-10.77 6.03 0 10.93 4.83 10.93 10.77 0 5.95-4.9 10.78-10.93 10.78z" />
-        </svg>
-      </span>
+      <div className="relative flex items-center gap-3 rounded-full bg-gradient-to-r from-green-500 to-green-600 px-5 py-3 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+        
+        {/* EFECTO PULSE */}
+        <span className="absolute inset-0 rounded-full bg-green-500 opacity-30 animate-ping"></span>
 
-      <span className="flex flex-col leading-tight">
-        <span className="text-[11px] uppercase tracking-[0.18em] text-white/80">
-          Cabinet Legal
-        </span>
-        <span className="text-sm font-semibold">Escríbenos</span>
-      </span>
+        {/* CONTENIDO */}
+        <div className="relative flex items-center gap-3">
+          
+          {/* ICONO */}
+          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32"
+              fill="currentColor"
+              className="h-5 w-5 text-green-600"
+            >
+              <path d="M16 .4C7.4.4.4 7.4.4 16c0 2.8.7 5.4 2 7.7L0 32l8.6-2.3c2.2 1.2 4.7 1.9 7.4 1.9 8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4zm0 28.5c-2.3 0-4.6-.6-6.6-1.8l-.5-.3-5.1 1.3 1.4-5-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.3 6-13.3 13.3-13.3S29.3 8.7 29.3 16 23.3 28.9 16 28.9zm7.3-9.8c-.4-.2-2.4-1.2-2.8-1.3-.4-.2-.7-.2-1 .2s-1.1 1.3-1.4 1.6c-.3.3-.5.3-.9.1-.4-.2-1.7-.6-3.2-2-1.2-1.1-2-2.4-2.2-2.8-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.5-.7.2-.3.1-.5 0-.7-.1-.2-1-2.3-1.4-3.1-.4-.8-.7-.7-1-.7h-.8c-.3 0-.7.1-1 .5-.3.4-1.4 1.4-1.4 3.3 0 1.9 1.4 3.7 1.6 4 .2.3 2.8 4.3 6.9 6 .9.4 1.7.6 2.3.8 1 .3 1.9.2 2.6.1.8-.1 2.4-1 2.8-2 .3-1 .3-1.8.2-2-.1-.2-.4-.3-.8-.5z" />
+            </svg>
+          </div>
+
+          {/* TEXTO */}
+          <div className="flex flex-col leading-tight">
+            <span className="text-[10px] uppercase tracking-[0.25em] text-white/80">
+              CABINET LEGAL
+            </span>
+            <span className="text-sm font-semibold text-white">
+              Escríbenos
+            </span>
+          </div>
+        </div>
+      </div>
     </a>
   );
 }
