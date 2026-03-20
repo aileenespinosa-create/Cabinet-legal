@@ -9,14 +9,9 @@ export default function WhatsAppButton() {
       className="fixed bottom-6 right-6 z-50"
     >
       <div className="relative flex items-center gap-3 rounded-full bg-gradient-to-r from-green-500 to-green-600 px-5 py-3 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-        
-        {/* EFECTO PULSE */}
         <span className="absolute inset-0 rounded-full bg-green-500 opacity-30 animate-ping"></span>
 
-        {/* CONTENIDO */}
         <div className="relative flex items-center gap-3">
-          
-          {/* ICONO */}
           <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +23,6 @@ export default function WhatsAppButton() {
             </svg>
           </div>
 
-          {/* TEXTO */}
           <div className="flex flex-col leading-tight">
             <span className="text-[10px] uppercase tracking-[0.25em] text-white/80">
               CABINET LEGAL
