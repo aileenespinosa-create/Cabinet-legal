@@ -4,7 +4,7 @@ import SiteHeader from "@/components/SiteHeader";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-[#fcfaf6] pt-[120px]">
+    <main className="min-h-screen bg-[#fcfaf6] pt-[96px]">
       <SiteHeader />
 
       {/* HERO */}

@@ -13,13 +13,13 @@ export const metadata: Metadata = {
 
 export default function ConsultaPage() {
   return (
-    <main className="min-h-screen overflow-x-hidden">
+    <main className="min-h-screen overflow-x-hidden bg-[#fcfaf6] pt-[120px]">
       <SiteHeader />
 
       {/* HERO */}
-      <section className="container-legal py-10 md:py-20">
+      <section className="container-legal py-10 md:py-16">
         <div className="card-legal overflow-hidden">
-          <div className="relative h-[220px] sm:h-[280px] md:h-[380px]">
+          <div className="relative h-[240px] sm:h-[300px] md:h-[380px]">
             <Image
               src="/hero-legal.jpg"
               alt="Consulta legal Cabinet Legal"
@@ -32,60 +32,60 @@ export default function ConsultaPage() {
             <div className="absolute inset-x-0 bottom-0 p-5 md:p-10">
               <div className="eyebrow text-white/80">Cabinet Legal</div>
 
-              <h1 className="mt-2 text-3xl font-semibold leading-tight text-white sm:text-4xl md:text-5xl">
-                Agenda una consulta legal con enfoque estratégico
+              <h1 className="mt-3 max-w-3xl text-3xl font-semibold leading-tight text-white sm:text-4xl md:text-5xl">
+                Solicita una consulta legal con enfoque estratégico
               </h1>
 
-              <p className="mt-3 max-w-2xl text-sm leading-6 text-white/90 md:text-lg md:leading-7">
-                Evaluamos tu caso, identificamos riesgos y te orientamos sobre la
-                mejor vía legal según tus objetivos.
+              <p className="mt-4 max-w-2xl text-sm leading-6 text-white/90 md:text-lg md:leading-7">
+                Evaluamos tu situación, identificamos riesgos y te orientamos
+                sobre la mejor vía legal según tu caso, tus objetivos y tu contexto.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CONTENIDO + FORM */}
+      {/* CONTENIDO + FORMULARIO */}
       <section className="pb-16 md:pb-20">
-        <div className="container-legal grid gap-6 md:grid-cols-[0.9fr_1.1fr]">
-          
+        <div className="container-legal grid gap-6 md:grid-cols-[0.92fr_1.08fr]">
           {/* TEXTO */}
           <div className="card-legal p-6 md:p-10">
-            <div className="eyebrow">Cabinet Legal</div>
+            <div className="eyebrow">Consulta</div>
 
             <h2 className="mt-4 text-3xl font-semibold leading-tight text-[#0f2740] md:text-4xl">
-              Hablemos de tu caso.
+              Hablemos de tu caso con claridad y criterio jurídico.
             </h2>
 
-            <p className="mt-4 text-base leading-7 text-[#5f6b76] md:text-lg md:leading-8">
+            <p className="mt-5 text-base leading-7 text-[#5f6b76] md:text-lg md:leading-8">
               Si necesitas orientación legal para tu empresa, una marca, un contrato,
               una operación o un conflicto específico, podemos ayudarte a definir
-              una estrategia clara y jurídicamente sólida.
+              una estrategia clara, práctica y jurídicamente sólida.
             </p>
 
             <div className="gold-line mt-6" />
 
             <div className="mt-8 space-y-4 text-sm leading-7 text-[#5f6b76] md:text-base md:leading-8">
               <p>• Atención directa y estratégica</p>
-              <p>• Evaluación inicial del caso</p>
+              <p>• Evaluación inicial de tu situación</p>
+              <p>• Identificación de riesgos y prioridades</p>
               <p>• Recomendación clara de próximos pasos</p>
-              <p>• Enfoque corporativo y práctico</p>
             </div>
 
-            <div className="mt-8 rounded-2xl border border-[#e8dfd0] bg-[#fcfaf6] p-5">
+            <div className="mt-8 rounded-2xl border border-[#e8dfd0] bg-[#fcfaf6] p-5 md:p-6">
               <h3 className="text-lg font-semibold text-[#0f2740]">
-                También puedes escribirnos por WhatsApp
+                ¿Prefieres escribirnos directamente?
               </h3>
 
-              <p className="mt-2 text-sm leading-6 text-[#5f6b76]">
-                Si prefieres un contacto más rápido, podemos orientarte por esa vía.
+              <p className="mt-2 text-sm leading-6 text-[#5f6b76] md:text-base md:leading-7">
+                También puedes contactarnos por WhatsApp para una orientación inicial
+                más rápida.
               </p>
 
               <a
-                href="https://wa.me/18095551234?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta."
+                href="https://wa.me/18093302232?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary-legal mt-4"
+                className="mt-4 inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-white px-6 py-3 text-sm font-semibold text-[#0f2740]"
               >
                 Escribir por WhatsApp
               </a>
@@ -101,8 +101,9 @@ export default function ConsultaPage() {
                 Solicitar consulta
               </h2>
 
-              <p className="mt-3 text-sm text-[#5f6b76] md:text-base">
-                Completa este formulario y nos pondremos en contacto contigo.
+              <p className="mt-3 text-sm leading-6 text-[#5f6b76] md:text-base md:leading-7">
+                Completa este formulario y nos pondremos en contacto contigo para
+                evaluar tu solicitud.
               </p>
             </div>
 
@@ -126,7 +127,7 @@ export default function ConsultaPage() {
                   name="nombre"
                   type="text"
                   required
-                  className="w-full rounded-2xl border border-[#e8dfd0] px-4 py-3"
+                  className="w-full rounded-2xl border border-[#e8dfd0] bg-white px-4 py-3 text-[#0f2740] outline-none transition focus:border-[#c9a96e]"
                   placeholder="Tu nombre"
                 />
               </div>
@@ -139,7 +140,7 @@ export default function ConsultaPage() {
                   name="email"
                   type="email"
                   required
-                  className="w-full rounded-2xl border border-[#e8dfd0] px-4 py-3"
+                  className="w-full rounded-2xl border border-[#e8dfd0] bg-white px-4 py-3 text-[#0f2740] outline-none transition focus:border-[#c9a96e]"
                   placeholder="tunombre@correo.com"
                 />
               </div>
@@ -151,7 +152,7 @@ export default function ConsultaPage() {
                 <input
                   name="telefono"
                   type="text"
-                  className="w-full rounded-2xl border border-[#e8dfd0] px-4 py-3"
+                  className="w-full rounded-2xl border border-[#e8dfd0] bg-white px-4 py-3 text-[#0f2740] outline-none transition focus:border-[#c9a96e]"
                   placeholder="Tu número"
                 />
               </div>
@@ -162,9 +163,10 @@ export default function ConsultaPage() {
                 </label>
                 <select
                   name="area"
-                  className="w-full rounded-2xl border border-[#e8dfd0] px-4 py-3"
+                  className="w-full rounded-2xl border border-[#e8dfd0] bg-white px-4 py-3 text-[#0f2740] outline-none transition focus:border-[#c9a96e]"
+                  defaultValue="Selecciona una opción"
                 >
-                  <option>Selecciona una opción</option>
+                  <option disabled>Selecciona una opción</option>
                   <option>Registro de marcas</option>
                   <option>Derecho corporativo</option>
                   <option>Propiedad intelectual</option>
@@ -181,12 +183,16 @@ export default function ConsultaPage() {
                   name="mensaje"
                   rows={6}
                   required
-                  className="w-full rounded-2xl border border-[#e8dfd0] px-4 py-3"
+                  className="w-full rounded-2xl border border-[#e8dfd0] bg-white px-4 py-3 text-[#0f2740] outline-none transition focus:border-[#c9a96e]"
                   placeholder="Cuéntanos brevemente tu caso"
                 />
               </div>
 
-              <button type="submit" className="btn-primary-legal mt-2">
+              <button
+                type="submit"
+                className="mt-2 inline-flex items-center justify-center rounded-full px-7 py-3 text-sm font-semibold shadow-sm"
+                style={{ backgroundColor: "#0f2740", color: "#ffffff" }}
+              >
                 Enviar solicitud
               </button>
             </form>
@@ -198,12 +204,12 @@ export default function ConsultaPage() {
       <section className="pb-16 md:pb-20">
         <div className="container-legal card-legal p-6 md:p-12">
           <h2 className="text-3xl font-semibold text-[#0f2740] md:text-4xl">
-            Toma decisiones con respaldo legal
+            Toma decisiones con respaldo legal.
           </h2>
 
-          <p className="mt-4 max-w-2xl text-[#5f6b76]">
+          <p className="mt-4 max-w-2xl text-base leading-7 text-[#5f6b76] md:text-lg md:leading-8">
             Una consulta oportuna puede ayudarte a evitar errores, reducir riesgos
-            y estructurar mejor tu situación legal.
+            y estructurar mejor tu situación legal desde el inicio.
           </p>
         </div>
       </section>
