@@ -1,9 +1,37 @@
 "use client";
 
+import { usePathname } from "next/navigation";
+
 export default function WhatsAppButton() {
+  const pathname = usePathname();
+
+  const getMessage = () => {
+    if (pathname === "/consulta") {
+      return "Hola, visité Cabinet Legal y me gustaría agendar una consulta.";
+    }
+
+    if (pathname === "/registro-de-marcas") {
+      return "Hola, visité Cabinet Legal y me gustaría recibir orientación sobre registro de marcas.";
+    }
+
+    if (pathname === "/servicios") {
+      return "Hola, visité Cabinet Legal y me gustaría recibir orientación sobre sus servicios legales.";
+    }
+
+    if (pathname === "/blog") {
+      return "Hola, visité Cabinet Legal y me gustaría recibir orientación legal.";
+    }
+
+    return "Hola, visité Cabinet Legal y me gustaría recibir orientación.";
+  };
+
+  const whatsappUrl = `https://wa.me/18093302232?text=${encodeURIComponent(
+    getMessage()
+  )}`;
+
   return (
     <a
-      href="https://wa.me/18093302232?text=Hola%2C%20visité%20Cabinet%20Legal%20y%20me%20gustaría%20recibir%20orientación."
+      href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50"
