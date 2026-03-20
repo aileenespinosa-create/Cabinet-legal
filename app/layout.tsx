@@ -5,8 +5,4 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 export const metadata = {
   title: "Cabinet Legal",
   description: "Firma de abogados en República Dominicana",
-  icons: {
-    icon: "/icon.png",
-    shortcut: "/favicon.ico",
-  },
 };
