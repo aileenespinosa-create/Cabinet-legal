@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Servicios legales de Cabinet Legal en República Dominicana: corporativo, litigios, propiedad intelectual y registro de marcas.",
   alternates: {
-    canonical: "https://www.cabinetlegal.com.do/servicios",
+    canonical: "https://cabinetlegal.com.do/servicios",
   },
 };
 
@@ -37,68 +37,100 @@ const services = [
 
 export default function ServiciosPage() {
   return (
-    <main className="min-h-screen overflow-x-hidden">
+    <main className="min-h-screen overflow-x-hidden bg-[#fcfaf6]">
       <SiteHeader />
 
-      <section className="container-legal py-10 md:py-20">
-        <div className="card-legal overflow-hidden">
-          <div className="relative h-[200px] sm:h-[260px] md:h-[360px]">
-            <Image
-              src="/hero-legal.jpg"
-              alt="Servicios legales Cabinet Legal"
-              fill
-              className="object-cover"
-              sizes="100vw"
-            />
-            <div className="hero-image-overlay absolute inset-0" />
-            <div className="absolute inset-x-0 bottom-0 p-5 md:p-10">
-              <div className="eyebrow text-white/80">Cabinet Legal</div>
-              <h1 className="mt-2 text-3xl font-semibold leading-tight text-white sm:text-4xl md:mt-3 md:text-5xl">
-                Servicios
-              </h1>
-              <p className="mt-3 max-w-2xl text-sm leading-6 text-white/85 md:mt-4 md:text-lg md:leading-7">
-                Asesoría legal estratégica para empresas, inversionistas y clientes
-                privados en República Dominicana.
-              </p>
+      {/* HERO */}
+      <section className="pt-12 pb-14 md:pt-20 md:pb-20">
+        <div className="container-legal">
+
+          <div className="mb-10 max-w-3xl">
+            <div className="mb-4 text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
+              Cabinet Legal
+            </div>
+
+            <h1 className="text-4xl font-light tracking-tight text-[#0f2740] md:text-5xl">
+              Servicios
+            </h1>
+
+            <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
+
+            <p className="mt-6 text-base leading-8 text-[#5f6b76] md:text-lg">
+              Asesoría legal estratégica para empresas, inversionistas y clientes
+              privados en República Dominicana.
+            </p>
+          </div>
+
+          <div className="card-legal overflow-hidden">
+            <div className="relative h-[200px] sm:h-[260px] md:h-[360px]">
+              <Image
+                src="/hero-legal.jpg"
+                alt="Servicios legales Cabinet Legal"
+                fill
+                className="object-cover"
+                sizes="100vw"
+              />
+              <div className="hero-image-overlay absolute inset-0" />
             </div>
           </div>
+
         </div>
       </section>
 
-      <section className="pb-12 md:pb-20">
-        <div className="container-legal grid gap-4 md:grid-cols-2">
+      {/* SERVICIOS */}
+      <section className="pb-14 md:pb-24">
+        <div className="container-legal grid gap-5 md:grid-cols-2">
+
           {services.map((service) => (
-            <article key={service.title} className="card-legal p-6 md:p-8">
-              <div className="eyebrow">Servicio</div>
-              <h2 className="mt-4 text-2xl font-semibold leading-tight text-[#0f2740] md:text-3xl">
+            <article
+              key={service.title}
+              className="card-legal p-6 transition hover:-translate-y-[2px] md:p-9"
+            >
+              <div className="mb-3 text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
+                Servicio
+              </div>
+
+              <h2 className="text-2xl font-semibold tracking-tight text-[#0f2740] md:text-3xl">
                 {service.title}
               </h2>
-              <p className="mt-4 text-sm leading-7 text-[#5f6b76] md:text-base md:leading-8">
+
+              <p className="mt-4 leading-8 text-[#5f6b76]">
                 {service.description}
               </p>
             </article>
           ))}
+
         </div>
       </section>
 
-      <section className="pb-16 md:pb-20">
-        <div className="container-legal card-legal p-6 md:p-12">
-          <div className="eyebrow">Contacto</div>
-          <h2 className="mt-4 text-3xl font-semibold text-[#0f2740] md:text-4xl">
-            ¿Necesitas orientación legal?
-          </h2>
-          <p className="mt-4 max-w-2xl text-base leading-7 text-[#5f6b76] md:text-lg md:leading-8">
-            Podemos evaluar tu situación y recomendarte el servicio legal más adecuado
-            según tu necesidad y tus objetivos.
-          </p>
+      {/* CTA */}
+      <section className="pb-16 md:pb-24">
+        <div className="container-legal">
+          <div className="card-legal p-6 md:p-12">
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap md:gap-4">
-            <Link href="/consulta" className="btn-primary-legal">
-              Solicitar consulta
-            </Link>
-            <Link href="/registro-de-marcas" className="btn-secondary-legal">
-              Ver registro de marcas
-            </Link>
+            <div className="mb-4 text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
+              Consulta
+            </div>
+
+            <h2 className="text-3xl font-light tracking-tight text-[#0f2740] md:text-4xl">
+              ¿Necesitas orientación legal?
+            </h2>
+
+            <p className="mt-5 max-w-2xl text-base leading-8 text-[#5f6b76] md:text-lg">
+              Podemos evaluar tu situación y recomendarte el servicio legal más adecuado
+              según tu necesidad y tus objetivos.
+            </p>
+
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap md:gap-4">
+              <Link href="/consulta" className="btn-primary-legal">
+                Solicitar consulta
+              </Link>
+
+              <Link href="/registro-de-marcas" className="btn-secondary-legal">
+                Ver registro de marcas
+              </Link>
+            </div>
+
           </div>
         </div>
       </section>
