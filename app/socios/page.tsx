@@ -30,24 +30,24 @@ const partners = [
     ],
   },
   {
-    name: "Ellis Beato",
-    role: "Founding Partner",
-    image: "/ellis.jpg",
-    bio: "Ellis Beato lidera la práctica de litigios en Cabinet Legal, con experiencia en litigios civiles, laborales, administrativos y en materia inmobiliaria, así como en la resolución de conflictos empresariales complejos. Representa a clientes en procesos judiciales y controversias estratégicas, con un enfoque riguroso, técnico y orientado a resultados.",
-    focus:
-      "Su práctica se centra en la defensa efectiva de los intereses de sus clientes, combinando análisis jurídico profundo, estrategia procesal y ejecución sólida en cada etapa del litigio.",
-    areas: [
-      "Litigios civiles",
-      "Litigios laborales",
-      "Litigios administrativos",
-      "Litigios en materia inmobiliaria",
-      "Resolución de conflictos",
-      "Representación judicial",
-      "Estrategia procesal",
-      "Controversias empresariales",
-    ],
-  },
-];
+{
+  name: "Ellis Beato",
+  role: "Founding Partner",
+  image: "/ellis.jpg",
+  bio: "Ellis Beato lidera la práctica de litigios en Cabinet Legal, con experiencia en litigios civiles, laborales, administrativos y en materia inmobiliaria, así como en la resolución de conflictos empresariales complejos. Representa a clientes en procesos judiciales y controversias estratégicas, con un enfoque riguroso, técnico y orientado a resultados.",
+  focus:
+    "Su práctica se centra en la defensa efectiva de los intereses de sus clientes, combinando análisis jurídico profundo, estrategia procesal y ejecución sólida en cada etapa del litigio.",
+  areas: [
+    "Litigios civiles",
+    "Litigios laborales",
+    "Litigios administrativos",
+    "Litigios en materia inmobiliaria",
+    "Resolución de conflictos",
+    "Representación judicial",
+    "Estrategia procesal",
+    "Controversias empresariales",
+  ],
+}
 
 export default function SociosPage() {
   return (
