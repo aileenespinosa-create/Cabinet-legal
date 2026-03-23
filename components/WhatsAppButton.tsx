@@ -39,7 +39,7 @@ export default function WhatsAppButton() {
 
   const { text, message } = getConfig();
 
-  const whatsappUrl = `https://wa.me/18093302232?text=${encodeURIComponent(
+  const whatsappUrl = `https://wa.me/18494603517?text=${encodeURIComponent(
     message
   )}`;
 
