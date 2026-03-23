@@ -31,20 +31,22 @@ export default function SiteHeader() {
         {/* DESKTOP */}
         <div className="hidden items-center gap-6 md:flex">
           <nav className="flex items-center gap-8 text-[13px] uppercase tracking-[0.08em] text-[#0f2740]">
-            <Link href="/firma" className={linkClass("/firma")}>
-              La Firma
-            </Link>
-            <Link href="/servicios" className={linkClass("/servicios")}>
-              Servicios
-            </Link>
-            <Link href="/registro-de-marcas" className={linkClass("/registro-de-marcas")}>
-              Marcas
-            </Link>
-            <Link href="/blog" className={linkClass("/blog")}>
-              Blog
-            </Link>
-          </nav>
+  <Link href="/firma" className={linkClass("/firma")}>
+    La firma
+  </Link>
 
+  <Link href="/servicios" className={linkClass("/servicios")}>
+    Servicios
+  </Link>
+
+  <Link href="/socios" className={linkClass("/socios")}>
+    Socios
+  </Link>
+
+  <Link href="/blog" className={linkClass("/blog")}>
+    Blog
+  </Link>
+</nav>
           {/* 🌍 LANGUAGE */}
           <div className="flex items-center gap-2 text-xs text-[#5f6b76]">
             <Link href="/">ES</Link>
