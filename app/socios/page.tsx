@@ -5,9 +5,9 @@ import SiteHeader from "@/components/SiteHeader";
 export const metadata: Metadata = {
   title: "Socios | Cabinet Legal",
   description:
-    "Conoce a los socios de Cabinet Legal, firma de abogados en República Dominicana.",
+    "Conoce a los socios de Cabinet Legal, firma de abogados en República Dominicana, con enfoque en derecho corporativo, marcas, propiedad intelectual y litigios.",
   alternates: {
-    canonical: "https://www.cabinetlegal.com.do/socios",
+    canonical: "https://cabinetlegal.com.do/socios",
   },
 };
 
@@ -16,12 +16,14 @@ const partners = [
     name: "Aileen Espinosa",
     role: "Managing Partner",
     image: "/aileen.jpg",
-    bio: "Aileen Espinosa lidera Cabinet Legal con una práctica enfocada en derecho corporativo, estructuración de negocios y estrategia legal empresarial. Asesora a empresas, inversionistas y clientes privados en decisiones jurídicas de alto impacto, con un enfoque claro, ejecutivo y orientado a resultados.",
+    bio: "Aileen Espinosa lidera Cabinet Legal con una práctica enfocada en derecho corporativo, estructuración de negocios, registro de marcas y propiedad intelectual. Asesora a empresas, inversionistas y clientes privados en decisiones jurídicas de alto impacto, con un enfoque estratégico, ejecutivo y orientado a resultados.",
     focus:
-      "Su práctica combina visión estratégica, precisión técnica y acompañamiento cercano en la toma de decisiones corporativas relevantes.",
+      "Su práctica combina visión empresarial, precisión técnica y acompañamiento directo en la toma de decisiones corporativas relevantes, así como en la protección legal de marcas y activos intangibles.",
     areas: [
       "Derecho corporativo",
       "Estructuración de negocios",
+      "Registro de marcas",
+      "Propiedad intelectual",
       "Gobierno corporativo",
       "Contratos comerciales",
       "Estrategia legal empresarial",
@@ -31,15 +33,17 @@ const partners = [
     name: "Ellis Beato",
     role: "Founding Partner",
     image: "/ellis.jpg",
-    bio: "Ellis desarrolla una práctica enfocada en asuntos corporativos, comerciales y en el acompañamiento legal de operaciones empresariales. Su trabajo se distingue por un enfoque práctico, analítico y orientado a la ejecución rigurosa de estrategias jurídicas.",
+    bio: "Ellis Beato lidera la práctica de litigios en Cabinet Legal, con experiencia en litigios civiles, penales y laborales, así como en la resolución de conflictos empresariales complejos. Representa a clientes en procesos judiciales y controversias estratégicas, con un enfoque riguroso, técnico y orientado a resultados.",
     focus:
-      "Acompaña a clientes en la gestión legal de sus operaciones y en la resolución de situaciones complejas con criterio técnico y visión empresarial.",
+      "Su práctica se centra en la defensa efectiva de los intereses de sus clientes, combinando análisis jurídico profundo, estrategia procesal y ejecución sólida en cada etapa del litigio.",
     areas: [
-      "Asuntos corporativos",
-      "Operaciones comerciales",
-      "Asesoría empresarial",
-      "Estrategia legal",
-      "Resolución de situaciones complejas",
+      "Litigios civiles",
+      "Litigios penales",
+      "Litigios laborales",
+      "Resolución de conflictos",
+      "Representación judicial",
+      "Estrategia procesal",
+      "Controversias empresariales",
     ],
   },
 ];
@@ -56,8 +60,8 @@ export default function SociosPage() {
             Socios
           </h1>
           <p className="mt-4 max-w-3xl text-base leading-7 text-[#5f6b76] md:text-lg md:leading-8">
-            Un equipo con visión estratégica, atención directa y enfoque en decisiones
-            legales de alto impacto.
+            Un equipo con enfoque estratégico, atención directa de socios y
+            especialización en asesoría corporativa y litigios de alto impacto.
           </p>
         </div>
 
