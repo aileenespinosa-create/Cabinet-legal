@@ -41,7 +41,7 @@ export default function ServiciosPage() {
       <SiteHeader />
 
       {/* HERO */}
-      <section className="pt-12 pb-14 md:pt-20 md:pb-20">
+      <section className="pt-24 pb-14 md:pt-32 md:pb-20">
         <div className="container-legal">
 
           <div className="mb-10 max-w-3xl">
