@@ -17,7 +17,7 @@ export default function HomePage() {
 
             <h1 className="max-w-3xl text-[26px] font-light leading-[1.12] tracking-tight text-[#0f2740] sm:text-[34px] md:text-[44px] lg:text-[52px]">
               Protegemos tu negocio, tu marca y tus decisiones más importantes
-              con asesoría legal estratégica y personalizada.
+              con asesoría legal estratégica y personalizada. 
             </h1>
 
             <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
