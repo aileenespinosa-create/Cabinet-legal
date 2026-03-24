@@ -15,7 +15,7 @@ export default function HomePage() {
               Cabinet Legal
             </div>
 
-            <h1 className="max-w-3xl text-[28px] font-light leading-[1.12] tracking-tight text-[#0f2740] sm:text-[34px] md:text-[44px] lg:text-[52px]">
+            <h1 className="max-w-3xl text-[26px] font-light leading-[1.12] tracking-tight text-[#0f2740] sm:text-[34px] md:text-[44px] lg:text-[52px]">
               Protegemos tu negocio, tu marca y tus decisiones más importantes
               con asesoría legal estratégica y personalizada.
             </h1>
