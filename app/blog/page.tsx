@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Artículos legales de Cabinet Legal sobre marcas, propiedad intelectual, asuntos corporativos y decisiones jurídicas relevantes en República Dominicana.",
   alternates: {
-    canonical: "https://www.cabinetlegal.com.do/blog",
+    canonical: "https://cabinetlegal.com.do/blog",
   },
 };
 

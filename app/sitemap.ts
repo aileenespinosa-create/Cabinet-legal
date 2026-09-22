@@ -3,46 +3,88 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://www.cabinetlegal.com.do",
+      url: "https://cabinetlegal.com.do",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: "https://www.cabinetlegal.com.do/firma",
+      url: "https://cabinetlegal.com.do/en",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 1,
+    },
+    {
+      url: "https://cabinetlegal.com.do/firma",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://www.cabinetlegal.com.do/servicios",
+      url: "https://cabinetlegal.com.do/en/firma",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: "https://cabinetlegal.com.do/servicios",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: "https://www.cabinetlegal.com.do/socios",
+      url: "https://cabinetlegal.com.do/en/servicios",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: "https://cabinetlegal.com.do/socios",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://www.cabinetlegal.com.do/consulta",
+      url: "https://cabinetlegal.com.do/en/socios",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://www.cabinetlegal.com.do/blog",
+      url: "https://cabinetlegal.com.do/consulta",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: "https://cabinetlegal.com.do/en/consulta",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: "https://cabinetlegal.com.do/blog",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.7,
     },
     {
-      url: "https://www.cabinetlegal.com.do/registro-de-marcas",
+      url: "https://cabinetlegal.com.do/registro-de-marcas",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
+    },
+    {
+      url: "https://cabinetlegal.com.do/blog/como-registrar-una-marca-republica-dominicana",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: "https://cabinetlegal.com.do/blog/cuanto-cuesta-registrar-una-marca",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
     },
   ];
 }

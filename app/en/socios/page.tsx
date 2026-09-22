@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Socios | Cabinet Legal",
+  title: "Partners | Cabinet Legal",
   description:
-    "Conoce a los socios de Cabinet Legal, firma de abogados en República Dominicana, con enfoque en derecho corporativo, marcas, propiedad intelectual y litigios.",
+    "Meet the partners of Cabinet Legal, a Dominican Republic law firm focused on corporate law, trademarks, intellectual property and litigation.",
   alternates: {
-    canonical: "https://cabinetlegal.com.do/socios",
+    canonical: "https://cabinetlegal.com.do/en/socios",
     languages: {
       "es-DO": "https://cabinetlegal.com.do/socios",
       en: "https://cabinetlegal.com.do/en/socios",
@@ -20,40 +20,40 @@ const partners = [
     name: "Aileen Espinosa",
     role: "Managing Partner",
     image: "/aileen.jpg",
-    bio: "Aileen Espinosa lidera Cabinet Legal con una práctica enfocada en derecho corporativo, estructuración de negocios, registro de marcas y propiedad intelectual. Asesora a empresas, inversionistas y clientes privados en decisiones jurídicas de alto impacto, con un enfoque estratégico, ejecutivo y orientado a resultados.",
+    bio: "Aileen Espinosa leads Cabinet Legal with a practice focused on corporate law, business structuring, trademark registration and intellectual property. She advises companies, investors and private clients on high-impact legal decisions, with a strategic, executive and results-oriented approach.",
     focus:
-      "Su práctica combina visión empresarial, precisión técnica y acompañamiento directo en la toma de decisiones corporativas relevantes, así como en la protección legal de marcas y activos intangibles.",
+      "Her practice combines business perspective, technical precision and direct involvement in major corporate decisions, as well as the legal protection of trademarks and intangible assets.",
     areas: [
-      "Derecho corporativo",
-      "Estructuración de negocios",
-      "Registro de marcas",
-      "Propiedad intelectual",
-      "Gobierno corporativo",
-      "Contratos comerciales",
-      "Estrategia legal empresarial",
+      "Corporate law",
+      "Business structuring",
+      "Trademark registration",
+      "Intellectual property",
+      "Corporate governance",
+      "Commercial contracts",
+      "Corporate legal strategy",
     ],
   },
   {
     name: "Ellis Beato",
     role: "Founding Partner",
     image: "/ellis.jpg",
-    bio: "Ellis Beato lidera la práctica de litigios en Cabinet Legal, con experiencia en litigios civiles, laborales, administrativos y en materia inmobiliaria, así como en la resolución de conflictos empresariales complejos. Representa a clientes en procesos judiciales y controversias estratégicas, con un enfoque riguroso, técnico y orientado a resultados.",
+    bio: "Ellis Beato leads the litigation practice at Cabinet Legal, with experience in civil, labor, administrative and real estate litigation, as well as resolving complex business disputes. He represents clients in judicial proceedings and strategic disputes with a rigorous, technical and results-oriented approach.",
     focus:
-      "Su práctica se centra en la defensa efectiva de los intereses de sus clientes, combinando análisis jurídico profundo, estrategia procesal y ejecución sólida en cada etapa del litigio.",
+      "His practice centers on the effective defense of his clients' interests, combining in-depth legal analysis, procedural strategy and solid execution at every stage of litigation.",
     areas: [
-      "Litigios civiles",
-      "Litigios laborales",
-      "Litigios administrativos",
-      "Litigios en materia inmobiliaria",
-      "Resolución de conflictos",
-      "Representación judicial",
-      "Estrategia procesal",
-      "Controversias empresariales",
+      "Civil litigation",
+      "Labor litigation",
+      "Administrative litigation",
+      "Real estate litigation",
+      "Dispute resolution",
+      "Judicial representation",
+      "Procedural strategy",
+      "Business disputes",
     ],
   },
 ];
 
-export default function SociosPage() {
+export default function SociosPageEN() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-[#f8f6f1]">
       <SiteHeader />
@@ -62,11 +62,11 @@ export default function SociosPage() {
         <div className="max-w-4xl">
           <div className="eyebrow">Cabinet Legal</div>
           <h1 className="mt-4 text-4xl font-semibold tracking-tight text-[#0f2740] md:text-5xl">
-            Socios
+            Partners
           </h1>
           <p className="mt-5 max-w-3xl text-base leading-8 text-[#5f6b76] md:text-lg">
-            Un equipo con enfoque estratégico, atención directa de socios y
-            especialización en asesoría corporativa y litigios de alto impacto.
+            A team with a strategic focus, direct partner attention and
+            specialization in high-impact corporate advisory and litigation.
           </p>
         </div>
 
@@ -105,7 +105,7 @@ export default function SociosPage() {
 
                     <div className="mt-8">
                       <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-[#0f2740]">
-                        Enfoque profesional
+                        Professional focus
                       </h3>
                       <p className="mt-3 text-base leading-8 text-[#5f6b76]">
                         {partner.focus}
@@ -115,7 +115,7 @@ export default function SociosPage() {
 
                   <div>
                     <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-[#0f2740]">
-                      Áreas de práctica
+                      Practice areas
                     </h3>
 
                     <ul className="mt-4 space-y-3">

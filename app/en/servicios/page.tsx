@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Servicios | Cabinet Legal",
+  title: "Services | Cabinet Legal",
   description:
-    "Servicios legales de Cabinet Legal en República Dominicana: corporativo, litigios, propiedad intelectual y registro de marcas.",
+    "Cabinet Legal's legal services in the Dominican Republic: corporate law, litigation, intellectual property and trademark registration.",
   alternates: {
-    canonical: "https://cabinetlegal.com.do/servicios",
+    canonical: "https://cabinetlegal.com.do/en/servicios",
     languages: {
       "es-DO": "https://cabinetlegal.com.do/servicios",
       en: "https://cabinetlegal.com.do/en/servicios",
@@ -18,28 +18,28 @@ export const metadata: Metadata = {
 
 const services = [
   {
-    title: "Derecho corporativo",
+    title: "Corporate law",
     description:
-      "Asesoría en estructuración de negocios, contratos, gobierno corporativo y acompañamiento jurídico en decisiones empresariales relevantes.",
+      "Advice on business structuring, contracts, corporate governance and legal support for major business decisions.",
   },
   {
-    title: "Propiedad intelectual",
+    title: "Intellectual property",
     description:
-      "Protección de marcas, estrategia registral, defensa de activos intangibles y acompañamiento en asuntos de propiedad industrial.",
+      "Trademark protection, registration strategy, defense of intangible assets and guidance on industrial property matters.",
   },
   {
-    title: "Litigios y disputas",
+    title: "Litigation and disputes",
     description:
-      "Representación en controversias civiles y comerciales con enfoque estratégico, claridad técnica y ejecución rigurosa.",
+      "Representation in civil and commercial disputes with a strategic approach, technical clarity and rigorous execution.",
   },
   {
-    title: "Registro de marcas",
+    title: "Trademark registration",
     description:
-      "Evaluación de disponibilidad, clasificación, presentación de solicitudes y seguimiento integral ante ONAPI.",
+      "Availability assessment, classification, filing and full follow-through before ONAPI, the Dominican IP office.",
   },
 ];
 
-export default function ServiciosPage() {
+export default function ServiciosPageEN() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-[#fcfaf6]">
       <SiteHeader />
@@ -54,14 +54,14 @@ export default function ServiciosPage() {
             </div>
 
             <h1 className="text-4xl font-light tracking-tight text-[#0f2740] md:text-5xl">
-              Servicios
+              Services
             </h1>
 
             <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
 
             <p className="mt-6 text-base leading-8 text-[#5f6b76] md:text-lg">
-              Asesoría legal estratégica para empresas, inversionistas y clientes
-              privados en República Dominicana.
+              Strategic legal counsel for companies, investors and private
+              clients in the Dominican Republic.
             </p>
           </div>
 
@@ -69,7 +69,7 @@ export default function ServiciosPage() {
             <div className="relative h-[200px] sm:h-[260px] md:h-[360px]">
               <Image
                 src="/hero-legal.jpg"
-                alt="Servicios legales Cabinet Legal"
+                alt="Cabinet Legal legal services"
                 fill
                 className="object-cover"
                 sizes="100vw"
@@ -81,7 +81,7 @@ export default function ServiciosPage() {
         </div>
       </section>
 
-      {/* SERVICIOS */}
+      {/* SERVICES */}
       <section className="pb-14 md:pb-24">
         <div className="container-legal grid gap-5 md:grid-cols-2">
 
@@ -91,7 +91,7 @@ export default function ServiciosPage() {
               className="card-legal p-6 transition hover:-translate-y-[2px] md:p-9"
             >
               <div className="mb-3 text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
-                Servicio
+                Service
               </div>
 
               <h2 className="text-2xl font-semibold tracking-tight text-[#0f2740] md:text-3xl">
@@ -113,25 +113,25 @@ export default function ServiciosPage() {
           <div className="card-legal p-6 md:p-12">
 
             <div className="mb-4 text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
-              Consulta
+              Consultation
             </div>
 
             <h2 className="text-3xl font-light tracking-tight text-[#0f2740] md:text-4xl">
-              ¿Necesitas orientación legal?
+              Need legal guidance?
             </h2>
 
             <p className="mt-5 max-w-2xl text-base leading-8 text-[#5f6b76] md:text-lg">
-              Podemos evaluar tu situación y recomendarte el servicio legal más adecuado
-              según tu necesidad y tus objetivos.
+              We can evaluate your situation and recommend the right legal
+              service for your needs and objectives.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap md:gap-4">
-              <Link href="/consulta" className="btn-primary-legal">
-                Solicitar consulta
+              <Link href="/en/consulta" className="btn-primary-legal">
+                Book a consultation
               </Link>
 
-              <Link href="/registro-de-marcas" className="btn-secondary-legal">
-                Ver registro de marcas
+              <Link href="/en" className="btn-secondary-legal">
+                Back to home
               </Link>
             </div>
 

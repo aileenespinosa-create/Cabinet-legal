@@ -8,17 +8,17 @@ export const metadata: Metadata = {
     "El costo de registrar una marca en República Dominicana depende del tipo de marca, la cantidad de clases y la estructura de la solicitud.",
   alternates: {
     canonical:
-      "https://www.cabinetlegal.com.do/blog/cuanto-cuesta-registrar-una-marca",
+      "https://cabinetlegal.com.do/blog/cuanto-cuesta-registrar-una-marca",
   },
   openGraph: {
     title: "Cuánto cuesta registrar una marca en República Dominicana | Cabinet Legal",
     description:
       "El costo de registrar una marca en República Dominicana depende del tipo de marca, la cantidad de clases y la estructura de la solicitud.",
-    url: "https://www.cabinetlegal.com.do/blog/cuanto-cuesta-registrar-una-marca",
+    url: "https://cabinetlegal.com.do/blog/cuanto-cuesta-registrar-una-marca",
     siteName: "Cabinet Legal",
     images: [
       {
-        url: "https://www.cabinetlegal.com.do/blog-legal.jpg",
+        url: "https://cabinetlegal.com.do/blog-legal.jpg",
         width: 1536,
         height: 1024,
         alt: "Costo de registrar una marca en República Dominicana",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "Cuánto cuesta registrar una marca en República Dominicana | Cabinet Legal",
     description:
       "El costo de registrar una marca en República Dominicana depende del tipo de marca, la cantidad de clases y la estructura de la solicitud.",
-    images: ["https://www.cabinetlegal.com.do/blog-legal.jpg"],
+    images: ["https://cabinetlegal.com.do/blog-legal.jpg"],
   },
 };
 
