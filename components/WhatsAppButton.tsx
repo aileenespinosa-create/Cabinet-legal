@@ -23,6 +23,13 @@ export default function WhatsAppButton() {
             "Hello, I visited Cabinet Legal and would like guidance on your legal services.",
         };
       }
+      if (pathname === "/en/inversion-extranjera") {
+        return {
+          text: "Ask about investing",
+          message:
+            "Hello, I'm a foreign investor and would like legal guidance on purchasing property in the Dominican Republic.",
+        };
+      }
       return {
         text: "Message us",
         message: "Hello, I visited Cabinet Legal and would like guidance.",
@@ -42,6 +49,13 @@ export default function WhatsAppButton() {
           text: "Nos services",
           message:
             "Bonjour, j'ai visité le site de Cabinet Legal et je souhaite des informations sur vos services juridiques.",
+        };
+      }
+      if (pathname === "/fr/inversion-extranjera") {
+        return {
+          text: "Question sur un investissement",
+          message:
+            "Bonjour, je suis un investisseur étranger et je souhaite obtenir un accompagnement juridique pour l'achat d'un bien immobilier en République Dominicaine.",
         };
       }
       return {
@@ -72,6 +86,14 @@ export default function WhatsAppButton() {
         text: "Consultar servicios",
         message:
           "Hola, visité Cabinet Legal y me gustaría recibir orientación sobre sus servicios legales.",
+      };
+    }
+
+    if (pathname === "/inversion-extranjera") {
+      return {
+        text: "Consultar inversión",
+        message:
+          "Hola, soy inversionista extranjero y me gustaría recibir orientación legal para comprar una propiedad en República Dominicana.",
       };
     }
 

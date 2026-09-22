@@ -127,6 +127,10 @@ export default function ServiciosPageFR() {
                 Demander une consultation
               </Link>
 
+              <Link href="/fr/inversion-extranjera" className="btn-secondary-legal">
+                Investisseurs étrangers
+              </Link>
+
               <Link href="/fr" className="btn-secondary-legal">
                 Retour à l&apos;accueil
               </Link>

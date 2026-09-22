@@ -134,6 +134,10 @@ export default function ServiciosPage() {
               <Link href="/registro-de-marcas" className="btn-secondary-legal">
                 Ver registro de marcas
               </Link>
+
+              <Link href="/inversion-extranjera" className="btn-secondary-legal">
+                Inversionistas extranjeros
+              </Link>
             </div>
 
           </div>

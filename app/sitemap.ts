@@ -93,6 +93,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: "https://cabinetlegal.com.do/inversion-extranjera",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: "https://cabinetlegal.com.do/en/inversion-extranjera",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: "https://cabinetlegal.com.do/fr/inversion-extranjera",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: "https://cabinetlegal.com.do/blog",
       lastModified: new Date(),
       changeFrequency: "weekly",

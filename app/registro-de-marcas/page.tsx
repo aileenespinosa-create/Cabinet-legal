@@ -44,7 +44,7 @@ export default function RegistroDeMarcasPage() {
                 </Link>
 
                 <a
-                  href="https://wa.me/18095551234?text=Hola%2C%20quiero%20registrar%20una%20marca."
+                  href="https://wa.me/18494603517?text=Hola%2C%20quiero%20registrar%20una%20marca."
                   target="_blank"
                   className="btn-secondary-legal"
                 >
@@ -158,7 +158,7 @@ export default function RegistroDeMarcasPage() {
             </Link>
 
             <a
-              href="https://wa.me/18095551234?text=Hola%2C%20quiero%20registrar%20una%20marca."
+              href="https://wa.me/18494603517?text=Hola%2C%20quiero%20registrar%20una%20marca."
               target="_blank"
               className="btn-secondary-legal"
             >

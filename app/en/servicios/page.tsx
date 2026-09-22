@@ -131,6 +131,10 @@ export default function ServiciosPageEN() {
                 Book a consultation
               </Link>
 
+              <Link href="/en/inversion-extranjera" className="btn-secondary-legal">
+                Foreign investors
+              </Link>
+
               <Link href="/en" className="btn-secondary-legal">
                 Back to home
               </Link>

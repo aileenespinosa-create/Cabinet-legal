@@ -235,6 +235,52 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* INVERSIÓN EXTRANJERA DESTACADO */}
+      <section className="pb-14 md:pb-24">
+        <div className="mx-auto w-full max-w-[1200px] px-6 lg:px-8">
+          <div className="card-legal grid gap-8 p-6 md:grid-cols-[0.9fr_1.1fr] md:p-12">
+            <div>
+              <div className="mb-4 text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
+                Servicio destacado
+              </div>
+              <h2 className="text-3xl font-light tracking-tight text-[#0f2740] md:text-4xl">
+                Asesoría legal para inversionistas extranjeros
+              </h2>
+              <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
+            </div>
+
+            <div className="space-y-5 text-base leading-8 text-[#5f6b76] md:text-lg">
+              <p>
+                Si estás comprando bienes raíces en República Dominicana
+                desde el extranjero, la protección legal correcta marca la
+                diferencia entre una inversión segura y un problema costoso.
+              </p>
+              <p>
+                Estructuramos tu compra, revisamos contratos y te
+                acompañamos en el cierre, trabajando junto a Land Consulting
+                DR para la verificación técnica de la propiedad.
+              </p>
+
+              <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
+                <Link
+                  href="/inversion-extranjera"
+                  className="inline-flex items-center justify-center rounded-full px-7 py-3 text-sm font-semibold shadow-sm transition hover:opacity-95"
+                  style={{ backgroundColor: "#0f2740", color: "#ffffff" }}
+                >
+                  Ver servicio
+                </Link>
+                <Link
+                  href="/consulta"
+                  className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-white px-7 py-3 text-sm font-semibold text-[#0f2740] transition hover:bg-[#f7f4ee]"
+                >
+                  Solicitar consulta
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* POR QUÉ ELEGIRNOS */}
       <section className="pb-14 md:pb-24">
         <div className="mx-auto w-full max-w-[1200px] px-6 lg:px-8">
