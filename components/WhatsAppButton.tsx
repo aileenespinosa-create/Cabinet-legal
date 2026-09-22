@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 export default function WhatsAppButton() {
   const pathname = usePathname();
   const isEnglish = pathname === "/en" || pathname.startsWith("/en/");
+  const isFrench = pathname === "/fr" || pathname.startsWith("/fr/");
 
   const getConfig = () => {
     if (isEnglish) {
@@ -25,6 +26,28 @@ export default function WhatsAppButton() {
       return {
         text: "Message us",
         message: "Hello, I visited Cabinet Legal and would like guidance.",
+      };
+    }
+
+    if (isFrench) {
+      if (pathname === "/fr/consulta") {
+        return {
+          text: "Réserver une consultation",
+          message:
+            "Bonjour, j'ai visité le site de Cabinet Legal et je souhaite réserver une consultation.",
+        };
+      }
+      if (pathname === "/fr/servicios") {
+        return {
+          text: "Nos services",
+          message:
+            "Bonjour, j'ai visité le site de Cabinet Legal et je souhaite des informations sur vos services juridiques.",
+        };
+      }
+      return {
+        text: "Écrivez-nous",
+        message:
+          "Bonjour, j'ai visité le site de Cabinet Legal et je souhaite obtenir des renseignements.",
       };
     }
 

@@ -1,6 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://cabinetlegal.com.do",
+    languages: {
+      "es-DO": "https://cabinetlegal.com.do",
+      en: "https://cabinetlegal.com.do/en",
+      fr: "https://cabinetlegal.com.do/fr",
+    },
+  },
+};
 
 export default function HomePage() {
   return (

@@ -15,6 +15,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: "https://cabinetlegal.com.do/fr",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 1,
+    },
+    {
       url: "https://cabinetlegal.com.do/firma",
       lastModified: new Date(),
       changeFrequency: "monthly",
@@ -22,6 +28,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: "https://cabinetlegal.com.do/en/firma",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: "https://cabinetlegal.com.do/fr/firma",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
@@ -39,6 +51,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: "https://cabinetlegal.com.do/fr/servicios",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: "https://cabinetlegal.com.do/socios",
       lastModified: new Date(),
       changeFrequency: "monthly",
@@ -51,6 +69,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: "https://cabinetlegal.com.do/fr/socios",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: "https://cabinetlegal.com.do/consulta",
       lastModified: new Date(),
       changeFrequency: "monthly",
@@ -58,6 +82,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: "https://cabinetlegal.com.do/en/consulta",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: "https://cabinetlegal.com.do/fr/consulta",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

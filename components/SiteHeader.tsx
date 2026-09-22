@@ -19,16 +19,26 @@ const NAV_EN = [
   { href: "/blog", label: "Blog" },
 ];
 
+const NAV_FR = [
+  { href: "/fr/firma", label: "Le Cabinet" },
+  { href: "/fr/servicios", label: "Services" },
+  { href: "/fr/socios", label: "Associés" },
+  { href: "/blog", label: "Blog" },
+];
+
 export default function SiteHeader() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
   const isEnglish = pathname === "/en" || pathname.startsWith("/en/");
-  const nav = isEnglish ? NAV_EN : NAV_ES;
+  const isFrench = pathname === "/fr" || pathname.startsWith("/fr/");
+  const nav = isEnglish ? NAV_EN : isFrench ? NAV_FR : NAV_ES;
 
-  // Path to switch to Spanish (strip the /en prefix).
+  // Path to switch to Spanish (strip the /en or /fr prefix).
   const esPath =
-    pathname === "/en" ? "/" : pathname.replace(/^\/en/, "") || "/";
+    pathname === "/en" || pathname === "/fr"
+      ? "/"
+      : pathname.replace(/^\/(en|fr)/, "") || "/";
 
   // Path to switch to English (prepend /en, or land on /en homepage
   // for pages that don't yet have an English version).
@@ -38,23 +48,56 @@ export default function SiteHeader() {
     "/servicios": "/en/servicios",
     "/socios": "/en/socios",
     "/consulta": "/en/consulta",
+    "/fr": "/en",
+    "/fr/firma": "/en/firma",
+    "/fr/servicios": "/en/servicios",
+    "/fr/socios": "/en/socios",
+    "/fr/consulta": "/en/consulta",
   };
-  const enPath = isEnglish ? pathname : englishEquivalents[pathname] ?? "/en";
+  const enPath = isEnglish
+    ? pathname
+    : englishEquivalents[pathname] ?? "/en";
+
+  // Path to switch to French (prepend /fr, or land on /fr homepage
+  // for pages that don't yet have a French version).
+  const frenchEquivalents: Record<string, string> = {
+    "/": "/fr",
+    "/firma": "/fr/firma",
+    "/servicios": "/fr/servicios",
+    "/socios": "/fr/socios",
+    "/consulta": "/fr/consulta",
+    "/en": "/fr",
+    "/en/firma": "/fr/firma",
+    "/en/servicios": "/fr/servicios",
+    "/en/socios": "/fr/socios",
+    "/en/consulta": "/fr/consulta",
+  };
+  const frPath = isFrench
+    ? pathname
+    : frenchEquivalents[pathname] ?? "/fr";
 
   const isActive = (path: string) => pathname === path;
 
   const linkClass = (path: string) =>
     `nav-link ${isActive(path) ? "active-link" : ""}`;
 
-  const consultaHref = isEnglish ? "/en/consulta" : "/consulta";
-  const consultaLabel = isEnglish ? "Consultation" : "Consulta";
+  const consultaHref = isEnglish
+    ? "/en/consulta"
+    : isFrench
+    ? "/fr/consulta"
+    : "/consulta";
+  const consultaLabel = isEnglish
+    ? "Consultation"
+    : isFrench
+    ? "Consultation"
+    : "Consulta";
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-[#e8ecef] bg-white/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
 
         {/* LOGO */}
-        <Link href={isEnglish ? "/en" : "/"}>
+        <Link href={isEnglish ? "/en" : isFrench ? "/fr" : "/"}>
           <Image
             src="/logo-cabinet-legal.jpg"
             alt="Cabinet Legal"
@@ -74,12 +117,16 @@ export default function SiteHeader() {
           </nav>
           {/* 🌍 LANGUAGE */}
           <div className="flex items-center gap-2 text-xs text-[#5f6b76]">
-            <Link href={esPath} className={!isEnglish ? "font-semibold text-[#0f2740]" : ""}>
+            <Link href={esPath} className={!isEnglish && !isFrench ? "font-semibold text-[#0f2740]" : ""}>
               ES
             </Link>
             <span>/</span>
             <Link href={enPath} className={isEnglish ? "font-semibold text-[#0f2740]" : ""}>
               EN
+            </Link>
+            <span>/</span>
+            <Link href={frPath} className={isFrench ? "font-semibold text-[#0f2740]" : ""}>
+              FR
             </Link>
           </div>
 
@@ -114,6 +161,8 @@ export default function SiteHeader() {
               <Link href={esPath}>ES</Link>
               <span>/</span>
               <Link href={enPath}>EN</Link>
+              <span>/</span>
+              <Link href={frPath}>FR</Link>
             </div>
           </div>
         </div>

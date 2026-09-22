@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Socios | Cabinet Legal",
+  title: "Associés | Cabinet Legal",
   description:
-    "Conoce a los socios de Cabinet Legal, firma de abogados en República Dominicana, con enfoque en derecho corporativo, marcas, propiedad intelectual y litigios.",
+    "Découvrez les associés de Cabinet Legal, cabinet d'avocats en République Dominicaine, spécialisé en droit des affaires, marques, propriété intellectuelle et contentieux.",
   alternates: {
-    canonical: "https://cabinetlegal.com.do/socios",
+    canonical: "https://cabinetlegal.com.do/fr/socios",
     languages: {
       "es-DO": "https://cabinetlegal.com.do/socios",
       en: "https://cabinetlegal.com.do/en/socios",
@@ -19,42 +19,42 @@ export const metadata: Metadata = {
 const partners = [
   {
     name: "Aileen Espinosa",
-    role: "Managing Partner",
+    role: "Associée gérante",
     image: "/aileen.jpg",
-    bio: "Aileen Espinosa lidera Cabinet Legal con una práctica enfocada en derecho corporativo, estructuración de negocios, registro de marcas y propiedad intelectual. Asesora a empresas, inversionistas y clientes privados en decisiones jurídicas de alto impacto, con un enfoque estratégico, ejecutivo y orientado a resultados.",
+    bio: "Aileen Espinosa dirige Cabinet Legal avec une pratique axée sur le droit des affaires, la structuration d'entreprise, le dépôt de marques et la propriété intellectuelle. Elle conseille entreprises, investisseurs et clients privés dans des décisions juridiques à fort enjeu, avec une approche stratégique, exécutive et orientée résultats.",
     focus:
-      "Su práctica combina visión empresarial, precisión técnica y acompañamiento directo en la toma de decisiones corporativas relevantes, así como en la protección legal de marcas y activos intangibles.",
+      "Sa pratique combine sens des affaires, précision technique et implication directe dans les décisions d'entreprise importantes, ainsi que dans la protection juridique des marques et des actifs incorporels.",
     areas: [
-      "Derecho corporativo",
-      "Estructuración de negocios",
-      "Registro de marcas",
-      "Propiedad intelectual",
-      "Gobierno corporativo",
-      "Contratos comerciales",
-      "Estrategia legal empresarial",
+      "Droit des affaires",
+      "Structuration d'entreprise",
+      "Dépôt de marques",
+      "Propriété intellectuelle",
+      "Gouvernance d'entreprise",
+      "Contrats commerciaux",
+      "Stratégie juridique d'entreprise",
     ],
   },
   {
     name: "Ellis Beato",
-    role: "Founding Partner",
+    role: "Associé fondateur",
     image: "/ellis.jpg",
-    bio: "Ellis Beato lidera la práctica de litigios en Cabinet Legal, con experiencia en litigios civiles, laborales, administrativos y en materia inmobiliaria, así como en la resolución de conflictos empresariales complejos. Representa a clientes en procesos judiciales y controversias estratégicas, con un enfoque riguroso, técnico y orientado a resultados.",
+    bio: "Ellis Beato dirige la pratique contentieuse de Cabinet Legal, avec une expérience en contentieux civil, du travail, administratif et immobilier, ainsi que dans la résolution de litiges d'affaires complexes. Il représente ses clients dans les procédures judiciaires et les litiges stratégiques, avec une approche rigoureuse, technique et orientée résultats.",
     focus:
-      "Su práctica se centra en la defensa efectiva de los intereses de sus clientes, combinando análisis jurídico profundo, estrategia procesal y ejecución sólida en cada etapa del litigio.",
+      "Sa pratique se concentre sur la défense efficace des intérêts de ses clients, combinant analyse juridique approfondie, stratégie procédurale et exécution solide à chaque étape du litige.",
     areas: [
-      "Litigios civiles",
-      "Litigios laborales",
-      "Litigios administrativos",
-      "Litigios en materia inmobiliaria",
-      "Resolución de conflictos",
-      "Representación judicial",
-      "Estrategia procesal",
-      "Controversias empresariales",
+      "Contentieux civil",
+      "Contentieux du travail",
+      "Contentieux administratif",
+      "Contentieux immobilier",
+      "Résolution de litiges",
+      "Représentation judiciaire",
+      "Stratégie procédurale",
+      "Litiges d'affaires",
     ],
   },
 ];
 
-export default function SociosPage() {
+export default function SociosPageFR() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-[#f8f6f1]">
       <SiteHeader />
@@ -63,11 +63,12 @@ export default function SociosPage() {
         <div className="max-w-4xl">
           <div className="eyebrow">Cabinet Legal</div>
           <h1 className="mt-4 text-4xl font-semibold tracking-tight text-[#0f2740] md:text-5xl">
-            Socios
+            Associés
           </h1>
           <p className="mt-5 max-w-3xl text-base leading-8 text-[#5f6b76] md:text-lg">
-            Un equipo con enfoque estratégico, atención directa de socios y
-            especialización en asesoría corporativa y litigios de alto impacto.
+            Une équipe avec une approche stratégique, l&apos;implication
+            directe des associés et une spécialisation en conseil
+            d&apos;entreprise et contentieux à fort enjeu.
           </p>
         </div>
 
@@ -106,7 +107,7 @@ export default function SociosPage() {
 
                     <div className="mt-8">
                       <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-[#0f2740]">
-                        Enfoque profesional
+                        Domaine de spécialisation
                       </h3>
                       <p className="mt-3 text-base leading-8 text-[#5f6b76]">
                         {partner.focus}
@@ -116,7 +117,7 @@ export default function SociosPage() {
 
                   <div>
                     <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-[#0f2740]">
-                      Áreas de práctica
+                      Domaines de pratique
                     </h3>
 
                     <ul className="mt-4 space-y-3">

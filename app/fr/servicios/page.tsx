@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Servicios | Cabinet Legal",
+  title: "Services | Cabinet Legal",
   description:
-    "Servicios legales de Cabinet Legal en República Dominicana: corporativo, litigios, propiedad intelectual y registro de marcas.",
+    "Services juridiques de Cabinet Legal en République Dominicaine : droit des affaires, contentieux, propriété intellectuelle et dépôt de marques.",
   alternates: {
-    canonical: "https://cabinetlegal.com.do/servicios",
+    canonical: "https://cabinetlegal.com.do/fr/servicios",
     languages: {
       "es-DO": "https://cabinetlegal.com.do/servicios",
       en: "https://cabinetlegal.com.do/en/servicios",
@@ -19,28 +19,28 @@ export const metadata: Metadata = {
 
 const services = [
   {
-    title: "Derecho corporativo",
+    title: "Droit des affaires",
     description:
-      "Asesoría en estructuración de negocios, contratos, gobierno corporativo y acompañamiento jurídico en decisiones empresariales relevantes.",
+      "Conseil en structuration d'entreprise, contrats, gouvernance d'entreprise et accompagnement juridique dans les décisions d'affaires importantes.",
   },
   {
-    title: "Propiedad intelectual",
+    title: "Propriété intellectuelle",
     description:
-      "Protección de marcas, estrategia registral, defensa de activos intangibles y acompañamiento en asuntos de propiedad industrial.",
+      "Protection des marques, stratégie de dépôt, défense des actifs incorporels et accompagnement en matière de propriété industrielle.",
   },
   {
-    title: "Litigios y disputas",
+    title: "Contentieux et litiges",
     description:
-      "Representación en controversias civiles y comerciales con enfoque estratégico, claridad técnica y ejecución rigurosa.",
+      "Représentation dans les litiges civils et commerciaux avec une approche stratégique, une clarté technique et une exécution rigoureuse.",
   },
   {
-    title: "Registro de marcas",
+    title: "Dépôt de marques",
     description:
-      "Evaluación de disponibilidad, clasificación, presentación de solicitudes y seguimiento integral ante ONAPI.",
+      "Évaluation de disponibilité, classification, dépôt des demandes et suivi complet auprès de l'ONAPI, l'office dominicain de la propriété industrielle.",
   },
 ];
 
-export default function ServiciosPage() {
+export default function ServiciosPageFR() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-[#fcfaf6]">
       <SiteHeader />
@@ -48,21 +48,20 @@ export default function ServiciosPage() {
       {/* HERO */}
       <section className="pt-24 pb-14 md:pt-32 md:pb-20">
         <div className="container-legal">
-
           <div className="mb-10 max-w-3xl">
             <div className="mb-4 text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
               Cabinet Legal
             </div>
 
             <h1 className="text-4xl font-light tracking-tight text-[#0f2740] md:text-5xl">
-              Servicios
+              Services
             </h1>
 
             <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
 
             <p className="mt-6 text-base leading-8 text-[#5f6b76] md:text-lg">
-              Asesoría legal estratégica para empresas, inversionistas y clientes
-              privados en República Dominicana.
+              Conseil juridique stratégique pour entreprises, investisseurs
+              et clients privés en République Dominicaine.
             </p>
           </div>
 
@@ -70,7 +69,7 @@ export default function ServiciosPage() {
             <div className="relative h-[200px] sm:h-[260px] md:h-[360px]">
               <Image
                 src="/hero-legal.jpg"
-                alt="Servicios legales Cabinet Legal"
+                alt="Services juridiques Cabinet Legal"
                 fill
                 className="object-cover"
                 sizes="100vw"
@@ -78,21 +77,19 @@ export default function ServiciosPage() {
               <div className="hero-image-overlay absolute inset-0" />
             </div>
           </div>
-
         </div>
       </section>
 
-      {/* SERVICIOS */}
+      {/* SERVICES */}
       <section className="pb-14 md:pb-24">
         <div className="container-legal grid gap-5 md:grid-cols-2">
-
           {services.map((service) => (
             <article
               key={service.title}
               className="card-legal p-6 transition hover:-translate-y-[2px] md:p-9"
             >
               <div className="mb-3 text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
-                Servicio
+                Service
               </div>
 
               <h2 className="text-2xl font-semibold tracking-tight text-[#0f2740] md:text-3xl">
@@ -104,7 +101,6 @@ export default function ServiciosPage() {
               </p>
             </article>
           ))}
-
         </div>
       </section>
 
@@ -112,30 +108,29 @@ export default function ServiciosPage() {
       <section className="pb-16 md:pb-24">
         <div className="container-legal">
           <div className="card-legal p-6 md:p-12">
-
             <div className="mb-4 text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
-              Consulta
+              Consultation
             </div>
 
             <h2 className="text-3xl font-light tracking-tight text-[#0f2740] md:text-4xl">
-              ¿Necesitas orientación legal?
+              Besoin d&apos;un accompagnement juridique ?
             </h2>
 
             <p className="mt-5 max-w-2xl text-base leading-8 text-[#5f6b76] md:text-lg">
-              Podemos evaluar tu situación y recomendarte el servicio legal más adecuado
-              según tu necesidad y tus objetivos.
+              Nous pouvons évaluer votre situation et vous recommander le
+              service juridique le plus adapté à vos besoins et à vos
+              objectifs.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap md:gap-4">
-              <Link href="/consulta" className="btn-primary-legal">
-                Solicitar consulta
+              <Link href="/fr/consulta" className="btn-primary-legal">
+                Demander une consultation
               </Link>
 
-              <Link href="/registro-de-marcas" className="btn-secondary-legal">
-                Ver registro de marcas
+              <Link href="/fr" className="btn-secondary-legal">
+                Retour à l&apos;accueil
               </Link>
             </div>
-
           </div>
         </div>
       </section>
