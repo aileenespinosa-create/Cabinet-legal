@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     ],
     apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
+  verification: {
+    google: "1jdQouTr-rYz6fo1WmrcRM0I28aYgkUxWHacJUXmFlc",
+  },
 };
 
 const legalServiceSchema = {
