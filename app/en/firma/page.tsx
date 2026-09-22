@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "La Firma | Cabinet Legal",
+  title: "The Firm | Cabinet Legal",
   description:
-    "Cabinet Legal es una firma de abogados en República Dominicana con enfoque corporativo, estratégico y atención directa de socios.",
+    "Cabinet Legal is a Dominican Republic law firm with a corporate, strategic focus and direct partner attention.",
   alternates: {
-    canonical: "https://cabinetlegal.com.do/firma",
+    canonical: "https://cabinetlegal.com.do/en/firma",
     languages: {
       "es-DO": "https://cabinetlegal.com.do/firma",
       en: "https://cabinetlegal.com.do/en/firma",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function FirmaPage() {
+export default function FirmaPageEN() {
   return (
     <main className="min-h-screen overflow-x-hidden">
       <SiteHeader />
@@ -35,10 +35,11 @@ export default function FirmaPage() {
             <div className="absolute inset-x-0 bottom-0 p-5 md:p-10">
               <div className="eyebrow text-white/80">Cabinet Legal</div>
               <h1 className="mt-2 text-3xl font-semibold leading-tight text-white sm:text-4xl md:mt-3 md:text-5xl">
-                La Firma
+                The Firm
               </h1>
               <p className="mt-3 max-w-2xl text-sm leading-6 text-white/85 md:mt-4 md:text-lg md:leading-7">
-                Asesoría legal sofisticada, visión estratégica y ejecución rigurosa.
+                Sophisticated legal counsel, strategic vision and rigorous
+                execution.
               </p>
             </div>
           </div>
@@ -48,9 +49,9 @@ export default function FirmaPage() {
       <section className="pb-12 md:pb-20">
         <div className="container-legal grid gap-6 md:grid-cols-[0.95fr_1.05fr]">
           <div className="card-legal p-6 md:p-10">
-            <div className="eyebrow">Nuestra visión</div>
+            <div className="eyebrow">Our vision</div>
             <h2 className="mt-4 text-3xl font-semibold leading-tight text-[#0f2740] md:text-4xl">
-              Atención boutique, criterio empresarial y enfoque en resultados.
+              Boutique attention, business judgment and results-driven focus.
             </h2>
             <div className="gold-line mt-6" />
           </div>
@@ -58,17 +59,19 @@ export default function FirmaPage() {
           <div className="card-legal p-6 md:p-10">
             <div className="space-y-5 text-base leading-7 text-[#5f6b76] md:text-lg md:leading-8">
               <p>
-                Cabinet Legal es una firma legal independiente en República Dominicana,
-                orientada a ofrecer asesoría de alto nivel a empresas, inversionistas y
-                clientes privados.
+                Cabinet Legal is an independent law firm in the Dominican
+                Republic, focused on delivering high-level counsel to
+                companies, investors and private clients.
               </p>
               <p>
-                Nuestra práctica combina derecho, estrategia y operación para acompañar
-                decisiones empresariales relevantes con una visión clara, moderna y precisa.
+                Our practice combines law, strategy and operations to support
+                important business decisions with a clear, modern and precise
+                perspective.
               </p>
               <p>
-                Trabajamos con atención directa de socios, comunicación impecable y un
-                estándar de ejecución riguroso en cada asunto.
+                We work with direct partner attention, impeccable
+                communication and a rigorous standard of execution on every
+                matter.
               </p>
             </div>
           </div>
@@ -78,35 +81,35 @@ export default function FirmaPage() {
       <section className="pb-12 md:pb-20">
         <div className="container-legal grid gap-4 md:grid-cols-3">
           <div className="card-legal p-6 md:p-8">
-            <div className="eyebrow">Enfoque</div>
+            <div className="eyebrow">Approach</div>
             <h3 className="mt-4 text-xl font-semibold text-[#0f2740] md:text-2xl">
-              Cercanía estratégica
+              Strategic closeness
             </h3>
             <p className="mt-4 text-sm leading-7 text-[#5f6b76] md:text-base md:leading-8">
-              Acompañamos a nuestros clientes con una visión práctica y jurídica alineada
-              con sus objetivos reales.
+              We support our clients with a practical, legally sound
+              perspective aligned with their real objectives.
             </p>
           </div>
 
           <div className="card-legal p-6 md:p-8">
-            <div className="eyebrow">Método</div>
+            <div className="eyebrow">Method</div>
             <h3 className="mt-4 text-xl font-semibold text-[#0f2740] md:text-2xl">
-              Precisión técnica
+              Technical precision
             </h3>
             <p className="mt-4 text-sm leading-7 text-[#5f6b76] md:text-base md:leading-8">
-              Analizamos cada caso con profundidad para construir soluciones claras,
-              seguras y sostenibles.
+              We analyze every case in depth to build clear, secure and
+              sustainable solutions.
             </p>
           </div>
 
           <div className="card-legal p-6 md:p-8">
-            <div className="eyebrow">Estándar</div>
+            <div className="eyebrow">Standard</div>
             <h3 className="mt-4 text-xl font-semibold text-[#0f2740] md:text-2xl">
-              Ejecución rigurosa
+              Rigorous execution
             </h3>
             <p className="mt-4 text-sm leading-7 text-[#5f6b76] md:text-base md:leading-8">
-              Priorizamos orden, seguimiento y excelencia en la implementación de cada
-              estrategia legal.
+              We prioritize order, follow-through and excellence in
+              implementing every legal strategy.
             </p>
           </div>
         </div>
@@ -114,21 +117,21 @@ export default function FirmaPage() {
 
       <section className="pb-16 md:pb-20">
         <div className="container-legal card-legal p-6 md:p-12">
-          <div className="eyebrow">Contacto</div>
+          <div className="eyebrow">Contact</div>
           <h2 className="mt-4 text-3xl font-semibold text-[#0f2740] md:text-4xl">
-            ¿Quieres conversar con nuestro equipo?
+            Want to talk with our team?
           </h2>
           <p className="mt-4 max-w-2xl text-base leading-7 text-[#5f6b76] md:text-lg md:leading-8">
-            Podemos evaluar tu situación y orientarte sobre la estrategia legal más adecuada
-            para tu empresa o proyecto.
+            We can evaluate your situation and guide you on the best legal
+            strategy for your company or project.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap md:gap-4">
-            <Link href="/consulta" className="btn-primary-legal">
-              Solicitar consulta
+            <Link href="/en/consulta" className="btn-primary-legal">
+              Book a consultation
             </Link>
-            <Link href="/socios" className="btn-secondary-legal">
-              Ver socios
+            <Link href="/en/socios" className="btn-secondary-legal">
+              View partners
             </Link>
           </div>
         </div>

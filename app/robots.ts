@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.cabinetlegal.com.do/sitemap.xml",
+    sitemap: "https://cabinetlegal.com.do/sitemap.xml",
   };
 }

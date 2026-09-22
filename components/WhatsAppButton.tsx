@@ -4,8 +4,30 @@ import { usePathname } from "next/navigation";
 
 export default function WhatsAppButton() {
   const pathname = usePathname();
+  const isEnglish = pathname === "/en" || pathname.startsWith("/en/");
 
   const getConfig = () => {
+    if (isEnglish) {
+      if (pathname === "/en/consulta") {
+        return {
+          text: "Book a consultation",
+          message:
+            "Hello, I visited Cabinet Legal and would like to book a consultation.",
+        };
+      }
+      if (pathname === "/en/servicios") {
+        return {
+          text: "Ask about our services",
+          message:
+            "Hello, I visited Cabinet Legal and would like guidance on your legal services.",
+        };
+      }
+      return {
+        text: "Message us",
+        message: "Hello, I visited Cabinet Legal and would like guidance.",
+      };
+    }
+
     if (pathname === "/consulta") {
       return {
         text: "Agendar consulta",
