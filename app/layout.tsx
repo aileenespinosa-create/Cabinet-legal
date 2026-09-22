@@ -42,7 +42,7 @@ const legalServiceSchema = {
     name: "Dominican Republic",
   },
   priceRange: "$$",
-  knowsLanguage: ["es", "en"],
+  knowsLanguage: ["es", "en", "fr"],
   sameAs: [] as string[],
   founder: [
     {

@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Consulta legal | Cabinet Legal",
+  title: "Demander une consultation | Cabinet Legal",
   description:
-    "Solicita una consulta con Cabinet Legal para evaluar tu caso y definir la mejor estrategia legal en República Dominicana.",
+    "Demandez une consultation avec Cabinet Legal pour évaluer votre dossier et définir la meilleure stratégie juridique en République Dominicaine.",
   alternates: {
-    canonical: "https://cabinetlegal.com.do/consulta",
+    canonical: "https://cabinetlegal.com.do/fr/consulta",
     languages: {
       "es-DO": "https://cabinetlegal.com.do/consulta",
       en: "https://cabinetlegal.com.do/en/consulta",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ConsultaPage() {
+export default function ConsultaPageFR() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-[#fcfaf6] pt-[120px]">
       <SiteHeader />
@@ -27,7 +27,7 @@ export default function ConsultaPage() {
           <div className="relative h-[240px] sm:h-[300px] md:h-[380px]">
             <Image
               src="/hero-legal.jpg"
-              alt="Consulta legal Cabinet Legal"
+              alt="Consultation juridique Cabinet Legal"
               fill
               className="object-cover"
               sizes="100vw"
@@ -38,77 +38,80 @@ export default function ConsultaPage() {
               <div className="eyebrow text-white/80">Cabinet Legal</div>
 
               <h1 className="mt-3 max-w-3xl text-3xl font-semibold leading-tight text-white sm:text-4xl md:text-5xl">
-                Solicita una consulta legal con enfoque estratégico
+                Demandez une consultation juridique avec une approche
+                stratégique
               </h1>
 
               <p className="mt-4 max-w-2xl text-sm leading-6 text-white/90 md:text-lg md:leading-7">
-                Evaluamos tu situación, identificamos riesgos y te orientamos
-                sobre la mejor vía legal según tu caso, tus objetivos y tu contexto.
+                Nous évaluons votre situation, identifions les risques et
+                vous orientons vers la meilleure voie juridique selon votre
+                dossier, vos objectifs et votre contexte.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CONTENIDO + FORMULARIO */}
+      {/* CONTENU + FORMULAIRE */}
       <section className="pb-16 md:pb-20">
         <div className="container-legal grid gap-6 md:grid-cols-[0.92fr_1.08fr]">
-          {/* TEXTO */}
+          {/* TEXTE */}
           <div className="card-legal p-6 md:p-10">
-            <div className="eyebrow">Consulta</div>
+            <div className="eyebrow">Consultation</div>
 
             <h2 className="mt-4 text-3xl font-semibold leading-tight text-[#0f2740] md:text-4xl">
-              Hablemos de tu caso con claridad y criterio jurídico.
+              Parlons de votre dossier avec clarté et rigueur juridique.
             </h2>
 
             <p className="mt-5 text-base leading-7 text-[#5f6b76] md:text-lg md:leading-8">
-              Si necesitas orientación legal para tu empresa, una marca, un contrato,
-              una operación o un conflicto específico, podemos ayudarte a definir
-              una estrategia clara, práctica y jurídicamente sólida.
+              Si vous avez besoin d&apos;un accompagnement juridique pour
+              votre entreprise, une marque, un contrat, une opération ou un
+              litige spécifique, nous pouvons vous aider à définir une
+              stratégie claire, pratique et juridiquement solide.
             </p>
 
             <div className="gold-line mt-6" />
 
             <div className="mt-8 space-y-4 text-sm leading-7 text-[#5f6b76] md:text-base md:leading-8">
-              <p>• Atención directa y estratégica</p>
-              <p>• Evaluación inicial de tu situación</p>
-              <p>• Identificación de riesgos y prioridades</p>
-              <p>• Recomendación clara de próximos pasos</p>
+              <p>• Accompagnement direct et stratégique</p>
+              <p>• Évaluation initiale de votre situation</p>
+              <p>• Identification des risques et priorités</p>
+              <p>• Recommandation claire des prochaines étapes</p>
             </div>
 
             <div className="mt-8 rounded-2xl border border-[#e8dfd0] bg-[#fcfaf6] p-5 md:p-6">
               <h3 className="text-lg font-semibold text-[#0f2740]">
-                ¿Prefieres escribirnos directamente?
+                Vous préférez nous écrire directement ?
               </h3>
 
               <p className="mt-2 text-sm leading-6 text-[#5f6b76] md:text-base md:leading-7">
-                También puedes contactarnos por WhatsApp para una orientación inicial
-                más rápida.
+                Vous pouvez également nous contacter sur WhatsApp pour une
+                orientation initiale plus rapide.
               </p>
 
               <a
-                href="https://wa.me/18494603517?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta."
+                href="https://wa.me/18494603517?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20une%20consultation."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-white px-6 py-3 text-sm font-semibold text-[#0f2740]"
               >
-                Escribir por WhatsApp
+                Nous écrire sur WhatsApp
               </a>
             </div>
           </div>
 
-          {/* FORMULARIO */}
+          {/* FORMULAIRE */}
           <div className="card-legal p-6 md:p-10">
             <div className="mb-6">
-              <div className="eyebrow">Formulario</div>
+              <div className="eyebrow">Formulaire</div>
 
               <h2 className="mt-4 text-2xl font-semibold text-[#0f2740] md:text-3xl">
-                Solicitar consulta
+                Demander une consultation
               </h2>
 
               <p className="mt-3 text-sm leading-6 text-[#5f6b76] md:text-base md:leading-7">
-                Completa este formulario y nos pondremos en contacto contigo para
-                evaluar tu solicitud.
+                Remplissez ce formulaire et nous vous contacterons pour
+                évaluer votre demande.
               </p>
             </div>
 
@@ -120,76 +123,89 @@ export default function ConsultaPage() {
               <input
                 type="hidden"
                 name="_subject"
-                value="Nueva consulta desde Cabinet Legal"
+                value="Nouvelle demande de consultation depuis Cabinet Legal (FR)"
               />
               <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="idioma" value="FR" />
 
               <div>
                 <label className="mb-2 block text-sm font-medium text-[#0f2740]">
-                  Nombre
+                  Nom
                 </label>
                 <input
                   name="nombre"
                   type="text"
                   required
                   className="w-full rounded-2xl border border-[#e8dfd0] bg-white px-4 py-3 text-[#0f2740] outline-none transition focus:border-[#c9a96e]"
-                  placeholder="Tu nombre"
+                  placeholder="Votre nom"
                 />
               </div>
 
               <div>
                 <label className="mb-2 block text-sm font-medium text-[#0f2740]">
-                  Correo electrónico
+                  E-mail
                 </label>
                 <input
                   name="email"
                   type="email"
                   required
                   className="w-full rounded-2xl border border-[#e8dfd0] bg-white px-4 py-3 text-[#0f2740] outline-none transition focus:border-[#c9a96e]"
-                  placeholder="tunombre@correo.com"
+                  placeholder="vous@email.com"
                 />
               </div>
 
               <div>
                 <label className="mb-2 block text-sm font-medium text-[#0f2740]">
-                  Teléfono
+                  Téléphone
                 </label>
                 <input
                   name="telefono"
                   type="text"
                   className="w-full rounded-2xl border border-[#e8dfd0] bg-white px-4 py-3 text-[#0f2740] outline-none transition focus:border-[#c9a96e]"
-                  placeholder="Tu número"
+                  placeholder="Votre numéro de téléphone"
                 />
               </div>
 
               <div>
                 <label className="mb-2 block text-sm font-medium text-[#0f2740]">
-                  Área de interés
+                  Pays
+                </label>
+                <input
+                  name="pais"
+                  type="text"
+                  className="w-full rounded-2xl border border-[#e8dfd0] bg-white px-4 py-3 text-[#0f2740] outline-none transition focus:border-[#c9a96e]"
+                  placeholder="D'où nous écrivez-vous ?"
+                />
+              </div>
+
+              <div>
+                <label className="mb-2 block text-sm font-medium text-[#0f2740]">
+                  Domaine d&apos;intérêt
                 </label>
                 <select
                   name="area"
                   className="w-full rounded-2xl border border-[#e8dfd0] bg-white px-4 py-3 text-[#0f2740] outline-none transition focus:border-[#c9a96e]"
-                  defaultValue="Selecciona una opción"
+                  defaultValue="Sélectionnez une option"
                 >
-                  <option disabled>Selecciona una opción</option>
-                  <option>Registro de marcas</option>
-                  <option>Derecho corporativo</option>
-                  <option>Propiedad intelectual</option>
-                  <option>Litigios</option>
-                  <option>Otro</option>
+                  <option disabled>Sélectionnez une option</option>
+                  <option>Dépôt de marques</option>
+                  <option>Droit des affaires</option>
+                  <option>Propriété intellectuelle</option>
+                  <option>Contentieux</option>
+                  <option>Autre</option>
                 </select>
               </div>
 
               <div>
                 <label className="mb-2 block text-sm font-medium text-[#0f2740]">
-                  Mensaje
+                  Message
                 </label>
                 <textarea
                   name="mensaje"
                   rows={6}
                   required
                   className="w-full rounded-2xl border border-[#e8dfd0] bg-white px-4 py-3 text-[#0f2740] outline-none transition focus:border-[#c9a96e]"
-                  placeholder="Cuéntanos brevemente tu caso"
+                  placeholder="Décrivez brièvement votre dossier"
                 />
               </div>
 
@@ -198,23 +214,24 @@ export default function ConsultaPage() {
                 className="mt-2 inline-flex items-center justify-center rounded-full px-7 py-3 text-sm font-semibold shadow-sm"
                 style={{ backgroundColor: "#0f2740", color: "#ffffff" }}
               >
-                Enviar solicitud
+                Envoyer la demande
               </button>
             </form>
           </div>
         </div>
       </section>
 
-      {/* CIERRE */}
+      {/* CLÔTURE */}
       <section className="pb-16 md:pb-20">
         <div className="container-legal card-legal p-6 md:p-12">
           <h2 className="text-3xl font-semibold text-[#0f2740] md:text-4xl">
-            Toma decisiones con respaldo legal.
+            Prenez vos décisions avec un accompagnement juridique solide.
           </h2>
 
           <p className="mt-4 max-w-2xl text-base leading-7 text-[#5f6b76] md:text-lg md:leading-8">
-            Una consulta oportuna puede ayudarte a evitar errores, reducir riesgos
-            y estructurar mejor tu situación legal desde el inicio.
+            Une consultation en temps utile peut vous aider à éviter des
+            erreurs, réduire les risques et mieux structurer votre situation
+            juridique dès le départ.
           </p>
         </div>
       </section>

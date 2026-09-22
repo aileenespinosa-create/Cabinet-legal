@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     languages: {
       "es-DO": "https://cabinetlegal.com.do/firma",
       en: "https://cabinetlegal.com.do/en/firma",
+      fr: "https://cabinetlegal.com.do/fr/firma",
     },
   },
 };
