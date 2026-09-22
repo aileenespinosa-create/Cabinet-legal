@@ -246,6 +246,53 @@ export default function HomePageFR() {
         </div>
       </section>
 
+      {/* SERVICE INVESTISSEURS ÉTRANGERS */}
+      <section className="pb-14 md:pb-24">
+        <div className="mx-auto w-full max-w-[1200px] px-6 lg:px-8">
+          <div className="card-legal grid gap-8 p-6 md:grid-cols-[0.9fr_1.1fr] md:p-12">
+            <div>
+              <div className="mb-4 text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
+                Service phare
+              </div>
+              <h2 className="text-3xl font-light tracking-tight text-[#0f2740] md:text-4xl">
+                Accompagnement juridique pour investisseurs étrangers
+              </h2>
+              <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
+            </div>
+
+            <div className="space-y-5 text-base leading-8 text-[#5f6b76] md:text-lg">
+              <p>
+                Si vous achetez un bien immobilier en République Dominicaine
+                depuis l&apos;étranger, une protection juridique adaptée fait
+                toute la différence entre un investissement sécurisé et un
+                problème coûteux.
+              </p>
+              <p>
+                Nous structurons votre achat, examinons les contrats et vous
+                accompagnons lors de la clôture, en collaboration avec Land
+                Consulting DR pour la vérification technique du bien.
+              </p>
+
+              <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
+                <Link
+                  href="/fr/inversion-extranjera"
+                  className="inline-flex items-center justify-center rounded-full px-7 py-3 text-sm font-semibold shadow-sm transition hover:opacity-95"
+                  style={{ backgroundColor: "#0f2740", color: "#ffffff" }}
+                >
+                  Voir le service
+                </Link>
+                <Link
+                  href="/fr/consulta"
+                  className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-white px-7 py-3 text-sm font-semibold text-[#0f2740] transition hover:bg-[#f7f4ee]"
+                >
+                  Demander une consultation
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* POURQUOI NOUS CHOISIR */}
       <section className="pb-14 md:pb-24">
         <div className="mx-auto w-full max-w-[1200px] px-6 lg:px-8">
