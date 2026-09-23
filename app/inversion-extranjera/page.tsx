@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Asesoría legal para inversionistas extranjeros | Cabinet Legal",
+  title: "Abogado para Comprar Bienes Raíces en República Dominicana",
   description:
-    "Compra bienes raíces en República Dominicana con protección legal completa: estructuración, contratos, cierre y protección post-compra para inversionistas extranjeros.",
+    "Compra propiedades en República Dominicana con protección legal completa: due diligence de título, contratos, cierre notarial y protección post-compra para inversionistas extranjeros.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/inversion-extranjera",
     languages: {

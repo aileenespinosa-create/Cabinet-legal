@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Demander une consultation | Cabinet Legal",
+  title: "Réserver une Consultation Juridique en République Dominicaine",
   description:
     "Demandez une consultation avec Cabinet Legal pour évaluer votre dossier et définir la meilleure stratégie juridique en République Dominicaine.",
   alternates: {

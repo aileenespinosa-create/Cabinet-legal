@@ -4,14 +4,37 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Registro de marcas en República Dominicana | Cabinet Legal",
+  title: "Registro de Marcas en República Dominicana ante ONAPI",
   description:
-    "Protege tu marca en República Dominicana con asesoría legal estratégica. Evaluamos, registramos y damos seguimiento completo ante ONAPI.",
+    "Protege tu marca en República Dominicana con asesoría legal estratégica. Evaluamos disponibilidad, registramos y damos seguimiento completo ante ONAPI.",
+  alternates: {
+    canonical: "https://cabinetlegal.com.do/registro-de-marcas",
+  },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "¿Cuánto cuesta registrar una marca en República Dominicana?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "El costo varía dependiendo del tipo de marca, la cantidad de clases y la estructura de la solicitud. Cada caso debe evaluarse individualmente para dar un presupuesto preciso.",
+      },
+    },
+  ],
 };
 
 export default function RegistroDeMarcasPage() {
   return (
     <main className="min-h-screen overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <SiteHeader />
 
       {/* HERO */}

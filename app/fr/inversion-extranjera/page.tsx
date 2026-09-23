@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Accompagnement juridique pour investisseurs étrangers | Cabinet Legal",
+  title: "Avocat Immobilier pour Investisseurs Étrangers en République Dominicaine",
   description:
     "Achetez un bien immobilier en République Dominicaine avec une protection juridique complète : structuration, contrats, clôture et protection après l'achat pour investisseurs étrangers.",
   alternates: {

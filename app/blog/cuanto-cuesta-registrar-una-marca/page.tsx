@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cuánto cuesta registrar una marca en República Dominicana | Cabinet Legal",
+  title: "Cuánto Cuesta Registrar una Marca en República Dominicana",
   description:
     "El costo de registrar una marca en República Dominicana depende del tipo de marca, la cantidad de clases y la estructura de la solicitud.",
   alternates: {
@@ -36,9 +36,37 @@ export const metadata: Metadata = {
   },
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "¿De qué depende el costo del registro de una marca en República Dominicana?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Depende del tipo de marca (denominativa, mixta o figurativa), la cantidad de clases, la actividad comercial y la complejidad del caso, incluyendo posibles oposiciones o requerimientos de ONAPI.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Por qué no es recomendable estimar el costo sin evaluación previa?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Intentar determinar el costo sin una revisión previa puede llevar a errores en la clasificación, duplicidad de registros o conflictos con marcas existentes.",
+      },
+    },
+  ],
+};
+
 export default function Article() {
   return (
     <main className="min-h-screen">
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <article className="container-legal py-16 md:py-20">
         <div className="card-legal overflow-hidden">
           <div className="relative h-[280px] md:h-[360px]">

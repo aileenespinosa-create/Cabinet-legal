@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Partners | Cabinet Legal",
+  title: "Our Attorneys | Dominican Republic Law Firm",
   description:
     "Meet the partners of Cabinet Legal, a Dominican Republic law firm focused on corporate law, trademarks, intellectual property and litigation.",
   alternates: {

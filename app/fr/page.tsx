@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Cabinet Legal | Cabinet d'avocats d'affaires en République Dominicaine",
+  title: "Cabinet d'Avocats en République Dominicaine pour Investisseurs Étrangers",
   description:
-    "Cabinet Legal conseille des entreprises, des investisseurs et des clients privés en droit des affaires, dépôt de marques, propriété intellectuelle et dossiers juridiques à fort enjeu en République Dominicaine.",
+    "Cabinet Legal conseille les investisseurs étrangers, entreprises et clients privés en achat immobilier, droit des affaires, fusions-acquisitions, marques et contentieux en République Dominicaine.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/fr",
     languages: {
@@ -76,8 +76,9 @@ export default function HomePageFR() {
             <div className="relative h-[340px] sm:h-[430px] md:h-[520px]">
               <Image
                 src="/hero-legal.jpg"
-                alt="Cabinet Legal"
+                alt="Avocats de Cabinet Legal conseillant des investisseurs étrangers en République Dominicaine"
                 fill
+                priority
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />

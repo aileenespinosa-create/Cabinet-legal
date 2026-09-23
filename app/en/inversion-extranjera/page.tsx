@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Legal Guidance for Foreign Investors | Cabinet Legal",
+  title: "Real Estate Lawyer for Foreign Buyers in the Dominican Republic",
   description:
-    "Buy real estate in the Dominican Republic with complete legal protection: structuring, contracts, closing and post-purchase protection for foreign investors.",
+    "Buy property in the Dominican Republic with full legal protection: title due diligence, contracts, notarial closing and post-purchase protection for foreign investors.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/en/inversion-extranjera",
     languages: {

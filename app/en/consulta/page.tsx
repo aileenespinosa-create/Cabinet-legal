@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Book a Consultation | Cabinet Legal",
+  title: "Book a Legal Consultation in the Dominican Republic",
   description:
     "Request a consultation with Cabinet Legal to evaluate your case and define the best legal strategy in the Dominican Republic.",
   alternates: {

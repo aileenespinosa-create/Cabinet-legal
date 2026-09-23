@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "The Firm | Cabinet Legal",
+  title: "Law Firm in Santo Domingo, Dominican Republic",
   description:
-    "Cabinet Legal is a Dominican Republic law firm with a corporate, strategic focus and direct partner attention.",
+    "Cabinet Legal is a law firm in Santo Domingo, Dominican Republic, with a corporate, strategic focus and direct partner attention for local and foreign clients.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/en/firma",
     languages: {

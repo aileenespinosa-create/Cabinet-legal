@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Cabinet Legal | Business Law Firm in the Dominican Republic",
+  title: "Dominican Republic Law Firm for Foreign Investors & Real Estate",
   description:
-    "Cabinet Legal advises companies, investors and private clients on corporate law, trademark registration, intellectual property and high-impact legal matters in the Dominican Republic.",
+    "Cabinet Legal advises foreign investors, companies and private clients on real estate purchases, corporate law, M&A, trademarks and litigation in the Dominican Republic.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/en",
     languages: {
@@ -74,8 +74,9 @@ export default function HomePageEN() {
             <div className="relative h-[340px] sm:h-[430px] md:h-[520px]">
               <Image
                 src="/hero-legal.jpg"
-                alt="Cabinet Legal"
+                alt="Cabinet Legal attorneys advising foreign investors in the Dominican Republic"
                 fill
+                priority
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
