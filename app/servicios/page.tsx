@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://cabinetlegal.com.do/servicios",
     languages: {
+      "x-default": "https://cabinetlegal.com.do/servicios",
       "es-DO": "https://cabinetlegal.com.do/servicios",
       en: "https://cabinetlegal.com.do/en/servicios",
       fr: "https://cabinetlegal.com.do/fr/servicios",

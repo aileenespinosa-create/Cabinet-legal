@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://cabinetlegal.com.do/inversion-extranjera",
     languages: {
+      "x-default": "https://cabinetlegal.com.do/inversion-extranjera",
       "es-DO": "https://cabinetlegal.com.do/inversion-extranjera",
       en: "https://cabinetlegal.com.do/en/inversion-extranjera",
       fr: "https://cabinetlegal.com.do/fr/inversion-extranjera",
