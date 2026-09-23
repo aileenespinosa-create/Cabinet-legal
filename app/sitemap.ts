@@ -147,6 +147,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: "https://cabinetlegal.com.do/blog/comprar-propiedad-republica-dominicana-extranjero",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: "https://cabinetlegal.com.do/blog/residencia-por-inversion-republica-dominicana",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: "https://cabinetlegal.com.do/blog/abrir-empresa-republica-dominicana-extranjero",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
       url: "https://cabinetlegal.com.do/blog/como-registrar-una-marca-republica-dominicana",
       lastModified: new Date(),
       changeFrequency: "monthly",

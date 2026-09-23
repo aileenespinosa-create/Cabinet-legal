@@ -189,10 +189,15 @@ export default function ConsultaPageFR() {
                   defaultValue="Sélectionnez une option"
                 >
                   <option disabled>Sélectionnez une option</option>
+                  <option>Investissement étranger / immobilier</option>
+                  <option>Fusions et acquisitions</option>
+                  <option>Création d'entreprise</option>
+                  <option>Résidence et permis de travail</option>
                   <option>Dépôt de marques</option>
                   <option>Droit des affaires</option>
                   <option>Propriété intellectuelle</option>
                   <option>Contentieux</option>
+                  <option>Contentieux pour investisseurs étrangers</option>
                   <option>Autre</option>
                 </select>
               </div>
@@ -217,6 +222,10 @@ export default function ConsultaPageFR() {
               >
                 Envoyer la demande
               </button>
+
+              <p className="text-center text-xs text-[#8a9099]">
+                Nous répondons sous 24 heures ouvrables.
+              </p>
             </form>
           </div>
         </div>

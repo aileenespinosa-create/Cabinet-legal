@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
+import FaqAccordion from "@/components/FaqAccordion";
+import { buildFaqSchema } from "@/components/faqSchema";
 
 export const metadata: Metadata = {
   title: "Abogados de Fusiones y Adquisiciones en República Dominicana",
@@ -12,36 +14,25 @@ export const metadata: Metadata = {
   },
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "¿Cuánto tiempo toma cerrar una adquisición en República Dominicana?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Depende del tamaño de la operación y de los hallazgos de la due diligence. Una adquisición de una PYME con documentación en regla puede cerrarse en 6 a 10 semanas; operaciones más complejas, con activos regulados o múltiples jurisdicciones, toman más tiempo.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Puede un extranjero comprar una empresa dominicana directamente?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Sí. La Ley 16-95 de Inversión Extranjera permite la inversión extranjera directa sin necesidad de socio local en la generalidad de los sectores. La operación puede estructurarse como compra de cuotas o acciones, o como compra de activos, según convenga al comprador.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Qué revisa una due diligence legal antes de comprar una empresa?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Como mínimo, la situación societaria y de gobierno corporativo, el cumplimiento fiscal y laboral, los contratos vigentes con clientes y proveedores, litigios activos o potenciales, gravámenes sobre activos y el estado de los permisos y registros requeridos para operar.",
-      },
-    },
-  ],
-};
+const faqs = [
+  {
+    question: "¿Cuánto tiempo toma cerrar una adquisición en República Dominicana?",
+    answer:
+      "Depende del tamaño de la operación y de los hallazgos de la due diligence. Una adquisición de una PYME con documentación en regla puede cerrarse en 6 a 10 semanas; operaciones más complejas, con activos regulados o múltiples jurisdicciones, toman más tiempo.",
+  },
+  {
+    question: "¿Puede un extranjero comprar una empresa dominicana directamente?",
+    answer:
+      "Sí. La Ley 16-95 de Inversión Extranjera permite la inversión extranjera directa sin necesidad de socio local en la generalidad de los sectores. La operación puede estructurarse como compra de cuotas o acciones, o como compra de activos, según convenga al comprador.",
+  },
+  {
+    question: "¿Qué revisa una due diligence legal antes de comprar una empresa?",
+    answer:
+      "Como mínimo, la situación societaria y de gobierno corporativo, el cumplimiento fiscal y laboral, los contratos vigentes con clientes y proveedores, litigios activos o potenciales, gravámenes sobre activos y el estado de los permisos y registros requeridos para operar.",
+  },
+];
+
+const faqSchema = buildFaqSchema(faqs);
 
 export default function FusionesYAdquisicionesPage() {
   return (
@@ -257,6 +248,8 @@ export default function FusionesYAdquisicionesPage() {
           </div>
         </div>
       </section>
+
+      <FaqAccordion faqs={faqs} />
 
       {/* CTA FINAL */}
       <section className="pb-16 md:pb-20">

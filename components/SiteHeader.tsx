@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 const NAV_ES = [
   { href: "/firma", label: "La firma" },
   { href: "/servicios", label: "Servicios" },
+  { href: "/inversion-extranjera", label: "Inversión Extranjera" },
   { href: "/socios", label: "Socios" },
   { href: "/blog", label: "Blog" },
 ];
@@ -15,6 +16,7 @@ const NAV_ES = [
 const NAV_EN = [
   { href: "/en/firma", label: "The Firm" },
   { href: "/en/servicios", label: "Services" },
+  { href: "/en/inversion-extranjera", label: "Foreign Investment" },
   { href: "/en/socios", label: "Partners" },
   { href: "/blog", label: "Blog" },
 ];
@@ -22,6 +24,7 @@ const NAV_EN = [
 const NAV_FR = [
   { href: "/fr/firma", label: "Le Cabinet" },
   { href: "/fr/servicios", label: "Services" },
+  { href: "/fr/inversion-extranjera", label: "Investissement étranger" },
   { href: "/fr/socios", label: "Associés" },
   { href: "/blog", label: "Blog" },
 ];
@@ -48,11 +51,13 @@ export default function SiteHeader() {
     "/servicios": "/en/servicios",
     "/socios": "/en/socios",
     "/consulta": "/en/consulta",
+    "/inversion-extranjera": "/en/inversion-extranjera",
     "/fr": "/en",
     "/fr/firma": "/en/firma",
     "/fr/servicios": "/en/servicios",
     "/fr/socios": "/en/socios",
     "/fr/consulta": "/en/consulta",
+    "/fr/inversion-extranjera": "/en/inversion-extranjera",
   };
   const enPath = isEnglish
     ? pathname
@@ -66,11 +71,13 @@ export default function SiteHeader() {
     "/servicios": "/fr/servicios",
     "/socios": "/fr/socios",
     "/consulta": "/fr/consulta",
+    "/inversion-extranjera": "/fr/inversion-extranjera",
     "/en": "/fr",
     "/en/firma": "/fr/firma",
     "/en/servicios": "/fr/servicios",
     "/en/socios": "/fr/socios",
     "/en/consulta": "/fr/consulta",
+    "/en/inversion-extranjera": "/fr/inversion-extranjera",
   };
   const frPath = isFrench
     ? pathname

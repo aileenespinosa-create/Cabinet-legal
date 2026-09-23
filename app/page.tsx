@@ -57,7 +57,7 @@ export default function HomePage() {
                 href="https://wa.me/18295420615?text=Hola%2C%20visité%20Cabinet%20Legal%20y%20me%20gustaría%20recibir%20orientación."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-white px-7 py-3 text-sm font-semibold text-[#0f2740] transition hover:bg-[#f7f4ee]"
+                className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-transparent px-7 py-3 text-sm font-medium text-[#5f6b76] transition hover:border-[#c8a46a] hover:bg-white hover:text-[#0f2740]"
               >
                 Escribir por WhatsApp
               </a>
@@ -96,6 +96,46 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* CIFRAS */}
+      <section className="pb-14 md:pb-20">
+        <div className="mx-auto w-full max-w-[1200px] px-6 lg:px-8">
+          <div className="grid grid-cols-2 gap-6 border-y border-[#e6dece] py-8 md:grid-cols-4 md:py-10">
+            <div>
+              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">
+                2009
+              </div>
+              <div className="mt-1 text-sm text-[#5f6b76]">
+                Año de fundación
+              </div>
+            </div>
+            <div>
+              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">
+                9
+              </div>
+              <div className="mt-1 text-sm text-[#5f6b76]">
+                Áreas de práctica especializadas
+              </div>
+            </div>
+            <div>
+              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">
+                3
+              </div>
+              <div className="mt-1 text-sm text-[#5f6b76]">
+                Idiomas de atención: español, inglés y francés
+              </div>
+            </div>
+            <div>
+              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">
+                100%
+              </div>
+              <div className="mt-1 text-sm text-[#5f6b76]">
+                Trámites que puedes iniciar por poder, sin viajar al país
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* PROBLEMA / SOLUCIÓN */}
       <section className="pb-14 md:pb-24">
         <div className="mx-auto grid w-full max-w-[1200px] gap-6 px-6 md:grid-cols-2 lg:px-8">
@@ -118,12 +158,13 @@ export default function HomePage() {
               Nuestra propuesta
             </div>
             <h2 className="text-2xl font-light tracking-tight text-[#0f2740] md:text-3xl">
-              Asesoría clara, ejecutiva y enfocada en resultados.
+              Un socio revisa tu caso, no un formulario.
             </h2>
             <p className="mt-5 leading-8 text-[#5f6b76]">
-              En Cabinet Legal combinamos estrategia, técnica y acompañamiento
-              directo para ayudarte a proteger tu negocio y actuar con seguridad
-              jurídica desde el inicio.
+              Desde 2009 acompañamos a empresas, inversionistas extranjeros y
+              clientes privados en compras de bienes raíces, estructuración
+              societaria, registro de marcas y litigios en República
+              Dominicana, con atención directa de socios en cada caso.
             </p>
           </div>
         </div>
@@ -230,7 +271,7 @@ export default function HomePage() {
                 </Link>
                 <Link
                   href="/consulta"
-                  className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-white px-7 py-3 text-sm font-semibold text-[#0f2740] transition hover:bg-[#f7f4ee]"
+                  className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-transparent px-7 py-3 text-sm font-medium text-[#5f6b76] transition hover:border-[#c8a46a] hover:bg-white hover:text-[#0f2740]"
                 >
                   Solicitar evaluación
                 </Link>
@@ -276,7 +317,7 @@ export default function HomePage() {
                 </Link>
                 <Link
                   href="/consulta"
-                  className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-white px-7 py-3 text-sm font-semibold text-[#0f2740] transition hover:bg-[#f7f4ee]"
+                  className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-transparent px-7 py-3 text-sm font-medium text-[#5f6b76] transition hover:border-[#c8a46a] hover:bg-white hover:text-[#0f2740]"
                 >
                   Solicitar consulta
                 </Link>
@@ -301,31 +342,32 @@ export default function HomePage() {
           <div className="grid gap-4 md:grid-cols-3">
             <div className="card-legal p-6 md:p-8">
               <h3 className="text-xl font-semibold text-[#0f2740]">
-                Atención directa
+                Atención directa de socios
               </h3>
               <p className="mt-4 leading-7 text-[#5f6b76]">
-                Recibes acompañamiento cercano y estratégico, sin procesos
-                impersonales.
+                Hablas con Aileen Espinosa o Ellis Beato desde la primera
+                consulta, no con un equipo júnior intermedio.
               </p>
             </div>
 
             <div className="card-legal p-6 md:p-8">
               <h3 className="text-xl font-semibold text-[#0f2740]">
-                Visión empresarial
+                Atención en tu idioma
               </h3>
               <p className="mt-4 leading-7 text-[#5f6b76]">
-                Entendemos el contexto de negocio detrás de cada decisión
-                jurídica.
+                Trabajamos en español, inglés y francés, sin depender de un
+                intermediario para entender lo que está en juego.
               </p>
             </div>
 
             <div className="card-legal p-6 md:p-8">
               <h3 className="text-xl font-semibold text-[#0f2740]">
-                Ejecución rigurosa
+                Seguimiento hasta el cierre
               </h3>
               <p className="mt-4 leading-7 text-[#5f6b76]">
-                Priorizamos claridad, estructura y seguimiento en cada asunto
-                legal.
+                Damos seguimiento activo a cada expediente ante ONAPI,
+                Migración o el Registro de Títulos hasta que el trámite
+                termina, no solo hasta que se presenta.
               </p>
             </div>
           </div>
@@ -346,35 +388,45 @@ export default function HomePage() {
 
           <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
             <Link
-              href="/blog/como-registrar-una-marca-republica-dominicana"
+              href="/blog/comprar-propiedad-republica-dominicana-extranjero"
               className="card-legal block p-6 transition hover:-translate-y-[1px] md:p-8"
             >
               <div className="text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
                 Blog
               </div>
               <h3 className="mt-4 text-xl font-semibold text-[#0f2740] md:text-2xl">
-                Cómo registrar una marca en República Dominicana (2026)
+                Cómo comprar propiedad en República Dominicana siendo
+                extranjero
               </h3>
               <p className="mt-4 leading-7 text-[#5f6b76] md:leading-8">
-                Guía práctica sobre requisitos, proceso en ONAPI, tiempos y
-                recomendaciones clave.
+                Requisitos, due diligence de título, cierre notarial y
+                errores que debes evitar antes de firmar.
               </p>
             </Link>
 
             <Link
-              href="/blog/cuanto-cuesta-registrar-una-marca"
+              href="/blog/residencia-por-inversion-republica-dominicana"
               className="card-legal block p-6 transition hover:-translate-y-[1px] md:p-8"
             >
               <div className="text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
                 Blog
               </div>
               <h3 className="mt-4 text-xl font-semibold text-[#0f2740] md:text-2xl">
-                Cuánto cuesta registrar una marca en República Dominicana
+                Residencia por inversión en República Dominicana: guía 2026
               </h3>
               <p className="mt-4 leading-7 text-[#5f6b76] md:leading-8">
-                Lo que debes evaluar antes de solicitar presupuesto y por qué el
-                costo depende del tipo de marca y las clases.
+                Las tres vías más comunes para obtener la residencia y
+                tiempos realistas del proceso.
               </p>
+            </Link>
+          </div>
+
+          <div className="mt-8 text-center">
+            <Link
+              href="/blog"
+              className="btn-secondary-legal"
+            >
+              Ver todas las publicaciones
             </Link>
           </div>
         </div>
@@ -407,7 +459,7 @@ export default function HomePage() {
                 href="https://wa.me/18295420615?text=Hola%2C%20visité%20Cabinet%20Legal%20y%20me%20gustaría%20recibir%20orientación."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-white px-7 py-3 text-sm font-semibold text-[#0f2740] transition hover:bg-[#f7f4ee]"
+                className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-transparent px-7 py-3 text-sm font-medium text-[#5f6b76] transition hover:border-[#c8a46a] hover:bg-white hover:text-[#0f2740]"
               >
                 Escribir por WhatsApp
               </a>

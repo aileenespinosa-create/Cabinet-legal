@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
+import FaqAccordion from "@/components/FaqAccordion";
+import { buildFaqSchema } from "@/components/faqSchema";
 
 export const metadata: Metadata = {
   title: "Registro de Marcas en República Dominicana ante ONAPI",
@@ -12,20 +14,25 @@ export const metadata: Metadata = {
   },
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "¿Cuánto cuesta registrar una marca en República Dominicana?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "El costo varía dependiendo del tipo de marca, la cantidad de clases y la estructura de la solicitud. Cada caso debe evaluarse individualmente para dar un presupuesto preciso.",
-      },
-    },
-  ],
-};
+const faqs = [
+  {
+    question: "¿Cuánto cuesta registrar una marca en República Dominicana?",
+    answer:
+      "El costo varía dependiendo del tipo de marca, la cantidad de clases y la estructura de la solicitud. Cada caso debe evaluarse individualmente para dar un presupuesto preciso.",
+  },
+  {
+    question: "¿Cuánto tiempo toma el registro de una marca ante ONAPI?",
+    answer:
+      "Con una solicitud bien preparada y sin oposiciones de terceros, el proceso ante ONAPI suele tomar entre 6 y 10 meses desde la presentación hasta la emisión del certificado. Una oposición o una observación de forma puede extender ese plazo.",
+  },
+  {
+    question: "¿Qué pasa si no registro mi marca?",
+    answer:
+      "Sin registro, no tienes derecho exclusivo sobre el nombre o el logo frente a terceros, y cualquier competidor puede registrar una marca igual o similar primero, obligándote a cambiar tu identidad comercial o a litigar para defenderla.",
+  },
+];
+
+const faqSchema = buildFaqSchema(faqs);
 
 export default function RegistroDeMarcasPage() {
   return (
@@ -162,6 +169,8 @@ export default function RegistroDeMarcasPage() {
           </div>
         </div>
       </section>
+
+      <FaqAccordion faqs={faqs} />
 
       {/* CTA FINAL */}
       <section className="pb-16 md:pb-20">

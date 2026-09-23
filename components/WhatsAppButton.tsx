@@ -1,9 +1,28 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 export default function WhatsAppButton() {
   const pathname = usePathname();
+  const [nearFooter, setNearFooter] = useState(false);
+
+  // Fade the floating bubble out once the footer (or the final CTA card
+  // right above it) starts entering the viewport, so it stops covering
+  // the "Solicitar consulta" / "Solicitar presupuesto" buttons and the
+  // footer contact info on short pages and on mobile.
+  useEffect(() => {
+    const footer = document.querySelector("footer");
+    if (!footer) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setNearFooter(entry.isIntersecting),
+      { rootMargin: "0px 0px 160px 0px", threshold: 0 }
+    );
+
+    observer.observe(footer);
+    return () => observer.disconnect();
+  }, [pathname]);
   const isEnglish = pathname === "/en" || pathname.startsWith("/en/");
   const isFrench = pathname === "/fr" || pathname.startsWith("/fr/");
 
@@ -115,7 +134,10 @@ export default function WhatsAppButton() {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-6"
+      aria-hidden={nearFooter}
+      className={`fixed bottom-4 right-4 z-50 transition-opacity duration-300 sm:bottom-6 sm:right-6 ${
+        nearFooter ? "pointer-events-none opacity-0" : "opacity-100"
+      }`}
     >
       <div className="relative flex items-center gap-2 rounded-full bg-gradient-to-r from-green-500 to-green-600 px-4 py-3 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl sm:gap-3 sm:px-5">
         <span className="absolute inset-0 rounded-full bg-green-500 opacity-30 animate-ping"></span>
