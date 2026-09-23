@@ -123,6 +123,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: "https://cabinetlegal.com.do/fusiones-y-adquisiciones",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: "https://cabinetlegal.com.do/formacion-de-empresas",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: "https://cabinetlegal.com.do/residencia-y-permisos-de-trabajo",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: "https://cabinetlegal.com.do/litigios-inversionistas-extranjeros",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: "https://cabinetlegal.com.do/blog/como-registrar-una-marca-republica-dominicana",
       lastModified: new Date(),
       changeFrequency: "monthly",
