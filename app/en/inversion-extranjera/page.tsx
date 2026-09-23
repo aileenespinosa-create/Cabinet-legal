@@ -55,7 +55,7 @@ export default function ForeignInvestorsPageEN() {
                 </Link>
 
                 <a
-                  href="https://wa.me/18494603517?text=Hello%2C%20I%27m%20a%20foreign%20investor%20and%20would%20like%20legal%20guidance%20on%20purchasing%20property%20in%20the%20Dominican%20Republic."
+                  href="https://wa.me/18295420615?text=Hello%2C%20I%27m%20a%20foreign%20investor%20and%20would%20like%20legal%20guidance%20on%20purchasing%20property%20in%20the%20Dominican%20Republic."
                   target="_blank"
                   className="btn-secondary-legal"
                 >
@@ -253,7 +253,7 @@ export default function ForeignInvestorsPageEN() {
             </Link>
 
             <a
-              href="https://wa.me/18494603517?text=Hello%2C%20I%27m%20a%20foreign%20investor%20and%20would%20like%20legal%20guidance%20on%20purchasing%20property%20in%20the%20Dominican%20Republic."
+              href="https://wa.me/18295420615?text=Hello%2C%20I%27m%20a%20foreign%20investor%20and%20would%20like%20legal%20guidance%20on%20purchasing%20property%20in%20the%20Dominican%20Republic."
               target="_blank"
               className="btn-secondary-legal"
             >

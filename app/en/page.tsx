@@ -54,7 +54,7 @@ export default function HomePageEN() {
               </Link>
 
               <a
-                href="https://wa.me/18494603517?text=Hello%2C%20I%20visited%20Cabinet%20Legal%20and%20would%20like%20guidance."
+                href="https://wa.me/18295420615?text=Hello%2C%20I%20visited%20Cabinet%20Legal%20and%20would%20like%20guidance."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-white px-7 py-3 text-sm font-semibold text-[#0f2740] transition hover:bg-[#f7f4ee]"
@@ -356,7 +356,7 @@ export default function HomePageEN() {
                 Book a consultation
               </Link>
               <a
-                href="https://wa.me/18494603517?text=Hello%2C%20I%20visited%20Cabinet%20Legal%20and%20would%20like%20guidance."
+                href="https://wa.me/18295420615?text=Hello%2C%20I%20visited%20Cabinet%20Legal%20and%20would%20like%20guidance."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-white px-7 py-3 text-sm font-semibold text-[#0f2740] transition hover:bg-[#f7f4ee]"

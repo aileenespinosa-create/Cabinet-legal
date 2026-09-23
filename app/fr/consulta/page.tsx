@@ -91,7 +91,7 @@ export default function ConsultaPageFR() {
               </p>
 
               <a
-                href="https://wa.me/18494603517?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20une%20consultation."
+                href="https://wa.me/18295420615?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20une%20consultation."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-white px-6 py-3 text-sm font-semibold text-[#0f2740]"

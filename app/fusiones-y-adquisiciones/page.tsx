@@ -85,7 +85,7 @@ export default function FusionesYAdquisicionesPage() {
                 </Link>
 
                 <a
-                  href="https://wa.me/18494603517?text=Hola%2C%20estoy%20evaluando%20una%20operaci%C3%B3n%20de%20fusiones%20y%20adquisiciones%20en%20Rep%C3%BAblica%20Dominicana%20y%20necesito%20asesor%C3%ADa%20legal."
+                  href="https://wa.me/18295420615?text=Hola%2C%20estoy%20evaluando%20una%20operaci%C3%B3n%20de%20fusiones%20y%20adquisiciones%20en%20Rep%C3%BAblica%20Dominicana%20y%20necesito%20asesor%C3%ADa%20legal."
                   target="_blank"
                   className="btn-secondary-legal"
                 >
@@ -277,7 +277,7 @@ export default function FusionesYAdquisicionesPage() {
             </Link>
 
             <a
-              href="https://wa.me/18494603517?text=Hola%2C%20estoy%20evaluando%20una%20operaci%C3%B3n%20de%20fusiones%20y%20adquisiciones%20en%20Rep%C3%BAblica%20Dominicana%20y%20necesito%20asesor%C3%ADa%20legal."
+              href="https://wa.me/18295420615?text=Hola%2C%20estoy%20evaluando%20una%20operaci%C3%B3n%20de%20fusiones%20y%20adquisiciones%20en%20Rep%C3%BAblica%20Dominicana%20y%20necesito%20asesor%C3%ADa%20legal."
               target="_blank"
               className="btn-secondary-legal"
             >

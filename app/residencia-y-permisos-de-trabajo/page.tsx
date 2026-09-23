@@ -85,7 +85,7 @@ export default function ResidenciaYPermisosDeTrabajoPage() {
                 </Link>
 
                 <a
-                  href="https://wa.me/18494603517?text=Hola%2C%20quiero%20tramitar%20mi%20residencia%20en%20Rep%C3%BAblica%20Dominicana%20y%20necesito%20asesor%C3%ADa%20legal."
+                  href="https://wa.me/18295420615?text=Hola%2C%20quiero%20tramitar%20mi%20residencia%20en%20Rep%C3%BAblica%20Dominicana%20y%20necesito%20asesor%C3%ADa%20legal."
                   target="_blank"
                   className="btn-secondary-legal"
                 >
@@ -272,7 +272,7 @@ export default function ResidenciaYPermisosDeTrabajoPage() {
             </Link>
 
             <a
-              href="https://wa.me/18494603517?text=Hola%2C%20quiero%20tramitar%20mi%20residencia%20en%20Rep%C3%BAblica%20Dominicana%20y%20necesito%20asesor%C3%ADa%20legal."
+              href="https://wa.me/18295420615?text=Hola%2C%20quiero%20tramitar%20mi%20residencia%20en%20Rep%C3%BAblica%20Dominicana%20y%20necesito%20asesor%C3%ADa%20legal."
               target="_blank"
               className="btn-secondary-legal"
             >

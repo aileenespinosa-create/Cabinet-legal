@@ -85,7 +85,7 @@ export default function LitigiosInversionistasExtranjerosPage() {
                 </Link>
 
                 <a
-                  href="https://wa.me/18494603517?text=Hola%2C%20soy%20inversionista%20extranjero%20y%20tengo%20una%20disputa%20legal%20en%20Rep%C3%BAblica%20Dominicana."
+                  href="https://wa.me/18295420615?text=Hola%2C%20soy%20inversionista%20extranjero%20y%20tengo%20una%20disputa%20legal%20en%20Rep%C3%BAblica%20Dominicana."
                   target="_blank"
                   className="btn-secondary-legal"
                 >
@@ -268,7 +268,7 @@ export default function LitigiosInversionistasExtranjerosPage() {
             </Link>
 
             <a
-              href="https://wa.me/18494603517?text=Hola%2C%20soy%20inversionista%20extranjero%20y%20tengo%20una%20disputa%20legal%20en%20Rep%C3%BAblica%20Dominicana."
+              href="https://wa.me/18295420615?text=Hola%2C%20soy%20inversionista%20extranjero%20y%20tengo%20una%20disputa%20legal%20en%20Rep%C3%BAblica%20Dominicana."
               target="_blank"
               className="btn-secondary-legal"
             >

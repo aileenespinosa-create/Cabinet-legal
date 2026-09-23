@@ -56,7 +56,7 @@ export default function InvestisseursEtrangersPageFR() {
                 </Link>
 
                 <a
-                  href="https://wa.me/18494603517?text=Bonjour%2C%20je%20suis%20un%20investisseur%20%C3%A9tranger%20et%20je%20souhaite%20obtenir%20un%20accompagnement%20juridique%20pour%20l%27achat%20d%27un%20bien%20immobilier%20en%20R%C3%A9publique%20Dominicaine."
+                  href="https://wa.me/18295420615?text=Bonjour%2C%20je%20suis%20un%20investisseur%20%C3%A9tranger%20et%20je%20souhaite%20obtenir%20un%20accompagnement%20juridique%20pour%20l%27achat%20d%27un%20bien%20immobilier%20en%20R%C3%A9publique%20Dominicaine."
                   target="_blank"
                   className="btn-secondary-legal"
                 >
@@ -259,7 +259,7 @@ export default function InvestisseursEtrangersPageFR() {
             </Link>
 
             <a
-              href="https://wa.me/18494603517?text=Bonjour%2C%20je%20suis%20un%20investisseur%20%C3%A9tranger%20et%20je%20souhaite%20obtenir%20un%20accompagnement%20juridique%20pour%20l%27achat%20d%27un%20bien%20immobilier%20en%20R%C3%A9publique%20Dominicaine."
+              href="https://wa.me/18295420615?text=Bonjour%2C%20je%20suis%20un%20investisseur%20%C3%A9tranger%20et%20je%20souhaite%20obtenir%20un%20accompagnement%20juridique%20pour%20l%27achat%20d%27un%20bien%20immobilier%20en%20R%C3%A9publique%20Dominicaine."
               target="_blank"
               className="btn-secondary-legal"
             >
