@@ -3,12 +3,13 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Consulta legal | Cabinet Legal",
+  title: "Agenda una Consulta Legal en República Dominicana",
   description:
     "Solicita una consulta con Cabinet Legal para evaluar tu caso y definir la mejor estrategia legal en República Dominicana.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/consulta",
     languages: {
+      "x-default": "https://cabinetlegal.com.do/consulta",
       "es-DO": "https://cabinetlegal.com.do/consulta",
       en: "https://cabinetlegal.com.do/en/consulta",
       fr: "https://cabinetlegal.com.do/fr/consulta",
@@ -87,7 +88,7 @@ export default function ConsultaPage() {
               </p>
 
               <a
-                href="https://wa.me/18494603517?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta."
+                href="https://wa.me/18295420615?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-white px-6 py-3 text-sm font-semibold text-[#0f2740]"

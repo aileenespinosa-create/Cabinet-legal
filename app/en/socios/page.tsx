@@ -3,12 +3,13 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Partners | Cabinet Legal",
+  title: "Our Attorneys | Dominican Republic Law Firm",
   description:
     "Meet the partners of Cabinet Legal, a Dominican Republic law firm focused on corporate law, trademarks, intellectual property and litigation.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/en/socios",
     languages: {
+      "x-default": "https://cabinetlegal.com.do/socios",
       "es-DO": "https://cabinetlegal.com.do/socios",
       en: "https://cabinetlegal.com.do/en/socios",
       fr: "https://cabinetlegal.com.do/fr/socios",

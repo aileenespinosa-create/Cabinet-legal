@@ -70,13 +70,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
+    <html lang="es" suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(legalServiceSchema),
+          }}
+        />
+        {/* Corrects the html lang attribute for /en and /fr subtrees so it
+            matches the hreflang tags declared on each page. Runs as an
+            inline blocking script (no dynamic rendering / no proxy needed)
+            so every page keeps static generation. */}
+        <script
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var p=window.location.pathname;var l=p.indexOf('/en')===0?'en':p.indexOf('/fr')===0?'fr':'es';document.documentElement.lang=l;})();`,
           }}
         />
       </head>

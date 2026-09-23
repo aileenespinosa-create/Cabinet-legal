@@ -4,12 +4,13 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Servicios | Cabinet Legal",
+  title: "Servicios Legales: Corporativo, M&A, Litigios y Marcas",
   description:
-    "Servicios legales de Cabinet Legal en República Dominicana: corporativo, litigios, propiedad intelectual y registro de marcas.",
+    "Servicios legales en República Dominicana para inversionistas y empresas: derecho corporativo, fusiones y adquisiciones, litigios, propiedad intelectual y registro de marcas.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/servicios",
     languages: {
+      "x-default": "https://cabinetlegal.com.do/servicios",
       "es-DO": "https://cabinetlegal.com.do/servicios",
       en: "https://cabinetlegal.com.do/en/servicios",
       fr: "https://cabinetlegal.com.do/fr/servicios",
@@ -24,9 +25,33 @@ const services = [
       "Asesoría en estructuración de negocios, contratos, gobierno corporativo y acompañamiento jurídico en decisiones empresariales relevantes.",
   },
   {
+    title: "Fusiones y adquisiciones",
+    description:
+      "Due diligence, estructuración, negociación y cierre de compraventas de empresas para compradores y vendedores, locales y extranjeros.",
+    href: "/fusiones-y-adquisiciones",
+  },
+  {
+    title: "Formación de empresas",
+    description:
+      "Constitución de sociedades para extranjeros y emprendedores: elección entre SRL y SA, registro mercantil, RNC y puesta en marcha.",
+    href: "/formacion-de-empresas",
+  },
+  {
+    title: "Residencia y permisos de trabajo",
+    description:
+      "Residencia por inversión, pensión o vínculo laboral, y regularización migratoria completa ante la Dirección General de Migración.",
+    href: "/residencia-y-permisos-de-trabajo",
+  },
+  {
     title: "Propiedad intelectual",
     description:
       "Protección de marcas, estrategia registral, defensa de activos intangibles y acompañamiento en asuntos de propiedad industrial.",
+  },
+  {
+    title: "Registro de marcas",
+    description:
+      "Evaluación de disponibilidad, clasificación, presentación de solicitudes y seguimiento integral ante ONAPI.",
+    href: "/registro-de-marcas",
   },
   {
     title: "Litigios y disputas",
@@ -34,9 +59,10 @@ const services = [
       "Representación en controversias civiles y comerciales con enfoque estratégico, claridad técnica y ejecución rigurosa.",
   },
   {
-    title: "Registro de marcas",
+    title: "Litigios para inversionistas extranjeros",
     description:
-      "Evaluación de disponibilidad, clasificación, presentación de solicitudes y seguimiento integral ante ONAPI.",
+      "Representación en disputas civiles, comerciales e inmobiliarias para inversionistas extranjeros, incluso sin residir en el país.",
+    href: "/litigios-inversionistas-extranjeros",
   },
 ];
 
@@ -96,12 +122,27 @@ export default function ServiciosPage() {
               </div>
 
               <h2 className="text-2xl font-semibold tracking-tight text-[#0f2740] md:text-3xl">
-                {service.title}
+                {service.href ? (
+                  <Link href={service.href} className="hover:underline">
+                    {service.title}
+                  </Link>
+                ) : (
+                  service.title
+                )}
               </h2>
 
               <p className="mt-4 leading-8 text-[#5f6b76]">
                 {service.description}
               </p>
+
+              {service.href && (
+                <Link
+                  href={service.href}
+                  className="mt-4 inline-block text-sm font-semibold text-[#0f2740] underline underline-offset-4"
+                >
+                  Ver más
+                </Link>
+              )}
             </article>
           ))}
 

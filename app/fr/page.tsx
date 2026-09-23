@@ -4,12 +4,13 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Cabinet Legal | Cabinet d'avocats d'affaires en République Dominicaine",
+  title: "Cabinet d'Avocats en République Dominicaine pour Investisseurs Étrangers",
   description:
-    "Cabinet Legal conseille des entreprises, des investisseurs et des clients privés en droit des affaires, dépôt de marques, propriété intellectuelle et dossiers juridiques à fort enjeu en République Dominicaine.",
+    "Cabinet Legal conseille les investisseurs étrangers, entreprises et clients privés en achat immobilier, droit des affaires, fusions-acquisitions, marques et contentieux en République Dominicaine.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/fr",
     languages: {
+      "x-default": "https://cabinetlegal.com.do",
       "es-DO": "https://cabinetlegal.com.do",
       en: "https://cabinetlegal.com.do/en",
       fr: "https://cabinetlegal.com.do/fr",
@@ -55,7 +56,7 @@ export default function HomePageFR() {
               </Link>
 
               <a
-                href="https://wa.me/18494603517?text=Bonjour%2C%20j%27ai%20visit%C3%A9%20le%20site%20de%20Cabinet%20Legal%20et%20je%20souhaite%20obtenir%20des%20renseignements."
+                href="https://wa.me/18295420615?text=Bonjour%2C%20j%27ai%20visit%C3%A9%20le%20site%20de%20Cabinet%20Legal%20et%20je%20souhaite%20obtenir%20des%20renseignements."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-white px-7 py-3 text-sm font-semibold text-[#0f2740] transition hover:bg-[#f7f4ee]"
@@ -76,8 +77,9 @@ export default function HomePageFR() {
             <div className="relative h-[340px] sm:h-[430px] md:h-[520px]">
               <Image
                 src="/hero-legal.jpg"
-                alt="Cabinet Legal"
+                alt="Avocats de Cabinet Legal conseillant des investisseurs étrangers en République Dominicaine"
                 fill
+                priority
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
@@ -364,7 +366,7 @@ export default function HomePageFR() {
                 Demander une consultation
               </Link>
               <a
-                href="https://wa.me/18494603517?text=Bonjour%2C%20j%27ai%20visit%C3%A9%20le%20site%20de%20Cabinet%20Legal%20et%20je%20souhaite%20obtenir%20des%20renseignements."
+                href="https://wa.me/18295420615?text=Bonjour%2C%20j%27ai%20visit%C3%A9%20le%20site%20de%20Cabinet%20Legal%20et%20je%20souhaite%20obtenir%20des%20renseignements."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-white px-7 py-3 text-sm font-semibold text-[#0f2740] transition hover:bg-[#f7f4ee]"

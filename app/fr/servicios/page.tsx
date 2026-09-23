@@ -4,12 +4,13 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Services | Cabinet Legal",
+  title: "Services Juridiques : Droit des Affaires, M&A, Contentieux et Marques",
   description:
-    "Services juridiques de Cabinet Legal en République Dominicaine : droit des affaires, contentieux, propriété intellectuelle et dépôt de marques.",
+    "Services juridiques en République Dominicaine pour investisseurs étrangers et entreprises : droit des affaires, fusions-acquisitions, contentieux, propriété intellectuelle et dépôt de marques.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/fr/servicios",
     languages: {
+      "x-default": "https://cabinetlegal.com.do/servicios",
       "es-DO": "https://cabinetlegal.com.do/servicios",
       en: "https://cabinetlegal.com.do/en/servicios",
       fr: "https://cabinetlegal.com.do/fr/servicios",

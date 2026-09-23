@@ -3,12 +3,13 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Demander une consultation | Cabinet Legal",
+  title: "Réserver une Consultation Juridique en République Dominicaine",
   description:
     "Demandez une consultation avec Cabinet Legal pour évaluer votre dossier et définir la meilleure stratégie juridique en République Dominicaine.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/fr/consulta",
     languages: {
+      "x-default": "https://cabinetlegal.com.do/consulta",
       "es-DO": "https://cabinetlegal.com.do/consulta",
       en: "https://cabinetlegal.com.do/en/consulta",
       fr: "https://cabinetlegal.com.do/fr/consulta",
@@ -90,7 +91,7 @@ export default function ConsultaPageFR() {
               </p>
 
               <a
-                href="https://wa.me/18494603517?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20une%20consultation."
+                href="https://wa.me/18295420615?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20une%20consultation."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-white px-6 py-3 text-sm font-semibold text-[#0f2740]"

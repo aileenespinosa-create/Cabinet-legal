@@ -4,9 +4,13 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
+  title: "Abogados en República Dominicana para Inversionistas Extranjeros",
+  description:
+    "Cabinet Legal asesora a inversionistas extranjeros, empresas y clientes privados en compra de bienes raíces, derecho corporativo, fusiones y adquisiciones, marcas y litigios en República Dominicana.",
   alternates: {
     canonical: "https://cabinetlegal.com.do",
     languages: {
+      "x-default": "https://cabinetlegal.com.do",
       "es-DO": "https://cabinetlegal.com.do",
       en: "https://cabinetlegal.com.do/en",
       fr: "https://cabinetlegal.com.do/fr",
@@ -50,7 +54,7 @@ export default function HomePage() {
               </Link>
 
               <a
-                href="https://wa.me/18494603517?text=Hola%2C%20visité%20Cabinet%20Legal%20y%20me%20gustaría%20recibir%20orientación."
+                href="https://wa.me/18295420615?text=Hola%2C%20visité%20Cabinet%20Legal%20y%20me%20gustaría%20recibir%20orientación."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-white px-7 py-3 text-sm font-semibold text-[#0f2740] transition hover:bg-[#f7f4ee]"
@@ -71,8 +75,9 @@ export default function HomePage() {
             <div className="relative h-[340px] sm:h-[430px] md:h-[520px]">
               <Image
                 src="/hero-legal.jpg"
-                alt="Cabinet Legal"
+                alt="Abogados de Cabinet Legal asesorando a inversionistas extranjeros en República Dominicana"
                 fill
+                priority
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
@@ -399,7 +404,7 @@ export default function HomePage() {
                 Solicitar consulta
               </Link>
               <a
-                href="https://wa.me/18494603517?text=Hola%2C%20visité%20Cabinet%20Legal%20y%20me%20gustaría%20recibir%20orientación."
+                href="https://wa.me/18295420615?text=Hola%2C%20visité%20Cabinet%20Legal%20y%20me%20gustaría%20recibir%20orientación."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-white px-7 py-3 text-sm font-semibold text-[#0f2740] transition hover:bg-[#f7f4ee]"

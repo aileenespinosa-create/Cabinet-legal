@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Blog legal | Cabinet Legal",
+  title: "Blog Legal: Marcas, Inversión Extranjera y Empresas en RD",
   description:
     "Artículos legales de Cabinet Legal sobre marcas, propiedad intelectual, asuntos corporativos y decisiones jurídicas relevantes en República Dominicana.",
   alternates: {

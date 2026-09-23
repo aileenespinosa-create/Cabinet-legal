@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cómo registrar una marca en República Dominicana (2026) | Cabinet Legal",
+  title: "Cómo Registrar una Marca en República Dominicana (2026)",
   description:
     "Guía legal sobre cómo registrar una marca en República Dominicana ante ONAPI, requisitos, proceso y recomendaciones clave.",
   alternates: {

@@ -4,12 +4,13 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Legal Guidance for Foreign Investors | Cabinet Legal",
+  title: "Real Estate Lawyer for Foreign Buyers in the Dominican Republic",
   description:
-    "Buy real estate in the Dominican Republic with complete legal protection: structuring, contracts, closing and post-purchase protection for foreign investors.",
+    "Buy property in the Dominican Republic with full legal protection: title due diligence, contracts, notarial closing and post-purchase protection for foreign investors.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/en/inversion-extranjera",
     languages: {
+      "x-default": "https://cabinetlegal.com.do/inversion-extranjera",
       "es-DO": "https://cabinetlegal.com.do/inversion-extranjera",
       en: "https://cabinetlegal.com.do/en/inversion-extranjera",
       fr: "https://cabinetlegal.com.do/fr/inversion-extranjera",
@@ -54,7 +55,7 @@ export default function ForeignInvestorsPageEN() {
                 </Link>
 
                 <a
-                  href="https://wa.me/18494603517?text=Hello%2C%20I%27m%20a%20foreign%20investor%20and%20would%20like%20legal%20guidance%20on%20purchasing%20property%20in%20the%20Dominican%20Republic."
+                  href="https://wa.me/18295420615?text=Hello%2C%20I%27m%20a%20foreign%20investor%20and%20would%20like%20legal%20guidance%20on%20purchasing%20property%20in%20the%20Dominican%20Republic."
                   target="_blank"
                   className="btn-secondary-legal"
                 >
@@ -252,7 +253,7 @@ export default function ForeignInvestorsPageEN() {
             </Link>
 
             <a
-              href="https://wa.me/18494603517?text=Hello%2C%20I%27m%20a%20foreign%20investor%20and%20would%20like%20legal%20guidance%20on%20purchasing%20property%20in%20the%20Dominican%20Republic."
+              href="https://wa.me/18295420615?text=Hello%2C%20I%27m%20a%20foreign%20investor%20and%20would%20like%20legal%20guidance%20on%20purchasing%20property%20in%20the%20Dominican%20Republic."
               target="_blank"
               className="btn-secondary-legal"
             >
