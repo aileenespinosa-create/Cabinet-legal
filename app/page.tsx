@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 import GuideBanner from "@/components/GuideBanner";
+import ServicesAccordion from "@/components/ServicesAccordion";
 
 export const metadata: Metadata = {
   title: "Abogados en República Dominicana para Inversionistas Extranjeros",
@@ -111,7 +112,7 @@ export default function HomePage() {
             </div>
             <div>
               <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">
-                9
+                11
               </div>
               <div className="mt-1 text-sm text-[#5f6b76]">
                 Áreas de práctica especializadas
@@ -174,71 +175,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SERVICIOS */}
-      <section className="pb-14 md:pb-24">
-        <div className="mx-auto w-full max-w-[1200px] px-6 lg:px-8">
-          <div className="mb-10 max-w-3xl">
-            <div className="mb-4 text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
-              Servicios clave
-            </div>
-            <h2 className="text-3xl font-light tracking-tight text-[#0f2740] md:text-4xl">
-              Áreas donde podemos ayudarte
-            </h2>
-          </div>
-
-          <div className="grid gap-4 sm:gap-6 md:grid-cols-2 xl:grid-cols-4">
-            <div className="card-legal p-6 md:p-8">
-              <div className="text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
-                Corporativo
-              </div>
-              <h3 className="mt-4 text-xl font-semibold text-[#0f2740]">
-                Derecho corporativo
-              </h3>
-              <p className="mt-4 leading-7 text-[#5f6b76]">
-                Estructuración de negocios, contratos y acompañamiento legal
-                empresarial.
-              </p>
-            </div>
-
-            <div className="card-legal p-6 md:p-8">
-              <div className="text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
-                Marcas
-              </div>
-              <h3 className="mt-4 text-xl font-semibold text-[#0f2740]">
-                Registro de marcas
-              </h3>
-              <p className="mt-4 leading-7 text-[#5f6b76]">
-                Evaluación, estrategia y gestión completa del proceso ante ONAPI.
-              </p>
-            </div>
-
-            <div className="card-legal p-6 md:p-8">
-              <div className="text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
-                Protección
-              </div>
-              <h3 className="mt-4 text-xl font-semibold text-[#0f2740]">
-                Propiedad intelectual
-              </h3>
-              <p className="mt-4 leading-7 text-[#5f6b76]">
-                Protección y defensa de activos intangibles con enfoque
-                estratégico.
-              </p>
-            </div>
-
-            <div className="card-legal p-6 md:p-8">
-              <div className="text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
-                Representación
-              </div>
-              <h3 className="mt-4 text-xl font-semibold text-[#0f2740]">
-                Litigios y disputas
-              </h3>
-              <p className="mt-4 leading-7 text-[#5f6b76]">
-                Manejo de controversias civiles y comerciales con rigor técnico.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ServicesAccordion lang="es" />
 
       {/* REGISTRO DE MARCAS DESTACADO */}
       <section className="pb-14 md:pb-24">

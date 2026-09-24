@@ -1,7 +1,25 @@
 import type { MetadataRoute } from "next";
+import { SERVICES } from "@/lib/services";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const base = "https://cabinetlegal.com.do";
+  const generic = ((["es", "en", "fr"] as const).flatMap((l) =>
+    SERVICES.filter((s) => !s.custom?.[l]).map((s) => ({
+      url: `${base}${l === "es" ? "" : "/" + l}/servicios/${s.slug[l]}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    }))
+  ));
+  const extra = ["/unete", "/en/unete", "/fr/unete", "/privacidad", "/en/privacidad", "/fr/privacidad"].map((u) => ({
+    url: `${base}${u}`,
+    lastModified: new Date(),
+    changeFrequency: "yearly" as const,
+    priority: 0.4,
+  }));
   return [
+    ...generic,
+    ...extra,
     {
       url: "https://cabinetlegal.com.do/guia-inversion",
       lastModified: new Date(),
@@ -154,12 +172,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: "https://cabinetlegal.com.do/residencia-y-permisos-de-trabajo",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: "https://cabinetlegal.com.do/litigios-inversionistas-extranjeros",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

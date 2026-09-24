@@ -3,6 +3,16 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import SiteFooter from "@/components/SiteFooter";
 import Script from "next/script";
 import type { Metadata } from "next";
+import localFont from "next/font/local";
+
+const lora = localFont({
+  src: [
+    { path: "./fonts/Lora-Variable.ttf", style: "normal" },
+    { path: "./fonts/Lora-Italic-Variable.ttf", style: "italic" },
+  ],
+  variable: "--font-lora",
+  display: "swap",
+});
 
 const GA_MEASUREMENT_ID = "G-ZT4997QF5S";
 
@@ -70,7 +80,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning className={lora.variable}>
       <head>
         <script
           type="application/ld+json"

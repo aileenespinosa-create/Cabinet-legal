@@ -97,7 +97,7 @@ export default function FirmaPage() {
             </div>
             <div>
               <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">
-                9
+                11
               </div>
               <div className="mt-1 text-sm text-[#5f6b76]">
                 Áreas de práctica especializadas
