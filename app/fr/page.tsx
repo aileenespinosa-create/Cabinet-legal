@@ -59,7 +59,7 @@ export default function HomePageFR() {
                 href="https://wa.me/18295420615?text=Bonjour%2C%20j%27ai%20visit%C3%A9%20le%20site%20de%20Cabinet%20Legal%20et%20je%20souhaite%20obtenir%20des%20renseignements."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-white px-7 py-3 text-sm font-semibold text-[#0f2740] transition hover:bg-[#f7f4ee]"
+                className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-transparent px-7 py-3 text-sm font-medium text-[#5f6b76] transition hover:border-[#c8a46a] hover:bg-white hover:text-[#0f2740]"
               >
                 Nous écrire sur WhatsApp
               </a>
@@ -238,7 +238,7 @@ export default function HomePageFR() {
                 </Link>
                 <Link
                   href="/fr/consulta"
-                  className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-white px-7 py-3 text-sm font-semibold text-[#0f2740] transition hover:bg-[#f7f4ee]"
+                  className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-transparent px-7 py-3 text-sm font-medium text-[#5f6b76] transition hover:border-[#c8a46a] hover:bg-white hover:text-[#0f2740]"
                 >
                   Demander une évaluation
                 </Link>
@@ -285,7 +285,7 @@ export default function HomePageFR() {
                 </Link>
                 <Link
                   href="/fr/consulta"
-                  className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-white px-7 py-3 text-sm font-semibold text-[#0f2740] transition hover:bg-[#f7f4ee]"
+                  className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-transparent px-7 py-3 text-sm font-medium text-[#5f6b76] transition hover:border-[#c8a46a] hover:bg-white hover:text-[#0f2740]"
                 >
                   Demander une consultation
                 </Link>
@@ -369,7 +369,7 @@ export default function HomePageFR() {
                 href="https://wa.me/18295420615?text=Bonjour%2C%20j%27ai%20visit%C3%A9%20le%20site%20de%20Cabinet%20Legal%20et%20je%20souhaite%20obtenir%20des%20renseignements."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-white px-7 py-3 text-sm font-semibold text-[#0f2740] transition hover:bg-[#f7f4ee]"
+                className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-transparent px-7 py-3 text-sm font-medium text-[#5f6b76] transition hover:border-[#c8a46a] hover:bg-white hover:text-[#0f2740]"
               >
                 Nous écrire sur WhatsApp
               </a>

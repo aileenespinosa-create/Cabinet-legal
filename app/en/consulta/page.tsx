@@ -187,10 +187,15 @@ export default function ConsultaPageEN() {
                   defaultValue="Select an option"
                 >
                   <option disabled>Select an option</option>
+                  <option>Foreign investment / real estate</option>
+                  <option>Mergers &amp; acquisitions</option>
+                  <option>Company formation</option>
+                  <option>Residency &amp; work permits</option>
                   <option>Trademark registration</option>
                   <option>Corporate law</option>
                   <option>Intellectual property</option>
                   <option>Litigation</option>
+                  <option>Litigation for foreign investors</option>
                   <option>Other</option>
                 </select>
               </div>
@@ -215,6 +220,10 @@ export default function ConsultaPageEN() {
               >
                 Send request
               </button>
+
+              <p className="text-center text-xs text-[#8a9099]">
+                We respond within 24 business hours.
+              </p>
             </form>
           </div>
         </div>

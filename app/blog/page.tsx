@@ -14,6 +14,27 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    href: "/blog/comprar-propiedad-republica-dominicana-extranjero",
+    title: "Cómo comprar propiedad en República Dominicana siendo extranjero",
+    description:
+      "Requisitos, due diligence de título, cierre notarial y errores que debes evitar antes de firmar.",
+    image: "/blog-legal.jpg",
+  },
+  {
+    href: "/blog/residencia-por-inversion-republica-dominicana",
+    title: "Residencia por inversión en República Dominicana: guía 2026",
+    description:
+      "Las tres vías más comunes para obtener la residencia, tiempos realistas y documentos que suelen generar demoras.",
+    image: "/blog-legal.jpg",
+  },
+  {
+    href: "/blog/abrir-empresa-republica-dominicana-extranjero",
+    title: "Cómo abrir una empresa en República Dominicana siendo extranjero",
+    description:
+      "SRL o SA, el proceso paso a paso, y los errores que encarecen la sociedad después de constituida.",
+    image: "/blog-legal.jpg",
+  },
+  {
     href: "/blog/como-registrar-una-marca-republica-dominicana",
     title: "Cómo registrar una marca en República Dominicana (2026)",
     description:

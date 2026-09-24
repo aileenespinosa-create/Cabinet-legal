@@ -60,18 +60,62 @@ export default function FirmaPage() {
           <div className="card-legal p-6 md:p-10">
             <div className="space-y-5 text-base leading-7 text-[#5f6b76] md:text-lg md:leading-8">
               <p>
-                Cabinet Legal es una firma legal independiente en República Dominicana,
-                orientada a ofrecer asesoría de alto nivel a empresas, inversionistas y
-                clientes privados.
+                Cabinet Legal es una firma legal independiente en Santo Domingo,
+                República Dominicana, fundada en 2009. Asesoramos a empresas,
+                inversionistas extranjeros y clientes privados en compras de
+                bienes raíces, estructuración societaria, fusiones y
+                adquisiciones, registro de marcas y litigios de alto impacto.
               </p>
               <p>
-                Nuestra práctica combina derecho, estrategia y operación para acompañar
-                decisiones empresariales relevantes con una visión clara, moderna y precisa.
+                Atendemos en español, inglés y francés, lo que nos permite
+                acompañar directamente a clientes que compran, invierten o
+                litigan en República Dominicana sin residir en el país.
               </p>
               <p>
-                Trabajamos con atención directa de socios, comunicación impecable y un
-                estándar de ejecución riguroso en cada asunto.
+                Quien lleva tu caso es un socio, no un equipo júnior
+                intermedio: hablas directamente con Aileen Espinosa o Ellis
+                Beato desde la primera consulta hasta el cierre del asunto.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CIFRAS */}
+      <section className="pb-12 md:pb-20">
+        <div className="container-legal">
+          <div className="grid grid-cols-2 gap-6 border-y border-[#e6dece] py-8 md:grid-cols-4 md:py-10">
+            <div>
+              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">
+                2009
+              </div>
+              <div className="mt-1 text-sm text-[#5f6b76]">
+                Año de fundación
+              </div>
+            </div>
+            <div>
+              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">
+                9
+              </div>
+              <div className="mt-1 text-sm text-[#5f6b76]">
+                Áreas de práctica especializadas
+              </div>
+            </div>
+            <div>
+              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">
+                3
+              </div>
+              <div className="mt-1 text-sm text-[#5f6b76]">
+                Idiomas de atención: español, inglés y francés
+              </div>
+            </div>
+            <div>
+              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">
+                2
+              </div>
+              <div className="mt-1 text-sm text-[#5f6b76]">
+                Socios, atención directa en cada caso
+              </div>
             </div>
           </div>
         </div>
@@ -85,8 +129,9 @@ export default function FirmaPage() {
               Cercanía estratégica
             </h3>
             <p className="mt-4 text-sm leading-7 text-[#5f6b76] md:text-base md:leading-8">
-              Acompañamos a nuestros clientes con una visión práctica y jurídica alineada
-              con sus objetivos reales.
+              Antes de recomendar una vía legal, entendemos qué necesitas
+              lograr como negocio o como inversionista, no solo qué documento
+              hace falta firmar.
             </p>
           </div>
 
@@ -96,8 +141,9 @@ export default function FirmaPage() {
               Precisión técnica
             </h3>
             <p className="mt-4 text-sm leading-7 text-[#5f6b76] md:text-base md:leading-8">
-              Analizamos cada caso con profundidad para construir soluciones claras,
-              seguras y sostenibles.
+              Revisamos cada caso a fondo — título, contrato, estructura
+              societaria o expediente migratorio — antes de actuar, para
+              evitar sorpresas después de firmado.
             </p>
           </div>
 
@@ -107,8 +153,9 @@ export default function FirmaPage() {
               Ejecución rigurosa
             </h3>
             <p className="mt-4 text-sm leading-7 text-[#5f6b76] md:text-base md:leading-8">
-              Priorizamos orden, seguimiento y excelencia en la implementación de cada
-              estrategia legal.
+              Damos seguimiento activo a cada expediente ante la institución
+              correspondiente (ONAPI, Migración, Registro de Títulos) hasta
+              su cierre, no solo hasta la presentación.
             </p>
           </div>
         </div>

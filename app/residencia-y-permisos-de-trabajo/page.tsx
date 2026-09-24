@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
+import FaqAccordion from "@/components/FaqAccordion";
+import { buildFaqSchema } from "@/components/faqSchema";
 
 export const metadata: Metadata = {
   title: "Abogados de Residencia y Permisos de Trabajo en República Dominicana",
@@ -12,36 +14,26 @@ export const metadata: Metadata = {
   },
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "¿Cómo puede un extranjero obtener la residencia en República Dominicana?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Las vías más comunes son la residencia por inversión (real estate, negocio o cuenta a plazo), la residencia por pensión o renta para jubilados y rentistas, y la residencia derivada de un vínculo laboral, familiar o matrimonial con un residente o nacional dominicano. Cada vía tiene requisitos y tiempos distintos.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Cuánto tiempo toma obtener la residencia dominicana?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Con el expediente completo, el proceso de residencia provisional suele tomar entre tres y seis meses. La residencia definitiva se solicita después de haber mantenido la residencia provisional durante el período que exige la ley, según la categoría migratoria.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Necesito un permiso de trabajo distinto a la residencia para trabajar en República Dominicana?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "La residencia legal es el requisito habilitante para trabajar o ser socio de una empresa en República Dominicana. Adicionalmente, el empleador debe cumplir con los registros laborales correspondientes ante el Ministerio de Trabajo para formalizar la contratación del extranjero.",
-      },
-    },
-  ],
-};
+const faqs = [
+  {
+    question: "¿Cómo puede un extranjero obtener la residencia en República Dominicana?",
+    answer:
+      "Las vías más comunes son la residencia por inversión (real estate, negocio o cuenta a plazo), la residencia por pensión o renta para jubilados y rentistas, y la residencia derivada de un vínculo laboral, familiar o matrimonial con un residente o nacional dominicano. Cada vía tiene requisitos y tiempos distintos.",
+  },
+  {
+    question: "¿Cuánto tiempo toma obtener la residencia dominicana?",
+    answer:
+      "Con el expediente completo, el proceso de residencia provisional suele tomar entre tres y seis meses. La residencia definitiva se solicita después de haber mantenido la residencia provisional durante el período que exige la ley, según la categoría migratoria.",
+  },
+  {
+    question:
+      "¿Necesito un permiso de trabajo distinto a la residencia para trabajar en República Dominicana?",
+    answer:
+      "La residencia legal es el requisito habilitante para trabajar o ser socio de una empresa en República Dominicana. Adicionalmente, el empleador debe cumplir con los registros laborales correspondientes ante el Ministerio de Trabajo para formalizar la contratación del extranjero.",
+  },
+];
+
+const faqSchema = buildFaqSchema(faqs);
 
 export default function ResidenciaYPermisosDeTrabajoPage() {
   return (
@@ -253,6 +245,8 @@ export default function ResidenciaYPermisosDeTrabajoPage() {
           </div>
         </div>
       </section>
+
+      <FaqAccordion faqs={faqs} />
 
       {/* CTA FINAL */}
       <section className="pb-16 md:pb-20">

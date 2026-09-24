@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
+import FaqAccordion from "@/components/FaqAccordion";
+import { buildFaqSchema } from "@/components/faqSchema";
 
 export const metadata: Metadata = {
   title: "Litigios para Inversionistas Extranjeros en República Dominicana",
@@ -12,36 +14,26 @@ export const metadata: Metadata = {
   },
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "¿Puede un extranjero demandar y ser demandado en los tribunales dominicanos?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Sí. Los tribunales dominicanos son competentes para conocer de litigios que involucren a partes extranjeras cuando el objeto de la disputa, el domicilio de la contraparte o el bien en controversia se encuentran en territorio dominicano. Un extranjero no residente puede litigar mediante apoderado especial, sin necesidad de estar presente en el país durante todo el proceso.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Qué opciones tiene un inversionista extranjero frente a un incumplimiento contractual en República Dominicana?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Puede iniciar una demanda civil o comercial ante los tribunales ordinarios, o recurrir al arbitraje si el contrato contiene una cláusula arbitral. La vía adecuada depende de lo pactado en el contrato, del monto en disputa y de la urgencia de la medida buscada.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Cuánto tiempo toma resolver un litigio comercial en República Dominicana?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Varía según la jurisdicción, la complejidad del caso y si hay medidas cautelares o recursos de por medio. Un proceso civil o comercial en primera instancia puede tomar entre varios meses y más de un año; el arbitraje suele ser más rápido cuando ambas partes lo eligieron como vía de resolución.",
-      },
-    },
-  ],
-};
+const faqs = [
+  {
+    question: "¿Puede un extranjero demandar y ser demandado en los tribunales dominicanos?",
+    answer:
+      "Sí. Los tribunales dominicanos son competentes para conocer de litigios que involucren a partes extranjeras cuando el objeto de la disputa, el domicilio de la contraparte o el bien en controversia se encuentran en territorio dominicano. Un extranjero no residente puede litigar mediante apoderado especial, sin necesidad de estar presente en el país durante todo el proceso.",
+  },
+  {
+    question:
+      "¿Qué opciones tiene un inversionista extranjero frente a un incumplimiento contractual en República Dominicana?",
+    answer:
+      "Puede iniciar una demanda civil o comercial ante los tribunales ordinarios, o recurrir al arbitraje si el contrato contiene una cláusula arbitral. La vía adecuada depende de lo pactado en el contrato, del monto en disputa y de la urgencia de la medida buscada.",
+  },
+  {
+    question: "¿Cuánto tiempo toma resolver un litigio comercial en República Dominicana?",
+    answer:
+      "Varía según la jurisdicción, la complejidad del caso y si hay medidas cautelares o recursos de por medio. Un proceso civil o comercial en primera instancia puede tomar entre varios meses y más de un año; el arbitraje suele ser más rápido cuando ambas partes lo eligieron como vía de resolución.",
+  },
+];
+
+const faqSchema = buildFaqSchema(faqs);
 
 export default function LitigiosInversionistasExtranjerosPage() {
   return (
@@ -248,6 +240,8 @@ export default function LitigiosInversionistasExtranjerosPage() {
           </div>
         </div>
       </section>
+
+      <FaqAccordion faqs={faqs} />
 
       {/* CTA FINAL */}
       <section className="pb-16 md:pb-20">

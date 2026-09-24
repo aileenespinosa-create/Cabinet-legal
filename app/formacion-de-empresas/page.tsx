@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
+import FaqAccordion from "@/components/FaqAccordion";
+import { buildFaqSchema } from "@/components/faqSchema";
 
 export const metadata: Metadata = {
   title: "Formación de Empresas en República Dominicana para Extranjeros",
@@ -12,36 +14,25 @@ export const metadata: Metadata = {
   },
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "¿Puedo abrir una empresa en República Dominicana sin ser residente?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Sí. No se requiere residencia ni nacionalidad dominicana para constituir una sociedad ni para ser socio o accionista de una empresa dominicana. El trámite puede iniciarse con poder desde el extranjero.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Cuál es la diferencia entre una SRL y una SA en República Dominicana?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "La SRL (Sociedad de Responsabilidad Limitada) exige un mínimo de dos socios y un capital social menor, con una estructura de gestión más simple, adecuada para PYMES y negocios familiares. La SA (Sociedad Anónima) exige un mínimo de dos accionistas y un consejo de administración, y es la forma habitual para empresas de mayor tamaño, con planes de levantar capital o admitir múltiples inversionistas.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Cuánto tiempo toma constituir una empresa en República Dominicana?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Con la documentación en regla, el proceso de constitución y registro mercantil suele tomar entre dos y cuatro semanas, sin contar el tiempo de apertura de cuenta bancaria, que depende de cada entidad financiera.",
-      },
-    },
-  ],
-};
+const faqs = [
+  {
+    question: "¿Puedo abrir una empresa en República Dominicana sin ser residente?",
+    answer:
+      "Sí. No se requiere residencia ni nacionalidad dominicana para constituir una sociedad ni para ser socio o accionista de una empresa dominicana. El trámite puede iniciarse con poder desde el extranjero.",
+  },
+  {
+    question: "¿Cuál es la diferencia entre una SRL y una SA en República Dominicana?",
+    answer:
+      "La SRL (Sociedad de Responsabilidad Limitada) exige un mínimo de dos socios y un capital social menor, con una estructura de gestión más simple, adecuada para PYMES y negocios familiares. La SA (Sociedad Anónima) exige un mínimo de dos accionistas y un consejo de administración, y es la forma habitual para empresas de mayor tamaño, con planes de levantar capital o admitir múltiples inversionistas.",
+  },
+  {
+    question: "¿Cuánto tiempo toma constituir una empresa en República Dominicana?",
+    answer:
+      "Con la documentación en regla, el proceso de constitución y registro mercantil suele tomar entre dos y cuatro semanas, sin contar el tiempo de apertura de cuenta bancaria, que depende de cada entidad financiera.",
+  },
+];
+
+const faqSchema = buildFaqSchema(faqs);
 
 export default function FormacionDeEmpresasPage() {
   return (
@@ -251,6 +242,8 @@ export default function FormacionDeEmpresasPage() {
           </div>
         </div>
       </section>
+
+      <FaqAccordion faqs={faqs} />
 
       {/* CTA FINAL */}
       <section className="pb-16 md:pb-20">

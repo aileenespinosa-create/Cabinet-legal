@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
+import FaqAccordion from "@/components/FaqAccordion";
+import { buildFaqSchema } from "@/components/faqSchema";
 
 export const metadata: Metadata = {
   title: "Abogado para Comprar Bienes Raíces en República Dominicana",
@@ -18,36 +20,31 @@ export const metadata: Metadata = {
   },
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "¿Necesito ser residente dominicano para comprar propiedad en República Dominicana?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "No. La Ley 16-95 de Inversión Extranjera otorga a la inversión extranjera el mismo tratamiento que a la inversión nacional. Un extranjero no residente puede comprar, poseer y vender bienes inmuebles en República Dominicana en las mismas condiciones que un dominicano, sin necesidad de residencia ni de un socio local.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Qué es el CONFOTUR y cuándo aplica a una inversión inmobiliaria?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "El CONFOTUR (Consejo de Fomento Turístico) administra incentivos fiscales para proyectos turísticos e inmobiliarios en polos designados por la Ley 158-01. Un proyecto o unidad con clasificación CONFOTUR puede beneficiarse de exención del impuesto de transferencia inmobiliaria (3%) y del IPI (impuesto anual sobre la propiedad) durante el período que otorga el decreto, siempre que el desarrollador haya obtenido la aprobación correspondiente.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Qué verifica exactamente la due diligence de título antes de comprar?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Confirma que el vendedor es el titular registrado ante la Jurisdicción Inmobiliaria, que el inmueble está libre de hipotecas, embargos, oposiciones o litis pendientes, que los linderos y la cabida coinciden con el certificado de título, y que no existen afectaciones (como declaratorias de utilidad pública o restricciones ambientales y costeras) que limiten el uso previsto de la propiedad.",
-      },
-    },
-  ],
-};
+const faqs = [
+  {
+    question:
+      "¿Necesito ser residente dominicano para comprar propiedad en República Dominicana?",
+    answer:
+      "No. La Ley 16-95 de Inversión Extranjera otorga a la inversión extranjera el mismo tratamiento que a la inversión nacional. Un extranjero no residente puede comprar, poseer y vender bienes inmuebles en República Dominicana en las mismas condiciones que un dominicano, sin necesidad de residencia ni de un socio local.",
+  },
+  {
+    question: "¿Qué es el CONFOTUR y cuándo aplica a una inversión inmobiliaria?",
+    answer:
+      "El CONFOTUR (Consejo de Fomento Turístico) administra incentivos fiscales para proyectos turísticos e inmobiliarios en polos designados por la Ley 158-01. Un proyecto o unidad con clasificación CONFOTUR puede beneficiarse de exención del impuesto de transferencia inmobiliaria (3%) y del IPI (impuesto anual sobre la propiedad) durante el período que otorga el decreto, siempre que el desarrollador haya obtenido la aprobación correspondiente.",
+  },
+  {
+    question: "¿Qué verifica exactamente la due diligence de título antes de comprar?",
+    answer:
+      "Confirma que el vendedor es el titular registrado ante la Jurisdicción Inmobiliaria, que el inmueble está libre de hipotecas, embargos, oposiciones o litis pendientes, que los linderos y la cabida coinciden con el certificado de título, y que no existen afectaciones (como declaratorias de utilidad pública o restricciones ambientales y costeras) que limiten el uso previsto de la propiedad.",
+  },
+  {
+    question: "¿Puedo comprar una propiedad en República Dominicana sin viajar al país?",
+    answer:
+      "Sí. La compra puede formalizarse mediante un poder especial otorgado a tu abogado, quien te representa en el proceso de due diligence, la firma del contrato y el cierre notarial. Te mantenemos informado en cada etapa sin que tengas que estar presente físicamente en el país.",
+  },
+];
+
+const faqSchema = buildFaqSchema(faqs);
 
 export default function InversionExtranjeraPage() {
   return (
@@ -369,6 +366,8 @@ export default function InversionExtranjeraPage() {
           </div>
         </div>
       </section>
+
+      <FaqAccordion faqs={faqs} />
 
       {/* CTA FINAL */}
       <section className="pb-16 md:pb-20">
