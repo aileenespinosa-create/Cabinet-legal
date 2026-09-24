@@ -15,7 +15,7 @@ const NAV: Record<Lang, NavItem[]> = {
     { href: "/inversion-extranjera", label: "Inversión extranjera" },
     { href: "/socios", label: "Equipo" },
     { href: "/blog", label: "Publicaciones" },
-    { href: "/unete", label: "Únete" },
+    { href: "/unete", label: "Carreras" },
   ],
   en: [
     { href: "/en/firma", label: "The Firm" },
@@ -36,7 +36,7 @@ const NAV: Record<Lang, NavItem[]> = {
 };
 
 const UI: Record<Lang, { consult: string; consultHref: string; allAreas: string; notSure: string; notSureText: string; menu: string }> = {
-  es: { consult: "Consulta", consultHref: "/consulta", allAreas: "Ver todas las áreas", notSure: "¿No sabes qué área necesitas?", notSureText: "Cuéntanos tu caso y un socio te orienta.", menu: "Abrir menú" },
+  es: { consult: "Consulta", consultHref: "/consulta", allAreas: "Ver todas las áreas", notSure: "¿No sabe qué área necesita?", notSureText: "Cuéntenos su caso y un socio le orientará.", menu: "Abrir menú" },
   en: { consult: "Consultation", consultHref: "/en/consulta", allAreas: "See all areas", notSure: "Not sure which area you need?", notSureText: "Tell us about your matter and a partner will guide you.", menu: "Open menu" },
   fr: { consult: "Consultation", consultHref: "/fr/consulta", allAreas: "Voir tous les domaines", notSure: "Vous ne savez pas quel domaine choisir ?", notSureText: "Expliquez-nous votre dossier, un associé vous oriente.", menu: "Ouvrir le menu" },
 };

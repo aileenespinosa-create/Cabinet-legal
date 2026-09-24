@@ -6,9 +6,9 @@ import FaqAccordion from "@/components/FaqAccordion";
 import { buildFaqSchema } from "@/components/faqSchema";
 
 export const metadata: Metadata = {
-  title: "Registro de Marcas en República Dominicana ante ONAPI",
+  title: "Registro de marca en República Dominicana ante ONAPI",
   description:
-    "Protege tu marca en República Dominicana con asesoría legal estratégica. Evaluamos disponibilidad, registramos y damos seguimiento completo ante ONAPI.",
+    "Registro de marca en República Dominicana ante ONAPI: búsqueda de antecedentes, solicitud, oposiciones y renovación conforme a la Ley 20-00. Consúltenos.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/registro-de-marcas",
   },
@@ -18,7 +18,7 @@ const faqs = [
   {
     question: "¿Cuánto cuesta registrar una marca en República Dominicana?",
     answer:
-      "El costo varía dependiendo del tipo de marca, la cantidad de clases y la estructura de la solicitud. Cada caso debe evaluarse individualmente para dar un presupuesto preciso.",
+      "El costo depende del tipo de marca (denominativa, figurativa o mixta), de la cantidad de clases de la Clasificación de Niza que deba cubrir y de las tasas vigentes de ONAPI. Evaluamos cada caso de forma individual para ofrecerle un presupuesto preciso.",
   },
   {
     question: "¿Cuánto tiempo toma el registro de una marca ante ONAPI?",
@@ -26,9 +26,9 @@ const faqs = [
       "Con una solicitud bien preparada y sin oposiciones de terceros, el proceso ante ONAPI suele tomar entre 6 y 10 meses desde la presentación hasta la emisión del certificado. Una oposición o una observación de forma puede extender ese plazo.",
   },
   {
-    question: "¿Qué pasa si no registro mi marca?",
+    question: "¿Qué ocurre si no registro mi marca?",
     answer:
-      "Sin registro, no tienes derecho exclusivo sobre el nombre o el logo frente a terceros, y cualquier competidor puede registrar una marca igual o similar primero, obligándote a cambiar tu identidad comercial o a litigar para defenderla.",
+      "Conforme a la Ley 20-00 sobre Propiedad Industrial, el derecho exclusivo sobre una marca se adquiere con su registro ante ONAPI. Sin registro, un tercero puede inscribir antes una marca igual o similar y obligarle a usted a cambiar su identidad comercial o a litigar para defenderla.",
   },
 ];
 
@@ -47,25 +47,26 @@ export default function RegistroDeMarcasPage() {
       {/* HERO */}
       <section className="container-legal py-10 md:py-20">
         <div className="card-legal overflow-hidden">
-          <div className="relative h-[220px] sm:h-[280px] md:h-[380px]">
+          <div className="relative flex min-h-[340px] items-end sm:min-h-[280px] md:min-h-[380px]">
             <Image
               src="/hero-legal.jpg"
-              alt="Registro de marcas en República Dominicana"
+              alt="Registro de marca en República Dominicana ante ONAPI"
               fill
               className="object-cover"
             />
             <div className="hero-image-overlay absolute inset-0" />
 
-            <div className="absolute inset-x-0 bottom-0 p-5 md:p-10">
+            <div className="relative z-10 w-full p-5 md:p-10">
               <div className="eyebrow text-white/80">Cabinet Legal</div>
 
               <h1 className="mt-2 text-3xl font-semibold text-white sm:text-4xl md:text-5xl">
-                Registra tu marca correctamente desde el inicio
+                Registro de marca en República Dominicana ante ONAPI
               </h1>
 
               <p className="mt-3 max-w-2xl text-sm text-white/90 md:text-lg">
-                Evita rechazos, conflictos legales y pérdida de derechos. Te
-                acompañamos en todo el proceso ante ONAPI con estrategia y precisión.
+                Evite rechazos, oposiciones y pérdida de derechos. Le
+                asistimos en todo el procedimiento ante ONAPI, desde la
+                búsqueda de antecedentes hasta la emisión del certificado.
               </p>
 
               <div className="mt-5 flex flex-col gap-3 sm:flex-row">
@@ -93,26 +94,27 @@ export default function RegistroDeMarcasPage() {
             <div className="eyebrow">Problema común</div>
 
             <h2 className="mt-4 text-3xl font-semibold text-[#0f2740]">
-              Muchas marcas son rechazadas o mal registradas.
+              Muchas solicitudes de marca son rechazadas u objetadas.
             </h2>
 
             <p className="mt-4 text-[#5f6b76] leading-7">
-              Elegir mal la clase, no evaluar disponibilidad o presentar una
-              solicitud incorrecta puede hacer que pierdas tiempo, dinero y
-              derechos sobre tu marca.
+              Elegir mal la clase, no verificar antecedentes o presentar una
+              solicitud defectuosa puede costarle tiempo, dinero y derechos
+              sobre su marca.
             </p>
           </div>
 
           <div className="card-legal p-6 md:p-10">
-            <div className="eyebrow">Nuestra solución</div>
+            <div className="eyebrow">Nuestro trabajo</div>
 
             <h2 className="mt-4 text-3xl font-semibold text-[#0f2740]">
-              Registro estratégico, no solo trámite.
+              Un registro bien fundamentado, no un simple trámite.
             </h2>
 
             <p className="mt-4 text-[#5f6b76] leading-7">
-              En Cabinet Legal analizamos tu marca, tu negocio y tu proyección
-              antes de presentar la solicitud, para protegerte correctamente desde el inicio.
+              En Cabinet Legal analizamos su marca, su actividad comercial y
+              sus planes de expansión antes de presentar la solicitud, para
+              que la protección cubra lo que usted realmente necesita.
             </p>
           </div>
         </div>
@@ -125,15 +127,17 @@ export default function RegistroDeMarcasPage() {
             <div className="eyebrow">Paso 1</div>
             <h3 className="mt-3 text-xl font-semibold">Evaluación</h3>
             <p className="mt-3 text-sm text-[#5f6b76]">
-              Revisamos disponibilidad y viabilidad legal de tu marca.
+              Realizamos la búsqueda de antecedentes y evaluamos la
+              registrabilidad de su marca.
             </p>
           </div>
 
           <div className="card-legal p-6">
             <div className="eyebrow">Paso 2</div>
-            <h3 className="mt-3 text-xl font-semibold">Estrategia</h3>
+            <h3 className="mt-3 text-xl font-semibold">Solicitud</h3>
             <p className="mt-3 text-sm text-[#5f6b76]">
-              Definimos clases y estructura correcta de la solicitud.
+              Definimos las clases de la Clasificación de Niza y la
+              estructura adecuada de la solicitud.
             </p>
           </div>
 
@@ -141,7 +145,8 @@ export default function RegistroDeMarcasPage() {
             <div className="eyebrow">Paso 3</div>
             <h3 className="mt-3 text-xl font-semibold">Gestión completa</h3>
             <p className="mt-3 text-sm text-[#5f6b76]">
-              Presentamos y damos seguimiento ante ONAPI.
+              Presentamos la solicitud, damos seguimiento ante ONAPI y
+              atendemos observaciones u oposiciones de terceros.
             </p>
           </div>
         </div>
@@ -157,9 +162,9 @@ export default function RegistroDeMarcasPage() {
           </h2>
 
           <p className="mt-4 text-[#5f6b76] leading-7 max-w-2xl">
-            El costo varía dependiendo del tipo de marca, la cantidad de clases
-            y la estructura de la solicitud. Por eso, cada caso debe evaluarse
-            individualmente para darte un presupuesto preciso.
+            El costo depende del tipo de marca, de la cantidad de clases y de
+            la estructura de la solicitud. Por eso evaluamos cada caso de
+            forma individual para ofrecerle un presupuesto preciso.
           </p>
 
           <div className="mt-6">
@@ -176,12 +181,12 @@ export default function RegistroDeMarcasPage() {
       <section className="pb-16 md:pb-20">
         <div className="container-legal card-legal p-6 md:p-12">
           <h2 className="text-3xl font-semibold text-[#0f2740]">
-            Protege tu marca antes de que sea tarde
+            Proteja su marca antes de que otro la registre
           </h2>
 
           <p className="mt-4 text-[#5f6b76] max-w-2xl">
-            Mientras más esperas, más riesgo existe de conflictos o de que otra
-            persona registre una marca similar.
+            Mientras más espere, mayor es el riesgo de conflictos o de que un
+            tercero registre una marca similar a la suya.
           </p>
 
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">

@@ -4,18 +4,18 @@ import type { Metadata } from "next";
 import GuideBanner from "@/components/GuideBanner";
 
 export const metadata: Metadata = {
-  title: "Cómo Abrir una Empresa en República Dominicana Siendo Extranjero",
+  title: "Abrir una empresa en República Dominicana siendo extranjero",
   description:
-    "Guía para constituir una empresa en República Dominicana desde el extranjero: SRL vs SA, registro mercantil, RNC y tiempos reales del proceso.",
+    "Abrir una empresa en República Dominicana siendo extranjero: le explicamos cómo elegir entre SRL y SA, el registro mercantil, el RNC y los plazos reales.",
   alternates: {
     canonical:
       "https://cabinetlegal.com.do/blog/abrir-empresa-republica-dominicana-extranjero",
   },
   openGraph: {
     title:
-      "Cómo abrir una empresa en República Dominicana siendo extranjero | Cabinet Legal",
+      "Abrir una empresa en República Dominicana siendo extranjero | Cabinet Legal",
     description:
-      "Guía para constituir una empresa en República Dominicana desde el extranjero: SRL vs SA, registro mercantil, RNC y tiempos reales del proceso.",
+      "Abrir una empresa en República Dominicana siendo extranjero: le explicamos cómo elegir entre SRL y SA, el registro mercantil, el RNC y los plazos reales.",
     url: "https://cabinetlegal.com.do/blog/abrir-empresa-republica-dominicana-extranjero",
     siteName: "Cabinet Legal",
     images: [
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Cómo abrir una empresa en República Dominicana siendo extranjero | Cabinet Legal",
+      "Abrir una empresa en República Dominicana siendo extranjero | Cabinet Legal",
     description:
-      "Guía para constituir una empresa en República Dominicana desde el extranjero: SRL vs SA, registro mercantil, RNC y tiempos reales del proceso.",
+      "Abrir una empresa en República Dominicana siendo extranjero: le explicamos cómo elegir entre SRL y SA, el registro mercantil, el RNC y los plazos reales.",
     images: ["https://cabinetlegal.com.do/blog-legal.jpg"],
   },
 };
@@ -48,7 +48,7 @@ const faqSchema = {
       name: "¿Puedo constituir una empresa en República Dominicana sin viajar al país?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Sí, el trámite puede iniciarse con poder desde el extranjero. No se requiere residencia ni nacionalidad dominicana para ser socio o accionista.",
+        text: "Sí, el trámite puede iniciarse mediante poder otorgado desde el extranjero. No se requiere residencia ni nacionalidad dominicana para ser socio o accionista.",
       },
     },
     {
@@ -56,7 +56,7 @@ const faqSchema = {
       name: "¿Debo elegir SRL o SA para mi empresa en República Dominicana?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "La SRL es la opción más simple y habitual para negocios pequeños y medianos; la SA es la forma recomendada para empresas de mayor tamaño o con planes de admitir múltiples inversionistas.",
+        text: "La SRL es la opción más sencilla y habitual para negocios pequeños y medianos; la SA es la forma recomendada para empresas de mayor tamaño o que proyectan admitir múltiples inversionistas.",
       },
     },
   ],
@@ -72,7 +72,7 @@ export default function Article() {
       />
       <article className="container-legal py-16 md:py-20">
         <div className="card-legal overflow-hidden">
-          <div className="relative h-[280px] md:h-[360px]">
+          <div className="relative flex min-h-[340px] items-end md:min-h-[360px]">
             <Image
               src="/hero-legal.jpg"
               alt="Abrir una empresa en República Dominicana siendo extranjero"
@@ -80,7 +80,7 @@ export default function Article() {
               className="object-cover"
             />
             <div className="hero-image-overlay absolute inset-0" />
-            <div className="absolute inset-x-0 bottom-0 p-6 md:p-10">
+            <div className="relative z-10 w-full p-6 md:p-10">
               <div className="eyebrow text-white/80">Cabinet Legal</div>
               <h1 className="mt-3 max-w-4xl text-3xl font-semibold leading-tight text-white md:text-5xl">
                 Cómo abrir una empresa en República Dominicana siendo
@@ -99,17 +99,17 @@ export default function Article() {
                 figura societaria correcta desde el inicio.
               </p>
 
-              <h2>SRL o SA: la primera decisión que toca tomar</h2>
+              <h2>SRL o SA: la primera decisión que debe tomar</h2>
               <p>
                 La Sociedad de Responsabilidad Limitada (SRL) es la forma
-                más usada para negocios pequeños y medianos: mínimo dos
-                socios, capital social reducido y gestión simple, con uno o
+                utilizada para negocios pequeños y medianos: mínimo dos
+                socios, capital social reducido y gestión sencilla, con uno o
                 varios gerentes en lugar de un consejo de administración. La
                 Sociedad Anónima (SA) exige mínimo dos accionistas y un
                 consejo de administración, con un régimen de gobierno
-                corporativo más formal — es la estructura recomendada para
-                empresas de mayor envergadura o con planes de admitir
-                inversionistas adicionales más adelante.
+                corporativo más formal. Es la estructura recomendada para
+                empresas de mayor envergadura o que proyectan admitir
+                inversionistas adicionales en el futuro.
               </p>
 
               <h2>El proceso, paso a paso</h2>
@@ -145,10 +145,10 @@ export default function Article() {
               <h2>Un socio nominal no significa perder el control</h2>
               <p>
                 La SRL exige un mínimo de dos socios, lo que lleva a algunos
-                inversionistas extranjeros a asumir que necesitan un socio
-                dominicano con participación real. No es así: puedes ser
+                inversionistas extranjeros a suponer que necesitan un socio
+                dominicano con participación real. No es así: usted puede ser
                 socio mayoritario de facto y administrar la sociedad
-                directamente o mediante apoderado, sin que ninguna ley exija
+                directamente o mediante apoderado, sin que ley alguna exija
                 que la administración esté a cargo de un residente.
               </p>
 
@@ -157,21 +157,21 @@ export default function Article() {
                 Los problemas más comunes no aparecen al constituir la
                 empresa, sino meses o años después: estatutos genéricos que
                 no contemplan cómo se resuelven los desacuerdos entre
-                socios, ausencia de un acuerdo de socios que regule salidas
-                y derechos de preferencia, o una estructura societaria
-                elegida sin pensar en cómo se va a financiar o vender el
-                negocio en el futuro.
+                socios, la ausencia de un acuerdo de socios que regule las
+                salidas y los derechos de preferencia, o una estructura
+                societaria elegida sin prever cómo se financiará o venderá
+                el negocio en el futuro.
               </p>
 
               <div className="mt-12 rounded-2xl bg-[#0f2740] p-8 text-white">
                 <h3 className="text-xl font-semibold">
-                  ¿Vas a constituir una empresa en República Dominicana?
+                  ¿Proyecta constituir una empresa en República Dominicana?
                 </h3>
 
                 <p className="mt-3 text-slate-200">
-                  Evaluamos tu operación y tus socios antes de recomendar la
-                  estructura, y redactamos estatutos adaptados a tu negocio,
-                  no formularios estándar.
+                  Evaluamos su operación y a sus socios antes de recomendar
+                  la estructura, y redactamos estatutos adaptados a su
+                  negocio, no formularios estándar.
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-4">

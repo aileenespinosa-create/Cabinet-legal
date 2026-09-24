@@ -6,9 +6,9 @@ import FaqAccordion from "@/components/FaqAccordion";
 import { buildFaqSchema } from "@/components/faqSchema";
 
 export const metadata: Metadata = {
-  title: "Formación de Empresas en República Dominicana para Extranjeros",
+  title: "Formación de empresas en República Dominicana para extranjeros",
   description:
-    "Abre tu empresa en República Dominicana desde el extranjero: elección entre SRL y SA, registro mercantil, RNC y estructura legal completa para inversionistas y emprendedores.",
+    "Formación de empresas en República Dominicana para extranjeros: SRL o SA según la Ley 479-08, Registro Mercantil y RNC, por poder y sin necesidad de viajar.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/formacion-de-empresas",
   },
@@ -18,12 +18,12 @@ const faqs = [
   {
     question: "¿Puedo abrir una empresa en República Dominicana sin ser residente?",
     answer:
-      "Sí. No se requiere residencia ni nacionalidad dominicana para constituir una sociedad ni para ser socio o accionista de una empresa dominicana. El trámite puede iniciarse con poder desde el extranjero.",
+      "Sí. No se requiere residencia ni nacionalidad dominicana para constituir una sociedad ni para ser socio o accionista de una empresa dominicana. El trámite puede realizarse mediante poder otorgado desde el extranjero.",
   },
   {
     question: "¿Cuál es la diferencia entre una SRL y una SA en República Dominicana?",
     answer:
-      "La SRL (Sociedad de Responsabilidad Limitada) exige un mínimo de dos socios y un capital social menor, con una estructura de gestión más simple, adecuada para PYMES y negocios familiares. La SA (Sociedad Anónima) exige un mínimo de dos accionistas y un consejo de administración, y es la forma habitual para empresas de mayor tamaño, con planes de levantar capital o admitir múltiples inversionistas.",
+      "La SRL (Sociedad de Responsabilidad Limitada) exige un mínimo de dos socios y un capital social menor, con una estructura de gestión más simple, adecuada para pymes y negocios familiares. La SA (Sociedad Anónima) exige un mínimo de dos accionistas y un consejo de administración, y es la forma habitual para empresas de mayor tamaño, con planes de levantar capital o admitir múltiples inversionistas.",
   },
   {
     question: "¿Cuánto tiempo toma constituir una empresa en República Dominicana?",
@@ -47,7 +47,7 @@ export default function FormacionDeEmpresasPage() {
       {/* HERO */}
       <section className="container-legal py-10 md:py-20">
         <div className="card-legal overflow-hidden">
-          <div className="relative h-[220px] sm:h-[280px] md:h-[380px]">
+          <div className="relative flex min-h-[340px] items-end sm:min-h-[280px] md:min-h-[380px]">
             <Image
               src="/hero-legal.jpg"
               alt="Formación de empresas en República Dominicana para extranjeros"
@@ -56,18 +56,19 @@ export default function FormacionDeEmpresasPage() {
             />
             <div className="hero-image-overlay absolute inset-0" />
 
-            <div className="absolute inset-x-0 bottom-0 p-5 md:p-10">
+            <div className="relative z-10 w-full p-5 md:p-10">
               <div className="eyebrow text-white/80">Cabinet Legal</div>
 
               <h1 className="mt-2 text-3xl font-semibold text-white sm:text-4xl md:text-5xl">
-                Constituye tu empresa en República Dominicana con la
-                estructura correcta desde el inicio
+                Constituya su empresa en República Dominicana con la
+                estructura adecuada desde el inicio
               </h1>
 
               <p className="mt-3 max-w-2xl text-sm text-white/90 md:text-lg">
-                Acompañamos a extranjeros y emprendedores en la elección de la
-                estructura societaria, la constitución y el registro de su
-                empresa, sin necesidad de residencia previa.
+                Asistimos a inversionistas extranjeros y emprendedores en la
+                elección del tipo societario, la constitución y el registro de
+                su empresa conforme a la Ley 479-08, sin necesidad de
+                residencia previa.
               </p>
 
               <div className="mt-5 flex flex-col gap-3 sm:flex-row">
@@ -100,27 +101,27 @@ export default function FormacionDeEmpresasPage() {
             </h2>
 
             <p className="mt-4 text-[#5f6b76] leading-7">
-              Un tipo societario mal elegido, estatutos genéricos sin
-              adaptarse al negocio real, o socios extranjeros que no
-              entienden sus obligaciones de gobierno corporativo en
-              República Dominicana, generan fricciones internas y problemas
-              de cumplimiento que podían evitarse desde la constitución.
+              Un tipo societario mal elegido, estatutos genéricos que no se
+              adaptan al negocio real o socios extranjeros que desconocen sus
+              obligaciones de gobierno corporativo en República Dominicana
+              generan fricciones internas y problemas de cumplimiento que
+              podían evitarse desde la constitución.
             </p>
           </div>
 
           <div className="card-legal p-6 md:p-10">
-            <div className="eyebrow">Nuestra solución</div>
+            <div className="eyebrow">Nuestro trabajo</div>
 
             <h2 className="mt-4 text-3xl font-semibold text-[#0f2740]">
-              Estructura societaria pensada para tu negocio, no una plantilla
-              genérica.
+              Una estructura societaria pensada para su negocio, no una
+              plantilla genérica.
             </h2>
 
             <p className="mt-4 text-[#5f6b76] leading-7">
-              En Cabinet Legal evaluamos tu operación, tus socios y tus planes
+              En Cabinet Legal evaluamos su operación, sus socios y sus planes
               de crecimiento antes de recomendar el tipo societario, y
-              redactamos estatutos y acuerdos de socios adaptados a tu caso,
-              no formularios estándar.
+              redactamos estatutos y pactos de socios adaptados a su caso, no
+              formularios estándar.
             </p>
           </div>
         </div>
@@ -147,9 +148,10 @@ export default function FormacionDeEmpresasPage() {
               Constitución y registro
             </h3>
             <p className="mt-3 text-sm text-[#5f6b76]">
-              Redactamos los estatutos, gestionamos la reserva de nombre
-              comercial, el registro mercantil ante la Cámara de Comercio y
-              la obtención del Registro Nacional de Contribuyentes (RNC).
+              Redactamos los estatutos y gestionamos el registro del nombre
+              comercial ante ONAPI, la inscripción en el Registro Mercantil de
+              la Cámara de Comercio y la obtención del Registro Nacional de
+              Contribuyentes (RNC) ante la DGII.
             </p>
           </div>
 
@@ -199,12 +201,12 @@ export default function FormacionDeEmpresasPage() {
               esta figura societaria específicamente.
             </p>
             <p>
-              Ninguna ley dominicana exige que el capital de una SRL o una SA
-              esté en manos de socios dominicanos, ni que la administración
-              esté a cargo de un residente. Un extranjero puede ser socio
-              único de facto en una SRL constituida con un segundo socio
-              nominal, o accionista mayoritario en una SA, y administrar la
-              sociedad directamente o mediante apoderado.
+              Por regla general, la ley dominicana no exige que el capital de
+              una SRL o una SA esté en manos de socios dominicanos ni que la
+              administración esté a cargo de un residente. Un extranjero
+              puede ser socio mayoritario de una SRL o accionista mayoritario
+              de una SA, y administrar la sociedad directamente o mediante
+              apoderado.
             </p>
 
             <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
@@ -230,9 +232,9 @@ export default function FormacionDeEmpresasPage() {
 
           <p className="mt-4 max-w-2xl text-[#5f6b76] leading-7">
             El costo varía según el tipo societario, el capital declarado y
-            los trámites adicionales que requiera tu negocio (permisos
-            sectoriales, registros especiales). Te damos un presupuesto claro
-            luego de conocer tu caso.
+            los trámites adicionales que requiera su negocio (permisos
+            sectoriales, registros especiales). Le ofrecemos un presupuesto
+            claro luego de conocer su caso.
           </p>
 
           <div className="mt-6">
@@ -249,14 +251,14 @@ export default function FormacionDeEmpresasPage() {
       <section className="pb-16 md:pb-20">
         <div className="container-legal card-legal p-6 md:p-12">
           <h2 className="text-3xl font-semibold text-[#0f2740]">
-            Empieza tu negocio en República Dominicana con la base legal
-            correcta
+            Inicie su negocio en República Dominicana con la base legal
+            adecuada
           </h2>
 
           <p className="mt-4 max-w-2xl text-[#5f6b76]">
-            Puedes iniciar el proceso de constitución desde el extranjero,
-            con poder notarial, sin necesidad de viajar antes de tener la
-            empresa lista.
+            Usted puede iniciar la constitución desde el extranjero, mediante
+            poder notarial, sin necesidad de viajar antes de tener la empresa
+            lista.
           </p>
 
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">

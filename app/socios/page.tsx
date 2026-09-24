@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Socios y Abogados de Cabinet Legal en República Dominicana",
+  title: "Socios y equipo de abogados en Santo Domingo",
   description:
-    "Conoce a los socios de Cabinet Legal, firma de abogados en República Dominicana, con enfoque en derecho corporativo, marcas, propiedad intelectual y litigios.",
+    "Conozca a los socios de Cabinet Legal, que dirigen las prácticas de derecho corporativo, tributario, inmobiliario, planificación sucesoral, marcas, residencia y litigios.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/socios",
     languages: {
@@ -21,11 +21,11 @@ export const metadata: Metadata = {
 const partners = [
   {
     name: "Aileen Espinosa",
-    role: "Managing Partner",
+    role: "Socia directora",
     image: "/aileen.jpg",
-    bio: "Aileen Espinosa lidera Cabinet Legal con una práctica enfocada en derecho corporativo, estructuración de negocios, registro de marcas y propiedad intelectual. Asesora a empresas, inversionistas y clientes privados en decisiones jurídicas de alto impacto, con un enfoque estratégico, ejecutivo y orientado a resultados.",
+    bio: "Aileen Espinosa lidera Cabinet Legal con una práctica enfocada en derecho corporativo, estructuración de negocios, registro de marcas y propiedad intelectual. Asesora a empresas, inversionistas y clientes privados en la constitución y reorganización de sociedades, la contratación comercial y la protección de sus marcas ante ONAPI.",
     focus:
-      "Su práctica combina visión empresarial, precisión técnica y acompañamiento directo en la toma de decisiones corporativas relevantes, así como en la protección legal de marcas y activos intangibles.",
+      "Su práctica combina el conocimiento del negocio del cliente con el rigor técnico del derecho societario, y la acompaña personalmente en las decisiones corporativas y en la protección de sus marcas y activos intangibles.",
     areas: [
       "Derecho corporativo",
       "Estructuración de negocios",
@@ -38,11 +38,11 @@ const partners = [
   },
   {
     name: "Ellis Beato",
-    role: "Founding Partner",
+    role: "Socio fundador",
     image: "/ellis-beato.jpg",
-    bio: "Ellis Beato dirige las prácticas de negocios y de litigación en Cabinet Legal. Asesora a empresas e inversionistas en la estructuración y negociación de sus operaciones, y los representa en litigios civiles, comerciales, laborales, administrativos e inmobiliarios, así como en la resolución de conflictos empresariales complejos, con un enfoque riguroso, técnico y orientado a resultados.",
+    bio: "Ellis Beato dirige las prácticas de negocios y de litigación en Cabinet Legal. Asesora a empresas e inversionistas en la estructuración y negociación de sus operaciones, y los representa en litigios civiles, comerciales, laborales, administrativos e inmobiliarios, así como en la resolución de conflictos empresariales complejos, incluidos los recursos ante la Suprema Corte de Justicia y el Tribunal Constitucional.",
     focus:
-      "Su práctica une la visión de negocios, que previene el conflicto, con la estrategia procesal que lo resuelve cuando surge: análisis jurídico profundo, negociación firme y ejecución sólida en cada etapa.",
+      "Su práctica une la visión de negocios, que previene el conflicto, con la estrategia procesal que lo resuelve cuando surge: análisis jurídico detallado, negociación firme y seguimiento del expediente en cada etapa.",
     areas: [
       "Derecho de los negocios y contratación",
       "Negociación y resolución de conflictos",
@@ -66,12 +66,13 @@ export default function SociosPage() {
         <div className="max-w-4xl">
           <div className="eyebrow">Cabinet Legal</div>
           <h1 className="mt-4 text-4xl font-semibold tracking-tight text-[#0f2740] md:text-5xl">
-            Socios
+            Socios y equipo de abogados
           </h1>
           <p className="mt-5 max-w-3xl text-base leading-8 text-[#5f6b76] md:text-lg">
-            Dos socios al frente de un excelente equipo de abogados, con
-            especialización en negocios, inversión extranjera y litigios de
-            alto impacto.
+            Dos socios dirigen personalmente cada asunto, al frente de un
+            equipo de abogados organizado por área: derecho corporativo y
+            tributario, inversión inmobiliaria, planificación sucesoral,
+            marcas, residencia y litigios.
           </p>
         </div>
 
@@ -145,9 +146,9 @@ export default function SociosPage() {
         <div className="grid gap-10 rounded-[24px] bg-[#0f2740] p-7 text-white md:grid-cols-[0.9fr_1.1fr] md:p-12">
           <div>
             <div className="text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">Nuestro equipo</div>
-            <h2 className="pt-4 text-3xl font-light leading-tight tracking-tight md:text-4xl">Un excelente equipo de abogados, organizado por área</h2>
+            <h2 className="pt-4 text-3xl font-light leading-tight tracking-tight md:text-4xl">Un equipo de abogados organizado por área</h2>
             <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
-            <p className="pt-6 leading-8 text-white/80">Detrás de cada socio trabaja un equipo de abogados asociados especializados. Cada asunto lo dirige un socio y lo desarrolla el abogado que domina la materia, para que tengas criterio de socio y dedicación de especialista.</p>
+            <p className="pt-6 leading-8 text-white/80">Detrás de cada socio trabaja un equipo de abogados asociados especializados. Cada asunto lo dirige un socio y lo desarrolla el abogado que domina la materia, de modo que usted cuenta con el criterio de un socio y la dedicación de un especialista.</p>
             <Link
               href="/consulta"
               className="mt-8 inline-flex items-center justify-center rounded-full bg-[#c8a46a] px-7 py-3 text-sm font-semibold text-[#0f2740] transition hover:bg-[#d6b57f]"

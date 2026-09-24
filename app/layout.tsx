@@ -14,6 +14,15 @@ const lora = localFont({
   display: "swap",
 });
 
+const sourceSans = localFont({
+  src: [
+    { path: "./fonts/SourceSans3-Variable.woff2", style: "normal", weight: "200 900" },
+    { path: "./fonts/SourceSans3-Italic-Variable.woff2", style: "italic", weight: "200 900" },
+  ],
+  variable: "--font-sans-body",
+  display: "swap",
+});
+
 const GA_MEASUREMENT_ID = "G-ZT4997QF5S";
 
 export const metadata: Metadata = {
@@ -22,7 +31,7 @@ export const metadata: Metadata = {
     default: "Cabinet Legal",
     template: "%s | Cabinet Legal",
   },
-  description: "Asesoría legal estratégica en República Dominicana",
+  description: "Firma de abogados en Santo Domingo, República Dominicana: derecho corporativo, tributario, inmobiliario, sucesiones, marcas, residencia y litigios.",
   icons: {
     icon: [
       { url: "/icon-16x16.png", sizes: "16x16", type: "image/png" },
@@ -80,7 +89,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" suppressHydrationWarning className={lora.variable}>
+    <html lang="es" suppressHydrationWarning className={`${lora.variable} ${sourceSans.variable}`}>
       <head>
         <script
           type="application/ld+json"

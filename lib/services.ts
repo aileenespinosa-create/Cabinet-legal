@@ -36,10 +36,10 @@ export const SERVICES: Service[] = [
       es: {
         title: "Derecho corporativo y societario",
         promise: "Una empresa bien estructurada hoy evita el conflicto entre socios de mañana.",
-        what: "Diseñamos la estructura societaria que responde a tu negocio real: quién decide, cómo entra y sale un socio, cómo se protege el patrimonio de cada uno. Luego la mantenemos al día para que tu empresa crezca sin contingencias.",
-        steps: ["Diagnóstico de tu negocio y tus socios", "Estructura, estatutos y pactos a la medida", "Acompañamiento corporativo continuo"],
-        items: ["Constitución de sociedades (SRL, SA, SAS)", "Pactos de socios y gobierno corporativo", "Contratos comerciales", "Cumplimiento y registros"],
-        proof: ["Pactos de socios a la medida", "Asambleas y actas al día", "Atención en 3 idiomas"],
+        what: "Diseñamos la estructura societaria que responde a su negocio real: quién decide, cómo entra y sale un socio y cómo se protege el patrimonio de cada uno. Constituimos la sociedad ante la Cámara de Comercio y la DGII, redactamos estatutos y pactos de socios a la medida y mantenemos al día asambleas, actas y registros para que su empresa crezca sin contingencias.",
+        steps: ["Diagnóstico de su negocio y de sus socios", "Estructura, estatutos y pactos a la medida", "Acompañamiento corporativo continuo"],
+        items: ["Constitución de sociedades (SRL, SA, SAS, EIRL)", "Pactos de socios y gobierno corporativo", "Contratos comerciales", "Asambleas, actas y Registro Mercantil"],
+        proof: ["Pactos de socios a la medida", "Asambleas y actas al día", "Atención en español, inglés y francés"],
       },
       en: {
         title: "Corporate and company law",
@@ -67,11 +67,11 @@ export const SERVICES: Service[] = [
     text: {
       es: {
         title: "Derecho tributario",
-        promise: "Cumple lo que exige la ley sin pagar de más, y defiéndete con firmeza ante la DGII.",
-        what: "Estructuramos tus operaciones, inversiones e inmuebles con la carga fiscal más eficiente que permite la ley, incluidos los incentivos CONFOTUR y los convenios para evitar la doble tributación. Si la DGII te fiscaliza o te notifica un ajuste, preparamos la defensa y la llevamos hasta el Tribunal Superior Administrativo si hace falta.",
-        steps: ["Diagnóstico fiscal de tu operación", "Planificación y cumplimiento a la medida", "Defensa ante la DGII y los tribunales"],
-        items: ["Planificación fiscal de empresas e inversiones", "Impuestos en compras y ventas de inmuebles", "Fiscalizaciones y reclamaciones ante la DGII", "Recursos ante el Tribunal Superior Administrativo"],
-        proof: ["Visión legal y fiscal integrada", "Incentivos y exenciones aplicados", "Defensa en sede administrativa y judicial"],
+        promise: "Cumpla lo que exige la ley sin pagar de más, y defiéndase con firmeza ante la DGII.",
+        what: "Estructuramos sus operaciones, inversiones e inmuebles con la carga fiscal más eficiente que permite la ley, incluidos los incentivos de CONFOTUR y los convenios para evitar la doble tributación.\n\nSi la DGII le fiscaliza o le notifica un ajuste, preparamos el recurso de reconsideración dentro del plazo y, de ser necesario, llevamos el caso ante el Tribunal Superior Administrativo.",
+        steps: ["Diagnóstico fiscal de su operación", "Planificación y cumplimiento a la medida", "Defensa ante la DGII y los tribunales"],
+        items: ["Planificación fiscal de empresas e inversiones", "Impuestos en la compra y venta de inmuebles", "Fiscalizaciones y reconsideraciones ante la DGII", "Recursos ante el Tribunal Superior Administrativo"],
+        proof: ["Criterio legal y fiscal integrado", "Incentivos y exenciones aplicados", "Defensa en sede administrativa y judicial"],
       },
       en: {
         title: "Tax law",
@@ -100,11 +100,11 @@ export const SERVICES: Service[] = [
     text: {
       es: {
         title: "Fusiones y adquisiciones",
-        promise: "Compra o vende una empresa sabiendo exactamente qué estás firmando.",
-        what: "Revisamos a fondo la empresa objetivo, identificamos los riesgos ocultos y los convertimos en precio, garantías o condiciones del contrato. Negociamos a tu lado hasta el cierre y la integración.",
-        steps: ["Due diligence legal completo", "Estructura y negociación de la operación", "Cierre e integración"],
-        items: ["Due diligence legal", "Estructuración de la operación", "Contratos de compraventa de acciones", "Integración posterior"],
-        proof: ["Informe de riesgos claro y priorizado", "Negociación dirigida por un socio", "Trabajo coordinado con tus asesores"],
+        promise: "Compre o venda una empresa sabiendo exactamente lo que firma.",
+        what: "Revisamos a fondo la empresa objetivo, identificamos los riesgos ocultos y los convertimos en precio, garantías o condiciones del contrato. Negociamos a su lado hasta el cierre y la integración.",
+        steps: ["Debida diligencia legal completa", "Estructura y negociación de la operación", "Cierre e integración"],
+        items: ["Debida diligencia (due diligence) legal", "Estructuración de la operación", "Contratos de compraventa de acciones o cuotas", "Integración posterior al cierre"],
+        proof: ["Informe de riesgos claro y priorizado", "Negociación dirigida por un socio", "Trabajo coordinado con sus asesores"],
       },
       en: {
         title: "Mergers and acquisitions",
@@ -133,10 +133,10 @@ export const SERVICES: Service[] = [
     text: {
       es: {
         title: "Inversión extranjera e inmobiliario",
-        promise: "Tu propiedad en República Dominicana, con título limpio y sin sorpresas.",
-        what: "Antes de que pagues, verificamos el título, el deslinde, las cargas y los permisos del proyecto, junto con Land Consulting DR. Redactamos y negociamos el contrato, cerramos ante notario y no soltamos el expediente hasta que el nuevo título está a tu nombre.",
-        steps: ["Verificación legal y técnica del inmueble", "Contrato que protege tu dinero", "Cierre, impuestos y nuevo título a tu nombre"],
-        items: ["Due diligence de título y deslinde", "Contratos y cierre notarial", "Exenciones CONFOTUR", "Registro de la inversión (Ley 16-95)"],
+        promise: "Su propiedad en República Dominicana, con título limpio y sin sorpresas.",
+        what: "Antes de que usted pague, verificamos el título, el deslinde, las cargas y los permisos del proyecto, junto con Land Consulting DR. Redactamos y negociamos el contrato, cerramos ante notario y no soltamos el expediente hasta que el nuevo certificado de título esté a su nombre.",
+        steps: ["Verificación legal y técnica del inmueble", "Un contrato que protege su dinero", "Cierre, impuestos y nuevo título a su nombre"],
+        items: ["Debida diligencia de título y deslinde", "Contratos y cierre notarial", "Exenciones CONFOTUR", "Registro de la inversión (Ley 16-95)"],
         proof: ["Todo el proceso por poder, sin viajar", "Exenciones CONFOTUR aplicadas", "Español, inglés y francés"],
       },
       en: {
@@ -165,11 +165,11 @@ export const SERVICES: Service[] = [
     text: {
       es: {
         title: "Energía e infraestructura",
-        promise: "Tu proyecto energético, con las autorizaciones y contratos que lo hacen financiable.",
-        what: "Acompañamos proyectos de generación, en especial renovables, desde la concesión hasta la operación. Estructuramos los contratos de compraventa de energía y el cumplimiento regulatorio que exigen los bancos y los inversionistas.",
+        promise: "Su proyecto energético, con las autorizaciones y los contratos que lo hacen financiable.",
+        what: "Acompañamos proyectos de generación, en especial de energía renovable, desde la concesión hasta la operación. Gestionamos las autorizaciones ante la Comisión Nacional de Energía, la Superintendencia de Electricidad y el Ministerio de Medio Ambiente, aplicamos los incentivos de la Ley 57-07 y estructuramos los contratos de compraventa de energía y el cumplimiento regulatorio que exigen los bancos y los inversionistas.",
         steps: ["Mapa regulatorio y de autorizaciones", "Concesiones y contratos del proyecto", "Cumplimiento durante la operación"],
-        items: ["Proyectos de energía renovable", "Concesiones y autorizaciones", "Contratos de compraventa de energía", "Regulación del sector eléctrico"],
-        proof: ["Visión regulatoria y contractual", "Coordinación con permisología", "Enfoque en financiamiento"],
+        items: ["Proyectos de energía renovable (Ley 57-07)", "Concesiones y autorizaciones", "Contratos de compraventa de energía (PPA)", "Regulación del sector eléctrico"],
+        proof: ["Dominio regulatorio y contractual", "Coordinación con permisología", "Estructuras aptas para financiamiento"],
       },
       en: {
         title: "Energy and infrastructure",
@@ -197,10 +197,10 @@ export const SERVICES: Service[] = [
     text: {
       es: {
         title: "Permisología y licencias",
-        promise: "Tu proyecto no se detiene por un permiso mal presentado.",
-        what: "Identificamos cada permiso y licencia que tu proyecto necesita, preparamos los expedientes completos y damos seguimiento en cada institución hasta obtener la aprobación. Tú te enfocas en construir y operar.",
+        promise: "Su proyecto no se detiene por un permiso mal presentado.",
+        what: "Identificamos cada permiso y licencia que su proyecto necesita, desde el uso de suelo en el ayuntamiento hasta la licencia de construcción del MIVHED y la autorización ambiental, preparamos los expedientes completos y damos seguimiento en cada institución hasta obtener la aprobación. Usted se concentra en construir y operar.",
         steps: ["Mapa de permisos por institución", "Expedientes completos desde el primer depósito", "Seguimiento hasta la aprobación"],
-        items: ["Permisos ambientales", "Licencias de construcción y uso de suelo", "Licencias sectoriales", "Renovaciones y cumplimiento"],
+        items: ["Permisos y autorizaciones ambientales", "Uso de suelo y licencias de construcción", "Licencias y no objeciones sectoriales", "Renovaciones y cumplimiento"],
         proof: ["Un solo responsable para todos los trámites", "Reportes de avance periódicos", "Menos rechazos y reprocesos"],
       },
       en: {
@@ -229,11 +229,11 @@ export const SERVICES: Service[] = [
     text: {
       es: {
         title: "Planificación patrimonial y sucesoral",
-        promise: "Lo que construiste, protegido y en manos de los tuyos, sin conflictos.",
-        what: "Diseñamos cómo se protege y se transmite tu patrimonio, dentro de los límites de la reserva hereditaria que impone la ley dominicana. Según tu caso, combinamos el fideicomiso de planificación sucesoral de la Ley 189-11, la fundación de interés privado panameña de la Ley 25 de 1995, el testamento y las sociedades tenedoras con protocolo familiar, para que tus bienes pasen a los tuyos en el momento y en las condiciones que tú decidas, sin disputas ni sucesiones interminables. Si la sucesión ya está abierta, la resolvemos por la vía amigable siempre que es posible y por la judicial cuando hace falta.",
+        promise: "Lo que usted construyó, protegido y en manos de los suyos, sin conflictos.",
+        what: "Diseñamos cómo se protege y se transmite su patrimonio, dentro de los límites de la reserva hereditaria que impone la ley dominicana.\n\nSegún su caso, combinamos el fideicomiso de planificación sucesoral de la Ley 189-11, la fundación de interés privado panameña de la Ley 25 de 1995, el testamento y las sociedades tenedoras con protocolo familiar, para que sus bienes pasen a sus herederos en el momento y en las condiciones que usted decida, sin disputas ni sucesiones interminables.\n\nSi la sucesión ya está abierta, la resolvemos por la vía amigable siempre que es posible y por la judicial cuando hace falta: determinación de herederos, declaración ante la DGII, partición y transferencia de cada bien.",
         steps: ["Diagnóstico del patrimonio, los herederos y los países involucrados", "Diseño de la estructura: fideicomiso, fundación, testamento o sociedad", "Constitución, aporte de los bienes y registro de cada uno"],
         items: ["Fideicomiso de planificación sucesoral (Ley 189-11)", "Fundación de interés privado en Panamá", "Testamentos, donaciones y sociedades tenedoras", "Determinación de herederos y particiones"],
-        proof: ["Enfoque en acuerdos familiares", "Bienes en el país y en el exterior", "Discreción absoluta"],
+        proof: ["Prioridad a los acuerdos familiares", "Bienes en el país y en el exterior", "Discreción absoluta"],
       },
       en: {
         title: "Estate planning and succession",
@@ -262,10 +262,10 @@ export const SERVICES: Service[] = [
     text: {
       es: {
         title: "Residencia y migración",
-        promise: "Vive e invierte en República Dominicana con tu estatus en regla.",
-        what: "Elegimos contigo la vía de residencia que mejor encaja con tu perfil, preparamos cada documento, apostilla y traducción, y te acompañamos en Migración hasta recibir tu carnet. También gestionamos renovaciones y permisos de trabajo.",
+        promise: "Viva e invierta en República Dominicana con su estatus en regla.",
+        what: "Elegimos con usted la vía de residencia que mejor se ajusta a su perfil, preparamos cada documento, apostilla y traducción, y le acompañamos ante la Dirección General de Migración hasta recibir su carnet. También gestionamos renovaciones y permisos de trabajo.",
         steps: ["Elección de la vía de residencia", "Expediente completo y apostillado", "Acompañamiento hasta el carnet"],
-        items: ["Residencia por inversión", "Rentistas y pensionados", "Permisos de trabajo", "Renovaciones y ciudadanía"],
+        items: ["Residencia por inversión", "Rentistas y pensionados", "Permisos de trabajo", "Renovaciones y naturalización"],
         proof: ["Inversionista, rentista o pensionado", "Calendario de renovaciones", "Familias incluidas"],
       },
       en: {
@@ -295,11 +295,11 @@ export const SERVICES: Service[] = [
     text: {
       es: {
         title: "Propiedad intelectual y marcas",
-        promise: "Tu marca es tuya. Nos aseguramos de que nadie más pueda usarla.",
-        what: "Antes de registrar, investigamos si tu marca es viable para evitar rechazos y oposiciones. La registramos ante ONAPI, la vigilamos y la defendemos cuando alguien intenta copiarla.",
+        promise: "Su marca le pertenece. Nos aseguramos de que nadie más pueda usarla.",
+        what: "Antes de registrar, verificamos si su marca es registrable para evitar rechazos y oposiciones. La registramos ante ONAPI conforme a la Ley 20-00, la vigilamos y la defendemos cuando alguien intenta copiarla.",
         steps: ["Búsqueda y estrategia de registro", "Solicitud y seguimiento ante ONAPI", "Vigilancia y defensa"],
         items: ["Búsqueda y registro ante ONAPI", "Oposiciones y defensa", "Nombres comerciales", "Derechos de autor y licencias"],
-        proof: ["Análisis de viabilidad previo", "Seguimiento hasta el certificado", "Defensa ante copias"],
+        proof: ["Análisis de registrabilidad previo", "Seguimiento hasta el certificado", "Acción contra las copias"],
       },
       en: {
         title: "Intellectual property and trademarks",
@@ -327,11 +327,11 @@ export const SERVICES: Service[] = [
     text: {
       es: {
         title: "Litigación y defensa judicial",
-        promise: "Cuando negociar no basta, una estrategia procesal que defiende tus intereses.",
-        what: "Analizamos tu caso con rigor, te decimos con franqueza tus opciones y diseñamos la estrategia procesal más eficaz. Te representamos en todas las instancias, desde el primer grado hasta la Suprema Corte y el Tribunal Constitucional, residas en el país o en el extranjero.",
+        promise: "Cuando negociar no basta, una estrategia procesal que defiende sus intereses.",
+        what: "Estudiamos su caso a fondo, le decimos con franqueza cuáles son sus opciones y diseñamos la estrategia procesal más eficaz, incluidas las medidas conservatorias urgentes.\n\nLe representamos en todas las instancias, desde el primer grado hasta la Suprema Corte de Justicia y el Tribunal Constitucional, resida usted en el país o en el extranjero.",
         steps: ["Evaluación franca del caso", "Estrategia procesal y medidas urgentes", "Representación en todas las instancias"],
-        items: ["Litigios civiles y comerciales", "Litigios inmobiliarios", "Laboral y administrativo", "Recursos ante las altas cortes"],
-        proof: ["Dirigido por el socio de litigios", "Civil, comercial, inmobiliario y laboral", "Clientes nacionales y extranjeros"],
+        items: ["Litigios civiles y comerciales", "Litigios inmobiliarios ante la Jurisdicción Inmobiliaria", "Laboral y contencioso administrativo", "Recursos ante la Suprema Corte y el Tribunal Constitucional"],
+        proof: ["Dirigido por el socio de litigación", "Civil, comercial, inmobiliario y laboral", "Clientes nacionales y extranjeros"],
       },
       en: {
         title: "Litigation and court representation",
@@ -359,11 +359,11 @@ export const SERVICES: Service[] = [
     text: {
       es: {
         title: "Cobro y recuperación de créditos",
-        promise: "Lo que te deben, reclamado con firmeza y por la vía más rápida.",
-        what: "Evaluamos la deuda y las garantías, intentamos primero un cobro amigable y, si no funciona, pasamos a la vía compulsiva: embargos, ejecución de hipotecas y, cuando corresponde, la acción penal por cheques sin fondos o estafa.",
+        promise: "Lo que le deben, reclamado con firmeza y por la vía más rápida.",
+        what: "Evaluamos la deuda, el título que la respalda y los bienes del deudor. Intentamos primero un cobro amigable con plazo definido y, si no prospera, pasamos a la vía compulsiva: embargos conservatorios y ejecutivos, ejecución de hipotecas y, cuando corresponde, la acción penal por cheques sin fondos o estafa.",
         steps: ["Evaluación de la deuda y los bienes del deudor", "Cobro amigable con plazo definido", "Embargos y ejecución de garantías"],
         items: ["Cobro amigable y compulsivo", "Embargos y medidas conservatorias", "Ejecución de hipotecas y garantías", "Recuperación de inversiones"],
-        proof: ["Medidas conservatorias tempranas", "Coordinación con derecho penal", "Reportes de avance claros"],
+        proof: ["Medidas conservatorias tempranas", "Coordinación con el área penal", "Reportes de avance claros"],
       },
       en: {
         title: "Debt collection and credit recovery",
@@ -391,8 +391,8 @@ export const SERVICES: Service[] = [
     text: {
       es: {
         title: "Derecho penal",
-        promise: "Una defensa técnica y firme cuando tu libertad o tu patrimonio están en juego.",
-        what: "Si fuiste víctima de una estafa, un abuso de confianza o cheques sin fondos, presentamos la querella y la sostenemos hasta el final. Si enfrentas una acusación, organizamos tu defensa desde la primera actuación, con estricta confidencialidad.",
+        promise: "Una defensa técnica y firme cuando su libertad o su patrimonio están en juego.",
+        what: "Si usted fue víctima de estafa, abuso de confianza o cheques sin fondos, presentamos la querella con constitución en actor civil y la sostenemos hasta la sentencia. Si enfrenta una acusación, organizamos su defensa desde la primera actuación ante el Ministerio Público, con estricta confidencialidad.",
         steps: ["Evaluación confidencial del caso", "Querella o estrategia de defensa", "Representación en cada audiencia"],
         items: ["Querellas por estafa y abuso de confianza", "Cheques sin fondos", "Defensa de imputados", "Delitos económicos"],
         proof: ["Énfasis en delitos económicos", "Confidencialidad total", "Disponibilidad en momentos urgentes"],

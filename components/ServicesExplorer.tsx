@@ -45,6 +45,9 @@ export default function ServicesExplorer({ lang }: { lang: Lang }) {
           <div>
             <div className="text-[11px] uppercase tracking-[0.24em] text-[#8a6a37]">{t.kicker}</div>
             <h1 className="pt-4 font-serif text-[38px] leading-[1.05] text-[#0f2740] md:text-[56px]">{t.expTitle}</h1>
+            {t.expQuestion && (
+              <p className="pt-4 font-serif text-[24px] leading-tight text-[#8a6a37] md:text-[30px]">{t.expQuestion}</p>
+            )}
           </div>
           <p className="text-base leading-8 text-[#5f6b76] md:text-lg">{t.expIntro}</p>
         </div>

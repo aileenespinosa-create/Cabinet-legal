@@ -12,7 +12,7 @@ const F: Record<Lang, {
     contact: "Contacto", byAppt: "Atención únicamente con cita previa",
     address: "Av. Pedro Henríquez Ureña No. 138, Torre Empresarial Reyna II, Suite 203, La Esperilla, Santo Domingo, República Dominicana",
     areas: "Áreas de práctica", firm: "La firma",
-    links: [["/firma", "La firma"], ["/socios", "Equipo"], ["/blog", "Publicaciones"], ["/guia-inversion", "Guía para invertir"], ["/unete", "Únete"], ["/consulta", "Consulta"]],
+    links: [["/firma", "La firma"], ["/socios", "Equipo"], ["/blog", "Publicaciones"], ["/guia-inversion", "Guía para invertir"], ["/unete", "Carreras"], ["/consulta", "Consulta"]],
     privacy: "Política de privacidad", privacyHref: "/privacidad", phoneLabel: "Teléfono y WhatsApp", rights: "Todos los derechos reservados.",
   },
   en: {

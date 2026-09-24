@@ -117,7 +117,7 @@ export default function WhatsAppButton() {
     }
 
     return {
-      text: "Escríbenos",
+      text: "Escríbanos",
       message:
         "Hola, visité Cabinet Legal y me gustaría recibir orientación.",
     };

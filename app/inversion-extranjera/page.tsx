@@ -7,9 +7,9 @@ import { buildFaqSchema } from "@/components/faqSchema";
 import GuideBanner from "@/components/GuideBanner";
 
 export const metadata: Metadata = {
-  title: "Abogado para Comprar Bienes Raíces en República Dominicana",
+  title: "Abogado inmobiliario en República Dominicana para extranjeros",
   description:
-    "Compra propiedades en República Dominicana con protección legal completa: due diligence de título, contratos, cierre notarial, Ley 16-95 y protección post-compra para inversionistas extranjeros.",
+    "Abogado inmobiliario en República Dominicana para extranjeros: debida diligencia de título, contratos, cierre notarial, CONFOTUR y registro de su título.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/inversion-extranjera",
     languages: {
@@ -26,22 +26,22 @@ const faqs = [
     question:
       "¿Necesito ser residente dominicano para comprar propiedad en República Dominicana?",
     answer:
-      "No. La Ley 16-95 de Inversión Extranjera otorga a la inversión extranjera el mismo tratamiento que a la inversión nacional. Un extranjero no residente puede comprar, poseer y vender bienes inmuebles en República Dominicana en las mismas condiciones que un dominicano, sin necesidad de residencia ni de un socio local.",
+      "No. La Ley 16-95 sobre Inversión Extranjera otorga a la inversión extranjera el mismo tratamiento que a la inversión nacional. Un extranjero no residente puede comprar, poseer y vender bienes inmuebles en República Dominicana en las mismas condiciones que un dominicano, sin necesidad de residencia ni de un socio local.",
   },
   {
     question: "¿Qué es el CONFOTUR y cuándo aplica a una inversión inmobiliaria?",
     answer:
-      "El CONFOTUR (Consejo de Fomento Turístico) administra incentivos fiscales para proyectos turísticos e inmobiliarios en polos designados por la Ley 158-01. Un proyecto o unidad con clasificación CONFOTUR puede beneficiarse de exención del impuesto de transferencia inmobiliaria (3%) y del IPI (impuesto anual sobre la propiedad) durante el período que otorga el decreto, siempre que el desarrollador haya obtenido la aprobación correspondiente.",
+      "El CONFOTUR (Consejo de Fomento Turístico) administra los incentivos fiscales de la Ley 158-01 para proyectos turísticos e inmobiliarios ubicados en polos turísticos designados. Una unidad en un proyecto con clasificación CONFOTUR puede beneficiarse de la exención del impuesto de transferencia inmobiliaria (3 %) y del Impuesto al Patrimonio Inmobiliario (IPI) durante el período que otorga la resolución de clasificación, siempre que el desarrollador haya obtenido la aprobación correspondiente.",
   },
   {
-    question: "¿Qué verifica exactamente la due diligence de título antes de comprar?",
+    question: "¿Qué verifica exactamente la debida diligencia de título antes de comprar?",
     answer:
-      "Confirma que el vendedor es el titular registrado ante la Jurisdicción Inmobiliaria, que el inmueble está libre de hipotecas, embargos, oposiciones o litis pendientes, que los linderos y la cabida coinciden con el certificado de título, y que no existen afectaciones (como declaratorias de utilidad pública o restricciones ambientales y costeras) que limiten el uso previsto de la propiedad.",
+      "Confirma que el vendedor es el titular registrado ante la Jurisdicción Inmobiliaria, que el inmueble está libre de hipotecas, embargos, oposiciones o litis sobre derechos registrados, que los linderos y la superficie coinciden con el certificado de título, y que no existen afectaciones (como declaratorias de utilidad pública o restricciones ambientales y costeras) que limiten el uso previsto de la propiedad.",
   },
   {
     question: "¿Puedo comprar una propiedad en República Dominicana sin viajar al país?",
     answer:
-      "Sí. La compra puede formalizarse mediante un poder especial otorgado a tu abogado, quien te representa en el proceso de due diligence, la firma del contrato y el cierre notarial. Te mantenemos informado en cada etapa sin que tengas que estar presente físicamente en el país.",
+      "Sí. La compra puede formalizarse mediante un poder especial otorgado a su abogado, quien lo representa en la debida diligencia, la firma del contrato y el cierre notarial. Le mantenemos informado en cada etapa sin que usted tenga que estar presente en el país.",
   },
 ];
 
@@ -60,27 +60,27 @@ export default function InversionExtranjeraPage() {
       {/* HERO */}
       <section className="container-legal py-10 md:py-20">
         <div className="card-legal overflow-hidden">
-          <div className="relative h-[220px] sm:h-[280px] md:h-[380px]">
+          <div className="relative flex min-h-[340px] items-end sm:min-h-[280px] md:min-h-[380px]">
             <Image
               src="/hero-legal.jpg"
-              alt="Asesoría legal para inversionistas extranjeros en República Dominicana"
+              alt="Abogado inmobiliario en República Dominicana para compradores extranjeros"
               fill
               className="object-cover"
             />
             <div className="hero-image-overlay absolute inset-0" />
 
-            <div className="absolute inset-x-0 bottom-0 p-5 md:p-10">
+            <div className="relative z-10 w-full p-5 md:p-10">
               <div className="eyebrow text-white/80">Cabinet Legal</div>
 
               <h1 className="mt-2 text-3xl font-semibold text-white sm:text-4xl md:text-5xl">
-                Invierte en República Dominicana con la protección legal que
-                tu inversión merece
+                Abogados para comprar propiedad en República Dominicana
               </h1>
 
               <p className="mt-3 max-w-2xl text-sm text-white/90 md:text-lg">
-                Acompañamos a inversionistas y compradores extranjeros en cada
-                etapa legal de la compra de bienes raíces: estructuración,
-                contratos, cierre y protección de tus derechos de propiedad.
+                Asistimos a inversionistas y compradores extranjeros en cada
+                etapa legal de la compra de un inmueble en Punta Cana, Cap
+                Cana, Las Terrenas o Santo Domingo: estructuración, contratos,
+                cierre notarial y registro de su título.
               </p>
 
               <div className="mt-5 flex flex-col gap-3 sm:flex-row">
@@ -108,30 +108,31 @@ export default function InversionExtranjeraPage() {
             <div className="eyebrow">Riesgo frecuente</div>
 
             <h2 className="mt-4 text-3xl font-semibold text-[#0f2740]">
-              Comprar propiedad en un país extranjero conlleva riesgos que no
-              siempre son visibles.
+              Comprar propiedad en otro país conlleva riesgos que no siempre
+              son visibles.
             </h2>
 
             <p className="mt-4 text-[#5f6b76] leading-7">
-              Títulos de propiedad poco claros, vendedores sin la
-              documentación en regla, contratos mal estructurados o cierres
-              sin acompañamiento legal pueden convertir una inversión
-              prometedora en un problema costoso.
+              Títulos con cargas no declaradas, vendedores sin la
+              documentación en regla, contratos mal redactados o cierres sin
+              asistencia legal pueden convertir una buena inversión en un
+              litigio costoso.
             </p>
           </div>
 
           <div className="card-legal p-6 md:p-10">
-            <div className="eyebrow">Nuestra solución</div>
+            <div className="eyebrow">Nuestro trabajo</div>
 
             <h2 className="mt-4 text-3xl font-semibold text-[#0f2740]">
-              Ejecución legal completa, de principio a fin.
+              Asistencia legal completa, de la oferta al registro.
             </h2>
 
             <p className="mt-4 text-[#5f6b76] leading-7">
-              En Cabinet Legal estructuramos tu compra, revisamos y negociamos
-              contratos, verificamos el cumplimiento legal en el cierre y
-              protegemos tus derechos de propiedad una vez que la transacción
-              se completa.
+              En Cabinet Legal estructuramos su compra, revisamos y negociamos
+              los contratos, verificamos el cumplimiento legal en el cierre y
+              defendemos sus derechos de propiedad una vez inscrita la
+              transacción. Un socio del despacho dirige cada expediente, en
+              español, inglés o francés.
             </p>
           </div>
         </div>
@@ -144,9 +145,9 @@ export default function InversionExtranjeraPage() {
             <div className="eyebrow">Paso 1</div>
             <h3 className="mt-3 text-xl font-semibold">Estructuración</h3>
             <p className="mt-3 text-sm text-[#5f6b76]">
-              Definimos la vía legal correcta para tu inversión: compra
-              personal, a través de sociedad, o estructura patrimonial según
-              tu caso.
+              Definimos la vía legal adecuada para su inversión: compra a
+              título personal, a través de una sociedad o mediante una
+              estructura patrimonial, según su caso.
             </p>
           </div>
 
@@ -154,8 +155,8 @@ export default function InversionExtranjeraPage() {
             <div className="eyebrow">Paso 2</div>
             <h3 className="mt-3 text-xl font-semibold">Contratos y cierre</h3>
             <p className="mt-3 text-sm text-[#5f6b76]">
-              Revisamos, negociamos y ejecutamos los contratos de
-              compraventa, acompañándote en el cierre ante notario y en el
+              Revisamos, negociamos y formalizamos los contratos de
+              compraventa, y le asistimos en el cierre ante notario y en el
               registro del título.
             </p>
           </div>
@@ -163,11 +164,11 @@ export default function InversionExtranjeraPage() {
           <div className="card-legal p-6">
             <div className="eyebrow">Paso 3</div>
             <h3 className="mt-3 text-xl font-semibold">
-              Protección post-compra
+              Protección posterior a la compra
             </h3>
             <p className="mt-3 text-sm text-[#5f6b76]">
-              Damos seguimiento legal continuo: cumplimiento fiscal,
-              contratos de alquiler y defensa de tus derechos si surge alguna
+              Damos seguimiento legal continuo: obligaciones fiscales,
+              contratos de alquiler y defensa de sus derechos si surge una
               disputa.
             </p>
           </div>
@@ -191,37 +192,37 @@ export default function InversionExtranjeraPage() {
               Todo proceso comienza con una <strong>oferta de compra</strong>{" "}
               o carta de intención, seguida de un{" "}
               <strong>contrato de promesa de venta</strong> que fija el
-              precio, el plazo y las condiciones suspensivas (por ejemplo,
-              que la due diligence no revele afectaciones sobre el título).
-              En esta etapa es habitual el pago de un depósito en garantía,
-              que debe quedar protegido contractualmente.
+              precio, el plazo y las condiciones suspensivas, por ejemplo,
+              que la debida diligencia (due diligence) no revele afectaciones
+              sobre el título. En esta etapa es habitual el pago de un
+              depósito, que debe quedar protegido contractualmente.
             </p>
             <p>
               Mientras se prepara el cierre, se completa la{" "}
-              <strong>due diligence de título</strong> ante la Jurisdicción
-              Inmobiliaria correspondiente y se verifica que el vendedor esté
-              al día con el Impuesto sobre la Propiedad Inmobiliaria (IPI) y,
-              si aplica, con las cuotas de mantenimiento del condominio o
+              <strong>debida diligencia de título</strong> ante la
+              Jurisdicción Inmobiliaria y se verifica que el vendedor esté al
+              día con el Impuesto al Patrimonio Inmobiliario (IPI) y, si
+              aplica, con las cuotas de mantenimiento del condominio o
               proyecto.
             </p>
             <p>
               El <strong>cierre</strong> se formaliza mediante un contrato de
               venta ante notario público, con la firma de ambas partes o de
-              sus apoderados. Si el comprador no puede estar presente en
-              República Dominicana, puede actuar mediante un{" "}
+              sus apoderados. Si usted no puede estar presente en República
+              Dominicana, puede actuar mediante un{" "}
               <strong>poder especial</strong> otorgado a su abogado.
             </p>
             <p>
               Tras la firma, se paga el <strong>impuesto de transferencia
-              inmobiliaria</strong> (3% del valor de la propiedad, salvo
-              exención aplicable) y se somete el expediente ante la{" "}
+              inmobiliaria</strong> (3 % del valor del inmueble, salvo
+              exención aplicable) ante la{" "}
               <strong>Dirección General de Impuestos Internos (DGII)</strong>{" "}
-              y luego ante el <strong>Registro de Títulos</strong>{" "}
-              correspondiente, que emite el nuevo certificado de título a
-              nombre del comprador. Este último paso registral es el que
-              hace oponible la compra frente a terceros, y es donde el
-              acompañamiento legal marca la diferencia frente a un cierre
-              informal.
+              y luego se deposita el expediente en el{" "}
+              <strong>Registro de Títulos</strong> correspondiente, que emite
+              el nuevo certificado de título a nombre del comprador conforme
+              a la Ley 108-05 de Registro Inmobiliario. Esta inscripción es
+              la que hace oponible la compra frente a terceros, y es la etapa
+              en la que un cierre informal suele fallar.
             </p>
           </div>
         </div>
@@ -234,19 +235,18 @@ export default function InversionExtranjeraPage() {
             <div className="eyebrow">Marco legal</div>
 
             <h2 className="mt-4 text-3xl font-semibold text-[#0f2740]">
-              Ley 16-95 de Inversión Extranjera
+              Ley 16-95 sobre Inversión Extranjera
             </h2>
 
             <p className="mt-4 text-[#5f6b76] leading-7">
               La Ley 16-95 y su reglamento de aplicación garantizan a la
               inversión extranjera el mismo tratamiento legal que a la
               inversión nacional, sin exigir autorización previa para
-              invertir en la generalidad de los sectores económicos, ni
-              porcentaje mínimo de participación dominicana. Permite
-              comprar bienes inmuebles, constituir o adquirir empresas, y
-              repatriar capital y utilidades, sujeto al registro
-              correspondiente ante las autoridades competentes cuando
-              aplique.
+              invertir en la generalidad de los sectores económicos ni un
+              porcentaje mínimo de participación dominicana. Permite comprar
+              bienes inmuebles, constituir o adquirir empresas y repatriar
+              capital y utilidades, sujeto al registro de la inversión ante
+              las autoridades competentes cuando corresponda.
             </p>
           </div>
 
@@ -258,15 +258,15 @@ export default function InversionExtranjeraPage() {
             </h2>
 
             <p className="mt-4 text-[#5f6b76] leading-7">
-              La Ley 158-01 de Fomento al Desarrollo Turístico crea
-              incentivos fiscales para proyectos ubicados en polos
-              turísticos designados, administrados por el Consejo de
-              Fomento Turístico (CONFOTUR). Un proyecto con clasificación
-              CONFOTUR vigente puede eximir al comprador del impuesto de
-              transferencia inmobiliaria y del IPI durante el período que
-              otorgue el decreto correspondiente. Verificamos la validez y
-              el alcance real de estos beneficios antes de que compres,
-              algo que muchos compradores extranjeros asumen sin confirmar.
+              La Ley 158-01 sobre Fomento al Desarrollo Turístico establece
+              incentivos fiscales para proyectos ubicados en polos turísticos
+              designados, administrados por el Consejo de Fomento Turístico
+              (CONFOTUR). Un proyecto con clasificación CONFOTUR vigente puede
+              eximir al comprador del impuesto de transferencia inmobiliaria
+              y del IPI durante el período que otorgue la resolución
+              correspondiente. Antes de que usted compre, verificamos la
+              vigencia y el alcance real de esos beneficios, que muchos
+              compradores extranjeros dan por supuestos sin confirmarlos.
             </p>
           </div>
         </div>
@@ -276,18 +276,19 @@ export default function InversionExtranjeraPage() {
       <section className="pb-12 md:pb-20">
         <div className="container-legal card-legal grid gap-8 p-6 md:grid-cols-[0.9fr_1.1fr] md:p-12">
           <div>
-            <div className="eyebrow">Alianza estratégica</div>
+            <div className="eyebrow">Alianza profesional</div>
             <h2 className="mt-4 text-3xl font-semibold text-[#0f2740]">
-              Due diligence técnica y ejecución legal, en un mismo proceso.
+              Debida diligencia técnica y ejecución legal, en un mismo
+              proceso.
             </h2>
             <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
           </div>
 
           <div className="space-y-5 text-[#5f6b76] leading-7">
             <p>
-              Antes de firmar cualquier acuerdo, es clave verificar que la
-              propiedad, el terreno o el proyecto sea exactamente lo que
-              promete: linderos correctos, permisos en regla, ausencia de
+              Antes de firmar cualquier acuerdo, conviene verificar que la
+              propiedad, el terreno o el proyecto sea exactamente lo que se
+              ofrece: linderos correctos, permisos en regla, ausencia de
               gravámenes y viabilidad real del proyecto.
             </p>
             <p>
@@ -300,7 +301,7 @@ export default function InversionExtranjeraPage() {
               >
                 Land Consulting DR
               </a>
-              , firma especializada en due diligence inmobiliaria para
+              , firma especializada en debida diligencia inmobiliaria para
               compradores extranjeros en República Dominicana. Land
               Consulting DR investiga y verifica la propiedad antes de la
               compra; Cabinet Legal estructura, negocia y ejecuta la compra
@@ -313,8 +314,8 @@ export default function InversionExtranjeraPage() {
                   Land Consulting DR
                 </div>
                 <p className="mt-2 text-sm text-[#5f6b76]">
-                  Due diligence técnica, verificación de terreno y estudios
-                  previos a la compra.
+                  Debida diligencia técnica, verificación de terreno y
+                  estudios previos a la compra.
                 </p>
               </div>
               <div className="rounded-xl border border-[#e8ecef] p-4">
@@ -323,7 +324,7 @@ export default function InversionExtranjeraPage() {
                 </div>
                 <p className="mt-2 text-sm text-[#5f6b76]">
                   Estructuración legal, contratos, cierre y protección
-                  post-compra.
+                  posterior a la compra.
                 </p>
               </div>
             </div>
@@ -353,13 +354,14 @@ export default function InversionExtranjeraPage() {
           <div className="eyebrow">Costo</div>
 
           <h2 className="mt-4 text-3xl font-semibold text-[#0f2740]">
-            ¿Cuánto cuesta la asesoría legal para mi inversión?
+            ¿Cuánto cuesta la asesoría legal para su inversión?
           </h2>
 
           <p className="mt-4 text-[#5f6b76] leading-7 max-w-2xl">
-            El costo depende del tipo de propiedad, el monto de la inversión
-            y la complejidad de la estructura legal requerida. Evaluamos cada
-            caso individualmente para darte un presupuesto preciso.
+            El costo depende del tipo de propiedad, del monto de la inversión
+            y de la complejidad de la estructura legal requerida. Evaluamos
+            cada caso de forma individual para ofrecerle un presupuesto
+            preciso.
           </p>
 
           <div className="mt-6">
@@ -376,12 +378,12 @@ export default function InversionExtranjeraPage() {
       <section className="pb-16 md:pb-20">
         <div className="container-legal card-legal p-6 md:p-12">
           <h2 className="text-3xl font-semibold text-[#0f2740]">
-            Protege tu inversión antes de firmar
+            Proteja su inversión antes de firmar
           </h2>
 
           <p className="mt-4 text-[#5f6b76] max-w-2xl">
-            Una vez firmado un contrato o entregado un depósito, tus opciones
-            legales se reducen. Habla con nosotros antes de comprometerte.
+            Una vez firmado un contrato o entregado un depósito, sus opciones
+            legales se reducen. Consúltenos antes de comprometerse.
           </p>
 
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
