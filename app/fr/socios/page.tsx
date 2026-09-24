@@ -40,18 +40,18 @@ const partners = [
     name: "Ellis Beato",
     role: "Associé fondateur",
     image: "/ellis-beato.jpg",
-    bio: "Ellis Beato dirige la pratique contentieuse de Cabinet Legal, avec une expérience en contentieux civil, du travail, administratif et immobilier, ainsi que dans la résolution de litiges d'affaires complexes. Il représente ses clients dans les procédures judiciaires et les litiges stratégiques, avec une approche rigoureuse, technique et orientée résultats.",
+    bio: "Ellis Beato dirige les pratiques affaires et contentieux de Cabinet Legal. Il conseille entreprises et investisseurs dans la structuration et la négociation de leurs opérations, et les représente en contentieux civil, commercial, du travail, administratif et immobilier, ainsi que dans la résolution de litiges d'affaires complexes, avec une approche rigoureuse, technique et orientée résultats.",
     focus:
-      "Sa pratique se concentre sur la défense efficace des intérêts de ses clients, combinant analyse juridique approfondie, stratégie procédurale et exécution solide à chaque étape du litige.",
+      "Sa pratique allie la vision d'affaires qui prévient les conflits à la stratégie contentieuse qui les résout lorsqu'ils surviennent : analyse juridique approfondie, négociation ferme et exécution solide à chaque étape.",
     areas: [
-      "Contentieux civil",
-      "Contentieux du travail",
-      "Contentieux administratif",
+      "Droit des affaires et contrats",
+      "Négociation et règlement des différends",
+      "Médiation et arbitrage commercial",
+      "Contentieux civil et commercial",
       "Contentieux immobilier",
-      "Résolution de litiges",
-      "Représentation judiciaire",
-      "Stratégie procédurale",
-      "Litiges d'affaires",
+      "Contentieux du travail et administratif",
+      "Recours devant les hautes juridictions",
+      "Stratégie contentieuse",
     ],
   },
 ];
@@ -144,13 +144,9 @@ export default function SociosPageFR() {
         <div className="grid gap-10 rounded-[24px] bg-[#0f2740] p-7 text-white md:grid-cols-[0.9fr_1.1fr] md:p-12">
           <div>
             <div className="text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">Notre équipe</div>
-            <h2 className="pt-4 text-3xl font-light leading-tight tracking-tight md:text-4xl">Plus de sept avocats collaborateurs, organisés par domaine</h2>
+            <h2 className="pt-4 text-3xl font-light leading-tight tracking-tight md:text-4xl">Une excellente équipe d&apos;avocats, organisée par domaine</h2>
             <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
             <p className="pt-6 leading-8 text-white/80">Derrière chaque associé travaille une équipe d&apos;avocats collaborateurs spécialisés. Chaque dossier est dirigé par un associé et traité par l&apos;avocat qui maîtrise le mieux la matière : le regard d&apos;un associé et l&apos;engagement d&apos;un spécialiste.</p>
-            <div className="mt-8 flex items-end gap-4">
-              <div className="text-5xl font-semibold text-[#c8a46a]">7+</div>
-              <div className="pb-1 text-sm uppercase tracking-[0.14em] text-white/70">Avocats collaborateurs</div>
-            </div>
             <Link
               href="/fr/consulta"
               className="mt-8 inline-flex items-center justify-center rounded-full bg-[#c8a46a] px-7 py-3 text-sm font-semibold text-[#0f2740] transition hover:bg-[#d6b57f]"

@@ -45,7 +45,7 @@ export const CAREERS_COPY: Record<
       ["Mentoría directa", "Trabajas cada asunto con un socio, que revisa tu trabajo y te da criterio real."],
       ["Asuntos de alto impacto", "Operaciones inmobiliarias, corporativas y litigios que exigen rigor técnico."],
       ["Clientes internacionales", "Inversionistas de América del Norte y Europa, atendidos en español, inglés y francés."],
-      ["Crecimiento por área", "Once áreas de práctica para especializarte donde está tu vocación."],
+      ["Crecimiento por área", "Doce áreas de práctica para especializarte donde está tu vocación."],
     ],
     profilesTitle: "Perfiles que buscamos",
     profiles: [
@@ -86,7 +86,7 @@ export const CAREERS_COPY: Record<
       ["Direct mentoring", "You work every matter with a partner who reviews your work and sharpens your judgment."],
       ["High-impact matters", "Real estate, corporate and litigation work that demands technical rigor."],
       ["International clients", "Investors from North America and Europe, served in Spanish, English and French."],
-      ["Growth by practice area", "Eleven practice areas to specialize where your interests lie."],
+      ["Growth by practice area", "Twelve practice areas to specialize where your interests lie."],
     ],
     profilesTitle: "Who we are looking for",
     profiles: [
@@ -127,7 +127,7 @@ export const CAREERS_COPY: Record<
       ["Mentorat direct", "Vous travaillez chaque dossier avec un associé qui relit votre travail et forge votre jugement."],
       ["Dossiers à fort enjeu", "Immobilier, droit des sociétés et contentieux exigeant une grande rigueur."],
       ["Clientèle internationale", "Des investisseurs d'Amérique du Nord et d'Europe, en espagnol, anglais et français."],
-      ["Évolution par domaine", "Onze domaines d'expertise pour vous spécialiser selon votre vocation."],
+      ["Évolution par domaine", "Douze domaines d'expertise pour vous spécialiser selon votre vocation."],
     ],
     profilesTitle: "Profils recherchés",
     profiles: [

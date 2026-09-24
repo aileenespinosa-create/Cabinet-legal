@@ -107,11 +107,11 @@ export default function HomePageEN() {
               <div className="mt-1 text-sm text-[#5f6b76]">Year founded</div>
             </div>
             <div>
-              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">7+</div>
-              <div className="mt-1 text-sm text-[#5f6b76]">Associate lawyers organized by practice area</div>
+              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">100%</div>
+              <div className="mt-1 text-sm text-[#5f6b76]">Matters you can start by power of attorney, without traveling</div>
             </div>
             <div>
-              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">11</div>
+              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">12</div>
               <div className="mt-1 text-sm text-[#5f6b76]">Specialized practice areas</div>
             </div>
             <div>
@@ -269,8 +269,8 @@ export default function HomePageEN() {
               </h3>
               <p className="mt-4 leading-7 text-[#5f6b76]">
                 A partner leads your matter from the first consultation,
-                backed by a team of more than seven associate lawyers
-                organized by practice area.
+                backed by an excellent team of lawyers specialized by
+                practice area.
               </p>
             </div>
 

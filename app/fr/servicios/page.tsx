@@ -3,7 +3,7 @@ import SiteHeader from "@/components/SiteHeader";
 import ServicesExplorer from "@/components/ServicesExplorer";
 
 export const metadata: Metadata = {
-  title: "Services juridiques en République dominicaine : 11 domaines",
+  title: "Services juridiques en République dominicaine : 12 domaines",
   description: "Droit des sociétés, fusions, investissement étranger et immobilier, énergie, permis, succession, résidence, marques, contentieux, recouvrement et droit pénal en République dominicaine.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/fr/servicios",

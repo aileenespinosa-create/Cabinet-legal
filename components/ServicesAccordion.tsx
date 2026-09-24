@@ -17,7 +17,7 @@ function Check() {
 // Home page: editorial accordion on navy, one area open at a time.
 export default function ServicesAccordion({ lang }: { lang: Lang }) {
   const t = SERVICES_COPY[lang];
-  const [open, setOpen] = useState(2);
+  const [open, setOpen] = useState(() => SERVICES.findIndex((s) => s.id === "inversion"));
 
   return (
     <section className="bg-[#0f2740] py-16 text-white md:py-28">

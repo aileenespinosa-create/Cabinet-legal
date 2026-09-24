@@ -3,7 +3,7 @@ import SiteHeader from "@/components/SiteHeader";
 import ServicesExplorer from "@/components/ServicesExplorer";
 
 export const metadata: Metadata = {
-  title: "Legal services in the Dominican Republic: 11 practice areas",
+  title: "Legal services in the Dominican Republic: 12 practice areas",
   description: "Corporate, M&A, foreign investment and real estate, energy, permits, estate planning, residency, trademarks, litigation, debt collection and criminal law in the Dominican Republic.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/en/servicios",

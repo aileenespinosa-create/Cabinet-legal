@@ -29,7 +29,7 @@ type Copy = {
 export const SERVICES_COPY: Record<Lang, Copy> = {
   es: {
     kicker: "Áreas de práctica",
-    accTitleA: "Once áreas.",
+    accTitleA: "Doce áreas.",
     accTitleB: "Un mismo estándar.",
     accIntro: "Abre cualquier área y conoce qué hacemos por ti, cómo trabajamos y qué incluye. Cada asunto lo dirige un socio.",
     expTitle: "¿Qué necesitas resolver?",
@@ -53,6 +53,7 @@ export const SERVICES_COPY: Record<Lang, Copy> = {
       ["Planificar mi herencia", "patrimonial"],
       ["Obtener la residencia", "residencia"],
       ["Denunciar una estafa", "penal"],
+      ["Resolver un tema con la DGII", "tributario"],
     ],
     whyUs: "Por qué con nosotros",
     otherAreas: "Otras áreas del mismo frente",
@@ -61,7 +62,7 @@ export const SERVICES_COPY: Record<Lang, Copy> = {
   },
   en: {
     kicker: "Practice areas",
-    accTitleA: "Eleven areas.",
+    accTitleA: "Twelve areas.",
     accTitleB: "One standard.",
     accIntro: "Open any area to see what we do for you, how we work and what is included. Every matter is led by a partner.",
     expTitle: "What do you need to solve?",
@@ -85,6 +86,7 @@ export const SERVICES_COPY: Record<Lang, Copy> = {
       ["Plan my estate", "patrimonial"],
       ["Get residency", "residencia"],
       ["Report a fraud", "penal"],
+      ["Handle a tax issue", "tributario"],
     ],
     whyUs: "Why us",
     otherAreas: "Other areas in this group",
@@ -93,7 +95,7 @@ export const SERVICES_COPY: Record<Lang, Copy> = {
   },
   fr: {
     kicker: "Domaines d'expertise",
-    accTitleA: "Onze domaines.",
+    accTitleA: "Douze domaines.",
     accTitleB: "Une même exigence.",
     accIntro: "Ouvrez un domaine pour découvrir ce que nous faisons pour vous, notre méthode et ce qui est inclus. Chaque dossier est dirigé par un associé.",
     expTitle: "Que devez-vous résoudre ?",
@@ -117,6 +119,7 @@ export const SERVICES_COPY: Record<Lang, Copy> = {
       ["Organiser ma succession", "patrimonial"],
       ["Obtenir la résidence", "residencia"],
       ["Porter plainte pour escroquerie", "penal"],
+      ["Régler une question fiscale", "tributario"],
     ],
     whyUs: "Pourquoi nous",
     otherAreas: "Autres domaines du même pôle",

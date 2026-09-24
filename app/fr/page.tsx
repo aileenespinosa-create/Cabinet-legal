@@ -110,11 +110,11 @@ export default function HomePageFR() {
               <div className="mt-1 text-sm text-[#5f6b76]">Année de fondation</div>
             </div>
             <div>
-              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">7+</div>
-              <div className="mt-1 text-sm text-[#5f6b76]">Avocats collaborateurs organisés par domaine</div>
+              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">100%</div>
+              <div className="mt-1 text-sm text-[#5f6b76]">Démarches possibles par procuration, sans voyager</div>
             </div>
             <div>
-              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">11</div>
+              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">12</div>
               <div className="mt-1 text-sm text-[#5f6b76]">Domaines d&apos;expertise</div>
             </div>
             <div>
@@ -277,8 +277,8 @@ export default function HomePageFR() {
               </h3>
               <p className="mt-4 leading-7 text-[#5f6b76]">
                 Un associé dirige votre dossier dès la première consultation,
-                avec le soutien d&apos;une équipe de plus de sept avocats
-                collaborateurs organisés par domaine d&apos;expertise.
+                avec le soutien d&apos;une excellente équipe d&apos;avocats
+                spécialisés par domaine d&apos;expertise.
               </p>
             </div>
 

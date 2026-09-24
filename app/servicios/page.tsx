@@ -3,7 +3,7 @@ import SiteHeader from "@/components/SiteHeader";
 import ServicesExplorer from "@/components/ServicesExplorer";
 
 export const metadata: Metadata = {
-  title: "Servicios legales en República Dominicana: 11 áreas de práctica",
+  title: "Servicios legales en República Dominicana: 12 áreas de práctica",
   description: "Derecho corporativo, fusiones, inversión extranjera e inmobiliario, energía, permisología, planificación sucesoral, residencia, marcas, litigación, cobros y derecho penal en República Dominicana.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/servicios",

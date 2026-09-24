@@ -60,6 +60,38 @@ export const SERVICES: Service[] = [
     },
   },
   {
+    id: "tributario",
+    pillar: "ni",
+    img: "/hero-legal.jpg",
+    slug: { es: "derecho-tributario", en: "tax-law", fr: "droit-fiscal" },
+    text: {
+      es: {
+        title: "Derecho tributario",
+        promise: "Cumple lo que exige la ley sin pagar de más, y defiéndete con firmeza ante la DGII.",
+        what: "Estructuramos tus operaciones, inversiones e inmuebles con la carga fiscal más eficiente que permite la ley, incluidos los incentivos CONFOTUR y los convenios para evitar la doble tributación. Si la DGII te fiscaliza o te notifica un ajuste, preparamos la defensa y la llevamos hasta el Tribunal Superior Administrativo si hace falta.",
+        steps: ["Diagnóstico fiscal de tu operación", "Planificación y cumplimiento a la medida", "Defensa ante la DGII y los tribunales"],
+        items: ["Planificación fiscal de empresas e inversiones", "Impuestos en compras y ventas de inmuebles", "Fiscalizaciones y reclamaciones ante la DGII", "Recursos ante el Tribunal Superior Administrativo"],
+        proof: ["Visión legal y fiscal integrada", "Incentivos y exenciones aplicados", "Defensa en sede administrativa y judicial"],
+      },
+      en: {
+        title: "Tax law",
+        promise: "Meet what the law requires without overpaying, and stand firm before the tax authority.",
+        what: "We structure your operations, investments and real estate with the most efficient tax burden the law allows, including CONFOTUR incentives and double taxation treaties. If the DGII audits you or issues an assessment, we build your defense and take it to the Superior Administrative Court if needed.",
+        steps: ["Tax review of your operation", "Tailored planning and compliance", "Defense before the DGII and the courts"],
+        items: ["Tax planning for companies and investments", "Taxes on real estate purchases and sales", "Audits and appeals before the DGII", "Appeals before the Superior Administrative Court"],
+        proof: ["Integrated legal and tax view", "Incentives and exemptions applied", "Administrative and judicial defense"],
+      },
+      fr: {
+        title: "Droit fiscal",
+        promise: "Respectez la loi sans payer plus que nécessaire, et défendez-vous avec fermeté face au fisc.",
+        what: "Nous structurons vos opérations, investissements et biens immobiliers avec la charge fiscale la plus efficace que permet la loi, y compris les incitations CONFOTUR et les conventions contre la double imposition. En cas de contrôle ou de redressement de la DGII, nous préparons votre défense jusqu'au Tribunal supérieur administratif si nécessaire.",
+        steps: ["Diagnostic fiscal de votre activité", "Planification et conformité sur mesure", "Défense devant la DGII et les tribunaux"],
+        items: ["Planification fiscale des sociétés et investissements", "Fiscalité des achats et ventes immobiliers", "Contrôles et réclamations devant la DGII", "Recours devant le Tribunal supérieur administratif"],
+        proof: ["Vision juridique et fiscale intégrée", "Incitations et exonérations appliquées", "Défense administrative et judiciaire"],
+      },
+    },
+  },
+  {
     id: "fusiones",
     pillar: "ni",
     img: "/hero-legal.jpg",
