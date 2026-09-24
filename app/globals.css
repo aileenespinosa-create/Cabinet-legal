@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --font-serif: var(--font-lora), Georgia, "Times New Roman", serif;
+}
+
 :root {
   --background: #f7f4ee;
   --surface: #ffffff;

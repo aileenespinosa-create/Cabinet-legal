@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import GuideLanding from "@/components/GuideLanding";
 
 export const metadata: Metadata = {
-  title: `Free guide: how to invest in the Dominican Republic 2026 | Cabinet Legal`,
+  title: `Free guide: how to invest in the Dominican Republic 2026`,
   description: `Download the 2026 legal guide for foreign investors: buying property, CONFOTUR, companies, residency and closing costs in the Dominican Republic.`,
   alternates: {
     canonical: "https://cabinetlegal.com.do/en/guia-inversion",

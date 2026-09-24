@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 import GuideBanner from "@/components/GuideBanner";
+import ServicesAccordion from "@/components/ServicesAccordion";
 
 export const metadata: Metadata = {
   title: "Dominican Republic Law Firm for Foreign Investors & Real Estate",
@@ -110,7 +111,7 @@ export default function HomePageEN() {
               <div className="mt-1 text-sm text-[#5f6b76]">Associate lawyers organized by practice area</div>
             </div>
             <div>
-              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">9</div>
+              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">11</div>
               <div className="mt-1 text-sm text-[#5f6b76]">Specialized practice areas</div>
             </div>
             <div>
@@ -156,71 +157,7 @@ export default function HomePageEN() {
         </div>
       </section>
 
-      {/* SERVICES */}
-      <section className="pb-14 md:pb-24">
-        <div className="mx-auto w-full max-w-[1200px] px-6 lg:px-8">
-          <div className="mb-10 max-w-3xl">
-            <div className="mb-4 text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
-              Key services
-            </div>
-            <h2 className="text-3xl font-light tracking-tight text-[#0f2740] md:text-4xl">
-              Areas where we can help
-            </h2>
-          </div>
-
-          <div className="grid gap-4 sm:gap-6 md:grid-cols-2 xl:grid-cols-4">
-            <div className="card-legal p-6 md:p-8">
-              <div className="text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
-                Corporate
-              </div>
-              <h3 className="mt-4 text-xl font-semibold text-[#0f2740]">
-                Corporate law
-              </h3>
-              <p className="mt-4 leading-7 text-[#5f6b76]">
-                Business structuring, contracts and ongoing corporate legal
-                support.
-              </p>
-            </div>
-
-            <div className="card-legal p-6 md:p-8">
-              <div className="text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
-                Trademarks
-              </div>
-              <h3 className="mt-4 text-xl font-semibold text-[#0f2740]">
-                Trademark registration
-              </h3>
-              <p className="mt-4 leading-7 text-[#5f6b76]">
-                Evaluation, strategy and full case management before ONAPI
-                (the Dominican IP office).
-              </p>
-            </div>
-
-            <div className="card-legal p-6 md:p-8">
-              <div className="text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
-                Protection
-              </div>
-              <h3 className="mt-4 text-xl font-semibold text-[#0f2740]">
-                Intellectual property
-              </h3>
-              <p className="mt-4 leading-7 text-[#5f6b76]">
-                Strategic protection and defense of intangible assets.
-              </p>
-            </div>
-
-            <div className="card-legal p-6 md:p-8">
-              <div className="text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
-                Representation
-              </div>
-              <h3 className="mt-4 text-xl font-semibold text-[#0f2740]">
-                Litigation and disputes
-              </h3>
-              <p className="mt-4 leading-7 text-[#5f6b76]">
-                Handling civil and commercial disputes with technical rigor.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ServicesAccordion lang="en" />
 
       {/* TRADEMARK REGISTRATION FEATURE */}
       <section className="pb-14 md:pb-24">
