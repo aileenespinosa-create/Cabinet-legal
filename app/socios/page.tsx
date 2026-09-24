@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
@@ -38,7 +39,7 @@ const partners = [
   {
     name: "Ellis Beato",
     role: "Founding Partner",
-    image: "/ellis.jpg",
+    image: "/ellis-beato.jpg",
     bio: "Ellis Beato lidera la práctica de litigios en Cabinet Legal, con experiencia en litigios civiles, laborales, administrativos y en materia inmobiliaria, así como en la resolución de conflictos empresariales complejos. Representa a clientes en procesos judiciales y controversias estratégicas, con un enfoque riguroso, técnico y orientado a resultados.",
     focus:
       "Su práctica se centra en la defensa efectiva de los intereses de sus clientes, combinando análisis jurídico profundo, estrategia procesal y ejecución sólida en cada etapa del litigio.",
@@ -57,7 +58,7 @@ const partners = [
 
 export default function SociosPage() {
   return (
-    <main className="overflow-x-hidden bg-[#f8f6f1]">
+    <main className="overflow-x-hidden bg-[#f8f6f1] pt-[88px]">
       <SiteHeader />
 
       <section className="container-legal py-12 md:py-20">
@@ -67,8 +68,9 @@ export default function SociosPage() {
             Socios
           </h1>
           <p className="mt-5 max-w-3xl text-base leading-8 text-[#5f6b76] md:text-lg">
-            Un equipo con enfoque estratégico, atención directa de socios y
-            especialización en asesoría corporativa y litigios de alto impacto.
+            Dos socios al frente de un equipo de más de siete abogados
+            asociados, con especialización en asesoría corporativa, inversión
+            extranjera y litigios de alto impacto.
           </p>
         </div>
 
@@ -135,6 +137,53 @@ export default function SociosPage() {
               </div>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="container-legal pb-16 md:pb-24">
+        <div className="grid gap-10 rounded-[24px] bg-[#0f2740] p-7 text-white md:grid-cols-[0.9fr_1.1fr] md:p-12">
+          <div>
+            <div className="text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">Nuestro equipo</div>
+            <h2 className="pt-4 text-3xl font-light leading-tight tracking-tight md:text-4xl">Más de siete abogados asociados, organizados por área</h2>
+            <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
+            <p className="pt-6 leading-8 text-white/80">Detrás de cada socio trabaja un equipo de abogados asociados especializados. Cada asunto lo dirige un socio y lo desarrolla el abogado que domina la materia, para que tengas criterio de socio y dedicación de especialista.</p>
+            <div className="mt-8 flex items-end gap-4">
+              <div className="text-5xl font-semibold text-[#c8a46a]">+7</div>
+              <div className="pb-1 text-sm uppercase tracking-[0.14em] text-white/70">Abogados asociados</div>
+            </div>
+            <Link
+              href="/consulta"
+              className="mt-8 inline-flex items-center justify-center rounded-full bg-[#c8a46a] px-7 py-3 text-sm font-semibold text-[#0f2740] transition hover:bg-[#d6b57f]"
+            >
+              Solicitar consulta
+            </Link>
+          </div>
+          <ul className="grid content-center gap-3 sm:grid-cols-2">
+                <li className="flex items-center gap-3 rounded-xl border border-[#e6dece] bg-white px-5 py-4 text-[#0f2740]">
+                  <span className="h-2 w-2 shrink-0 rounded-full bg-[#c8a46a]" />
+                  Derecho corporativo y societario
+                </li>
+                <li className="flex items-center gap-3 rounded-xl border border-[#e6dece] bg-white px-5 py-4 text-[#0f2740]">
+                  <span className="h-2 w-2 shrink-0 rounded-full bg-[#c8a46a]" />
+                  Inversión extranjera e inmobiliario
+                </li>
+                <li className="flex items-center gap-3 rounded-xl border border-[#e6dece] bg-white px-5 py-4 text-[#0f2740]">
+                  <span className="h-2 w-2 shrink-0 rounded-full bg-[#c8a46a]" />
+                  Registro de marcas y propiedad intelectual
+                </li>
+                <li className="flex items-center gap-3 rounded-xl border border-[#e6dece] bg-white px-5 py-4 text-[#0f2740]">
+                  <span className="h-2 w-2 shrink-0 rounded-full bg-[#c8a46a]" />
+                  Litigios civiles y comerciales
+                </li>
+                <li className="flex items-center gap-3 rounded-xl border border-[#e6dece] bg-white px-5 py-4 text-[#0f2740]">
+                  <span className="h-2 w-2 shrink-0 rounded-full bg-[#c8a46a]" />
+                  Litigios laborales y administrativos
+                </li>
+                <li className="flex items-center gap-3 rounded-xl border border-[#e6dece] bg-white px-5 py-4 text-[#0f2740]">
+                  <span className="h-2 w-2 shrink-0 rounded-full bg-[#c8a46a]" />
+                  Migración y residencia
+                </li>
+          </ul>
         </div>
       </section>
     </main>

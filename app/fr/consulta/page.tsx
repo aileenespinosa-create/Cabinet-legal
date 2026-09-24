@@ -191,7 +191,7 @@ export default function ConsultaPageFR() {
                   <option disabled>Sélectionnez une option</option>
                   <option>Investissement étranger / immobilier</option>
                   <option>Fusions et acquisitions</option>
-                  <option>Création d'entreprise</option>
+                  <option>Création d&apos;entreprise</option>
                   <option>Résidence et permis de travail</option>
                   <option>Dépôt de marques</option>
                   <option>Droit des affaires</option>

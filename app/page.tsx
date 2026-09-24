@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
+import GuideBanner from "@/components/GuideBanner";
 
 export const metadata: Metadata = {
   title: "Abogados en República Dominicana para Inversionistas Extranjeros",
@@ -126,15 +127,17 @@ export default function HomePage() {
             </div>
             <div>
               <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">
-                100%
+                +7
               </div>
               <div className="mt-1 text-sm text-[#5f6b76]">
-                Trámites que puedes iniciar por poder, sin viajar al país
+                Abogados asociados organizados por área de práctica
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <GuideBanner lang="es" />
 
       {/* PROBLEMA / SOLUCIÓN */}
       <section className="pb-14 md:pb-24">
@@ -164,7 +167,8 @@ export default function HomePage() {
               Desde 2009 acompañamos a empresas, inversionistas extranjeros y
               clientes privados en compras de bienes raíces, estructuración
               societaria, registro de marcas y litigios en República
-              Dominicana, con atención directa de socios en cada caso.
+              Dominicana. Cada caso lo dirige un socio y lo trabaja un equipo
+              de más de siete abogados asociados.
             </p>
           </div>
         </div>
@@ -345,8 +349,9 @@ export default function HomePage() {
                 Atención directa de socios
               </h3>
               <p className="mt-4 leading-7 text-[#5f6b76]">
-                Hablas con Aileen Espinosa o Ellis Beato desde la primera
-                consulta, no con un equipo júnior intermedio.
+                Un socio dirige tu caso desde la primera consulta, con el
+                respaldo de un equipo de más de siete abogados asociados
+                organizados por área de práctica.
               </p>
             </div>
 

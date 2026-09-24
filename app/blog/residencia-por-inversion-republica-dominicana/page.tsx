@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import GuideBanner from "@/components/GuideBanner";
 
 export const metadata: Metadata = {
   title: "Residencia por Inversión en República Dominicana: Guía 2026",
@@ -181,6 +182,8 @@ export default function Article() {
           </div>
         </div>
       </article>
+      <GuideBanner lang="es" />
+
     </main>
   );
 }

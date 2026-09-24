@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
+import GuideBanner from "@/components/GuideBanner";
 
 export const metadata: Metadata = {
   title: "Dominican Republic Law Firm for Foreign Investors & Real Estate",
@@ -95,6 +96,32 @@ export default function HomePageEN() {
           </div>
         </div>
       </section>
+
+      {/* FIGURES */}
+      <section className="pb-14 md:pb-20">
+        <div className="mx-auto w-full max-w-[1200px] px-6 lg:px-8">
+          <div className="grid grid-cols-2 gap-6 border-y border-[#e6dece] py-8 md:grid-cols-4 md:py-10">
+            <div>
+              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">2009</div>
+              <div className="mt-1 text-sm text-[#5f6b76]">Year founded</div>
+            </div>
+            <div>
+              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">7+</div>
+              <div className="mt-1 text-sm text-[#5f6b76]">Associate lawyers organized by practice area</div>
+            </div>
+            <div>
+              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">9</div>
+              <div className="mt-1 text-sm text-[#5f6b76]">Specialized practice areas</div>
+            </div>
+            <div>
+              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">3</div>
+              <div className="mt-1 text-sm text-[#5f6b76]">Languages: English, Spanish and French</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <GuideBanner lang="en" />
 
       {/* PROBLEM / SOLUTION */}
       <section className="pb-14 md:pb-24">
@@ -301,11 +328,12 @@ export default function HomePageEN() {
           <div className="grid gap-4 md:grid-cols-3">
             <div className="card-legal p-6 md:p-8">
               <h3 className="text-xl font-semibold text-[#0f2740]">
-                Direct attention
+                Partner-led team
               </h3>
               <p className="mt-4 leading-7 text-[#5f6b76]">
-                You receive close, strategic support, with no impersonal
-                processes.
+                A partner leads your matter from the first consultation,
+                backed by a team of more than seven associate lawyers
+                organized by practice area.
               </p>
             </div>
 

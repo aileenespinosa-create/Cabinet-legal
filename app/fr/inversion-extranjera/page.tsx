@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
+import GuideBanner from "@/components/GuideBanner";
 
 export const metadata: Metadata = {
   title: "Avocat Immobilier pour Investisseurs Étrangers en République Dominicaine",
@@ -215,6 +216,8 @@ export default function InvestisseursEtrangersPageFR() {
           </div>
         </div>
       </section>
+
+      <GuideBanner lang="fr" />
 
       {/* COÛT */}
       <section className="pb-12 md:pb-20">

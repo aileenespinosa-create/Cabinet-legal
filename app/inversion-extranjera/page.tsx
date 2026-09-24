@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 import FaqAccordion from "@/components/FaqAccordion";
 import { buildFaqSchema } from "@/components/faqSchema";
+import GuideBanner from "@/components/GuideBanner";
 
 export const metadata: Metadata = {
   title: "Abogado para Comprar Bienes Raíces en República Dominicana",
@@ -343,6 +344,8 @@ export default function InversionExtranjeraPage() {
           </div>
         </div>
       </section>
+
+      <GuideBanner lang="es" />
 
       {/* COSTO */}
       <section className="pb-12 md:pb-20">
