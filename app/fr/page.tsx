@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
+import GuideBanner from "@/components/GuideBanner";
 
 export const metadata: Metadata = {
   title: "Cabinet d'Avocats en République Dominicaine pour Investisseurs Étrangers",
@@ -98,6 +99,32 @@ export default function HomePageFR() {
           </div>
         </div>
       </section>
+
+      {/* FIGURES */}
+      <section className="pb-14 md:pb-20">
+        <div className="mx-auto w-full max-w-[1200px] px-6 lg:px-8">
+          <div className="grid grid-cols-2 gap-6 border-y border-[#e6dece] py-8 md:grid-cols-4 md:py-10">
+            <div>
+              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">2009</div>
+              <div className="mt-1 text-sm text-[#5f6b76]">Année de fondation</div>
+            </div>
+            <div>
+              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">7+</div>
+              <div className="mt-1 text-sm text-[#5f6b76]">Avocats collaborateurs organisés par domaine</div>
+            </div>
+            <div>
+              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">9</div>
+              <div className="mt-1 text-sm text-[#5f6b76]">Domaines d&apos;expertise</div>
+            </div>
+            <div>
+              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">3</div>
+              <div className="mt-1 text-sm text-[#5f6b76]">Langues : français, anglais et espagnol</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <GuideBanner lang="fr" />
 
       {/* PROBLÈME / SOLUTION */}
       <section className="pb-14 md:pb-24">
@@ -310,11 +337,12 @@ export default function HomePageFR() {
           <div className="grid gap-4 md:grid-cols-3">
             <div className="card-legal p-6 md:p-8">
               <h3 className="text-xl font-semibold text-[#0f2740]">
-                Attention directe
+                Une équipe dirigée par un associé
               </h3>
               <p className="mt-4 leading-7 text-[#5f6b76]">
-                Vous bénéficiez d&apos;un accompagnement proche et
-                stratégique, sans démarches impersonnelles.
+                Un associé dirige votre dossier dès la première consultation,
+                avec le soutien d&apos;une équipe de plus de sept avocats
+                collaborateurs organisés par domaine d&apos;expertise.
               </p>
             </div>
 

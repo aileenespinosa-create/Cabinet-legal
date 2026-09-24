@@ -5,6 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
+      disallow: ["/api/", "/guia-inversion/descarga", "/en/guia-inversion/descarga", "/fr/guia-inversion/descarga"],
     },
     sitemap: "https://cabinetlegal.com.do/sitemap.xml",
   };

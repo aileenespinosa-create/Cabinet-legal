@@ -72,9 +72,11 @@ export default function FirmaPage() {
                 litigan en República Dominicana sin residir en el país.
               </p>
               <p>
-                Quien lleva tu caso es un socio, no un equipo júnior
-                intermedio: hablas directamente con Aileen Espinosa o Ellis
-                Beato desde la primera consulta hasta el cierre del asunto.
+                Contamos con un equipo de más de siete abogados asociados,
+                organizados por área de práctica y dirigidos por nuestros
+                socios, Aileen Espinosa y Ellis Beato. Cada asunto lo dirige un
+                socio desde la primera consulta hasta el cierre, y lo trabaja
+                el abogado especializado en la materia.
               </p>
             </div>
           </div>
@@ -111,10 +113,10 @@ export default function FirmaPage() {
             </div>
             <div>
               <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">
-                2
+                +7
               </div>
               <div className="mt-1 text-sm text-[#5f6b76]">
-                Socios, atención directa en cada caso
+                Abogados asociados, dirigidos por dos socios
               </div>
             </div>
           </div>

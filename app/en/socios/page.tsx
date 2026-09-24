@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
@@ -38,7 +39,7 @@ const partners = [
   {
     name: "Ellis Beato",
     role: "Founding Partner",
-    image: "/ellis.jpg",
+    image: "/ellis-beato.jpg",
     bio: "Ellis Beato leads the litigation practice at Cabinet Legal, with experience in civil, labor, administrative and real estate litigation, as well as resolving complex business disputes. He represents clients in judicial proceedings and strategic disputes with a rigorous, technical and results-oriented approach.",
     focus:
       "His practice centers on the effective defense of his clients' interests, combining in-depth legal analysis, procedural strategy and solid execution at every stage of litigation.",
@@ -57,7 +58,7 @@ const partners = [
 
 export default function SociosPageEN() {
   return (
-    <main className="overflow-x-hidden bg-[#f8f6f1]">
+    <main className="overflow-x-hidden bg-[#f8f6f1] pt-[88px]">
       <SiteHeader />
 
       <section className="container-legal py-12 md:py-20">
@@ -135,6 +136,53 @@ export default function SociosPageEN() {
               </div>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="container-legal pb-16 md:pb-24">
+        <div className="grid gap-10 rounded-[24px] bg-[#0f2740] p-7 text-white md:grid-cols-[0.9fr_1.1fr] md:p-12">
+          <div>
+            <div className="text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">Our team</div>
+            <h2 className="pt-4 text-3xl font-light leading-tight tracking-tight md:text-4xl">More than seven associate lawyers, organized by practice area</h2>
+            <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
+            <p className="pt-6 leading-8 text-white/80">Behind each partner is a team of specialized associate lawyers. Every matter is led by a partner and handled by the lawyer who knows the subject best, so you get a partner&apos;s judgment and a specialist&apos;s dedication.</p>
+            <div className="mt-8 flex items-end gap-4">
+              <div className="text-5xl font-semibold text-[#c8a46a]">7+</div>
+              <div className="pb-1 text-sm uppercase tracking-[0.14em] text-white/70">Associate lawyers</div>
+            </div>
+            <Link
+              href="/en/consulta"
+              className="mt-8 inline-flex items-center justify-center rounded-full bg-[#c8a46a] px-7 py-3 text-sm font-semibold text-[#0f2740] transition hover:bg-[#d6b57f]"
+            >
+              Request a consultation
+            </Link>
+          </div>
+          <ul className="grid content-center gap-3 sm:grid-cols-2">
+                <li className="flex items-center gap-3 rounded-xl border border-[#e6dece] bg-white px-5 py-4 text-[#0f2740]">
+                  <span className="h-2 w-2 shrink-0 rounded-full bg-[#c8a46a]" />
+                  Corporate and company law
+                </li>
+                <li className="flex items-center gap-3 rounded-xl border border-[#e6dece] bg-white px-5 py-4 text-[#0f2740]">
+                  <span className="h-2 w-2 shrink-0 rounded-full bg-[#c8a46a]" />
+                  Foreign investment and real estate
+                </li>
+                <li className="flex items-center gap-3 rounded-xl border border-[#e6dece] bg-white px-5 py-4 text-[#0f2740]">
+                  <span className="h-2 w-2 shrink-0 rounded-full bg-[#c8a46a]" />
+                  Trademarks and intellectual property
+                </li>
+                <li className="flex items-center gap-3 rounded-xl border border-[#e6dece] bg-white px-5 py-4 text-[#0f2740]">
+                  <span className="h-2 w-2 shrink-0 rounded-full bg-[#c8a46a]" />
+                  Civil and commercial litigation
+                </li>
+                <li className="flex items-center gap-3 rounded-xl border border-[#e6dece] bg-white px-5 py-4 text-[#0f2740]">
+                  <span className="h-2 w-2 shrink-0 rounded-full bg-[#c8a46a]" />
+                  Employment and administrative litigation
+                </li>
+                <li className="flex items-center gap-3 rounded-xl border border-[#e6dece] bg-white px-5 py-4 text-[#0f2740]">
+                  <span className="h-2 w-2 shrink-0 rounded-full bg-[#c8a46a]" />
+                  Immigration and residency
+                </li>
+          </ul>
         </div>
       </section>
     </main>

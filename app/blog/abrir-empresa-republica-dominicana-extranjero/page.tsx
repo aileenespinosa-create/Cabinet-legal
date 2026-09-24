@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import GuideBanner from "@/components/GuideBanner";
 
 export const metadata: Metadata = {
   title: "Cómo Abrir una Empresa en República Dominicana Siendo Extranjero",
@@ -193,6 +194,8 @@ export default function Article() {
           </div>
         </div>
       </article>
+      <GuideBanner lang="es" />
+
     </main>
   );
 }

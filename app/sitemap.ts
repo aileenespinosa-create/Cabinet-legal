@@ -3,6 +3,24 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
+      url: "https://cabinetlegal.com.do/guia-inversion",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: "https://cabinetlegal.com.do/en/guia-inversion",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: "https://cabinetlegal.com.do/fr/guia-inversion",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: "https://cabinetlegal.com.do",
       lastModified: new Date(),
       changeFrequency: "weekly",
