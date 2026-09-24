@@ -51,12 +51,17 @@ export default function FirmaPageFR() {
       <section className="pb-12 md:pb-20">
         <div className="container-legal grid gap-6 md:grid-cols-[0.95fr_1.05fr]">
           <div className="card-legal p-6 md:p-10">
-            <div className="eyebrow">Notre vision</div>
-            <h2 className="mt-4 text-3xl font-semibold leading-tight text-[#0f2740] md:text-4xl">
-              Un accompagnement de proximité, un sens des affaires et une
-              approche orientée résultats.
+            <div className="eyebrow">Notre promesse</div>
+            <h2 className="mt-4 font-serif text-3xl font-semibold leading-tight text-[#0f2740] md:text-4xl">
+              Nous pensons comme votre partenaire d&apos;affaires.<br />
+              Nous agissons comme votre défense la plus ferme.
+              <br />
+              <span className="text-[#8a6a37]">Et nous vous traitons comme notre seul client.</span>
             </h2>
             <div className="gold-line mt-6" />
+            <p className="pt-6 text-base leading-8 text-[#5f6b76] md:text-lg">
+              Chaque dossier bénéficie d&apos;un suivi personnalisé : il est dirigé par un associé qui connaît votre activité, vous parle clairement et suit le dossier jusqu&apos;à sa clôture. C&apos;est ainsi que nous protégeons ce que vous avez bâti, en République dominicaine et partout dans le monde.
+            </p>
           </div>
 
           <div className="card-legal p-6 md:p-10">

@@ -50,11 +50,17 @@ export default function FirmaPage() {
       <section className="pb-12 md:pb-20">
         <div className="container-legal grid gap-6 md:grid-cols-[0.95fr_1.05fr]">
           <div className="card-legal p-6 md:p-10">
-            <div className="eyebrow">Nuestra visión</div>
-            <h2 className="mt-4 text-3xl font-semibold leading-tight text-[#0f2740] md:text-4xl">
-              Atención boutique, criterio empresarial y enfoque en resultados.
+            <div className="eyebrow">Nuestra promesa</div>
+            <h2 className="mt-4 font-serif text-3xl font-semibold leading-tight text-[#0f2740] md:text-4xl">
+              Pensamos como tu socio de negocios.<br />
+              Actuamos como tu defensa más firme.
+              <br />
+              <span className="text-[#8a6a37]">Y te atendemos como si fueras nuestro único cliente.</span>
             </h2>
             <div className="gold-line mt-6" />
+            <p className="pt-6 text-base leading-8 text-[#5f6b76] md:text-lg">
+              Cada asunto recibe un trato personalizado: lo dirige un socio que conoce tu negocio, te habla con claridad y no suelta el expediente hasta cerrarlo. Así protegemos lo que has construido, en República Dominicana y desde cualquier lugar del mundo.
+            </p>
           </div>
 
           <div className="card-legal p-6 md:p-10">

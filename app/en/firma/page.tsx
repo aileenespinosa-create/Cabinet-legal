@@ -51,11 +51,17 @@ export default function FirmaPageEN() {
       <section className="pb-12 md:pb-20">
         <div className="container-legal grid gap-6 md:grid-cols-[0.95fr_1.05fr]">
           <div className="card-legal p-6 md:p-10">
-            <div className="eyebrow">Our vision</div>
-            <h2 className="mt-4 text-3xl font-semibold leading-tight text-[#0f2740] md:text-4xl">
-              Boutique attention, business judgment and results-driven focus.
+            <div className="eyebrow">Our promise</div>
+            <h2 className="mt-4 font-serif text-3xl font-semibold leading-tight text-[#0f2740] md:text-4xl">
+              We think like your business partner.<br />
+              We act as your firmest defense.
+              <br />
+              <span className="text-[#8a6a37]">And we treat you as if you were our only client.</span>
             </h2>
             <div className="gold-line mt-6" />
+            <p className="pt-6 text-base leading-8 text-[#5f6b76] md:text-lg">
+              Every matter receives personal attention: it is led by a partner who knows your business, speaks to you clearly and stays on the file until it is closed. That is how we protect what you have built, in the Dominican Republic and from anywhere in the world.
+            </p>
           </div>
 
           <div className="card-legal p-6 md:p-10">
