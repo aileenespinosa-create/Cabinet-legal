@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import GuideLanding from "@/components/GuideLanding";
 
 export const metadata: Metadata = {
-  title: `Guía gratuita: cómo invertir en República Dominicana 2026 | Cabinet Legal`,
+  title: `Guía gratuita: cómo invertir en República Dominicana 2026`,
   description: `Descarga la guía legal 2026 para inversionistas extranjeros: compra de inmuebles, CONFOTUR, empresas, residencia y costos de cierre en República Dominicana.`,
   alternates: {
     canonical: "https://cabinetlegal.com.do/guia-inversion",
