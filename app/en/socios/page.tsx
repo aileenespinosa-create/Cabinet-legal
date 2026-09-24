@@ -47,6 +47,7 @@ const partners = [
       "Business law and contracts",
       "Negotiation and dispute resolution",
       "Commercial mediation and arbitration",
+      "Estate planning and succession",
       "Civil and commercial litigation",
       "Real estate litigation",
       "Labor and administrative litigation",

@@ -47,6 +47,7 @@ const partners = [
       "Derecho de los negocios y contratación",
       "Negociación y resolución de conflictos",
       "Mediación y arbitraje comercial",
+      "Planificación patrimonial y sucesoral",
       "Litigación civil y comercial",
       "Litigación inmobiliaria",
       "Litigación laboral y administrativa",

@@ -47,6 +47,7 @@ const partners = [
       "Droit des affaires et contrats",
       "Négociation et règlement des différends",
       "Médiation et arbitrage commercial",
+      "Planification patrimoniale et successorale",
       "Contentieux civil et commercial",
       "Contentieux immobilier",
       "Contentieux du travail et administratif",
