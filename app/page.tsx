@@ -112,7 +112,7 @@ export default function HomePage() {
             </div>
             <div>
               <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">
-                11
+                12
               </div>
               <div className="mt-1 text-sm text-[#5f6b76]">
                 Áreas de práctica especializadas
@@ -128,10 +128,10 @@ export default function HomePage() {
             </div>
             <div>
               <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">
-                +7
+                100%
               </div>
               <div className="mt-1 text-sm text-[#5f6b76]">
-                Abogados asociados organizados por área de práctica
+                Trámites que puedes iniciar por poder, sin viajar al país
               </div>
             </div>
           </div>
@@ -168,8 +168,8 @@ export default function HomePage() {
               Desde 2009 acompañamos a empresas, inversionistas extranjeros y
               clientes privados en compras de bienes raíces, estructuración
               societaria, registro de marcas y litigios en República
-              Dominicana. Cada caso lo dirige un socio y lo trabaja un equipo
-              de más de siete abogados asociados.
+              Dominicana. Cada caso lo dirige un socio, con el respaldo de un
+              excelente equipo de abogados.
             </p>
           </div>
         </div>
@@ -287,8 +287,8 @@ export default function HomePage() {
               </h3>
               <p className="mt-4 leading-7 text-[#5f6b76]">
                 Un socio dirige tu caso desde la primera consulta, con el
-                respaldo de un equipo de más de siete abogados asociados
-                organizados por área de práctica.
+                respaldo de un excelente equipo de abogados especializados
+                por área de práctica.
               </p>
             </div>
 

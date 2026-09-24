@@ -72,9 +72,9 @@ export default function FirmaPage() {
                 litigan en República Dominicana sin residir en el país.
               </p>
               <p>
-                Contamos con un equipo de más de siete abogados asociados,
-                organizados por área de práctica y dirigidos por nuestros
-                socios, Aileen Espinosa y Ellis Beato. Cada asunto lo dirige un
+                Contamos con un excelente equipo de abogados, organizado por
+                área de práctica y dirigido por nuestros socios, Aileen
+                Espinosa y Ellis Beato. Cada asunto lo dirige un
                 socio desde la primera consulta hasta el cierre, y lo trabaja
                 el abogado especializado en la materia.
               </p>
@@ -97,7 +97,7 @@ export default function FirmaPage() {
             </div>
             <div>
               <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">
-                11
+                12
               </div>
               <div className="mt-1 text-sm text-[#5f6b76]">
                 Áreas de práctica especializadas
@@ -113,10 +113,10 @@ export default function FirmaPage() {
             </div>
             <div>
               <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">
-                +7
+                2
               </div>
               <div className="mt-1 text-sm text-[#5f6b76]">
-                Abogados asociados, dirigidos por dos socios
+                Socios, atención directa en cada caso
               </div>
             </div>
           </div>

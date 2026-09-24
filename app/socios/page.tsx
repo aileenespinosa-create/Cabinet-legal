@@ -40,18 +40,18 @@ const partners = [
     name: "Ellis Beato",
     role: "Founding Partner",
     image: "/ellis-beato.jpg",
-    bio: "Ellis Beato lidera la práctica de litigios en Cabinet Legal, con experiencia en litigios civiles, laborales, administrativos y en materia inmobiliaria, así como en la resolución de conflictos empresariales complejos. Representa a clientes en procesos judiciales y controversias estratégicas, con un enfoque riguroso, técnico y orientado a resultados.",
+    bio: "Ellis Beato dirige las prácticas de negocios y de litigación en Cabinet Legal. Asesora a empresas e inversionistas en la estructuración y negociación de sus operaciones, y los representa en litigios civiles, comerciales, laborales, administrativos e inmobiliarios, así como en la resolución de conflictos empresariales complejos, con un enfoque riguroso, técnico y orientado a resultados.",
     focus:
-      "Su práctica se centra en la defensa efectiva de los intereses de sus clientes, combinando análisis jurídico profundo, estrategia procesal y ejecución sólida en cada etapa del litigio.",
+      "Su práctica une la visión de negocios, que previene el conflicto, con la estrategia procesal que lo resuelve cuando surge: análisis jurídico profundo, negociación firme y ejecución sólida en cada etapa.",
     areas: [
-      "Litigios civiles",
-      "Litigios laborales",
-      "Litigios administrativos",
-      "Litigios en materia inmobiliaria",
-      "Resolución de conflictos",
-      "Representación judicial",
+      "Derecho de los negocios y contratación",
+      "Negociación y resolución de conflictos",
+      "Mediación y arbitraje comercial",
+      "Litigación civil y comercial",
+      "Litigación inmobiliaria",
+      "Litigación laboral y administrativa",
+      "Recursos ante las altas cortes",
       "Estrategia procesal",
-      "Controversias empresariales",
     ],
   },
 ];
@@ -68,9 +68,9 @@ export default function SociosPage() {
             Socios
           </h1>
           <p className="mt-5 max-w-3xl text-base leading-8 text-[#5f6b76] md:text-lg">
-            Dos socios al frente de un equipo de más de siete abogados
-            asociados, con especialización en asesoría corporativa, inversión
-            extranjera y litigios de alto impacto.
+            Dos socios al frente de un excelente equipo de abogados, con
+            especialización en negocios, inversión extranjera y litigios de
+            alto impacto.
           </p>
         </div>
 
@@ -144,13 +144,9 @@ export default function SociosPage() {
         <div className="grid gap-10 rounded-[24px] bg-[#0f2740] p-7 text-white md:grid-cols-[0.9fr_1.1fr] md:p-12">
           <div>
             <div className="text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">Nuestro equipo</div>
-            <h2 className="pt-4 text-3xl font-light leading-tight tracking-tight md:text-4xl">Más de siete abogados asociados, organizados por área</h2>
+            <h2 className="pt-4 text-3xl font-light leading-tight tracking-tight md:text-4xl">Un excelente equipo de abogados, organizado por área</h2>
             <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
             <p className="pt-6 leading-8 text-white/80">Detrás de cada socio trabaja un equipo de abogados asociados especializados. Cada asunto lo dirige un socio y lo desarrolla el abogado que domina la materia, para que tengas criterio de socio y dedicación de especialista.</p>
-            <div className="mt-8 flex items-end gap-4">
-              <div className="text-5xl font-semibold text-[#c8a46a]">+7</div>
-              <div className="pb-1 text-sm uppercase tracking-[0.14em] text-white/70">Abogados asociados</div>
-            </div>
             <Link
               href="/consulta"
               className="mt-8 inline-flex items-center justify-center rounded-full bg-[#c8a46a] px-7 py-3 text-sm font-semibold text-[#0f2740] transition hover:bg-[#d6b57f]"

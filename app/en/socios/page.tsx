@@ -40,18 +40,18 @@ const partners = [
     name: "Ellis Beato",
     role: "Founding Partner",
     image: "/ellis-beato.jpg",
-    bio: "Ellis Beato leads the litigation practice at Cabinet Legal, with experience in civil, labor, administrative and real estate litigation, as well as resolving complex business disputes. He represents clients in judicial proceedings and strategic disputes with a rigorous, technical and results-oriented approach.",
+    bio: "Ellis Beato leads the business and litigation practices at Cabinet Legal. He advises companies and investors on structuring and negotiating their transactions, and represents them in civil, commercial, labor, administrative and real estate litigation, as well as in resolving complex business disputes, with a rigorous, technical and results-oriented approach.",
     focus:
-      "His practice centers on the effective defense of his clients' interests, combining in-depth legal analysis, procedural strategy and solid execution at every stage of litigation.",
+      "His practice combines the business insight that prevents disputes with the litigation strategy that resolves them when they arise: in-depth legal analysis, firm negotiation and solid execution at every stage.",
     areas: [
-      "Civil litigation",
-      "Labor litigation",
-      "Administrative litigation",
+      "Business law and contracts",
+      "Negotiation and dispute resolution",
+      "Commercial mediation and arbitration",
+      "Civil and commercial litigation",
       "Real estate litigation",
-      "Dispute resolution",
-      "Judicial representation",
-      "Procedural strategy",
-      "Business disputes",
+      "Labor and administrative litigation",
+      "Appeals before the high courts",
+      "Litigation strategy",
     ],
   },
 ];
@@ -143,13 +143,9 @@ export default function SociosPageEN() {
         <div className="grid gap-10 rounded-[24px] bg-[#0f2740] p-7 text-white md:grid-cols-[0.9fr_1.1fr] md:p-12">
           <div>
             <div className="text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">Our team</div>
-            <h2 className="pt-4 text-3xl font-light leading-tight tracking-tight md:text-4xl">More than seven associate lawyers, organized by practice area</h2>
+            <h2 className="pt-4 text-3xl font-light leading-tight tracking-tight md:text-4xl">An excellent team of lawyers, organized by practice area</h2>
             <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
             <p className="pt-6 leading-8 text-white/80">Behind each partner is a team of specialized associate lawyers. Every matter is led by a partner and handled by the lawyer who knows the subject best, so you get a partner&apos;s judgment and a specialist&apos;s dedication.</p>
-            <div className="mt-8 flex items-end gap-4">
-              <div className="text-5xl font-semibold text-[#c8a46a]">7+</div>
-              <div className="pb-1 text-sm uppercase tracking-[0.14em] text-white/70">Associate lawyers</div>
-            </div>
             <Link
               href="/en/consulta"
               className="mt-8 inline-flex items-center justify-center rounded-full bg-[#c8a46a] px-7 py-3 text-sm font-semibold text-[#0f2740] transition hover:bg-[#d6b57f]"
