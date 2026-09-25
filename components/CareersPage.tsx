@@ -6,7 +6,7 @@ import { CAREERS_COPY } from "@/lib/careersCopy";
 export default function CareersPage({ lang }: { lang: Lang }) {
   const t = CAREERS_COPY[lang];
   return (
-    <main className="min-h-screen bg-[#fcfaf6] pt-[88px]">
+    <main className="min-h-screen bg-[#fcfaf6] pt-[96px]">
       <SiteHeader />
 
       <section className="bg-[#0f2740] py-16 text-white md:py-24">

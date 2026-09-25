@@ -36,9 +36,9 @@ export const CAREERS_COPY: Record<
   }
 > = {
   es: {
-    metaTitle: "Carreras en Cabinet Legal: empleo para abogados y pasantes",
+    metaTitle: "Únete a Cabinet Legal: empleo para abogados y pasantes",
     metaDesc: "Trabaje en Cabinet Legal, firma de abogados en Santo Domingo. Buscamos abogados asociados, pasantes de Derecho y personal paralegal. Envíe su CV.",
-    kicker: "Carreras en Cabinet Legal",
+    kicker: "Únete a Cabinet Legal",
     title: "Construya su carrera junto a los socios, no a distancia de ellos.",
     intro: "Buscamos abogados, estudiantes de Derecho y profesionales que deseen trabajar en asuntos de alto impacto, con clientes de varios países y en tres idiomas.",
     reasons: [
@@ -77,9 +77,9 @@ export const CAREERS_COPY: Record<
     errGeneric: "No pudimos enviar su candidatura en este momento. Inténtelo de nuevo o escríbanos a info@cabinetlegal.com.do.",
   },
   en: {
-    metaTitle: "Careers at Cabinet Legal: jobs for lawyers and interns",
+    metaTitle: "Join Cabinet Legal: careers for lawyers and interns",
     metaDesc: "Work at Cabinet Legal, a law firm in Santo Domingo. We are looking for associate lawyers, law interns and paralegal staff. Send your CV.",
-    kicker: "Careers at Cabinet Legal",
+    kicker: "Join Cabinet Legal",
     title: "Build your career alongside the partners, not at a distance from them.",
     intro: "We are looking for lawyers, law students and professionals who want to work on high-impact matters, with clients from several countries and in three languages.",
     reasons: [
@@ -118,9 +118,9 @@ export const CAREERS_COPY: Record<
     errGeneric: "We couldn't send your application right now. Please try again or write to info@cabinetlegal.com.do.",
   },
   fr: {
-    metaTitle: "Carrières chez Cabinet Legal : avocats et stagiaires",
+    metaTitle: "Rejoignez Cabinet Legal : carrières pour avocats et stagiaires",
     metaDesc: "Rejoignez Cabinet Legal, cabinet d'avocats à Saint-Domingue. Nous recherchons des avocats collaborateurs, des stagiaires en droit et du personnel juridique. Envoyez votre CV.",
-    kicker: "Carrières chez Cabinet Legal",
+    kicker: "Rejoignez Cabinet Legal",
     title: "Construisez votre carrière aux côtés des associés, pas à distance.",
     intro: "Nous recherchons des avocats, des étudiants en droit et des professionnels désireux de travailler sur des dossiers à fort enjeu, avec des clients de plusieurs pays et en trois langues.",
     reasons: [

@@ -5,7 +5,7 @@ import { PRIVACY_COPY } from "@/lib/privacyCopy";
 export default function PrivacyPage({ lang }: { lang: Lang }) {
   const t = PRIVACY_COPY[lang];
   return (
-    <main className="min-h-screen bg-[#fcfaf6] pt-[88px]">
+    <main className="min-h-screen bg-[#fcfaf6] pt-[96px]">
       <SiteHeader />
       <article className="mx-auto w-full max-w-[820px] px-6 py-14 md:py-24">
         <h1 className="font-serif text-[38px] leading-tight text-[#0f2740] md:text-[52px]">{t.title}</h1>

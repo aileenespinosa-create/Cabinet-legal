@@ -54,7 +54,7 @@ export default function ServiceDetail({ service, lang }: { service: Service; lan
   ];
 
   return (
-    <main className="min-h-screen bg-[#fcfaf6] pt-[88px]">
+    <main className="min-h-screen bg-[#fcfaf6] pt-[96px]">
       <SiteHeader />
       <script
         type="application/ld+json"

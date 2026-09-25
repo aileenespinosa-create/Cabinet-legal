@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main className="min-h-screen overflow-x-hidden bg-[#fcfaf6] pt-[88px]">
+    <main className="min-h-screen overflow-x-hidden bg-[#fcfaf6] pt-[96px]">
       <SiteHeader />
       <ServicesExplorer lang="en" />
     </main>

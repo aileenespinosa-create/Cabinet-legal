@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function FirmaPage() {
   return (
-    <main className="min-h-screen overflow-x-hidden">
+    <main className="min-h-screen overflow-x-hidden pt-[96px]">
       <SiteHeader />
 
       <section className="container-legal py-10 md:py-20">
@@ -35,12 +35,12 @@ export default function FirmaPage() {
             />
             <div className="hero-image-overlay absolute inset-0" />
             <div className="relative z-10 w-full p-5 md:p-10">
-              <div className="eyebrow text-white/80">La firma</div>
+              <div className="eyebrow text-white/80">Cabinet Legal</div>
               <h1 className="mt-2 text-3xl font-semibold leading-tight text-white sm:text-4xl md:mt-3 md:text-5xl">
                 Firma de abogados en Santo Domingo
               </h1>
               <p className="mt-3 max-w-2xl text-sm leading-6 text-white/85 md:mt-4 md:text-lg md:leading-7">
-                Desde 2009, cada asunto dirigido por un socio, en español, inglés y francés.
+                Rigor jurídico, discreción absoluta y un socio que responde por su asunto hasta el último detalle.
               </p>
             </div>
           </div>
@@ -67,7 +67,7 @@ export default function FirmaPage() {
             <div className="space-y-5 text-base leading-7 text-[#5f6b76] md:text-lg md:leading-8">
               <p>
                 Cabinet Legal es una firma legal independiente en Santo Domingo,
-                República Dominicana, fundada en 2009. Asesoramos a empresas,
+                República Dominicana. Asesoramos a empresas,
                 inversionistas extranjeros y clientes privados en compras de
                 bienes raíces, estructuración societaria, fusiones y
                 adquisiciones, planificación sucesoral, registro de marcas,

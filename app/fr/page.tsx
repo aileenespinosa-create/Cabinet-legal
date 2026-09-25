@@ -106,8 +106,8 @@ export default function HomePageFR() {
         <div className="mx-auto w-full max-w-[1200px] px-6 lg:px-8">
           <div className="grid grid-cols-2 gap-6 border-y border-[#e6dece] py-8 md:grid-cols-4 md:py-10">
             <div>
-              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">2009</div>
-              <div className="mt-1 text-sm text-[#5f6b76]">Année de fondation</div>
+              <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">24 h</div>
+              <div className="mt-1 text-sm text-[#5f6b76]">Réponse d&apos;un associé, jours ouvrables</div>
             </div>
             <div>
               <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">100%</div>

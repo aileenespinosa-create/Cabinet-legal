@@ -36,7 +36,7 @@ const faqSchema = buildFaqSchema(faqs);
 
 export default function RegistroDeMarcasPage() {
   return (
-    <main className="min-h-screen overflow-x-hidden">
+    <main className="min-h-screen overflow-x-hidden pt-[96px]">
       <script
         type="application/ld+json"
         // eslint-disable-next-line react/no-danger

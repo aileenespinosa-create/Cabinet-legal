@@ -53,7 +53,7 @@ const articles = [
 
 export default function BlogPage() {
   return (
-    <main className="min-h-screen overflow-x-hidden">
+    <main className="min-h-screen overflow-x-hidden pt-[96px]">
       <SiteHeader />
 
       <section className="container-legal py-10 md:py-20">
