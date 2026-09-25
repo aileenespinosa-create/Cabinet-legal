@@ -1,4 +1,7 @@
+import { after } from "next/server";
+import { sendAlert } from "@/lib/brevo";
 import { createGuideToken, isGuideLang, type GuideLang } from "@/lib/guide";
+import { registrar } from "@/lib/registro";
 
 const SITE_URL = "https://cabinetlegal.com.do";
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
@@ -65,11 +68,35 @@ export async function POST(request: Request) {
     }),
   });
 
+  const registro = {
+    email,
+    nombre: name,
+    origen: "Guía" as const,
+    idioma: lang,
+    extra: { PAIS: country, INTERES: interest },
+  };
+
   if (!res.ok) {
     const detail = await res.text().catch(() => "");
     console.error("Brevo double opt-in failed", res.status, detail);
+    after(async () => {
+      await registrar(apiKey, { ...registro, detalle: `solicitó la guía (${lang.toUpperCase()}); ERROR al enviar la confirmación` });
+      await sendAlert(
+        apiKey,
+        `ALERTA: falló la solicitud de la guía de ${name}`,
+        `<p>${name} (${email}) pidió la guía y Brevo rechazó el envío del correo de confirmación (código ${res.status}).</p><p>Sus datos quedaron en Brevo, lista Registro general.</p>`,
+      );
+    });
     return Response.json({ ok: false, error: "provider" }, { status: 502 });
   }
+
+  // Audit trail, recorded after the response so the visitor never waits on it.
+  after(() =>
+    registrar(apiKey, {
+      ...registro,
+      detalle: `solicitó la guía (${lang.toUpperCase()}); interés: ${interest || "-"}; país: ${country || "-"}; confirmación enviada`,
+    }),
+  );
 
   return Response.json({ ok: true });
 }

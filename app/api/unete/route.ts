@@ -3,7 +3,8 @@
 // never lost, then forwarded with the CV attached to the recruiting inbox. If
 // the email cannot be sent, an alert goes out to the firm right away.
 
-import { esc, sendAlert, sendBrevoEmail, upsertBrevoContact } from "@/lib/brevo";
+import { esc, sendAlert, sendBrevoEmail } from "@/lib/brevo";
+import { LIST_CANDIDATOS, registrar } from "@/lib/registro";
 
 const MAX_BYTES = 4 * 1024 * 1024;
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
@@ -69,21 +70,26 @@ ${message ? `<p style="font-family:Arial,sans-serif;font-size:14px"><b>Mensaje:<
 <p style="font-family:Arial,sans-serif;font-size:12px;color:#8a939b">El candidato autorizó el tratamiento de sus datos para este proceso de selección.</p>`;
 
   // 1. Durable record first: the candidate's details survive even if the email fails.
-  const listId = Number(process.env.BREVO_LIST_ID_CANDIDATOS || 6);
-  const stamp = new Date().toLocaleString("es-DO", { timeZone: "America/Santo_Domingo" });
   const summary = [
-    `Fecha: ${stamp}`,
     `Perfil: ${profile || "-"}`,
     `Área: ${area || "-"}`,
     `Teléfono: ${phone || "-"}`,
     `LinkedIn: ${linkedin || "-"}`,
-    `Idioma: ${lang.toUpperCase() || "-"}`,
     message ? `Mensaje: ${message}` : "",
   ]
     .filter(Boolean)
     .join(" | ")
     .slice(0, 1800);
-  const saved = await upsertBrevoContact(apiKey, email, { FIRSTNAME: name, CANDIDATURA: summary }, [listId]);
+  const saved = await registrar(apiKey, {
+    email,
+    nombre: name,
+    origen: "Carreras",
+    detalle: `candidatura recibida (${profile || "perfil no indicado"}${area ? `, ${area}` : ""}), CV adjunto`,
+    telefono: phone,
+    idioma: lang,
+    extra: { CANDIDATURA: summary },
+    listIds: [LIST_CANDIDATOS],
+  });
 
   // 2. Forward the application with the CV to the recruiting inbox.
   const subject = `Candidatura: ${name} (${profile || "perfil no indicado"})`;
@@ -99,12 +105,13 @@ ${message ? `<p style="font-family:Arial,sans-serif;font-size:14px"><b>Mensaje:<
 
   // 3. If the email did not go out, alert the firm with the candidate's details.
   if (!sent) {
+    await registrar(apiKey, { email, nombre: name, origen: "Carreras", detalle: "ERROR: el correo de la candidatura no se pudo enviar a la firma" });
     await sendAlert(
       apiKey,
       `ALERTA: no se pudo enviar la candidatura de ${name}`,
       `<p>El formulario de Carreras recibió una candidatura, pero el correo a ${esc(to)} no se pudo enviar.</p>
 ${html}
-<p>${saved ? "Los datos quedaron guardados en Brevo, Contactos, lista Candidatos." : "Tampoco se pudo guardar en Brevo: estos son los únicos datos disponibles."} El CV no se conserva: solicítelo de nuevo al candidato.</p>`,
+<p>${saved ? "Los datos quedaron guardados en Brevo, Contactos, listas Registro general y Candidatos." : "Tampoco se pudo guardar en Brevo: estos son los únicos datos disponibles."} El CV no se conserva: solicítelo de nuevo al candidato.</p>`,
     );
   }
 

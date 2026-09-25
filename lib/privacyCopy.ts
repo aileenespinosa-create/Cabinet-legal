@@ -21,6 +21,7 @@ export const PRIVACY_COPY: Record<Lang, { metaTitle: string; title: string; upda
         "Enviarle la guía descargable y, si usted lo aceptó, comunicaciones ocasionales de la firma. Puede darse de baja en cualquier momento desde el enlace incluido en cada correo.",
         "Evaluar su candidatura en los procesos de selección.",
         "Mejorar el funcionamiento y el contenido del sitio.",
+        "Llevar un registro de cada solicitud recibida (fecha, canal y contenido) para darle seguimiento y poder demostrar cómo se atendió.",
       ]],
       ["Base del tratamiento", ["Su consentimiento, otorgado al enviar un formulario, y la necesidad de atender la relación precontractual o profesional que usted mismo inicia."]],
       ["Con quién los compartimos", [
@@ -51,6 +52,7 @@ export const PRIVACY_COPY: Record<Lang, { metaTitle: string; title: string; upda
         "To send you the downloadable guide and, if you agreed, occasional updates from the firm. You can unsubscribe at any time from the link in each email.",
         "To assess your application in recruitment processes.",
         "To improve the site's functionality and content.",
+        "To keep a record of each request received (date, channel and content) so it can be followed up and we can show how it was handled.",
       ]],
       ["Legal basis", ["Your consent, given when you submit a form, and the need to handle the pre-contractual or professional relationship you initiate."]],
       ["Who we share it with", [
@@ -81,6 +83,7 @@ export const PRIVACY_COPY: Record<Lang, { metaTitle: string; title: string; upda
         "Vous envoyer le guide téléchargeable et, si vous l'avez accepté, des communications ponctuelles du cabinet. Vous pouvez vous désinscrire à tout moment via le lien de chaque courriel.",
         "Étudier votre candidature lors des recrutements.",
         "Améliorer le fonctionnement et le contenu du site.",
+        "Tenir un registre de chaque demande reçue (date, canal et contenu) pour en assurer le suivi et pouvoir justifier de son traitement.",
       ]],
       ["Base légale", ["Votre consentement, donné lors de l'envoi d'un formulaire, et la nécessité de gérer la relation précontractuelle ou professionnelle que vous initiez."]],
       ["Destinataires", [

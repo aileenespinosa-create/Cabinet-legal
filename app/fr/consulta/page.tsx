@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
+import ConsultaForm from "@/components/ConsultaForm";
 
 export const metadata: Metadata = {
   title: "Réserver une Consultation Juridique en République Dominicaine",
@@ -116,17 +117,12 @@ export default function ConsultaPageFR() {
               </p>
             </div>
 
-            <form
-              action="https://formspree.io/f/mlgpavya"
-              method="POST"
-              className="grid gap-4"
-            >
+            <ConsultaForm lang="fr" className="grid gap-4">
               <input
                 type="hidden"
                 name="_subject"
                 value="Nouvelle demande de consultation depuis Cabinet Legal (FR)"
               />
-              <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="idioma" value="FR" />
 
               <div>
@@ -226,7 +222,7 @@ export default function ConsultaPageFR() {
               <p className="text-center text-xs text-[#8a9099]">
                 Nous répondons sous 24 heures ouvrables.
               </p>
-            </form>
+            </ConsultaForm>
           </div>
         </div>
       </section>

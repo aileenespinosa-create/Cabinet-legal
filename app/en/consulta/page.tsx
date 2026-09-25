@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
+import ConsultaForm from "@/components/ConsultaForm";
 
 export const metadata: Metadata = {
   title: "Book a Legal Consultation in the Dominican Republic",
@@ -114,17 +115,12 @@ export default function ConsultaPageEN() {
               </p>
             </div>
 
-            <form
-              action="https://formspree.io/f/mlgpavya"
-              method="POST"
-              className="grid gap-4"
-            >
+            <ConsultaForm lang="en" className="grid gap-4">
               <input
                 type="hidden"
                 name="_subject"
                 value="New consultation request from Cabinet Legal (EN)"
               />
-              <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="idioma" value="EN" />
 
               <div>
@@ -224,7 +220,7 @@ export default function ConsultaPageEN() {
               <p className="text-center text-xs text-[#8a9099]">
                 We respond within 24 business hours.
               </p>
-            </form>
+            </ConsultaForm>
           </div>
         </div>
       </section>

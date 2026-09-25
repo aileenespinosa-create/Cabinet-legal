@@ -7,6 +7,7 @@
 // fake alerts.
 
 import { brevoHeaders, esc, sendAlert } from "@/lib/brevo";
+import { registrar } from "@/lib/registro";
 
 const FAILURE = new Set([
   "error",
@@ -53,25 +54,65 @@ export async function POST(request: Request) {
     const messageId = String(hint["message-id"] ?? hint.messageId ?? "").trim();
     if (!messageId || !FAILURE.has(norm(hint.event))) continue;
 
-    // Confirm with Brevo what really happened to that message.
-    const url = `https://api.brevo.com/v3/smtp/statistics/events?limit=50&messageId=${encodeURIComponent(messageId)}`;
-    const res = await fetch(url, { headers: brevoHeaders(apiKey) });
-    if (!res.ok) {
-      console.error("Brevo webhook: could not confirm event", res.status);
-      continue;
+    // Confirm with Brevo that the message is really ours before alerting.
+    // First the event log; if it does not list the failure (some rejections
+    // never reach it), fall back to the message record itself.
+    let e: BrevoEvent | undefined;
+    const evRes = await fetch(
+      `https://api.brevo.com/v3/smtp/statistics/events?days=30&limit=50&messageId=${encodeURIComponent(messageId)}`,
+      { headers: brevoHeaders(apiKey) },
+    );
+    if (evRes.ok) {
+      const data = (await evRes.json().catch(() => ({}))) as { events?: BrevoEvent[] };
+      e = (data.events ?? []).find((x) => FAILURE.has(norm(x.event)));
+    } else {
+      console.error("Brevo webhook: events lookup failed", evRes.status);
     }
-    const data = (await res.json().catch(() => ({}))) as { events?: BrevoEvent[] };
-    const failures = (data.events ?? []).filter((e) => FAILURE.has(norm(e.event)));
-    if (failures.length === 0) continue;
+    if (!e) {
+      const mRes = await fetch(
+        `https://api.brevo.com/v3/smtp/emails?limit=5&messageId=${encodeURIComponent(messageId)}`,
+        { headers: brevoHeaders(apiKey) },
+      );
+      const mData = mRes.ok
+        ? ((await mRes.json().catch(() => ({}))) as {
+            transactionalEmails?: { email?: string; subject?: string; date?: string; from?: string; tags?: string[] }[];
+          })
+        : {};
+      const m = mData.transactionalEmails?.[0];
+      if (!m) {
+        console.warn("Brevo webhook: message not found in account, ignored", messageId);
+        continue;
+      }
+      e = {
+        email: m.email,
+        subject: m.subject,
+        date: m.date,
+        from: m.from,
+        tags: m.tags,
+        event: String(hint.event ?? ""),
+        reason: String(hint.reason ?? ""),
+      };
+    }
 
-    const e = failures[0];
     const tags = [e.tag, ...(e.tags ?? [])].filter(Boolean).map((t) => norm(t));
     if (tags.includes("alerta")) continue; // never alert about an alert
 
+    // Audit trail: a guide confirmation that never arrived is noted on the
+    // person's record (usually a mistyped address).
+    if (tags.includes("optin") && e.email) {
+      await registrar(apiKey, {
+        email: e.email,
+        nombre: "",
+        origen: "Guía",
+        detalle: `el correo de confirmación no se entregó (${e.event}${e.reason ? `: ${e.reason}` : ""})`,
+      });
+    }
+
     const ours = /@cabinetlegal\.com\.do$/i.test(e.email ?? "");
-    const important = ALWAYS.has(norm(e.event)) || ours || tags.includes("careers");
+    const important = ALWAYS.has(norm(e.event)) || ours || tags.includes("careers") || tags.includes("consulta");
     if (!important) continue;
 
+    console.log("Brevo webhook: alerting", e.event, e.subject);
     const isCareers = tags.includes("careers") || /^candidatura/i.test(e.subject ?? "");
     const rows: [string, string][] = [
       ["Evento", e.event ?? ""],
