@@ -31,7 +31,7 @@ const faqs = [
   {
     question: "¿Qué es el CONFOTUR y cuándo aplica a una inversión inmobiliaria?",
     answer:
-      "El CONFOTUR (Consejo de Fomento Turístico) administra los incentivos fiscales de la Ley 158-01 para proyectos turísticos e inmobiliarios ubicados en polos turísticos designados. Una unidad en un proyecto con clasificación CONFOTUR puede beneficiarse de la exención del impuesto de transferencia inmobiliaria (3 %) y del Impuesto al Patrimonio Inmobiliario (IPI) durante el período que otorga la resolución de clasificación, siempre que el desarrollador haya obtenido la aprobación correspondiente.",
+      "El CONFOTUR (Consejo de Fomento Turístico) administra los incentivos fiscales de la Ley 158-01 para proyectos turísticos e inmobiliarios ubicados en polos turísticos designados. Una unidad en un proyecto con clasificación CONFOTUR puede beneficiarse de la exención del impuesto de transferencia inmobiliaria (3 %) y del Impuesto al Patrimonio Inmobiliario (IPI), por el plazo que establezca la resolución de clasificación (hasta 15 años), siempre que el desarrollador haya obtenido la aprobación correspondiente y la exención se tramite ante el Ministerio de Hacienda y la DGII.",
   },
   {
     question: "¿Qué verifica exactamente la debida diligencia de título antes de comprar?",
@@ -262,9 +262,11 @@ export default function InversionExtranjeraPage() {
               incentivos fiscales para proyectos ubicados en polos turísticos
               designados, administrados por el Consejo de Fomento Turístico
               (CONFOTUR). Un proyecto con clasificación CONFOTUR vigente puede
-              eximir al comprador del impuesto de transferencia inmobiliaria
-              y del IPI durante el período que otorgue la resolución
-              correspondiente. Antes de que usted compre, verificamos la
+              eximir al primer comprador del impuesto de transferencia
+              inmobiliaria y del IPI, en los términos de la resolución de
+              clasificación del proyecto y por un plazo que puede llegar a 15
+              años; la exención se tramita ante el Ministerio de Hacienda y
+              la DGII. Antes de que usted compre, verificamos la
               vigencia y el alcance real de esos beneficios, que muchos
               compradores extranjeros dan por supuestos sin confirmarlos.
             </p>

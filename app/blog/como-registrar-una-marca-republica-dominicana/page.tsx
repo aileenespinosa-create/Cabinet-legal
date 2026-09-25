@@ -101,11 +101,17 @@ export default function Article() {
               <ol>
                 <li>Búsqueda de disponibilidad</li>
                 <li>Presentación de la solicitud ante ONAPI</li>
-                <li>Examen formal</li>
+                <li>Examen de forma: ONAPI verifica que la solicitud esté completa</li>
+                <li>Examen de fondo: ONAPI analiza si la marca es distintiva y si entra en conflicto con derechos anteriores (artículos 73 y 74 de la Ley 20-00)</li>
+                <li>Respuesta a objeciones, si ONAPI formula alguna</li>
                 <li>Publicación en el boletín oficial</li>
-                <li>Período de oposición</li>
-                <li>Emisión del certificado</li>
+                <li>Plazo de 45 días para oposiciones de terceros</li>
+                <li>Emisión del certificado de registro, válido por diez años y renovable</li>
               </ol>
+              <p>
+                Sin objeciones ni oposiciones, el proceso completo suele tomar
+                entre tres y cuatro meses.
+              </p>
 
               <h2>Errores comunes al registrar una marca</h2>
               <ul>

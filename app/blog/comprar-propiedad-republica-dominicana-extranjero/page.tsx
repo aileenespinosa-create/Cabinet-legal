@@ -133,8 +133,11 @@ export default function Article() {
                 Si la propiedad forma parte de un proyecto con clasificación
                 CONFOTUR vigente (Ley núm. 158-01 sobre Fomento al Desarrollo
                 Turístico), usted puede calificar para la exención del
-                impuesto de transferencia y del IPI durante el período que
-                otorgue el decreto. No todos los proyectos que se anuncian
+                impuesto de transferencia en la primera adquisición y del IPI,
+                en los términos que establecen la Ley 158-01, sus
+                modificaciones y la resolución de clasificación del proyecto,
+                por un plazo que puede llegar a 15 años. La exención se
+                tramita ante el Ministerio de Hacienda y la DGII. No todos los proyectos que se anuncian
                 como &quot;CONFOTUR&quot; cuentan con una aprobación vigente y
                 aplicable a su unidad específica: verifíquelo antes de
                 comprar, no después.

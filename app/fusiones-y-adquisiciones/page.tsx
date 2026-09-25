@@ -18,7 +18,7 @@ const faqs = [
   {
     question: "¿Cuánto tiempo toma cerrar una adquisición en República Dominicana?",
     answer:
-      "Depende del tamaño de la operación y de los hallazgos de la debida diligencia. La adquisición de una pyme con documentación en regla puede cerrarse en 6 a 10 semanas; las operaciones con activos regulados o varias jurisdicciones requieren más tiempo.",
+      "Depende del tamaño de la operación, de los hallazgos de la debida diligencia y de las autorizaciones que se requieran. Una empresa pequeña con la documentación en regla puede adquirirse en algunas semanas; las operaciones con activos regulados, financiamiento o varias jurisdicciones requieren más tiempo. Le damos un calendario concreto tras la revisión inicial.",
   },
   {
     question: "¿Puede un extranjero comprar una empresa dominicana directamente?",

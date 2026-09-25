@@ -453,7 +453,7 @@ export const SERVICES_SEO: Record<string, Partial<Record<Lang, ServiceSeo>>> = {
       faq: [
         [
           "¿Por cuánto tiempo protege el registro de una marca?",
-          "El registro ante ONAPI otorga protección por diez años contados desde su concesión y puede renovarse por períodos iguales de manera indefinida.",
+          "El registro ante ONAPI otorga protección por diez años contados desde su concesión y puede renovarse por períodos iguales de manera indefinida. Sin objeciones ni oposiciones, el trámite, que incluye un examen de forma, un examen de fondo, la publicación y un plazo de 45 días para oposiciones, suele completarse en tres a cuatro meses.",
         ],
         [
           "¿Qué ocurre si otra persona registró su marca antes que usted?",
@@ -473,7 +473,7 @@ export const SERVICES_SEO: Record<string, Partial<Record<Lang, ServiceSeo>>> = {
       faq: [
         [
           "How long does a trademark registration last?",
-          "Registration with ONAPI grants protection for ten years from the date it is granted and can be renewed indefinitely for successive periods of the same length.",
+          "Registration with ONAPI grants protection for ten years from the date it is granted and can be renewed indefinitely for successive periods of the same length. Without objections or oppositions, the process (formal examination, substantive examination, publication and a 45-day opposition period) usually takes three to four months.",
         ],
         [
           "What if someone else registered your trademark before you did?",
@@ -493,7 +493,7 @@ export const SERVICES_SEO: Record<string, Partial<Record<Lang, ServiceSeo>>> = {
       faq: [
         [
           "Combien de temps dure la protection d'une marque enregistrée ?",
-          "L'enregistrement auprès de l'ONAPI confère une protection de dix ans à compter de sa délivrance, renouvelable indéfiniment pour des périodes identiques.",
+          "L'enregistrement auprès de l'ONAPI confère une protection de dix ans à compter de sa délivrance, renouvelable indéfiniment pour des périodes identiques. Sans objection ni opposition, la procédure (examen de forme, examen de fond, publication et délai d'opposition de 45 jours) prend généralement trois à quatre mois.",
         ],
         [
           "Que se passe-t-il si un tiers a enregistré votre marque avant vous ?",

@@ -115,10 +115,13 @@ export default function Article() {
 
               <h2>Plazos realistas</h2>
               <p>
-                Con el expediente completo, la residencia provisional suele
-                tomar entre tres y seis meses. La residencia definitiva se
-                solicita después de mantener la provisional durante el
-                período que exige la categoría migratoria correspondiente.
+                El proceso comienza con el visado de residencia en el
+                consulado dominicano. Ya en el país, con el expediente
+                completo, la Dirección General de Migración suele resolver la
+                residencia en unos dos a tres meses. La residencia temporal se
+                renueva cada año y, tras cinco años, puede solicitarse la
+                permanente; el inversionista que cumple los requisitos puede
+                acceder directamente a la residencia permanente.
                 Los plazos más largos casi siempre obedecen a documentos
                 apostillados de forma incorrecta o a la elección de una vía
                 migratoria equivocada desde el inicio, no al trámite en sí.
