@@ -11,14 +11,23 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Publicar la rama del paquete
+      - name: Publicar cambios
         run: |
+          git config user.name "Cabinet Legal"
+          git config user.email "info@cabinetlegal.com.do"
           git fetch origin main
-          B=$(ls .github/workflows/*.bundle | head -1)
-          echo "Paquete: $B"
-          git bundle list-heads "$B"
-          BR=$(git bundle list-heads "$B" | awk '{print $2}' | sed 's#refs/heads/##' | head -1)
-          git fetch "$B" "$BR:$BR"
+          if ls .github/workflows/*.b64 >/dev/null 2>&1; then
+            P=$(ls .github/workflows/*.b64 | head -1)
+            BR=$(basename "$P" .b64 | sed 's#--#/#')
+            base64 -d "$P" | gunzip > /tmp/cambios.patch
+            git checkout -b "$BR" origin/main
+            git am /tmp/cambios.patch
+          else
+            B=$(ls .github/workflows/*.bundle | head -1)
+            BR=$(git bundle list-heads "$B" | awk '{print $2}' | sed 's#refs/heads/##' | head -1)
+            git fetch "$B" "$BR:$BR"
+          fi
+          git log --oneline -1 "$BR"
           git push origin "$BR"
       - name: Borrar la rama temporal
         run: git push origin --delete subir-cambios
