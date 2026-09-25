@@ -1,6 +1,8 @@
 import { readFile } from "fs/promises";
 import path from "path";
+import { after } from "next/server";
 import { GUIDE_FILES, isGuideLang, verifyGuideToken } from "@/lib/guide";
+import { registrar } from "@/lib/registro";
 
 // Serves the PDF only to visitors who arrive with a valid, signed link
 // (issued after they confirmed their email address).
@@ -14,6 +16,19 @@ export async function GET(request: Request) {
   const requested = url.searchParams.get("lang");
   const lang = isGuideLang(requested) ? requested : access.lang;
   const { file, download } = GUIDE_FILES[lang];
+
+  // Audit trail: the download is recorded after the file is sent.
+  const apiKey = process.env.BREVO_API_KEY;
+  if (apiKey) {
+    after(() =>
+      registrar(apiKey, {
+        email: access.email,
+        nombre: "",
+        origen: "Guía",
+        detalle: `correo confirmado; descargó la guía (${lang.toUpperCase()})`,
+      }),
+    );
+  }
 
   const data = await readFile(path.join(process.cwd(), "private", "guias", file));
 
