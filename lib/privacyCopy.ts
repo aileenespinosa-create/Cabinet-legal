@@ -24,7 +24,7 @@ export const PRIVACY_COPY: Record<Lang, { metaTitle: string; title: string; upda
       ]],
       ["Base del tratamiento", ["Su consentimiento, otorgado al enviar un formulario, y la necesidad de atender la relación precontractual o profesional que usted mismo inicia."]],
       ["Con quién los compartimos", [
-        "No vendemos ni cedemos sus datos. Solo los tratan proveedores que nos prestan servicios técnicos, bajo obligaciones de confidencialidad: Brevo (envío de correos), Vercel (alojamiento del sitio) y Google (analítica).",
+        "No vendemos ni cedemos sus datos. Solo los tratan proveedores que nos prestan servicios técnicos, bajo obligaciones de confidencialidad: Brevo (envío de correos y registro de contactos y candidaturas), Vercel (alojamiento del sitio) y Google (analítica).",
         "Algunos de estos proveedores pueden tratar datos fuera de la República Dominicana, con garantías adecuadas de protección.",
       ]],
       ["Cuánto tiempo los conservamos", ["Mientras dure la relación o la finalidad para la que se recogieron. Los currículos se conservan hasta 12 meses para futuras posiciones, salvo que usted solicite su eliminación antes."]],
@@ -54,7 +54,7 @@ export const PRIVACY_COPY: Record<Lang, { metaTitle: string; title: string; upda
       ]],
       ["Legal basis", ["Your consent, given when you submit a form, and the need to handle the pre-contractual or professional relationship you initiate."]],
       ["Who we share it with", [
-        "We do not sell or transfer your data. It is processed only by providers of technical services to us, under confidentiality obligations: Brevo (email delivery), Vercel (website hosting) and Google (analytics).",
+        "We do not sell or transfer your data. It is processed only by providers of technical services to us, under confidentiality obligations: Brevo (email delivery and contact and application records), Vercel (website hosting) and Google (analytics).",
         "Some of these providers may process data outside the Dominican Republic, with appropriate safeguards.",
       ]],
       ["How long we keep it", ["For as long as the relationship or purpose lasts. CVs are kept for up to 12 months for future openings, unless you ask us to delete them sooner."]],
@@ -84,7 +84,7 @@ export const PRIVACY_COPY: Record<Lang, { metaTitle: string; title: string; upda
       ]],
       ["Base légale", ["Votre consentement, donné lors de l'envoi d'un formulaire, et la nécessité de gérer la relation précontractuelle ou professionnelle que vous initiez."]],
       ["Destinataires", [
-        "Nous ne vendons ni ne cédons vos données. Elles ne sont traitées que par nos prestataires techniques, tenus à la confidentialité : Brevo (envoi de courriels), Vercel (hébergement) et Google (statistiques).",
+        "Nous ne vendons ni ne cédons vos données. Elles ne sont traitées que par nos prestataires techniques, tenus à la confidentialité : Brevo (envoi de courriels et registre des contacts et candidatures), Vercel (hébergement) et Google (statistiques).",
         "Certains de ces prestataires peuvent traiter des données hors de la République dominicaine, avec des garanties appropriées.",
       ]],
       ["Durée de conservation", ["Pendant la durée de la relation ou de la finalité de la collecte. Les CV sont conservés jusqu'à 12 mois pour de futures opportunités, sauf demande de suppression anticipée."]],

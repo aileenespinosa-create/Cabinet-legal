@@ -1,11 +1,12 @@
-// Receives job applications from the "Únete" page and forwards them, with the
-// CV attached, to the firm's recruiting inbox through Brevo's email API.
+// Receives job applications from the Careers page. Every application is first
+// saved as a Brevo contact (list "Candidatos") so the candidate's details are
+// never lost, then forwarded with the CV attached to the recruiting inbox. If
+// the email cannot be sent, an alert goes out to the firm right away.
+
+import { esc, sendAlert, sendBrevoEmail, upsertBrevoContact } from "@/lib/brevo";
 
 const MAX_BYTES = 4 * 1024 * 1024;
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-
-const esc = (v: string) =>
-  v.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
 export async function POST(request: Request) {
   let form: FormData;
@@ -67,21 +68,47 @@ ${rows.filter(([, v]) => v).map(([k, v]) => `<tr><td style="color:#5f6b76">${k}<
 ${message ? `<p style="font-family:Arial,sans-serif;font-size:14px"><b>Mensaje:</b><br>${esc(message).replace(/\n/g, "<br>")}</p>` : ""}
 <p style="font-family:Arial,sans-serif;font-size:12px;color:#8a939b">El candidato autorizó el tratamiento de sus datos para este proceso de selección.</p>`;
 
-  const res = await fetch("https://api.brevo.com/v3/smtp/email", {
-    method: "POST",
-    headers: { "api-key": apiKey, "content-type": "application/json", accept: "application/json" },
-    body: JSON.stringify({
-      sender: { name: "Cabinet Legal · Únete", email: sender },
-      to: [{ email: to }],
-      replyTo: { email, name },
-      subject: `Candidatura: ${name} (${profile || "perfil no indicado"})`,
-      htmlContent: html,
-      attachment: [{ name: `CV-${safeName}.pdf`, content: bytes.toString("base64") }],
-    }),
+  // 1. Durable record first: the candidate's details survive even if the email fails.
+  const listId = Number(process.env.BREVO_LIST_ID_CANDIDATOS || 6);
+  const stamp = new Date().toLocaleString("es-DO", { timeZone: "America/Santo_Domingo" });
+  const summary = [
+    `Fecha: ${stamp}`,
+    `Perfil: ${profile || "-"}`,
+    `Área: ${area || "-"}`,
+    `Teléfono: ${phone || "-"}`,
+    `LinkedIn: ${linkedin || "-"}`,
+    `Idioma: ${lang.toUpperCase() || "-"}`,
+    message ? `Mensaje: ${message}` : "",
+  ]
+    .filter(Boolean)
+    .join(" | ")
+    .slice(0, 1800);
+  const saved = await upsertBrevoContact(apiKey, email, { FIRSTNAME: name, CANDIDATURA: summary }, [listId]);
+
+  // 2. Forward the application with the CV to the recruiting inbox.
+  const subject = `Candidatura: ${name} (${profile || "perfil no indicado"})`;
+  const sent = await sendBrevoEmail(apiKey, {
+    sender: { name: "Cabinet Legal · Carreras", email: sender },
+    to: [{ email: to }],
+    replyTo: { email, name },
+    subject,
+    htmlContent: html,
+    attachment: [{ name: `CV-${safeName}.pdf`, content: bytes.toString("base64") }],
+    tags: ["careers"],
   });
 
-  if (!res.ok) {
-    console.error("Brevo careers email failed", res.status, await res.text().catch(() => ""));
+  // 3. If the email did not go out, alert the firm with the candidate's details.
+  if (!sent) {
+    await sendAlert(
+      apiKey,
+      `ALERTA: no se pudo enviar la candidatura de ${name}`,
+      `<p>El formulario de Carreras recibió una candidatura, pero el correo a ${esc(to)} no se pudo enviar.</p>
+${html}
+<p>${saved ? "Los datos quedaron guardados en Brevo, Contactos, lista Candidatos." : "Tampoco se pudo guardar en Brevo: estos son los únicos datos disponibles."} El CV no se conserva: solicítelo de nuevo al candidato.</p>`,
+    );
+  }
+
+  if (!sent && !saved) {
     return Response.json({ ok: false, error: "provider" }, { status: 502 });
   }
   return Response.json({ ok: true });
