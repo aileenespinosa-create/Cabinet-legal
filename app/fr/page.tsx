@@ -30,22 +30,23 @@ export default function HomePageFR() {
         <div className="mx-auto grid w-full max-w-[1200px] items-center gap-10 px-6 lg:grid-cols-2 lg:gap-14 lg:px-8">
           <div>
             <div className="mb-4 text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
-              Cabinet Legal
+              Avocats en République dominicaine
             </div>
 
             <h1 className="max-w-3xl text-[26px] font-light leading-[1.12] tracking-tight text-[#0f2740] sm:text-[34px] md:text-[44px] lg:text-[52px]">
-              Nous protégeons votre entreprise, votre marque et vos décisions
-              les plus importantes grâce à un conseil juridique stratégique et
-              personnalisé.
+              Nous protégeons ce que vous bâtissez en République dominicaine.
             </h1>
 
             <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
 
             <p className="mt-8 max-w-2xl text-[16px] leading-8 text-[#5f6b76] md:text-[17px]">
-              Nous accompagnons entreprises, investisseurs et clients privés
-              en droit des affaires, dépôt de marques, propriété
-              intellectuelle et dossiers juridiques à fort enjeu en
-              République Dominicaine.
+              Particuliers, familles, entreprises et investisseurs nous font
+              confiance pour acheter et investir en toute sécurité, structurer
+              leurs affaires, protéger leur patrimoine et défendre leurs
+              droits : droit des affaires et fiscal, immobilier, successions,
+              marques, résidence et contentieux. Un associé dirige votre
+              dossier et, pour la plupart des démarches, peut agir par
+              procuration sans que vous ayez à voyager.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -76,18 +77,17 @@ export default function HomePageFR() {
           </div>
 
           <div className="card-legal overflow-hidden">
-            <div className="relative h-[340px] sm:h-[430px] md:h-[520px]">
+            <div className="relative aspect-[1808/1024]">
               <Image
                 src="/hero-legal.jpg"
                 alt="Avocats de Cabinet Legal conseillant des investisseurs étrangers en République Dominicaine"
                 fill
                 priority
-                className="object-cover"
+                className="object-cover object-[center_18%]"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-              <div className="hero-image-overlay absolute inset-0" />
-
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-white md:p-9">
+            </div>
+            <div className="bg-[#0f2740] p-6 text-white md:p-8">
                 <div className="text-[10px] uppercase tracking-[0.24em] text-[#e9d3ab]">
                   Cabinet Legal
                 </div>
@@ -95,7 +95,6 @@ export default function HomePageFR() {
                   Attention directe, précision technique et vision
                   stratégique.
                 </div>
-              </div>
             </div>
           </div>
         </div>

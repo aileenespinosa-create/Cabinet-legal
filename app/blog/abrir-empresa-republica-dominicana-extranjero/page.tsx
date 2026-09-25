@@ -77,7 +77,7 @@ export default function Article() {
               src="/hero-legal.jpg"
               alt="Abrir una empresa en República Dominicana siendo extranjero"
               fill
-              className="object-cover"
+              className="object-cover object-[center_18%]"
             />
             <div className="hero-image-overlay absolute inset-0" />
             <div className="relative z-10 w-full p-6 md:p-10">

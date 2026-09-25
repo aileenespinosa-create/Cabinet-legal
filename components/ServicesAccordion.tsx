@@ -99,7 +99,7 @@ export default function ServicesAccordion({ lang }: { lang: Lang }) {
                     </div>
                     <div className="hidden flex-col gap-3 lg:flex">
                       <div className="relative h-[220px] overflow-hidden rounded-2xl">
-                        <Image src={s.img} alt="" fill className="object-cover" sizes="300px" />
+                        <Image src={s.img} alt="" fill className="object-cover object-[75%_18%]" sizes="300px" />
                       </div>
                       {x.proof.map((p) => (
                         <div key={p} className="rounded-xl bg-white/[0.06] px-4 py-2.5 text-[13px] text-[#e9d3ab]">{p}</div>

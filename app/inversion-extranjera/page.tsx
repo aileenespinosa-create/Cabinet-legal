@@ -65,7 +65,7 @@ export default function InversionExtranjeraPage() {
               src="/hero-legal.jpg"
               alt="Abogado inmobiliario en República Dominicana para compradores extranjeros"
               fill
-              className="object-cover"
+              className="object-cover object-[center_18%]"
             />
             <div className="hero-image-overlay absolute inset-0" />
 

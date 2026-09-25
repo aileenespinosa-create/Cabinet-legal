@@ -53,7 +53,7 @@ export default function ResidenciaYPermisosDeTrabajoPage() {
               src="/hero-legal.jpg"
               alt="Residencia dominicana para extranjeros y permisos de trabajo"
               fill
-              className="object-cover"
+              className="object-cover object-[center_18%]"
             />
             <div className="hero-image-overlay absolute inset-0" />
 

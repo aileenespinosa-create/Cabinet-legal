@@ -32,7 +32,7 @@ export default function InvestisseursEtrangersPageFR() {
               src="/hero-legal.jpg"
               alt="Accompagnement juridique pour investisseurs étrangers en République Dominicaine"
               fill
-              className="object-cover"
+              className="object-cover object-[center_18%]"
             />
             <div className="hero-image-overlay absolute inset-0" />
 
