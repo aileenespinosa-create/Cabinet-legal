@@ -1,0 +1,24 @@
+name: Aplicar cambios de Claude
+on:
+  push:
+    branches: [subir-cambios]
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Publicar la rama del paquete
+        run: |
+          git fetch origin main
+          B=$(ls .github/workflows/*.bundle | head -1)
+          echo "Paquete: $B"
+          git bundle list-heads "$B"
+          BR=$(git bundle list-heads "$B" | awk '{print $2}' | sed 's#refs/heads/##' | head -1)
+          git fetch "$B" "$BR:$BR"
+          git push origin "$BR"
+      - name: Borrar la rama temporal
+        run: git push origin --delete subir-cambios
