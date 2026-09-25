@@ -23,7 +23,7 @@ const faqs = [
   {
     question: "¿Cuánto tiempo toma obtener la residencia dominicana?",
     answer:
-      "Con el expediente completo, el proceso de residencia provisional suele tomar entre tres y seis meses. La residencia definitiva se solicita después de haber mantenido la residencia provisional durante el período que exige la ley para cada categoría migratoria.",
+      "El trámite comienza con el visado de residencia en el consulado dominicano. Ya en el país, con el expediente completo, la Dirección General de Migración suele resolver la residencia temporal en unos dos a tres meses. La residencia temporal se renueva cada año y, tras cinco años, puede solicitarse la permanente; ciertos inversionistas pueden optar directamente por la residencia permanente, conforme a la Ley 285-04 y su reglamento, el Decreto 631-11.",
   },
   {
     question:
@@ -204,9 +204,11 @@ export default function ResidenciaYPermisosDeTrabajoPage() {
               dominicano.
             </p>
             <p>
-              Por regla general, la residencia provisional precede a la
-              residencia definitiva, que se solicita una vez transcurrido el
-              período que exige la categoría migratoria correspondiente.
+              Por regla general, la residencia temporal, renovable cada año,
+              precede a la residencia permanente, que puede solicitarse tras
+              cinco años. El inversionista que cumple los requisitos de la
+              Ley 285-04 y del Decreto 631-11 puede acceder directamente a la
+              residencia permanente.
             </p>
 
             <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">

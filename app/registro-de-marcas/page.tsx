@@ -23,7 +23,7 @@ const faqs = [
   {
     question: "¿Cuánto tiempo toma el registro de una marca ante ONAPI?",
     answer:
-      "Con una solicitud bien preparada y sin oposiciones de terceros, el proceso ante ONAPI suele tomar entre 6 y 10 meses desde la presentación hasta la emisión del certificado. Una oposición o una observación de forma puede extender ese plazo.",
+      "Sin objeciones ni oposiciones, el registro ante ONAPI suele completarse en tres a cuatro meses. La solicitud pasa por un examen de forma y un examen de fondo conforme a los artículos 73 y 74 de la Ley 20-00; luego se publica y se abre un plazo de 45 días para que terceros presenten oposición. Una objeción de ONAPI o una oposición puede extender el proceso varios meses.",
   },
   {
     question: "¿Qué ocurre si no registro mi marca?",
