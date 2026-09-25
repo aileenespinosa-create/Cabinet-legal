@@ -3,9 +3,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cómo Registrar una Marca en República Dominicana (2026)",
+  title: "Cómo registrar una marca en República Dominicana (2026)",
   description:
-    "Guía legal sobre cómo registrar una marca en República Dominicana ante ONAPI, requisitos, proceso y recomendaciones clave.",
+    "Cómo registrar una marca en República Dominicana ante ONAPI: requisitos, proceso paso a paso, errores comunes y recomendaciones para proteger su negocio.",
   alternates: {
     canonical:
       "https://cabinetlegal.com.do/blog/como-registrar-una-marca-republica-dominicana",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cómo registrar una marca en República Dominicana (2026) | Cabinet Legal",
     description:
-      "Guía legal sobre cómo registrar una marca en República Dominicana ante ONAPI, requisitos, proceso y recomendaciones clave.",
+      "Cómo registrar una marca en República Dominicana ante ONAPI: requisitos, proceso paso a paso, errores comunes y recomendaciones para proteger su negocio.",
     url: "https://cabinetlegal.com.do/blog/como-registrar-una-marca-republica-dominicana",
     siteName: "Cabinet Legal",
     images: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Cómo registrar una marca en República Dominicana (2026) | Cabinet Legal",
     description:
-      "Guía legal sobre cómo registrar una marca en República Dominicana ante ONAPI, requisitos, proceso y recomendaciones clave.",
+      "Cómo registrar una marca en República Dominicana ante ONAPI: requisitos, proceso paso a paso, errores comunes y recomendaciones para proteger su negocio.",
     images: ["https://cabinetlegal.com.do/blog-legal.jpg"],
   },
 };
@@ -41,7 +41,7 @@ export default function Article() {
     <main className="min-h-screen">
       <article className="container-legal py-16 md:py-20">
         <div className="card-legal overflow-hidden">
-          <div className="relative h-[280px] md:h-[360px]">
+          <div className="relative flex min-h-[340px] items-end md:min-h-[360px]">
             <Image
               src="/blog-legal.jpg"
               alt="Registro de marca en República Dominicana"
@@ -49,7 +49,7 @@ export default function Article() {
               className="object-cover"
             />
             <div className="hero-image-overlay absolute inset-0" />
-            <div className="absolute inset-x-0 bottom-0 p-6 md:p-10">
+            <div className="relative z-10 w-full p-6 md:p-10">
               <div className="eyebrow text-white/80">Cabinet Legal</div>
               <h1 className="mt-3 max-w-4xl text-3xl font-semibold leading-tight text-white md:text-5xl">
                 Cómo registrar una marca en República Dominicana (2026)
@@ -60,26 +60,26 @@ export default function Article() {
           <div className="px-6 py-10 md:px-10 md:py-12">
             <div className="article-content">
               <p>
-                Si tienes un negocio o estás construyendo una marca, registrarla en
-                República Dominicana no es opcional: es lo que evita que terceros
-                utilicen tu nombre, tu identidad o incluso tu reputación.
+                Si usted tiene un negocio o está desarrollando una marca, registrarla en
+                República Dominicana no es opcional: es lo que impide que terceros
+                utilicen su nombre, su identidad o incluso su reputación.
               </p>
 
               <p>
-                En la práctica, muchos negocios operan sin protección legal y descubren
-                el problema cuando ya es tarde. Registrar tu marca a tiempo te permite
-                asegurar exclusividad y evitar conflictos.
+                En la práctica, muchos negocios operan sin protección legal y advierten
+                el problema cuando ya es tarde. Registrar su marca a tiempo le permite
+                asegurar la exclusividad y prevenir conflictos.
               </p>
 
-              <h2>¿Qué es una marca y por qué debes registrarla?</h2>
+              <h2>¿Qué es una marca y por qué debe registrarla?</h2>
               <p>
-                Una marca es el signo que identifica tus productos o servicios en el
+                Una marca es el signo que distingue sus productos o servicios en el
                 mercado. Puede ser un nombre, un logo o una combinación de ambos.
               </p>
 
               <p>
-                El registro te otorga derechos exclusivos de uso en República Dominicana
-                y te permite impedir que terceros utilicen signos similares.
+                El registro le otorga derechos exclusivos de uso en República Dominicana
+                y le permite impedir que terceros utilicen signos similares.
               </p>
 
               <h2>¿Dónde se registra una marca en República Dominicana?</h2>
@@ -100,25 +100,25 @@ export default function Article() {
               <h2>Proceso de registro paso a paso</h2>
               <ol>
                 <li>Búsqueda de disponibilidad</li>
-                <li>Presentación de solicitud en ONAPI</li>
+                <li>Presentación de la solicitud ante ONAPI</li>
                 <li>Examen formal</li>
-                <li>Publicación en boletín oficial</li>
-                <li>Periodo de oposición</li>
+                <li>Publicación en el boletín oficial</li>
+                <li>Período de oposición</li>
                 <li>Emisión del certificado</li>
               </ol>
 
               <h2>Errores comunes al registrar una marca</h2>
               <ul>
-                <li>No verificar disponibilidad previamente</li>
-                <li>Elegir mal la clasificación</li>
-                <li>No responder requerimientos de ONAPI</li>
+                <li>No verificar previamente la disponibilidad</li>
+                <li>Elegir incorrectamente la clasificación</li>
+                <li>No responder a los requerimientos de ONAPI</li>
               </ul>
 
               <p>
-                Estos errores pueden provocar rechazo o retrasos importantes en el proceso.
+                Estos errores pueden provocar el rechazo de la solicitud o retrasos importantes en el proceso.
               </p>
 
-              <h2>¿Necesitas asesoría legal?</h2>
+              <h2>¿Necesita asesoría legal?</h2>
               <p>
                 Aunque el proceso puede iniciarse sin abogado, una asesoría adecuada reduce
                 riesgos, evita conflictos y aumenta las probabilidades de éxito desde el inicio.
@@ -126,12 +126,12 @@ export default function Article() {
 
               <div className="mt-12 rounded-2xl bg-[#0f2740] p-8 text-white">
                 <h3 className="text-xl font-semibold">
-                  ¿Quieres registrar tu marca correctamente desde el inicio?
+                  ¿Desea registrar su marca correctamente desde el inicio?
                 </h3>
 
                 <p className="mt-3 text-slate-200">
-                  En Cabinet Legal evaluamos tu caso, verificamos disponibilidad y
-                  gestionamos el proceso ante ONAPI para que tu marca esté protegida
+                  En Cabinet Legal evaluamos su caso, verificamos la disponibilidad y
+                  gestionamos el proceso ante ONAPI para que su marca esté protegida
                   con una estrategia clara y sin riesgos innecesarios.
                 </p>
 
@@ -151,6 +151,17 @@ export default function Article() {
                   </Link>
                 </div>
               </div>
+
+              <p className="mt-8">
+                Conozca en detalle nuestro servicio de{" "}
+                <Link
+                  href="/registro-de-marcas"
+                  className="font-semibold text-[#0f2740] underline"
+                >
+                  registro de marcas en República Dominicana
+                </Link>
+                .
+              </p>
             </div>
           </div>
         </div>

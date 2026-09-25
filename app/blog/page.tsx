@@ -5,9 +5,9 @@ import SiteHeader from "@/components/SiteHeader";
 import GuideBanner from "@/components/GuideBanner";
 
 export const metadata: Metadata = {
-  title: "Blog Legal: Marcas, Inversión Extranjera y Empresas en RD",
+  title: "Blog jurídico: guías legales en República Dominicana",
   description:
-    "Artículos legales de Cabinet Legal sobre marcas, propiedad intelectual, asuntos corporativos y decisiones jurídicas relevantes en República Dominicana.",
+    "Guías jurídicas de Cabinet Legal para usted: registro de marcas, inversión inmobiliaria, constitución de empresas y residencia en República Dominicana.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/blog",
   },
@@ -18,35 +18,35 @@ const articles = [
     href: "/blog/comprar-propiedad-republica-dominicana-extranjero",
     title: "Cómo comprar propiedad en República Dominicana siendo extranjero",
     description:
-      "Requisitos, due diligence de título, cierre notarial y errores que debes evitar antes de firmar.",
+      "Requisitos, debida diligencia (due diligence) del título, cierre notarial y errores que usted debe evitar antes de firmar.",
     image: "/blog-legal.jpg",
   },
   {
     href: "/blog/residencia-por-inversion-republica-dominicana",
     title: "Residencia por inversión en República Dominicana: guía 2026",
     description:
-      "Las tres vías más comunes para obtener la residencia, tiempos realistas y documentos que suelen generar demoras.",
+      "Las tres vías más comunes para obtener la residencia, plazos realistas y los documentos que suelen generar demoras.",
     image: "/blog-legal.jpg",
   },
   {
     href: "/blog/abrir-empresa-republica-dominicana-extranjero",
     title: "Cómo abrir una empresa en República Dominicana siendo extranjero",
     description:
-      "SRL o SA, el proceso paso a paso, y los errores que encarecen la sociedad después de constituida.",
+      "SRL o SA, el proceso paso a paso y los errores que encarecen la sociedad una vez constituida.",
     image: "/blog-legal.jpg",
   },
   {
     href: "/blog/como-registrar-una-marca-republica-dominicana",
     title: "Cómo registrar una marca en República Dominicana (2026)",
     description:
-      "Guía práctica sobre requisitos, proceso en ONAPI, tiempos, errores comunes y recomendaciones clave.",
+      "Guía práctica sobre requisitos, el procedimiento ante ONAPI, plazos, errores comunes y recomendaciones clave.",
     image: "/blog-legal.jpg",
   },
   {
     href: "/blog/cuanto-cuesta-registrar-una-marca",
     title: "Cuánto cuesta registrar una marca en República Dominicana",
     description:
-      "Explicamos por qué el costo depende del tipo de marca, la cantidad de clases y la estructura del expediente.",
+      "Le explicamos por qué el costo depende del tipo de marca, el número de clases y la estructura del expediente.",
     image: "/blog-legal.jpg",
   },
 ];
@@ -58,22 +58,22 @@ export default function BlogPage() {
 
       <section className="container-legal py-10 md:py-20">
         <div className="card-legal overflow-hidden">
-          <div className="relative h-[180px] sm:h-[220px] md:h-[320px]">
+          <div className="relative flex min-h-[340px] items-end sm:min-h-[220px] md:min-h-[320px]">
             <Image
               src="/hero-legal.jpg"
-              alt="Blog legal Cabinet Legal"
+              alt="Blog jurídico de Cabinet Legal"
               fill
               className="object-cover"
             />
             <div className="hero-image-overlay absolute inset-0" />
-            <div className="absolute inset-x-0 bottom-0 p-4 md:p-10">
+            <div className="relative z-10 w-full p-4 md:p-10">
               <div className="eyebrow text-white/80">Cabinet Legal</div>
               <h1 className="mt-2 max-w-4xl text-2xl font-semibold leading-tight text-white sm:text-3xl md:mt-3 md:text-5xl">
-                Blog legal
+                Blog jurídico: guías legales sobre República Dominicana
               </h1>
               <p className="mt-2 max-w-2xl text-sm leading-6 text-white/85 md:mt-4 md:text-lg md:leading-7">
-                Publicaciones sobre marcas, propiedad intelectual y decisiones jurídicas
-                relevantes para proteger y fortalecer tu negocio.
+                Publicaciones sobre marcas, inversión inmobiliaria, empresas y residencia,
+                con criterios jurídicos para proteger y fortalecer su patrimonio y su negocio.
               </p>
             </div>
           </div>

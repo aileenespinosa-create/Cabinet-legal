@@ -25,7 +25,7 @@ export default function ConsultaPageEN() {
       {/* HERO */}
       <section className="container-legal py-10 md:py-16">
         <div className="card-legal overflow-hidden">
-          <div className="relative h-[240px] sm:h-[300px] md:h-[380px]">
+          <div className="relative flex min-h-[340px] items-end sm:min-h-[300px] md:min-h-[380px]">
             <Image
               src="/hero-legal.jpg"
               alt="Legal consultation with Cabinet Legal"
@@ -35,7 +35,7 @@ export default function ConsultaPageEN() {
             />
             <div className="hero-image-overlay absolute inset-0" />
 
-            <div className="absolute inset-x-0 bottom-0 p-5 md:p-10">
+            <div className="relative z-10 w-full p-5 md:p-10">
               <div className="eyebrow text-white/80">Cabinet Legal</div>
 
               <h1 className="mt-3 max-w-3xl text-3xl font-semibold leading-tight text-white sm:text-4xl md:text-5xl">

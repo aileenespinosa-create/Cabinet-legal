@@ -6,7 +6,7 @@ import SiteHeader from "@/components/SiteHeader";
 export const metadata: Metadata = {
   title: "Firma de Abogados en Santo Domingo, República Dominicana",
   description:
-    "Cabinet Legal es una firma de abogados en Santo Domingo, República Dominicana, con enfoque corporativo, estratégico y atención directa de socios para clientes locales y extranjeros.",
+    "Cabinet Legal es una firma de abogados en Santo Domingo fundada en 2009. Cada asunto lo dirige un socio y atendemos en español, inglés y francés.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/firma",
     languages: {
@@ -25,7 +25,7 @@ export default function FirmaPage() {
 
       <section className="container-legal py-10 md:py-20">
         <div className="card-legal overflow-hidden">
-          <div className="relative h-[200px] sm:h-[260px] md:h-[360px]">
+          <div className="relative flex min-h-[340px] items-end sm:min-h-[260px] md:min-h-[360px]">
             <Image
               src="/hero-legal.jpg"
               alt="Cabinet Legal"
@@ -34,13 +34,13 @@ export default function FirmaPage() {
               sizes="100vw"
             />
             <div className="hero-image-overlay absolute inset-0" />
-            <div className="absolute inset-x-0 bottom-0 p-5 md:p-10">
-              <div className="eyebrow text-white/80">Cabinet Legal</div>
+            <div className="relative z-10 w-full p-5 md:p-10">
+              <div className="eyebrow text-white/80">La firma</div>
               <h1 className="mt-2 text-3xl font-semibold leading-tight text-white sm:text-4xl md:mt-3 md:text-5xl">
-                La Firma
+                Firma de abogados en Santo Domingo
               </h1>
               <p className="mt-3 max-w-2xl text-sm leading-6 text-white/85 md:mt-4 md:text-lg md:leading-7">
-                Asesoría legal sofisticada, visión estratégica y ejecución rigurosa.
+                Desde 2009, cada asunto dirigido por un socio, en español, inglés y francés.
               </p>
             </div>
           </div>
@@ -52,14 +52,14 @@ export default function FirmaPage() {
           <div className="card-legal p-6 md:p-10">
             <div className="eyebrow">Nuestra promesa</div>
             <h2 className="mt-4 font-serif text-3xl font-semibold leading-tight text-[#0f2740] md:text-4xl">
-              Pensamos como tu socio de negocios.<br />
-              Actuamos como tu defensa más firme.
+              Pensamos como su socio de negocios.<br />
+              Actuamos como su defensa más firme.
               <br />
-              <span className="text-[#8a6a37]">Y te atendemos como si fueras nuestro único cliente.</span>
+              <span className="text-[#8a6a37]">Y le atendemos como si fuera nuestro único cliente.</span>
             </h2>
             <div className="gold-line mt-6" />
             <p className="pt-6 text-base leading-8 text-[#5f6b76] md:text-lg">
-              Cada asunto recibe un trato personalizado: lo dirige un socio que conoce tu negocio, te habla con claridad y no suelta el expediente hasta cerrarlo. Así protegemos lo que has construido, en República Dominicana y desde cualquier lugar del mundo.
+              Cada asunto recibe un trato personalizado: lo dirige un socio que conoce su negocio, le habla con claridad y no suelta el expediente hasta cerrarlo. Así protegemos lo que usted ha construido, en República Dominicana y desde cualquier lugar del mundo.
             </p>
           </div>
 
@@ -70,7 +70,8 @@ export default function FirmaPage() {
                 República Dominicana, fundada en 2009. Asesoramos a empresas,
                 inversionistas extranjeros y clientes privados en compras de
                 bienes raíces, estructuración societaria, fusiones y
-                adquisiciones, registro de marcas y litigios de alto impacto.
+                adquisiciones, planificación sucesoral, registro de marcas,
+                residencia y litigios.
               </p>
               <p>
                 Atendemos en español, inglés y francés, lo que nos permite
@@ -78,8 +79,8 @@ export default function FirmaPage() {
                 litigan en República Dominicana sin residir en el país.
               </p>
               <p>
-                Contamos con un excelente equipo de abogados, organizado por
-                área de práctica y dirigido por nuestros socios, Aileen
+                Contamos con un equipo de abogados organizado por área de
+                práctica y dirigido por nuestros socios, Aileen
                 Espinosa y Ellis Beato. Cada asunto lo dirige un
                 socio desde la primera consulta hasta el cierre, y lo trabaja
                 el abogado especializado en la materia.
@@ -134,12 +135,12 @@ export default function FirmaPage() {
           <div className="card-legal p-6 md:p-8">
             <div className="eyebrow">Enfoque</div>
             <h3 className="mt-4 text-xl font-semibold text-[#0f2740] md:text-2xl">
-              Cercanía estratégica
+              Primero, sus objetivos
             </h3>
             <p className="mt-4 text-sm leading-7 text-[#5f6b76] md:text-base md:leading-8">
-              Antes de recomendar una vía legal, entendemos qué necesitas
-              lograr como negocio o como inversionista, no solo qué documento
-              hace falta firmar.
+              Antes de recomendar una vía legal, entendemos qué necesita
+              lograr usted como empresa, inversionista o familia, no solo qué
+              documento hace falta firmar.
             </p>
           </div>
 
@@ -149,20 +150,21 @@ export default function FirmaPage() {
               Precisión técnica
             </h3>
             <p className="mt-4 text-sm leading-7 text-[#5f6b76] md:text-base md:leading-8">
-              Revisamos cada caso a fondo — título, contrato, estructura
-              societaria o expediente migratorio — antes de actuar, para
-              evitar sorpresas después de firmado.
+              Revisamos cada caso a fondo antes de actuar: título, contrato,
+              estructura societaria o expediente migratorio. Así se evitan
+              sorpresas después de la firma.
             </p>
           </div>
 
           <div className="card-legal p-6 md:p-8">
             <div className="eyebrow">Estándar</div>
             <h3 className="mt-4 text-xl font-semibold text-[#0f2740] md:text-2xl">
-              Ejecución rigurosa
+              Seguimiento hasta el cierre
             </h3>
             <p className="mt-4 text-sm leading-7 text-[#5f6b76] md:text-base md:leading-8">
               Damos seguimiento activo a cada expediente ante la institución
-              correspondiente (ONAPI, Migración, Registro de Títulos) hasta
+              correspondiente (ONAPI, Dirección General de Migración, DGII,
+              Registro de Títulos) hasta
               su cierre, no solo hasta la presentación.
             </p>
           </div>
@@ -173,11 +175,11 @@ export default function FirmaPage() {
         <div className="container-legal card-legal p-6 md:p-12">
           <div className="eyebrow">Contacto</div>
           <h2 className="mt-4 text-3xl font-semibold text-[#0f2740] md:text-4xl">
-            ¿Quieres conversar con nuestro equipo?
+            ¿Desea conversar con nuestro equipo?
           </h2>
           <p className="mt-4 max-w-2xl text-base leading-7 text-[#5f6b76] md:text-lg md:leading-8">
-            Podemos evaluar tu situación y orientarte sobre la estrategia legal más adecuada
-            para tu empresa o proyecto.
+            Un socio evaluará su situación y le indicará la vía legal más adecuada
+            para su empresa, su inversión o su familia.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap md:gap-4">

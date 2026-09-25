@@ -2,6 +2,7 @@
 
 @theme {
   --font-serif: var(--font-lora), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-sans-body), "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 :root {
@@ -19,27 +20,67 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  margin: 0;
-  background: linear-gradient(to bottom, #fbf8f3 0%, #f6f2ea 100%);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Resets live in the base layer so Tailwind spacing utilities (mt-*, mb-*)
+   written on headings and paragraphs are no longer silently overridden. */
+@layer base {
+  body {
+    margin: 0;
+    background: linear-gradient(to bottom, #fbf8f3 0%, #f6f2ea 100%);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    line-height: 1.15;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  p {
+    margin: 0;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    text-wrap: pretty;
+  }
+
+  /* Consecutive paragraphs always breathe. */
+  p + p {
+    margin-top: 0.9em;
+  }
+
+  /* A heading followed directly by text gets a clear gap. */
+  :is(h1, h2, h3, h4) + p {
+    margin-top: 0.75rem;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    font-family: inherit;
+  }
 }
 
-* {
-  box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  letter-spacing: -0.02em;
-  margin: 0;
-}
-
-p {
-  margin: 0;
+/* Long legal paragraphs read as a composed document on large screens:
+   justified with hyphenation. Phones keep a clean left edge. Single-line
+   text is unaffected, and centered blocks stay centered. */
+@media (min-width: 1024px) {
+  main p:not(:where(.text-center, .text-center *, .text-right, .text-right *, .no-justify, .no-justify *, .font-serif, .italic, [class*="text-lg"], [class*="text-xl"], [class*="text-2xl"], [class*="text-3xl"], [class*="text-[2"], [class*="text-[3"])) {
+    text-align: justify;
+  }
 }
 
 a {
@@ -146,11 +187,25 @@ a {
 }
 
 .hero-image-overlay {
-  background: linear-gradient(
-    180deg,
-    rgba(15, 39, 64, 0.08) 0%,
-    rgba(15, 39, 64, 0.28) 100%
-  );
+  background:
+    linear-gradient(90deg, rgba(9, 24, 42, 0.82) 0%, rgba(9, 24, 42, 0.55) 55%, rgba(9, 24, 42, 0.2) 100%),
+    linear-gradient(0deg, rgba(9, 24, 42, 0.75) 0%, rgba(9, 24, 42, 0) 60%);
+}
+
+/* Secondary buttons and eyebrows placed over a photo stay legible. */
+.hero-image-overlay ~ div .btn-secondary-legal {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.hero-image-overlay ~ div .btn-secondary-legal:hover {
+  background: #fff;
+  color: var(--navy);
+}
+
+.hero-image-overlay ~ div .eyebrow {
+  color: var(--gold);
 }
 
 @media (max-width: 767px) {
@@ -173,11 +228,6 @@ body {
 img {
   max-width: 100%;
   height: auto;
-}
-
-input,
-textarea {
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 input:focus,

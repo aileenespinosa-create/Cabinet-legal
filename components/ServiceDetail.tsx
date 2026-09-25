@@ -3,6 +3,9 @@ import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
 import { CONSULT_HREF, PILLARS, SERVICES, serviceHref, type Lang, type Service } from "@/lib/services";
 import { SERVICES_COPY } from "@/lib/servicesCopy";
+import { SERVICES_SEO } from "@/lib/servicesSeo";
+
+const BASE = "https://cabinetlegal.com.do";
 
 // Generic page for a practice area that has no hand-written page of its own.
 export default function ServiceDetail({ service, lang }: { service: Service; lang: Lang }) {
@@ -10,10 +13,53 @@ export default function ServiceDetail({ service, lang }: { service: Service; lan
   const x = service.text[lang];
   const related = SERVICES.filter((s) => s.pillar === service.pillar && s.id !== service.id);
   const wa = `https://wa.me/18295420615?text=${encodeURIComponent(x.title)}`;
+  const seo = SERVICES_SEO[service.id]?.[lang];
+  const paragraphs = x.what.split("\n\n");
+  const prefix = lang === "es" ? "" : `/${lang}`;
+  const pageUrl = `${BASE}${serviceHref(service, lang)}`;
+
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: x.title,
+      description: seo?.description ?? x.promise,
+      serviceType: x.title,
+      url: pageUrl,
+      areaServed: { "@type": "Country", name: "Dominican Republic" },
+      provider: { "@type": "LegalService", name: "Cabinet Legal", url: BASE },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: t.home, item: `${BASE}${prefix || "/"}` },
+        { "@type": "ListItem", position: 2, name: t.servicesLabel, item: `${BASE}${prefix}/servicios` },
+        { "@type": "ListItem", position: 3, name: x.title, item: pageUrl },
+      ],
+    },
+    ...(seo?.faq.length
+      ? [
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: seo.faq.map(([q, a]) => ({
+              "@type": "Question",
+              name: q,
+              acceptedAnswer: { "@type": "Answer", text: a },
+            })),
+          },
+        ]
+      : []),
+  ];
 
   return (
     <main className="min-h-screen bg-[#fcfaf6] pt-[88px]">
       <SiteHeader />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
       <section className="relative overflow-hidden bg-[#0f2740] text-white">
         <Image src={service.img} alt="" fill priority className="object-cover opacity-25" sizes="100vw" />
@@ -37,9 +83,14 @@ export default function ServiceDetail({ service, lang }: { service: Service; lan
         <div className="mx-auto grid w-full max-w-[1200px] gap-10 px-6 md:grid-cols-[0.8fr_1.2fr] md:gap-16 lg:px-8">
           <div>
             <div className="text-[11px] uppercase tracking-[0.24em] text-[#8a6a37]">{t.helpWhen}</div>
+            {seo?.h2 && <h2 className="mt-5 font-serif text-3xl leading-tight text-[#0f2740] md:text-4xl">{seo.h2}</h2>}
             <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
           </div>
-          <p className="text-lg leading-9 text-[#3a4550] md:text-xl">{x.what}</p>
+          <div className="max-w-[68ch] text-[17px] leading-8 text-[#3a4550] md:text-[18px]">
+            {paragraphs.map((para) => (
+              <p key={para.slice(0, 32)}>{para}</p>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -83,6 +134,28 @@ export default function ServiceDetail({ service, lang }: { service: Service; lan
           </div>
         </div>
       </section>
+
+      {seo?.faq.length ? (
+        <section className="pb-14 md:pb-24">
+          <div className="mx-auto grid w-full max-w-[1200px] gap-10 px-6 md:grid-cols-[0.8fr_1.2fr] md:gap-16 lg:px-8">
+            <div>
+              <div className="text-[11px] uppercase tracking-[0.24em] text-[#8a6a37]">{t.faqTitle}</div>
+              <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
+            </div>
+            <div className="divide-y divide-[#e8dfd0] border-y border-[#e8dfd0]">
+              {seo.faq.map(([q, a]) => (
+                <details key={q} className="group py-5">
+                  <summary className="flex cursor-pointer list-none items-start justify-between gap-6 font-serif text-xl leading-snug text-[#0f2740] md:text-[22px]">
+                    <h3 className="font-serif text-xl leading-snug md:text-[22px]">{q}</h3>
+                    <span className="mt-1 text-2xl leading-none text-[#c8a46a] transition group-open:rotate-45" aria-hidden="true">+</span>
+                  </summary>
+                  <p className="max-w-[68ch] pt-4 text-[16px] leading-8 text-[#4a5561]">{a}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       {related.length > 0 && (
         <section className="pb-14 md:pb-24">

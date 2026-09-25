@@ -3,9 +3,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cuánto Cuesta Registrar una Marca en República Dominicana",
+  title: "Cuánto cuesta registrar una marca en República Dominicana",
   description:
-    "El costo de registrar una marca en República Dominicana depende del tipo de marca, la cantidad de clases y la estructura de la solicitud.",
+    "Cuánto cuesta registrar una marca en República Dominicana: el costo depende del tipo de marca, el número de clases y la estructura de su solicitud ante ONAPI.",
   alternates: {
     canonical:
       "https://cabinetlegal.com.do/blog/cuanto-cuesta-registrar-una-marca",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cuánto cuesta registrar una marca en República Dominicana | Cabinet Legal",
     description:
-      "El costo de registrar una marca en República Dominicana depende del tipo de marca, la cantidad de clases y la estructura de la solicitud.",
+      "Cuánto cuesta registrar una marca en República Dominicana: el costo depende del tipo de marca, el número de clases y la estructura de su solicitud ante ONAPI.",
     url: "https://cabinetlegal.com.do/blog/cuanto-cuesta-registrar-una-marca",
     siteName: "Cabinet Legal",
     images: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Cuánto cuesta registrar una marca en República Dominicana | Cabinet Legal",
     description:
-      "El costo de registrar una marca en República Dominicana depende del tipo de marca, la cantidad de clases y la estructura de la solicitud.",
+      "Cuánto cuesta registrar una marca en República Dominicana: el costo depende del tipo de marca, el número de clases y la estructura de su solicitud ante ONAPI.",
     images: ["https://cabinetlegal.com.do/blog-legal.jpg"],
   },
 };
@@ -45,7 +45,7 @@ const faqSchema = {
       name: "¿De qué depende el costo del registro de una marca en República Dominicana?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Depende del tipo de marca (denominativa, mixta o figurativa), la cantidad de clases, la actividad comercial y la complejidad del caso, incluyendo posibles oposiciones o requerimientos de ONAPI.",
+        text: "Depende del tipo de marca (denominativa, mixta o figurativa), el número de clases, la actividad comercial y la complejidad del caso, incluyendo posibles oposiciones o requerimientos de ONAPI.",
       },
     },
     {
@@ -53,7 +53,7 @@ const faqSchema = {
       name: "¿Por qué no es recomendable estimar el costo sin evaluación previa?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Intentar determinar el costo sin una revisión previa puede llevar a errores en la clasificación, duplicidad de registros o conflictos con marcas existentes.",
+        text: "Intentar determinar el costo sin una revisión previa puede conducir a errores en la clasificación, duplicidad de registros o conflictos con marcas existentes.",
       },
     },
   ],
@@ -69,7 +69,7 @@ export default function Article() {
       />
       <article className="container-legal py-16 md:py-20">
         <div className="card-legal overflow-hidden">
-          <div className="relative h-[280px] md:h-[360px]">
+          <div className="relative flex min-h-[340px] items-end md:min-h-[360px]">
             <Image
               src="/blog-legal.jpg"
               alt="Costo de registrar una marca en República Dominicana"
@@ -77,7 +77,7 @@ export default function Article() {
               className="object-cover"
             />
             <div className="hero-image-overlay absolute inset-0" />
-            <div className="absolute inset-x-0 bottom-0 p-6 md:p-10">
+            <div className="relative z-10 w-full p-6 md:p-10">
               <div className="eyebrow text-white/80">Cabinet Legal</div>
               <h1 className="mt-3 max-w-4xl text-3xl font-semibold leading-tight text-white md:text-5xl">
                 Cuánto cuesta registrar una marca en República Dominicana
@@ -94,8 +94,8 @@ export default function Article() {
               </p>
 
               <p>
-                El valor del registro depende de varios factores específicos de cada caso,
-                por lo que es importante analizar correctamente la situación antes de
+                El valor del registro depende de varios factores propios de cada caso,
+                por lo que conviene analizar debidamente la situación antes de
                 iniciar el proceso.
               </p>
 
@@ -112,7 +112,7 @@ export default function Article() {
                   mixta o figurativa.
                 </li>
                 <li>
-                  <strong>Cantidad de clases:</strong> cada clase adicional implica un
+                  <strong>Número de clases:</strong> cada clase adicional implica un
                   costo independiente.
                 </li>
                 <li>
@@ -140,7 +140,7 @@ export default function Article() {
 
               <h2>¿Por qué no es recomendable estimar el costo sin evaluación?</h2>
               <p>
-                Intentar determinar el costo sin una revisión previa puede llevar a
+                Intentar determinar el costo sin una revisión previa puede conducir a
                 errores en la clasificación, duplicidad de registros o conflictos con
                 marcas existentes.
               </p>
@@ -159,13 +159,13 @@ export default function Article() {
 
               <div className="mt-12 rounded-2xl bg-[#0f2740] p-8 text-white">
                 <h3 className="text-xl font-semibold">
-                  ¿Quieres conocer el costo exacto de registrar tu marca?
+                  ¿Desea conocer el costo exacto de registrar su marca?
                 </h3>
 
                 <p className="mt-3 text-slate-200">
-                  En Cabinet Legal analizamos tu caso, verificamos la disponibilidad de
-                  tu marca y te indicamos el costo real del proceso según tu actividad y
-                  el alcance de protección que necesitas.
+                  En Cabinet Legal analizamos su caso, verificamos la disponibilidad de
+                  su marca y le indicamos el costo real del proceso según su actividad y
+                  el alcance de protección que necesita.
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-4">
@@ -184,6 +184,17 @@ export default function Article() {
                   </Link>
                 </div>
               </div>
+
+              <p className="mt-8">
+                Conozca en detalle nuestro servicio de{" "}
+                <Link
+                  href="/registro-de-marcas"
+                  className="font-semibold text-[#0f2740] underline"
+                >
+                  registro de marcas en República Dominicana
+                </Link>
+                .
+              </p>
             </div>
           </div>
         </div>

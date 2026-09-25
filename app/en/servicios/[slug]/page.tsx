@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ServiceDetail from "@/components/ServiceDetail";
 import { SERVICES, findService } from "@/lib/services";
+import { SERVICES_SEO } from "@/lib/servicesSeo";
 
 const LANG = "en" as const;
 const BASE = "https://cabinetlegal.com.do";
@@ -17,11 +18,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const s = findService(slug, LANG);
   if (!s) return {};
   const x = s.text[LANG];
+  const seo = SERVICES_SEO[s.id]?.[LANG];
   const alt = (l: "es" | "en" | "fr") =>
     s.custom?.[l] ? `${BASE}${s.custom[l]}` : `${BASE}${l === "es" ? "" : "/" + l}/servicios/${s.slug[l]}`;
   return {
-    title: `${x.title} in the Dominican Republic`,
-    description: `${x.promise} ${x.what}`.slice(0, 158),
+    title: seo?.seoTitle ?? `${x.title} in the Dominican Republic`,
+    description: seo?.description ?? x.promise,
     alternates: {
       canonical: alt(LANG),
       languages: { "x-default": alt("es"), "es-DO": alt("es"), en: alt("en"), fr: alt("fr") },

@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Agenda una Consulta Legal en República Dominicana",
+  title: "Solicite una consulta legal en República Dominicana",
   description:
-    "Solicita una consulta con Cabinet Legal para evaluar tu caso y definir la mejor estrategia legal en República Dominicana.",
+    "Solicite una consulta con Cabinet Legal en Santo Domingo. Un socio evalúa su caso y le responde en español, inglés o francés en menos de 24 horas hábiles.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/consulta",
     languages: {
@@ -25,7 +25,7 @@ export default function ConsultaPage() {
       {/* HERO */}
       <section className="container-legal py-10 md:py-16">
         <div className="card-legal overflow-hidden">
-          <div className="relative h-[240px] sm:h-[300px] md:h-[380px]">
+          <div className="relative flex min-h-[340px] items-end sm:min-h-[300px] md:min-h-[380px]">
             <Image
               src="/hero-legal.jpg"
               alt="Consulta legal Cabinet Legal"
@@ -35,16 +35,16 @@ export default function ConsultaPage() {
             />
             <div className="hero-image-overlay absolute inset-0" />
 
-            <div className="absolute inset-x-0 bottom-0 p-5 md:p-10">
+            <div className="relative z-10 w-full p-5 md:p-10">
               <div className="eyebrow text-white/80">Cabinet Legal</div>
 
               <h1 className="mt-3 max-w-3xl text-3xl font-semibold leading-tight text-white sm:text-4xl md:text-5xl">
-                Solicita una consulta legal con enfoque estratégico
+                Solicite una consulta legal
               </h1>
 
               <p className="mt-4 max-w-2xl text-sm leading-6 text-white/90 md:text-lg md:leading-7">
-                Evaluamos tu situación, identificamos riesgos y te orientamos
-                sobre la mejor vía legal según tu caso, tus objetivos y tu contexto.
+                Un socio evalúa su situación, identifica los riesgos y le
+                indica la vía legal más adecuada según su caso y sus objetivos.
               </p>
             </div>
           </div>
@@ -59,31 +59,33 @@ export default function ConsultaPage() {
             <div className="eyebrow">Consulta</div>
 
             <h2 className="mt-4 text-3xl font-semibold leading-tight text-[#0f2740] md:text-4xl">
-              Hablemos de tu caso con claridad y criterio jurídico.
+              Hablemos de su caso con claridad.
             </h2>
 
             <p className="mt-5 text-base leading-7 text-[#5f6b76] md:text-lg md:leading-8">
-              Si necesitas orientación legal para tu empresa, una marca, un contrato,
-              una operación o un conflicto específico, podemos ayudarte a definir
-              una estrategia clara, práctica y jurídicamente sólida.
+              Si necesita orientación legal para su empresa, una marca, un contrato,
+              una compra de inmueble, una sucesión o un conflicto específico, le
+              ayudamos a definir los próximos pasos y a ejecutarlos. Atendemos en
+              español, inglés y francés, y muchos trámites pueden hacerse por
+              poder, sin que usted viaje al país.
             </p>
 
             <div className="gold-line mt-6" />
 
             <div className="mt-8 space-y-4 text-sm leading-7 text-[#5f6b76] md:text-base md:leading-8">
-              <p>• Atención directa y estratégica</p>
-              <p>• Evaluación inicial de tu situación</p>
+              <p>• Atención directa de un socio</p>
+              <p>• Evaluación inicial de su situación</p>
               <p>• Identificación de riesgos y prioridades</p>
               <p>• Recomendación clara de próximos pasos</p>
             </div>
 
             <div className="mt-8 rounded-2xl border border-[#e8dfd0] bg-[#fcfaf6] p-5 md:p-6">
               <h3 className="text-lg font-semibold text-[#0f2740]">
-                ¿Prefieres escribirnos directamente?
+                ¿Prefiere escribirnos directamente?
               </h3>
 
               <p className="mt-2 text-sm leading-6 text-[#5f6b76] md:text-base md:leading-7">
-                También puedes contactarnos por WhatsApp para una orientación inicial
+                También puede contactarnos por WhatsApp para una orientación inicial
                 más rápida.
               </p>
 
@@ -108,8 +110,8 @@ export default function ConsultaPage() {
               </h2>
 
               <p className="mt-3 text-sm leading-6 text-[#5f6b76] md:text-base md:leading-7">
-                Completa este formulario y nos pondremos en contacto contigo para
-                evaluar tu solicitud.
+                Complete este formulario y nos pondremos en contacto con usted para
+                evaluar su solicitud.
               </p>
             </div>
 
@@ -134,7 +136,7 @@ export default function ConsultaPage() {
                   type="text"
                   required
                   className="w-full rounded-2xl border border-[#e8dfd0] bg-white px-4 py-3 text-[#0f2740] outline-none transition focus:border-[#c9a96e]"
-                  placeholder="Tu nombre"
+                  placeholder="Su nombre"
                 />
               </div>
 
@@ -147,7 +149,7 @@ export default function ConsultaPage() {
                   type="email"
                   required
                   className="w-full rounded-2xl border border-[#e8dfd0] bg-white px-4 py-3 text-[#0f2740] outline-none transition focus:border-[#c9a96e]"
-                  placeholder="tunombre@correo.com"
+                  placeholder="nombre@correo.com"
                 />
               </div>
 
@@ -159,7 +161,7 @@ export default function ConsultaPage() {
                   name="telefono"
                   type="text"
                   className="w-full rounded-2xl border border-[#e8dfd0] bg-white px-4 py-3 text-[#0f2740] outline-none transition focus:border-[#c9a96e]"
-                  placeholder="Tu número"
+                  placeholder="Su número"
                 />
               </div>
 
@@ -170,9 +172,9 @@ export default function ConsultaPage() {
                 <select
                   name="area"
                   className="w-full rounded-2xl border border-[#e8dfd0] bg-white px-4 py-3 text-[#0f2740] outline-none transition focus:border-[#c9a96e]"
-                  defaultValue="Selecciona una opción"
+                  defaultValue="Seleccione una opción"
                 >
-                  <option disabled>Selecciona una opción</option>
+                  <option disabled>Seleccione una opción</option>
                   <option>Inversión extranjera / bienes raíces</option>
                   <option>Fusiones y adquisiciones</option>
                   <option>Formación de empresas</option>
@@ -195,7 +197,7 @@ export default function ConsultaPage() {
                   rows={6}
                   required
                   className="w-full rounded-2xl border border-[#e8dfd0] bg-white px-4 py-3 text-[#0f2740] outline-none transition focus:border-[#c9a96e]"
-                  placeholder="Cuéntanos brevemente tu caso"
+                  placeholder="Cuéntenos brevemente su caso"
                 />
               </div>
 
@@ -208,7 +210,7 @@ export default function ConsultaPage() {
               </button>
 
               <p className="text-center text-xs text-[#8a9099]">
-                Te respondemos en menos de 24 horas hábiles.
+                Le respondemos en menos de 24 horas hábiles.
               </p>
             </form>
           </div>
@@ -219,12 +221,12 @@ export default function ConsultaPage() {
       <section className="pb-16 md:pb-20">
         <div className="container-legal card-legal p-6 md:p-12">
           <h2 className="text-3xl font-semibold text-[#0f2740] md:text-4xl">
-            Toma decisiones con respaldo legal.
+            Decida con respaldo legal.
           </h2>
 
           <p className="mt-4 max-w-2xl text-base leading-7 text-[#5f6b76] md:text-lg md:leading-8">
-            Una consulta oportuna puede ayudarte a evitar errores, reducir riesgos
-            y estructurar mejor tu situación legal desde el inicio.
+            Una consulta a tiempo le permite evitar errores, reducir riesgos
+            y estructurar correctamente su situación legal desde el inicio.
           </p>
         </div>
       </section>

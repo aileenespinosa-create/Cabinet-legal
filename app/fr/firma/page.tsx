@@ -25,7 +25,7 @@ export default function FirmaPageFR() {
 
       <section className="container-legal py-10 md:py-20">
         <div className="card-legal overflow-hidden">
-          <div className="relative h-[200px] sm:h-[260px] md:h-[360px]">
+          <div className="relative flex min-h-[340px] items-end sm:min-h-[260px] md:min-h-[360px]">
             <Image
               src="/hero-legal.jpg"
               alt="Cabinet Legal"
@@ -34,7 +34,7 @@ export default function FirmaPageFR() {
               sizes="100vw"
             />
             <div className="hero-image-overlay absolute inset-0" />
-            <div className="absolute inset-x-0 bottom-0 p-5 md:p-10">
+            <div className="relative z-10 w-full p-5 md:p-10">
               <div className="eyebrow text-white/80">Cabinet Legal</div>
               <h1 className="mt-2 text-3xl font-semibold leading-tight text-white sm:text-4xl md:mt-3 md:text-5xl">
                 Le Cabinet

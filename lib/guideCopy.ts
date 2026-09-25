@@ -50,7 +50,7 @@ export const GUIDE_COPY: Record<GuideLang, GuideCopy> = {
     kicker: "Guía gratuita 2026",
     title: "Cómo invertir en República Dominicana",
     subtitle:
-      "La guía legal que preparamos para inversionistas extranjeros: compra de inmuebles, CONFOTUR, empresas, residencia, costos de cierre y los errores que más dinero cuestan.",
+      "La guía legal que preparamos para el inversionista extranjero sobre cómo invertir en República Dominicana: compra de inmuebles, CONFOTUR, sociedades, residencia, costos de cierre y los errores que más dinero cuestan.",
     pages: "12 páginas · PDF · Español, inglés y francés",
     inside: "Qué incluye",
     chapters: [
@@ -67,16 +67,16 @@ export const GUIDE_COPY: Record<GuideLang, GuideCopy> = {
     forWho: [
       "Compradores de vivienda o propiedades vacacionales",
       "Inversionistas en proyectos turísticos o en planos",
-      "Emprendedores que quieren abrir una empresa en el país",
+      "Emprendedores que desean constituir una empresa en el país",
       "Jubilados y rentistas que evalúan la residencia",
     ],
-    formTitle: "Recibe la guía en tu correo",
+    formTitle: "Reciba la guía en su correo",
     formIntro:
-      "Te enviaremos un correo para confirmar tu dirección. Al confirmarla, podrás descargar la guía de inmediato.",
+      "Le enviaremos un correo para confirmar su dirección. Una vez confirmada, podrá descargar la guía de inmediato.",
     name: "Nombre",
     email: "Correo electrónico",
     country: "País de residencia",
-    interest: "¿Qué te interesa?",
+    interest: "¿Qué le interesa?",
     interestOptions: [
       "Comprar un inmueble",
       "Invertir en un proyecto turístico",
@@ -88,32 +88,32 @@ export const GUIDE_COPY: Record<GuideLang, GuideCopy> = {
       "Acepto recibir la guía y comunicaciones ocasionales de Cabinet Legal. Puedo darme de baja en cualquier momento.",
     submit: "Enviar la guía",
     sending: "Enviando...",
-    sentTitle: "Revisa tu correo",
+    sentTitle: "Revise su correo",
     sentText:
-      "Te enviamos un mensaje para confirmar tu dirección. Haz clic en el enlace de confirmación y se abrirá la página de descarga. Si no lo ves en unos minutos, revisa la carpeta de correo no deseado.",
-    errorInvalid: "Revisa tu nombre, tu correo y la casilla de aceptación.",
+      "Le enviamos un mensaje para confirmar su dirección. Haga clic en el enlace de confirmación y se abrirá la página de descarga. Si no lo recibe en unos minutos, revise la carpeta de correo no deseado.",
+    errorInvalid: "Revise su nombre, su correo y la casilla de aceptación.",
     errorGeneric:
-      "No pudimos enviar la solicitud en este momento. Inténtalo de nuevo o escríbenos por WhatsApp.",
-    privacy: "No compartimos tus datos con terceros.",
+      "No pudimos enviar la solicitud en este momento. Inténtelo de nuevo o escríbanos por WhatsApp.",
+    privacy: "No compartimos sus datos con terceros.",
     bannerKicker: "Guía gratuita 2026",
     bannerTitle: "Cómo invertir en República Dominicana",
     bannerText:
       "Compra de inmuebles, CONFOTUR, empresas, residencia y costos de cierre, explicados por nuestros abogados en 12 páginas. Disponible en español, inglés y francés.",
     bannerCta: "Descargar la guía",
     dlKicker: "Correo confirmado",
-    dlTitle: "Tu guía está lista",
+    dlTitle: "Su guía está lista",
     dlText:
-      "Gracias por confirmar tu correo. Descarga la guía y guárdala; el enlace de descarga estará activo durante 30 días.",
+      "Gracias por confirmar su correo. Descargue la guía y consérvela; el enlace de descarga estará activo durante 30 días.",
     dlButton: "Descargar la guía (PDF)",
     dlOther: "También disponible en:",
-    dlNextTitle: "¿Tienes una operación en mente?",
+    dlNextTitle: "¿Tiene una operación en mente?",
     dlNextText:
-      "Cuéntanos qué planeas. Un socio revisará tu caso y te indicará los pasos, los plazos y el costo antes de comenzar.",
+      "Cuéntenos qué planea. Un socio revisará su caso y le indicará los pasos, los plazos y el costo antes de comenzar.",
     dlConsult: "Solicitar consulta",
     dlWhatsApp: "Escribir por WhatsApp",
     dlInvalidTitle: "Este enlace no es válido o ya venció",
     dlInvalidText:
-      "Solicita la guía de nuevo con tu correo y te enviaremos un enlace nuevo.",
+      "Solicite la guía nuevamente con su correo y le enviaremos un enlace nuevo.",
     dlInvalidCta: "Solicitar la guía",
     consultHref: "/consulta",
     langNames: { es: "Español", en: "English", fr: "Français" },

@@ -6,9 +6,9 @@ import GuideBanner from "@/components/GuideBanner";
 import ServicesAccordion from "@/components/ServicesAccordion";
 
 export const metadata: Metadata = {
-  title: "Abogados en República Dominicana para Inversionistas Extranjeros",
+  title: "Abogados en República Dominicana, Santo Domingo",
   description:
-    "Cabinet Legal asesora a inversionistas extranjeros, empresas y clientes privados en compra de bienes raíces, derecho corporativo, fusiones y adquisiciones, marcas y litigios en República Dominicana.",
+    "Firma de abogados en Santo Domingo desde 2009: derecho corporativo, tributario, inmobiliario, sucesiones, marcas, residencia y litigios. Atención directa de socios.",
   alternates: {
     canonical: "https://cabinetlegal.com.do",
     languages: {
@@ -34,16 +34,18 @@ export default function HomePage() {
             </div>
 
             <h1 className="max-w-3xl text-[26px] font-light leading-[1.12] tracking-tight text-[#0f2740] sm:text-[34px] md:text-[44px] lg:text-[52px]">
-              Protegemos tu negocio, tu marca y tus decisiones más importantes
-              con asesoría legal estratégica y personalizada. 
+              Abogados en República Dominicana para empresas, inversionistas y
+              familias
             </h1>
 
             <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
 
             <p className="mt-8 max-w-2xl text-[16px] leading-8 text-[#5f6b76] md:text-[17px]">
-              Acompañamos empresas, inversionistas y clientes privados en derecho
-              corporativo, registro de marcas, propiedad intelectual y asuntos
-              legales de alto impacto en República Dominicana.
+              Desde 2009 asesoramos en derecho corporativo y tributario,
+              inversión inmobiliaria, planificación sucesoral, registro de
+              marcas, residencia y litigios. Un socio dirige su asunto, le
+              atiende en español, inglés o francés y, en la mayoría de los
+              trámites, puede actuar por poder sin que usted tenga que viajar.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -66,10 +68,18 @@ export default function HomePage() {
             </div>
 
             <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-[#66717c]">
-              <div>Derecho corporativo</div>
-              <div>Registro de marcas</div>
-              <div>Propiedad intelectual</div>
-              <div>Litigios</div>
+              <Link href="/servicios/derecho-corporativo" className="transition hover:text-[#0f2740]">
+                Derecho corporativo
+              </Link>
+              <Link href="/inversion-extranjera" className="transition hover:text-[#0f2740]">
+                Inversión inmobiliaria
+              </Link>
+              <Link href="/servicios/planificacion-patrimonial-y-sucesoral" className="transition hover:text-[#0f2740]">
+                Planificación sucesoral
+              </Link>
+              <Link href="/servicios/litigacion-y-defensa-judicial" className="transition hover:text-[#0f2740]">
+                Litigación
+              </Link>
             </div>
           </div>
 
@@ -90,7 +100,7 @@ export default function HomePage() {
                   Cabinet Legal
                 </div>
                 <div className="mt-3 max-w-xl text-[22px] font-light leading-[1.2] tracking-tight md:text-[30px]">
-                  Atención directa, precisión técnica y visión estratégica.
+                  Cada asunto, dirigido por un socio desde la primera consulta.
                 </div>
               </div>
             </div>
@@ -131,7 +141,7 @@ export default function HomePage() {
                 100%
               </div>
               <div className="mt-1 text-sm text-[#5f6b76]">
-                Trámites que puedes iniciar por poder, sin viajar al país
+                Trámites que puede iniciar por poder, sin viajar al país
               </div>
             </div>
           </div>
@@ -151,9 +161,10 @@ export default function HomePage() {
               Muchos negocios operan sin la protección legal adecuada.
             </h2>
             <p className="mt-5 leading-8 text-[#5f6b76]">
-              Contratos mal estructurados, marcas sin registrar o decisiones
-              empresariales sin soporte jurídico pueden generar conflictos,
-              pérdidas económicas y riesgos innecesarios.
+              Contratos mal redactados, marcas sin registrar ante ONAPI o
+              decisiones societarias sin soporte jurídico terminan en
+              conflictos entre socios, reclamaciones fiscales y pérdidas
+              que se podían evitar.
             </p>
           </div>
 
@@ -162,14 +173,14 @@ export default function HomePage() {
               Nuestra propuesta
             </div>
             <h2 className="text-2xl font-light tracking-tight text-[#0f2740] md:text-3xl">
-              Un socio revisa tu caso, no un formulario.
+              Un socio revisa su caso, no un formulario.
             </h2>
             <p className="mt-5 leading-8 text-[#5f6b76]">
-              Desde 2009 acompañamos a empresas, inversionistas extranjeros y
-              clientes privados en compras de bienes raíces, estructuración
-              societaria, registro de marcas y litigios en República
-              Dominicana. Cada caso lo dirige un socio, con el respaldo de un
-              excelente equipo de abogados.
+              Desde 2009 asesoramos a empresas, inversionistas extranjeros y
+              familias en compras de inmuebles, estructuración societaria,
+              registro de marcas y litigios en República Dominicana. Cada
+              asunto lo dirige un socio, con el apoyo de abogados dedicados
+              a cada área de práctica.
             </p>
           </div>
         </div>
@@ -193,13 +204,14 @@ export default function HomePage() {
 
             <div className="space-y-5 text-base leading-8 text-[#5f6b76] md:text-lg">
               <p>
-                Registrar tu marca correctamente desde el inicio puede evitar
-                rechazos, conflictos y pérdida de derechos sobre tu identidad
-                comercial.
+                Registrar su marca correctamente desde el inicio evita
+                rechazos, oposiciones y la pérdida de derechos sobre su
+                nombre comercial.
               </p>
               <p>
-                Evaluamos la viabilidad legal de tu marca, definimos la
-                estrategia adecuada y gestionamos el proceso completo ante ONAPI.
+                Verificamos la disponibilidad de su marca, definimos las
+                clases que debe proteger y gestionamos el proceso completo
+                ante ONAPI.
               </p>
 
               <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
@@ -238,14 +250,16 @@ export default function HomePage() {
 
             <div className="space-y-5 text-base leading-8 text-[#5f6b76] md:text-lg">
               <p>
-                Si estás comprando bienes raíces en República Dominicana
-                desde el extranjero, la protección legal correcta marca la
-                diferencia entre una inversión segura y un problema costoso.
+                Si usted compra un inmueble en República Dominicana desde el
+                extranjero, la revisión del título ante la Jurisdicción
+                Inmobiliaria y un contrato bien redactado separan una
+                inversión segura de un litigio costoso.
               </p>
               <p>
-                Estructuramos tu compra, revisamos contratos y te
-                acompañamos en el cierre, trabajando junto a Land Consulting
-                DR para la verificación técnica de la propiedad.
+                Estructuramos su compra, revisamos los contratos y le
+                acompañamos hasta la inscripción en el Registro de Títulos,
+                junto a Land Consulting DR para la verificación técnica de la
+                propiedad.
               </p>
 
               <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
@@ -286,15 +300,14 @@ export default function HomePage() {
                 Atención directa de socios
               </h3>
               <p className="mt-4 leading-7 text-[#5f6b76]">
-                Un socio dirige tu caso desde la primera consulta, con el
-                respaldo de un excelente equipo de abogados especializados
-                por área de práctica.
+                Un socio dirige su asunto desde la primera consulta, con el
+                apoyo de abogados dedicados a cada área de práctica.
               </p>
             </div>
 
             <div className="card-legal p-6 md:p-8">
               <h3 className="text-xl font-semibold text-[#0f2740]">
-                Atención en tu idioma
+                Atención en su idioma
               </h3>
               <p className="mt-4 leading-7 text-[#5f6b76]">
                 Trabajamos en español, inglés y francés, sin depender de un
@@ -342,7 +355,7 @@ export default function HomePage() {
               </h3>
               <p className="mt-4 leading-7 text-[#5f6b76] md:leading-8">
                 Requisitos, due diligence de título, cierre notarial y
-                errores que debes evitar antes de firmar.
+                errores que debe evitar antes de firmar.
               </p>
             </Link>
 
@@ -382,11 +395,11 @@ export default function HomePage() {
               Consulta
             </div>
             <h2 className="text-3xl font-light tracking-tight text-[#0f2740] md:text-4xl">
-              ¿Necesitas orientación legal?
+              ¿Necesita orientación legal?
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-8 text-[#5f6b76] md:text-lg">
-              Podemos evaluar tu situación y orientarte sobre la mejor estrategia
-              según tu caso, tu negocio y tus objetivos.
+              Cuéntenos su situación. Un socio la evaluará y le explicará
+              sus opciones legales antes de que usted tome una decisión.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap md:gap-4">

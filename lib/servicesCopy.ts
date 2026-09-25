@@ -6,6 +6,8 @@ type Copy = {
   accTitleB: string;
   accIntro: string;
   expTitle: string;
+  // Optional question shown under the H1 (used when the H1 is a keyword title).
+  expQuestion?: string;
   expIntro: string;
   startBy: string;
   all: string;
@@ -23,6 +25,9 @@ type Copy = {
   otherAreas: string;
   detailCtaTitle: string;
   detailCtaText: string;
+  faqTitle: string;
+  home: string;
+  servicesLabel: string;
 };
 
 // intents: [label, service id]
@@ -31,19 +36,20 @@ export const SERVICES_COPY: Record<Lang, Copy> = {
     kicker: "Áreas de práctica",
     accTitleA: "Doce áreas.",
     accTitleB: "Un mismo estándar.",
-    accIntro: "Abre cualquier área y conoce qué hacemos por ti, cómo trabajamos y qué incluye. Cada asunto lo dirige un socio.",
-    expTitle: "¿Qué necesitas resolver?",
-    expIntro: "Elige tu situación o un área y descubre qué hacemos, cómo lo hacemos y qué puedes esperar de nosotros.",
-    startBy: "Empieza por tu situación:",
+    accIntro: "Abra cualquier área y conozca qué hacemos por usted, cómo trabajamos y qué incluye. Cada asunto lo dirige un socio.",
+    expTitle: "Servicios legales en República Dominicana",
+    expQuestion: "¿Qué necesita resolver?",
+    expIntro: "Elija su situación o un área y conozca qué hacemos, cómo lo hacemos y qué puede esperar de nosotros. Atendemos en español, inglés y francés.",
+    startBy: "Empiece por su situación:",
     all: "Todas",
     howWeWork: "Cómo trabajamos",
     includes: "Incluye",
-    helpWhen: "Qué hacemos por ti",
+    helpWhen: "Qué hacemos por usted",
     talk: "Hablar con un especialista",
     seeArea: "Ver el área completa",
     seeAll: "Ver todas las áreas",
-    noFitTitle: "¿Tu caso no encaja en ninguna?",
-    noFitText: "Cuéntanoslo y un socio te dirá en 24 horas cómo podemos ayudarte.",
+    noFitTitle: "¿Su caso no encaja en ninguna?",
+    noFitText: "Cuéntenoslo y un socio le indicará en 24 horas cómo podemos ayudarle.",
     consult: "Solicitar consulta",
     intents: [
       ["Comprar una propiedad", "inversion"],
@@ -57,8 +63,11 @@ export const SERVICES_COPY: Record<Lang, Copy> = {
     ],
     whyUs: "Por qué con nosotros",
     otherAreas: "Otras áreas del mismo frente",
-    detailCtaTitle: "Hablemos de tu caso",
-    detailCtaText: "Un socio revisará tu situación y te explicará los pasos, los plazos y el costo antes de comenzar.",
+    detailCtaTitle: "Hablemos de su caso",
+    detailCtaText: "Un socio revisará su situación y le explicará los pasos, los plazos y el costo antes de comenzar.",
+    faqTitle: "Preguntas frecuentes",
+    home: "Inicio",
+    servicesLabel: "Servicios",
   },
   en: {
     kicker: "Practice areas",
@@ -92,6 +101,9 @@ export const SERVICES_COPY: Record<Lang, Copy> = {
     otherAreas: "Other areas in this group",
     detailCtaTitle: "Let's talk about your matter",
     detailCtaText: "A partner will review your situation and explain the steps, timeline and cost before we begin.",
+    faqTitle: "Frequently asked questions",
+    home: "Home",
+    servicesLabel: "Services",
   },
   fr: {
     kicker: "Domaines d'expertise",
@@ -125,5 +137,8 @@ export const SERVICES_COPY: Record<Lang, Copy> = {
     otherAreas: "Autres domaines du même pôle",
     detailCtaTitle: "Parlons de votre dossier",
     detailCtaText: "Un associé examinera votre situation et vous indiquera les étapes, les délais et le coût avant de commencer.",
+    faqTitle: "Questions fréquentes",
+    home: "Accueil",
+    servicesLabel: "Services",
   },
 };
