@@ -74,13 +74,18 @@ html {
   }
 }
 
-/* Long legal paragraphs read as a composed document on large screens:
-   justified with hyphenation. Phones keep a clean left edge. Single-line
-   text is unaffected, and centered blocks stay centered. */
-@media (min-width: 1024px) {
-  main p:not(:where(.text-center, .text-center *, .text-right, .text-right *, .no-justify, .no-justify *, .font-serif, .italic, [class*="text-lg"], [class*="text-xl"], [class*="text-2xl"], [class*="text-3xl"], [class*="text-[2"], [class*="text-[3"])) {
-    text-align: justify;
-  }
+/* Every running text block is set as a composed legal document: justified
+   margins on all screen sizes, with hyphenation in the page's language so
+   narrow columns do not open gaps between words. The last line of each
+   paragraph stays flush left. Only blocks explicitly centered or aligned
+   right (buttons, badges, captions) keep their alignment. */
+main :is(p, li, dd, blockquote):not(:where(.text-center, .text-center *, .text-right, .text-right *, .no-justify, .no-justify *)) {
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphenate-limit-chars: 7 3 3;
+  word-spacing: -0.01em;
 }
 
 a {

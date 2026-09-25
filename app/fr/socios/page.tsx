@@ -59,7 +59,7 @@ const partners = [
 
 export default function SociosPageFR() {
   return (
-    <main className="overflow-x-hidden bg-[#f8f6f1] pt-[88px]">
+    <main className="overflow-x-hidden bg-[#f8f6f1] pt-[96px]">
       <SiteHeader />
 
       <section className="container-legal py-12 md:py-20">

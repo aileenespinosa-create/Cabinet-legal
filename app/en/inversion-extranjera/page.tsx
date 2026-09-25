@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function ForeignInvestorsPageEN() {
   return (
-    <main className="min-h-screen overflow-x-hidden">
+    <main className="min-h-screen overflow-x-hidden pt-[96px]">
       <SiteHeader />
 
       {/* HERO */}

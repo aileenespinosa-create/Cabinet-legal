@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function FirmaPageFR() {
   return (
-    <main className="min-h-screen overflow-x-hidden">
+    <main className="min-h-screen overflow-x-hidden pt-[96px]">
       <SiteHeader />
 
       <section className="container-legal py-10 md:py-20">
@@ -40,8 +40,8 @@ export default function FirmaPageFR() {
                 Le Cabinet
               </h1>
               <p className="mt-3 max-w-2xl text-sm leading-6 text-white/85 md:mt-4 md:text-lg md:leading-7">
-                Conseil juridique sophistiqué, vision stratégique et
-                exécution rigoureuse.
+                Rigueur juridique, discrétion absolue et un associé qui répond
+                de votre dossier jusqu&apos;au moindre détail.
               </p>
             </div>
           </div>

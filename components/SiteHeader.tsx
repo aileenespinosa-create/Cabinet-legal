@@ -15,7 +15,7 @@ const NAV: Record<Lang, NavItem[]> = {
     { href: "/inversion-extranjera", label: "Inversión extranjera" },
     { href: "/socios", label: "Equipo" },
     { href: "/blog", label: "Publicaciones" },
-    { href: "/unete", label: "Carreras" },
+    { href: "/unete", label: "Únete" },
   ],
   en: [
     { href: "/en/firma", label: "The Firm" },
@@ -23,7 +23,7 @@ const NAV: Record<Lang, NavItem[]> = {
     { href: "/en/inversion-extranjera", label: "Foreign Investment" },
     { href: "/en/socios", label: "Team" },
     { href: "/blog", label: "Insights" },
-    { href: "/en/unete", label: "Careers" },
+    { href: "/en/unete", label: "Join us" },
   ],
   fr: [
     { href: "/fr/firma", label: "Le Cabinet" },
@@ -31,7 +31,7 @@ const NAV: Record<Lang, NavItem[]> = {
     { href: "/fr/inversion-extranjera", label: "Investissement étranger" },
     { href: "/fr/socios", label: "Équipe" },
     { href: "/blog", label: "Publications" },
-    { href: "/fr/unete", label: "Carrières" },
+    { href: "/fr/unete", label: "Rejoignez-nous" },
   ],
 };
 
@@ -40,6 +40,8 @@ const UI: Record<Lang, { consult: string; consultHref: string; allAreas: string;
   en: { consult: "Consultation", consultHref: "/en/consulta", allAreas: "See all areas", notSure: "Not sure which area you need?", notSureText: "Tell us about your matter and a partner will guide you.", menu: "Open menu" },
   fr: { consult: "Consultation", consultHref: "/fr/consulta", allAreas: "Voir tous les domaines", notSure: "Vous ne savez pas quel domaine choisir ?", notSureText: "Expliquez-nous votre dossier, un associé vous oriente.", menu: "Ouvrir le menu" },
 };
+
+const SINCE: Record<Lang, string> = { es: "Desde 2009", en: "Since 2009", fr: "Depuis 2009" };
 
 // Pages whose address differs only by the language prefix.
 const SHARED = ["/", "/firma", "/servicios", "/socios", "/consulta", "/inversion-extranjera", "/guia-inversion", "/unete", "/privacidad"];
@@ -100,9 +102,12 @@ export default function SiteHeader() {
         }
       }}
     >
-      <div className="mx-auto flex max-w-[1280px] items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <Link href={lang === "es" ? "/" : `/${lang}`} className="shrink-0">
-          <Image src="/logo-cabinet-legal.jpg" alt="Cabinet Legal" width={150} height={40} priority />
+      <div className="mx-auto flex max-w-[1280px] items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+        <Link href={lang === "es" ? "/" : `/${lang}`} className="flex shrink-0 flex-col items-start">
+          <Image src="/logo-cabinet-legal.jpg" alt="Cabinet Legal" width={150} height={53} priority />
+          <span className="mt-1 pl-[46px] text-[9.5px] font-semibold uppercase leading-none tracking-[0.32em] text-[#a8864f]">
+            {SINCE[lang]}
+          </span>
         </Link>
 
         {/* DESKTOP */}

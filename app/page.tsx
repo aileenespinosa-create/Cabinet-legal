@@ -41,7 +41,7 @@ export default function HomePage() {
             <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
 
             <p className="mt-8 max-w-2xl text-[16px] leading-8 text-[#5f6b76] md:text-[17px]">
-              Desde 2009 asesoramos en derecho corporativo y tributario,
+              Asesoramos en derecho corporativo y tributario,
               inversión inmobiliaria, planificación sucesoral, registro de
               marcas, residencia y litigios. Un socio dirige su asunto, le
               atiende en español, inglés o francés y, en la mayoría de los
@@ -114,10 +114,10 @@ export default function HomePage() {
           <div className="grid grid-cols-2 gap-6 border-y border-[#e6dece] py-8 md:grid-cols-4 md:py-10">
             <div>
               <div className="text-3xl font-semibold text-[#0f2740] md:text-4xl">
-                2009
+                24 h
               </div>
               <div className="mt-1 text-sm text-[#5f6b76]">
-                Año de fundación
+                Respuesta de un socio, en días hábiles
               </div>
             </div>
             <div>
@@ -176,7 +176,7 @@ export default function HomePage() {
               Un socio revisa su caso, no un formulario.
             </h2>
             <p className="mt-5 leading-8 text-[#5f6b76]">
-              Desde 2009 asesoramos a empresas, inversionistas extranjeros y
+              Asesoramos a empresas, inversionistas extranjeros y
               familias en compras de inmuebles, estructuración societaria,
               registro de marcas y litigios en República Dominicana. Cada
               asunto lo dirige un socio, con el apoyo de abogados dedicados
