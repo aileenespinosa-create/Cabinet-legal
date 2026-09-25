@@ -1,0 +1,50 @@
+name: Generar guías PDF
+# Regenerates the investment guides (PDF) and their cover previews whenever
+# the guide source in tools/guia changes, then commits the results.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/guia/**"
+      - ".github/workflows/guias.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Fuentes (Poppins y Lora)
+        run: |
+          mkdir -p ~/.local/share/fonts
+          cd ~/.local/share/fonts
+          for f in Light LightItalic Regular Medium SemiBold Bold; do
+            curl -fsSL -o "Poppins-$f.ttf" "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-$f.ttf"
+          done
+          curl -fsSL -o "Lora.ttf" "https://github.com/google/fonts/raw/main/ofl/lora/Lora%5Bwght%5D.ttf"
+          curl -fsSL -o "Lora-Italic.ttf" "https://github.com/google/fonts/raw/main/ofl/lora/Lora-Italic%5Bwght%5D.ttf"
+          fc-cache -f
+      - name: Dependencias
+        run: |
+          pip install pyphen pillow
+          cd tools/guia && npm init -y >/dev/null && npm install playwright@1 && npx playwright install --with-deps chromium
+      - name: Generar
+        run: |
+          cd tools/guia
+          python build.py
+          node render.js
+      - name: Guardar
+        run: |
+          git config user.name "Cabinet Legal"
+          git config user.email "info@cabinetlegal.com.do"
+          git add private/guias public/guia
+          if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
+          git commit -m "Guías PDF regeneradas desde tools/guia"
+          git push
