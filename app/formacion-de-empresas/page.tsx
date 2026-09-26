@@ -52,7 +52,7 @@ export default function FormacionDeEmpresasPage() {
               src="/hero-legal.jpg"
               alt="Formación de empresas en República Dominicana para extranjeros"
               fill
-              className="object-cover"
+              className="object-cover object-[center_18%]"
             />
             <div className="hero-image-overlay absolute inset-0" />
 

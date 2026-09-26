@@ -52,7 +52,7 @@ export default function FusionesYAdquisicionesPage() {
               src="/hero-legal.jpg"
               alt="Abogados de fusiones y adquisiciones en República Dominicana"
               fill
-              className="object-cover"
+              className="object-cover object-[center_18%]"
             />
             <div className="hero-image-overlay absolute inset-0" />
 

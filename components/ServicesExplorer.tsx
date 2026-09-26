@@ -124,7 +124,7 @@ export default function ServicesExplorer({ lang }: { lang: Lang }) {
 
           <div ref={panelRef} className="scroll-mt-24 overflow-hidden rounded-[26px] bg-[#0f2740] text-white shadow-[0_30px_60px_rgba(15,39,64,0.22)] lg:sticky lg:top-28">
             <div className="relative h-[170px]">
-              <Image src={current.img} alt="" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 600px" />
+              <Image src={current.img} alt="" fill className="object-cover object-[75%_18%]" sizes="(max-width: 1024px) 100vw, 600px" />
               <div className="absolute inset-0 bg-gradient-to-b from-[#0f2740]/15 to-[#0f2740]" />
               <span className="absolute left-8 top-6 rounded-full bg-[#c8a46a] px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#0f2740]">
                 {PILLARS[current.pillar][lang]}

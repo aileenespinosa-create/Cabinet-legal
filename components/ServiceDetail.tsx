@@ -62,7 +62,7 @@ export default function ServiceDetail({ service, lang }: { service: Service; lan
       />
 
       <section className="relative overflow-hidden bg-[#0f2740] text-white">
-        <Image src={service.img} alt="" fill priority className="object-cover opacity-25" sizes="100vw" />
+        <Image src={service.img} alt="" fill priority className="object-cover object-[center_18%] opacity-25" sizes="100vw" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0f2740] via-[#0f2740]/90 to-[#0f2740]/60" />
         <div className="relative mx-auto w-full max-w-[1200px] px-6 py-16 md:py-28 lg:px-8">
           <div className="text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">{PILLARS[service.pillar][lang]}</div>

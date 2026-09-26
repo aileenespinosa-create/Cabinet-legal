@@ -30,20 +30,22 @@ export default function HomePageEN() {
         <div className="mx-auto grid w-full max-w-[1200px] items-center gap-10 px-6 lg:grid-cols-2 lg:gap-14 lg:px-8">
           <div>
             <div className="mb-4 text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
-              Cabinet Legal
+              Lawyers in the Dominican Republic
             </div>
 
             <h1 className="max-w-3xl text-[26px] font-light leading-[1.12] tracking-tight text-[#0f2740] sm:text-[34px] md:text-[44px] lg:text-[52px]">
-              We protect your business, your brand and your most important
-              decisions with strategic, personalized legal counsel.
+              We protect what you build in the Dominican Republic.
             </h1>
 
             <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
 
             <p className="mt-8 max-w-2xl text-[16px] leading-8 text-[#5f6b76] md:text-[17px]">
-              We advise companies, investors and private clients on corporate
-              law, trademark registration, intellectual property and
-              high-impact legal matters in the Dominican Republic.
+              Individuals, families, companies and investors rely on us to buy
+              and invest safely, structure their businesses, protect their
+              assets and defend their rights: corporate and tax law, real
+              estate, estates, trademarks, residency and litigation. A partner
+              leads your matter and, in most procedures, can act under a power
+              of attorney so you never have to travel.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -74,25 +76,23 @@ export default function HomePageEN() {
           </div>
 
           <div className="card-legal overflow-hidden">
-            <div className="relative h-[340px] sm:h-[430px] md:h-[520px]">
+            <div className="relative aspect-[1808/1024]">
               <Image
                 src="/hero-legal.jpg"
                 alt="Cabinet Legal attorneys advising foreign investors in the Dominican Republic"
                 fill
                 priority
-                className="object-cover"
+                className="object-cover object-[center_18%]"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-              <div className="hero-image-overlay absolute inset-0" />
-
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-white md:p-9">
+            </div>
+            <div className="bg-[#0f2740] p-6 text-white md:p-8">
                 <div className="text-[10px] uppercase tracking-[0.24em] text-[#e9d3ab]">
                   Cabinet Legal
                 </div>
                 <div className="mt-3 max-w-xl text-[22px] font-light leading-[1.2] tracking-tight md:text-[30px]">
                   Direct attention, technical precision and strategic vision.
                 </div>
-              </div>
             </div>
           </div>
         </div>

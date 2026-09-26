@@ -52,7 +52,7 @@ export default function RegistroDeMarcasPage() {
               src="/hero-legal.jpg"
               alt="Registro de marca en República Dominicana ante ONAPI"
               fill
-              className="object-cover"
+              className="object-cover object-[center_18%]"
             />
             <div className="hero-image-overlay absolute inset-0" />
 

@@ -31,7 +31,7 @@ export default function ConsultaPageFR() {
               src="/hero-legal.jpg"
               alt="Consultation juridique Cabinet Legal"
               fill
-              className="object-cover"
+              className="object-cover object-[center_18%]"
               sizes="100vw"
             />
             <div className="hero-image-overlay absolute inset-0" />
