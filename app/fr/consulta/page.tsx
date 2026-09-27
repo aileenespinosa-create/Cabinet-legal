@@ -75,10 +75,10 @@ export default function ConsultaPageFR() {
             <div className="gold-line mt-6" />
 
             <div className="mt-8 space-y-4 text-sm leading-7 text-[#5f6b76] md:text-base md:leading-8">
-              <p>• Accompagnement direct et stratégique</p>
-              <p>• Évaluation initiale de votre situation</p>
+              <p>• Un premier entretien gratuit de 20 minutes avec un associé</p>
+              <p>• Évaluation initiale de votre situation et de vos documents</p>
               <p>• Identification des risques et priorités</p>
-              <p>• Recommandation claire des prochaines étapes</p>
+              <p>• Proposition écrite sous 48 heures, avec périmètre, délais et honoraires</p>
             </div>
 
             <div className="mt-8 rounded-2xl border border-[#e8dfd0] bg-[#fcfaf6] p-5 md:p-6">
