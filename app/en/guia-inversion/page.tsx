@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import GuideLanding from "@/components/GuideLanding";
 
 export const metadata: Metadata = {
-  title: `Free guide: how to invest in the Dominican Republic 2026`,
+  title: `2026 guide: how to invest in the Dominican Republic`,
   description: `Download the 2026 legal guide for foreign investors: buying property, CONFOTUR, companies, residency and closing costs in the Dominican Republic.`,
   alternates: {
     canonical: "https://cabinetlegal.com.do/en/guia-inversion",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: `Free guide: how to invest in the Dominican Republic 2026 | Cabinet Legal`,
+    title: `2026 guide: how to invest in the Dominican Republic | Cabinet Legal`,
     description: `Download the 2026 legal guide for foreign investors: buying property, CONFOTUR, companies, residency and closing costs in the Dominican Republic.`,
     url: "https://cabinetlegal.com.do/en/guia-inversion",
     images: [{ url: "https://cabinetlegal.com.do/guia/portada-en.jpg", width: 910, height: 1286 }],

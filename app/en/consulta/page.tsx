@@ -73,7 +73,7 @@ export default function ConsultaPageEN() {
             <div className="gold-line mt-6" />
 
             <div className="mt-8 space-y-4 text-sm leading-7 text-[#5f6b76] md:text-base md:leading-8">
-              <p>• A complimentary 20-minute call with a partner</p>
+              <p>• Consultation with a partner, in person or by video</p>
               <p>• Initial review of your situation and documents</p>
               <p>• Identification of risks and priorities</p>
               <p>• Written proposal within 48 hours, with scope, timeline and fees</p>
