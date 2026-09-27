@@ -47,7 +47,7 @@ export type GuideCopy = {
 
 export const GUIDE_COPY: Record<GuideLang, GuideCopy> = {
   es: {
-    kicker: "Guía gratuita 2026",
+    kicker: "Guía 2026",
     title: "Cómo invertir en República Dominicana",
     subtitle:
       "La guía legal que preparamos para el inversionista extranjero sobre cómo invertir en República Dominicana: compra de inmuebles, CONFOTUR, sociedades, residencia, costos de cierre y los errores que más dinero cuestan.",
@@ -95,7 +95,7 @@ export const GUIDE_COPY: Record<GuideLang, GuideCopy> = {
     errorGeneric:
       "No pudimos enviar la solicitud en este momento. Inténtelo de nuevo o escríbanos por WhatsApp.",
     privacy: "No compartimos sus datos con terceros.",
-    bannerKicker: "Guía gratuita 2026",
+    bannerKicker: "Guía 2026",
     bannerTitle: "Cómo invertir en República Dominicana",
     bannerText:
       "Compra de inmuebles, CONFOTUR, empresas, residencia y costos de cierre, explicados por nuestros abogados en 12 páginas. Disponible en español, inglés y francés.",
@@ -120,7 +120,7 @@ export const GUIDE_COPY: Record<GuideLang, GuideCopy> = {
     whatsappText: "Hola, descargué la guía para invertir en República Dominicana y me gustaría una consulta.",
   },
   en: {
-    kicker: "Free guide 2026",
+    kicker: "2026 Guide",
     title: "How to invest in the Dominican Republic",
     subtitle:
       "The legal guide we prepared for foreign investors: buying property, CONFOTUR, companies, residency, closing costs and the mistakes that cost the most money.",
@@ -168,7 +168,7 @@ export const GUIDE_COPY: Record<GuideLang, GuideCopy> = {
     errorGeneric:
       "We couldn't send your request right now. Please try again or message us on WhatsApp.",
     privacy: "We never share your details with third parties.",
-    bannerKicker: "Free guide 2026",
+    bannerKicker: "2026 Guide",
     bannerTitle: "How to invest in the Dominican Republic",
     bannerText:
       "Buying property, CONFOTUR, companies, residency and closing costs, explained by our lawyers in 12 pages. Available in English, Spanish and French.",
@@ -192,7 +192,7 @@ export const GUIDE_COPY: Record<GuideLang, GuideCopy> = {
     whatsappText: "Hello, I downloaded the guide to investing in the Dominican Republic and would like a consultation.",
   },
   fr: {
-    kicker: "Guide gratuit 2026",
+    kicker: "Guide 2026",
     title: "Comment investir en République dominicaine",
     subtitle:
       "Le guide juridique que nous avons préparé pour les investisseurs étrangers : achat immobilier, CONFOTUR, sociétés, résidence, frais de clôture et les erreurs qui coûtent le plus cher.",
@@ -240,7 +240,7 @@ export const GUIDE_COPY: Record<GuideLang, GuideCopy> = {
     errorGeneric:
       "Nous n'avons pas pu envoyer votre demande pour le moment. Réessayez ou écrivez-nous sur WhatsApp.",
     privacy: "Nous ne partageons jamais vos données avec des tiers.",
-    bannerKicker: "Guide gratuit 2026",
+    bannerKicker: "Guide 2026",
     bannerTitle: "Comment investir en République dominicaine",
     bannerText:
       "Achat immobilier, CONFOTUR, sociétés, résidence et frais de clôture, expliqués par nos avocats en 12 pages. Disponible en français, anglais et espagnol.",

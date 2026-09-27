@@ -74,7 +74,7 @@ export default function ConsultaPage() {
             <div className="gold-line mt-6" />
 
             <div className="mt-8 space-y-4 text-sm leading-7 text-[#5f6b76] md:text-base md:leading-8">
-              <p>• Primera llamada de 20 minutos con un socio, sin costo</p>
+              <p>• Consulta con un socio, presencial o por videollamada</p>
               <p>• Evaluación inicial de su situación y de sus documentos</p>
               <p>• Identificación de riesgos y prioridades</p>
               <p>• Propuesta por escrito en 48 horas, con alcance, plazos y honorarios</p>
