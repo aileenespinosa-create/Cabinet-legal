@@ -191,6 +191,18 @@ a {
   margin-top: 0.5rem;
 }
 
+.article-content ul {
+  list-style: disc;
+}
+
+.article-content ol {
+  list-style: decimal;
+}
+
+.article-content li::marker {
+  color: var(--gold);
+}
+
 .hero-image-overlay {
   background:
     linear-gradient(90deg, rgba(9, 24, 42, 0.82) 0%, rgba(9, 24, 42, 0.55) 55%, rgba(9, 24, 42, 0.2) 100%),

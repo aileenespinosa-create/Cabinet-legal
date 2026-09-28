@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import SiteHeader from "@/components/SiteHeader";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -61,13 +62,14 @@ const faqSchema = {
 
 export default function Article() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-[96px]">
+      <SiteHeader />
       <script
         type="application/ld+json"
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <article className="container-legal py-16 md:py-20">
+      <article className="container-legal py-10 md:py-16">
         <div className="card-legal overflow-hidden">
           <div className="relative flex min-h-[340px] items-end md:min-h-[360px]">
             <Image

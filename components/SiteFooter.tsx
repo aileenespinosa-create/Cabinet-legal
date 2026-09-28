@@ -19,14 +19,14 @@ const F: Record<Lang, {
     contact: "Contact", byAppt: "By appointment only",
     address: "Av. Pedro Henríquez Ureña No. 138, Torre Empresarial Reyna II, Suite 203, La Esperilla, Santo Domingo, Dominican Republic",
     areas: "Practice areas", firm: "The firm",
-    links: [["/en/firma", "The Firm"], ["/en/socios", "Team"], ["/blog", "Insights"], ["/en/guia-inversion", "Investment guide"], ["/en/unete", "Join us"], ["/en/consulta", "Consultation"]],
+    links: [["/en/firma", "The Firm"], ["/en/socios", "Team"], ["/en/blog", "Insights"], ["/en/guia-inversion", "Investment guide"], ["/en/unete", "Join us"], ["/en/consulta", "Consultation"]],
     privacy: "Privacy policy", privacyHref: "/en/privacidad", phoneLabel: "Phone and WhatsApp", rights: "All rights reserved.",
   },
   fr: {
     contact: "Contact", byAppt: "Uniquement sur rendez-vous",
     address: "Av. Pedro Henríquez Ureña n° 138, Torre Empresarial Reyna II, Suite 203, La Esperilla, Saint-Domingue, République dominicaine",
     areas: "Domaines d'expertise", firm: "Le cabinet",
-    links: [["/fr/firma", "Le Cabinet"], ["/fr/socios", "Équipe"], ["/blog", "Publications"], ["/fr/guia-inversion", "Guide d'investissement"], ["/fr/unete", "Rejoignez-nous"], ["/fr/consulta", "Consultation"]],
+    links: [["/fr/firma", "Le Cabinet"], ["/fr/socios", "Équipe"], ["/fr/blog", "Publications"], ["/fr/guia-inversion", "Guide d'investissement"], ["/fr/unete", "Rejoignez-nous"], ["/fr/consulta", "Consultation"]],
     privacy: "Politique de confidentialité", privacyHref: "/fr/privacidad", phoneLabel: "Téléphone et WhatsApp", rights: "Tous droits réservés.",
   },
 };

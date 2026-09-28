@@ -2,14 +2,20 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import GuideBanner from "@/components/GuideBanner";
+import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
   title: "Abrir una empresa en República Dominicana siendo extranjero",
   description:
     "Abrir una empresa en República Dominicana siendo extranjero: le explicamos cómo elegir entre SRL y SA, el registro mercantil, el RNC y los plazos reales.",
   alternates: {
-    canonical:
-      "https://cabinetlegal.com.do/blog/abrir-empresa-republica-dominicana-extranjero",
+    canonical: "https://cabinetlegal.com.do/blog/abrir-empresa-republica-dominicana-extranjero",
+    languages: {
+      "x-default": "https://cabinetlegal.com.do/blog/abrir-empresa-republica-dominicana-extranjero",
+      "es-DO": "https://cabinetlegal.com.do/blog/abrir-empresa-republica-dominicana-extranjero",
+      en: "https://cabinetlegal.com.do/en/blog/open-company-dominican-republic-foreigner",
+      fr: "https://cabinetlegal.com.do/fr/blog/creer-societe-republique-dominicaine-etranger",
+    },
   },
   openGraph: {
     title:
@@ -64,13 +70,14 @@ const faqSchema = {
 
 export default function Article() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-[96px]">
+      <SiteHeader />
       <script
         type="application/ld+json"
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <article className="container-legal py-16 md:py-20">
+      <article className="container-legal py-10 md:py-16">
         <div className="card-legal overflow-hidden">
           <div className="relative flex min-h-[340px] items-end md:min-h-[360px]">
             <Image

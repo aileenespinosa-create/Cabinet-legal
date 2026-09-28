@@ -2,14 +2,20 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import GuideBanner from "@/components/GuideBanner";
+import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
   title: "Comprar propiedad en República Dominicana como extranjero",
   description:
     "Comprar propiedad en República Dominicana siendo extranjero: requisitos, debida diligencia del título, cierre notarial y errores que usted debe evitar.",
   alternates: {
-    canonical:
-      "https://cabinetlegal.com.do/blog/comprar-propiedad-republica-dominicana-extranjero",
+    canonical: "https://cabinetlegal.com.do/blog/comprar-propiedad-republica-dominicana-extranjero",
+    languages: {
+      "x-default": "https://cabinetlegal.com.do/blog/comprar-propiedad-republica-dominicana-extranjero",
+      "es-DO": "https://cabinetlegal.com.do/blog/comprar-propiedad-republica-dominicana-extranjero",
+      en: "https://cabinetlegal.com.do/en/blog/buying-property-dominican-republic-foreigner",
+      fr: "https://cabinetlegal.com.do/fr/blog/acheter-bien-immobilier-republique-dominicaine-etranger",
+    },
   },
   openGraph: {
     title:
@@ -64,13 +70,14 @@ const faqSchema = {
 
 export default function Article() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-[96px]">
+      <SiteHeader />
       <script
         type="application/ld+json"
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <article className="container-legal py-16 md:py-20">
+      <article className="container-legal py-10 md:py-16">
         <div className="card-legal overflow-hidden">
           <div className="relative flex min-h-[340px] items-end md:min-h-[360px]">
             <Image
@@ -112,7 +119,15 @@ export default function Article() {
                 libre de hipotecas y embargos, y que los linderos coincidan
                 con el certificado de título. Eso se confirma mediante una
                 debida diligencia del título ante la Jurisdicción
-                Inmobiliaria, antes de comprometer un solo dólar.
+                Inmobiliaria, antes de comprometer un solo dólar. Explicamos
+                cada paso en nuestra guía sobre{" "}
+                <Link
+                  href="/blog/verificar-titulo-inmueble-republica-dominicana"
+                  className="font-semibold text-[#0f2740] underline"
+                >
+                  cómo verificar el título de un inmueble
+                </Link>
+                .
               </p>
 
               <h2>2. El proceso, en términos generales</h2>
