@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { PILLARS, SERVICES, serviceHref, type Lang, type PillarId } from "@/lib/services";
+import { switchBlogPath } from "@/lib/blog";
 
 type NavItem = { href: string; label: string; services?: boolean };
 
@@ -22,7 +23,7 @@ const NAV: Record<Lang, NavItem[]> = {
     { href: "/en/servicios", label: "Services", services: true },
     { href: "/en/inversion-extranjera", label: "Foreign Investment" },
     { href: "/en/socios", label: "Team" },
-    { href: "/blog", label: "Insights" },
+    { href: "/en/blog", label: "Insights" },
     { href: "/en/unete", label: "Join us" },
   ],
   fr: [
@@ -30,7 +31,7 @@ const NAV: Record<Lang, NavItem[]> = {
     { href: "/fr/servicios", label: "Services", services: true },
     { href: "/fr/inversion-extranjera", label: "Investissement étranger" },
     { href: "/fr/socios", label: "Équipe" },
-    { href: "/blog", label: "Publications" },
+    { href: "/fr/blog", label: "Publications" },
     { href: "/fr/unete", label: "Rejoignez-nous" },
   ],
 };
@@ -53,6 +54,8 @@ function languageOf(pathname: string): Lang {
 }
 
 function switchTo(pathname: string, from: Lang, to: Lang): string {
+  const blog = switchBlogPath(pathname, from, to);
+  if (blog) return blog;
   const bare = from === "es" ? pathname : pathname.replace(/^\/(en|fr)/, "") || "/";
   const prefix = to === "es" ? "" : `/${to}`;
   if (SHARED.includes(bare)) return bare === "/" ? prefix || "/" : `${prefix}${bare}`;

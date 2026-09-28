@@ -1,6 +1,7 @@
 import "./globals.css";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import SiteFooter from "@/components/SiteFooter";
+import DocumentLang from "@/components/DocumentLang";
 import Script from "next/script";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
@@ -110,6 +111,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <DocumentLang />
         {children}
         <SiteFooter />
         <WhatsAppButton />

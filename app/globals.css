@@ -14,6 +14,8 @@
   --navy: #0f2740;
   --gold: #c8a46a;
   --gold-soft: #efe2c8;
+  /* Gold dark enough to read on white and cream backgrounds (about 5:1). */
+  --gold-ink: #8a6d3b;
 }
 
 html {
@@ -72,6 +74,20 @@ html {
   button {
     font-family: inherit;
   }
+
+  /* Kept in the base layer so utility classes (text-*, h-*) on links and
+     images win, as they should. Unlayered, these rules overrode them and left
+     white text on white buttons. */
+  a {
+    transition: all 0.25s ease;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 /* Every running text block is set as a composed legal document: justified
@@ -88,11 +104,6 @@ main :is(p, li, dd, blockquote):not(:where(.text-center, .text-center *, .text-r
   word-spacing: -0.01em;
 }
 
-a {
-  transition: all 0.25s ease;
-  text-decoration: none;
-  color: inherit;
-}
 
 .container-legal {
   max-width: 1200px;
@@ -130,8 +141,20 @@ a {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.28em;
-  color: var(--gold);
+  color: var(--gold-ink);
   font-weight: 600;
+}
+
+/* Brand gold (#c8a46a) only has enough contrast on navy or over photos.
+   On light backgrounds, gold text uses the darker ink tone; inside dark
+   blocks it keeps the bright gold. */
+.text-\[\#c8a46a\] {
+  color: var(--gold-ink);
+}
+
+:is([class*="bg-[#0f2740]"], [class*="bg-[#0b1f33]"], [class*="from-[#0f2740]"], [class*="from-[#0b1d31]"], .hero-image-overlay ~ *) :is(.eyebrow, .text-\[\#c8a46a\]),
+:is([class*="bg-[#0f2740]"], [class*="bg-[#0b1f33]"]):is(.eyebrow, .text-\[\#c8a46a\]) {
+  color: var(--gold);
 }
 
 .btn-primary-legal {
@@ -170,6 +193,7 @@ a {
   background: white;
 }
 
+@layer components {
 .article-content h2 {
   margin-top: 2.25rem;
   margin-bottom: 0.75rem;
@@ -189,6 +213,19 @@ a {
 .article-content ol {
   padding-left: 1.5rem;
   margin-top: 0.5rem;
+}
+
+.article-content ul {
+  list-style: disc;
+}
+
+.article-content ol {
+  list-style: decimal;
+}
+
+.article-content li::marker {
+  color: var(--gold);
+}
 }
 
 .hero-image-overlay {
@@ -230,10 +267,6 @@ body {
   overflow-x: hidden;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 input:focus,
 textarea:focus {

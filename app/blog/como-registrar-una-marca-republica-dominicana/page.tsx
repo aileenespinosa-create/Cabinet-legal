@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import SiteHeader from "@/components/SiteHeader";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,8 +8,13 @@ export const metadata: Metadata = {
   description:
     "Cómo registrar una marca en República Dominicana ante ONAPI: requisitos, proceso paso a paso, errores comunes y recomendaciones para proteger su negocio.",
   alternates: {
-    canonical:
-      "https://cabinetlegal.com.do/blog/como-registrar-una-marca-republica-dominicana",
+    canonical: "https://cabinetlegal.com.do/blog/como-registrar-una-marca-republica-dominicana",
+    languages: {
+      "x-default": "https://cabinetlegal.com.do/blog/como-registrar-una-marca-republica-dominicana",
+      "es-DO": "https://cabinetlegal.com.do/blog/como-registrar-una-marca-republica-dominicana",
+      en: "https://cabinetlegal.com.do/en/blog/register-trademark-dominican-republic",
+      fr: "https://cabinetlegal.com.do/fr/blog/deposer-marque-republique-dominicaine",
+    },
   },
   openGraph: {
     title: "Cómo registrar una marca en República Dominicana (2026) | Cabinet Legal",
@@ -38,8 +44,9 @@ export const metadata: Metadata = {
 
 export default function Article() {
   return (
-    <main className="min-h-screen">
-      <article className="container-legal py-16 md:py-20">
+    <main className="min-h-screen pt-[96px]">
+      <SiteHeader />
+      <article className="container-legal py-10 md:py-16">
         <div className="card-legal overflow-hidden">
           <div className="relative flex min-h-[340px] items-end md:min-h-[360px]">
             <Image

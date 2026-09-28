@@ -2,14 +2,20 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import GuideBanner from "@/components/GuideBanner";
+import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
   title: "Residencia por inversión en República Dominicana: guía 2026",
   description:
     "Residencia por inversión en República Dominicana: conozca las vías disponibles (inmobiliaria, empresarial o financiera), requisitos, plazos y errores comunes.",
   alternates: {
-    canonical:
-      "https://cabinetlegal.com.do/blog/residencia-por-inversion-republica-dominicana",
+    canonical: "https://cabinetlegal.com.do/blog/residencia-por-inversion-republica-dominicana",
+    languages: {
+      "x-default": "https://cabinetlegal.com.do/blog/residencia-por-inversion-republica-dominicana",
+      "es-DO": "https://cabinetlegal.com.do/blog/residencia-por-inversion-republica-dominicana",
+      en: "https://cabinetlegal.com.do/en/blog/residency-by-investment-dominican-republic",
+      fr: "https://cabinetlegal.com.do/fr/blog/residence-par-investissement-republique-dominicaine",
+    },
   },
   openGraph: {
     title:
@@ -64,13 +70,14 @@ const faqSchema = {
 
 export default function Article() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-[96px]">
+      <SiteHeader />
       <script
         type="application/ld+json"
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <article className="container-legal py-16 md:py-20">
+      <article className="container-legal py-10 md:py-16">
         <div className="card-legal overflow-hidden">
           <div className="relative flex min-h-[340px] items-end md:min-h-[360px]">
             <Image

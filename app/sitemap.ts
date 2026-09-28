@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SERVICES } from "@/lib/services";
+import { ARTICLES } from "@/lib/blogArticles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://cabinetlegal.com.do";
@@ -17,7 +18,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "yearly" as const,
     priority: 0.4,
   }));
+  const blogPages = [
+    ...["/en/blog", "/fr/blog"].map((u) => ({ url: `${base}${u}`, lastModified: new Date(), changeFrequency: "weekly" as const, priority: 0.7 })),
+    ...ARTICLES.flatMap((a) =>
+      (["es", "en", "fr"] as const)
+        // Spanish pages that predate the blog module are listed individually below.
+        .filter((l) => (l === "es" ? !!a.text.es : !!a.text[l]))
+        .map((l) => ({
+          url: `${base}${l === "es" ? "" : "/" + l}/blog/${a.slug[l]}`,
+          lastModified: new Date(a.date),
+          changeFrequency: "monthly" as const,
+          priority: 0.7,
+        }))
+    ),
+  ];
   return [
+    ...blogPages,
     ...generic,
     ...extra,
     {

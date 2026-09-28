@@ -1,8 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
 import type { Metadata } from "next";
-import SiteHeader from "@/components/SiteHeader";
-import GuideBanner from "@/components/GuideBanner";
+import BlogIndex from "@/components/BlogIndex";
+import { blogPath } from "@/lib/blog";
+import { articleByKey } from "@/lib/blogArticles";
 
 export const metadata: Metadata = {
   title: "Blog jurídico: guías legales en República Dominicana",
@@ -10,6 +9,12 @@ export const metadata: Metadata = {
     "Guías jurídicas de Cabinet Legal para usted: registro de marcas, inversión inmobiliaria, constitución de empresas y residencia en República Dominicana.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/blog",
+    languages: {
+      "x-default": "https://cabinetlegal.com.do/blog",
+      "es-DO": "https://cabinetlegal.com.do/blog",
+      en: "https://cabinetlegal.com.do/en/blog",
+      fr: "https://cabinetlegal.com.do/fr/blog",
+    },
   },
 };
 
@@ -52,66 +57,10 @@ const articles = [
 ];
 
 export default function BlogPage() {
-  return (
-    <main className="min-h-screen overflow-x-hidden pt-[96px]">
-      <SiteHeader />
-
-      <section className="container-legal py-10 md:py-20">
-        <div className="card-legal overflow-hidden">
-          <div className="relative flex min-h-[340px] items-end sm:min-h-[220px] md:min-h-[320px]">
-            <Image
-              src="/hero-legal.jpg"
-              alt="Blog jurídico de Cabinet Legal"
-              fill
-              className="object-cover object-[center_18%]"
-            />
-            <div className="hero-image-overlay absolute inset-0" />
-            <div className="relative z-10 w-full p-4 md:p-10">
-              <div className="eyebrow text-white/80">Cabinet Legal</div>
-              <h1 className="mt-2 max-w-4xl text-2xl font-semibold leading-tight text-white sm:text-3xl md:mt-3 md:text-5xl">
-                Blog jurídico: guías legales sobre República Dominicana
-              </h1>
-              <p className="mt-2 max-w-2xl text-sm leading-6 text-white/85 md:mt-4 md:text-lg md:leading-7">
-                Publicaciones sobre marcas, inversión inmobiliaria, empresas y residencia,
-                con criterios jurídicos para proteger y fortalecer su patrimonio y su negocio.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="pb-14 md:pb-20">
-        <div className="container-legal grid gap-4 md:grid-cols-2">
-          {articles.map((article) => (
-            <Link key={article.href} href={article.href} className="card-legal overflow-hidden">
-              <div className="relative h-[170px] sm:h-[200px] md:h-[220px]">
-                <Image
-                  src={article.image}
-                  alt={article.title}
-                  fill
-                  className="object-cover"
-                />
-                <div className="hero-image-overlay absolute inset-0" />
-              </div>
-
-              <div className="p-5 md:p-8">
-                <div className="eyebrow">Artículo</div>
-                <h2 className="mt-3 text-lg font-semibold leading-tight text-[#0f2740] sm:text-xl md:mt-4 md:text-2xl">
-                  {article.title}
-                </h2>
-                <p className="mt-3 text-sm leading-6 text-[#5f6b76] md:mt-4 md:text-base md:leading-8">
-                  {article.description}
-                </p>
-                <div className="mt-5 text-sm font-semibold text-[#0f2740] md:mt-6">
-                  Leer artículo →
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
-      <GuideBanner lang="es" />
-
-    </main>
-  );
+  const nuevo = articleByKey("titulo")!;
+  const items = [
+    { href: blogPath(nuevo, "es"), title: nuevo.text.es!.h1, description: nuevo.text.es!.description },
+    ...articles.map(({ href, title, description }) => ({ href, title, description })),
+  ];
+  return <BlogIndex lang="es" items={items} />;
 }
