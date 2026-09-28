@@ -105,7 +105,7 @@ export default function ServicesExplorer({ lang }: { lang: Lang }) {
                   aria-pressed={on}
                   className={`flex w-full items-center gap-5 border-b border-[#e3d9c7] px-4 py-4 text-left transition md:py-5 ${on ? "rounded-2xl bg-white text-[#0f2740] shadow-[0_12px_30px_rgba(15,39,64,0.10)]" : "text-[#3a4550] hover:text-[#0f2740]"}`}
                 >
-                  <span className={`w-7 shrink-0 text-[13px] font-semibold tracking-wider ${on ? "text-[#8a6a37]" : "text-[#a3acb3]"}`}>
+                  <span className={`w-7 shrink-0 text-[13px] font-semibold tracking-wider ${on ? "text-[#8a6a37]" : "text-[#7d8791]"}`}>
                     {String(n).padStart(2, "0")}
                   </span>
                   <span className="flex-1 font-serif text-[20px] leading-tight md:text-[24px]">{s.text[lang].title}</span>

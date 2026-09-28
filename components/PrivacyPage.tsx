@@ -9,7 +9,7 @@ export default function PrivacyPage({ lang }: { lang: Lang }) {
       <SiteHeader />
       <article className="mx-auto w-full max-w-[820px] px-6 py-14 md:py-24">
         <h1 className="font-serif text-[38px] leading-tight text-[#0f2740] md:text-[52px]">{t.title}</h1>
-        <p className="pt-3 text-sm text-[#8a939b]">{t.updated}</p>
+        <p className="pt-3 text-sm text-[#6b7680]">{t.updated}</p>
         <p className="pt-8 text-lg leading-8 text-[#3a4550]">{t.intro}</p>
         {t.sections.map(([heading, paragraphs]) => (
           <section key={heading} className="pt-10">
