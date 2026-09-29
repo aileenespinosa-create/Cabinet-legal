@@ -57,9 +57,9 @@ const articles = [
 ];
 
 export default function BlogPage() {
-  const nuevo = articleByKey("titulo")!;
+  const nuevos = [articleByKey("poder")!, articleByKey("titulo")!];
   const items = [
-    { href: blogPath(nuevo, "es"), title: nuevo.text.es!.h1, description: nuevo.text.es!.description },
+    ...nuevos.map((n) => ({ href: blogPath(n, "es"), title: n.text.es!.h1, description: n.text.es!.description })),
     ...articles.map(({ href, title, description }) => ({ href, title, description })),
   ];
   return <BlogIndex lang="es" items={items} />;
