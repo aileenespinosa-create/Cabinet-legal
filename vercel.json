@@ -12,5 +12,11 @@
       "destination": "https://cabinetlegal.com.do/:path*",
       "permanent": true
     }
+  ],
+  "crons": [
+    {
+      "path": "/api/cron/secuencia",
+      "schedule": "15 14 * * *"
+    }
   ]
 }
