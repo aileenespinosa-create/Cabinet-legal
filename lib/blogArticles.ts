@@ -3,6 +3,242 @@ import type { Article } from "@/lib/blogTypes";
 const LAND = "[Land Consulting DR](https://landconsultingdr.com)";
 
 export const ARTICLES: Article[] = [
+  // ---------------------------------------------------------------- Power of attorney from abroad (3 languages)
+  {
+    key: "poder",
+    date: "2026-09-29",
+    slug: {
+      es: "comprar-inmueble-republica-dominicana-sin-viajar-poder",
+      en: "buy-property-dominican-republic-without-travelling-power-of-attorney",
+      fr: "acheter-bien-republique-dominicaine-sans-se-deplacer-procuration",
+    },
+    serviceHref: { es: "/inversion-extranjera", en: "/en/inversion-extranjera", fr: "/fr/inversion-extranjera" },
+    text: {
+      es: {
+        title: "Comprar o vender un inmueble en República Dominicana sin viajar: el poder desde el exterior",
+        description:
+          "Cómo otorgar desde el extranjero un poder especial para comprar o vender un inmueble en República Dominicana: apostilla, consulado, traducción, requisitos del Registro de Títulos e impuestos.",
+        h1: "Comprar o vender un inmueble en República Dominicana sin viajar: el poder desde el exterior",
+        intro: [
+          "Buena parte de nuestros clientes que residen fuera del país compra, vende o hereda inmuebles en República Dominicana sin necesidad de viajar. La herramienta es el poder especial: el documento mediante el cual usted autoriza a una persona de su confianza, por lo general su abogado, a firmar y tramitar en su nombre.",
+          "Para que el Registro de Títulos y la Dirección General de Impuestos Internos (DGII) lo acepten, el poder debe cumplir requisitos de forma y de contenido. Estos son los que revisamos en cada caso.",
+        ],
+        sections: [
+          {
+            h: "1. Un poder especial, no uno general",
+            blocks: [
+              { t: "p", text: "El Reglamento General de Registro de Títulos (Resolución núm. 788-2022) dispone que las inscripciones se solicitan por el propietario o por su representante con poder especial. Un poder general puede servir para otros actos, pero para transferir un inmueble conviene otorgar uno específico para la operación." },
+              { t: "ul", items: [
+                "Identificación completa de quien otorga el poder y del apoderado. Si usted es extranjero no residente, su pasaporte o documento oficial de identidad.",
+                "Descripción del inmueble por su designación catastral, municipio, provincia y matrícula, tal como figura en el certificado de título.",
+                "Los actos autorizados, con precisión: firmar el contrato, recibir o pagar el precio, pagar impuestos, depositar el expediente y retirar el nuevo certificado de título.",
+                "Si usted está casado, la intervención de su cónyuge cuando el inmueble forme parte de la comunidad o constituya la vivienda familiar.",
+              ] },
+            ],
+          },
+          {
+            h: "2. Dónde firmarlo: tres vías",
+            blocks: [
+              { t: "ul", items: [
+                "Ante un notario de su país, con apostilla. República Dominicana es parte del Convenio de La Haya sobre la Apostilla desde el 30 de agosto de 2009, de modo que el poder otorgado en otro país miembro solo necesita la apostilla de ese país. La excepción es Alemania: la apostilla no se acepta entre ambos países y el documento debe legalizarse por la vía consular.",
+                "En un país que no forma parte del Convenio: el poder debe legalizarse por la vía consular y ser visado por el Ministerio de Relaciones Exteriores, conforme al artículo 21 de la Ley núm. 140-15 del Notariado.",
+                "Ante el cónsul dominicano. Los cónsules ejercen funciones notariales para actos que deban ejecutarse en territorio dominicano (Ley núm. 716 de 1944 y Ley núm. 140-15). Suelen requerir su identificación, los datos del apoderado, una copia del título y testigos.",
+              ] },
+            ],
+          },
+          {
+            h: "3. Traducción al español",
+            blocks: [
+              { t: "p", text: "Todo documento redactado en un idioma distinto del español debe traducirse por un intérprete competente para surtir efecto ante el Registro Inmobiliario. En la práctica, la traducción la realiza un intérprete judicial en República Dominicana, y el poder se presenta junto con su traducción." },
+            ],
+          },
+          {
+            h: "4. Lo que exige la DGII y los impuestos de la operación",
+            blocks: [
+              { t: "ul", items: [
+                "Si el vendedor es no residente y actúa mediante apoderado, la DGII exige un poder debidamente apostillado (Norma General núm. 03-2024).",
+                "El contrato de venta debe llevar las firmas legalizadas por notario, y la firma del notario certificada por la Procuraduría General de la República.",
+                "El comprador paga el impuesto de transferencia del 3 % del valor del inmueble (Ley núm. 173-07). La DGII toma el mayor entre el valor que tiene registrado y el precio del contrato, y el pago debe hacerse dentro de los seis meses siguientes a la transferencia para evitar recargos.",
+                "El vendedor debe estar al día con el Impuesto al Patrimonio Inmobiliario (IPI). En 2026 están exentas las personas físicas cuyo patrimonio inmobiliario total no supere RD$10,695,494.",
+              ] },
+            ],
+          },
+          {
+            h: "5. Cómo trabajamos un cierre a distancia",
+            blocks: [
+              { t: "ol", items: [
+                "Verificamos el título y el estado jurídico del inmueble antes de cualquier pago. Vea [cómo verificar el título de un inmueble](/blog/verificar-titulo-inmueble-republica-dominicana).",
+                "Redactamos el poder a la medida del inmueble y de la operación, y le indicamos dónde y cómo firmarlo según su país.",
+                "Usted lo firma, lo apostilla o lo legaliza, y nos envía el original por mensajería.",
+                "Firmamos el contrato en su nombre con las firmas legalizadas.",
+                "Pagamos los impuestos y depositamos el expediente ante el Registro de Títulos.",
+                "Le remitimos el nuevo certificado de título a su nombre.",
+              ] },
+            ],
+          },
+        ],
+        faq: [
+          { q: "¿Puede mi abogado ser el apoderado?", a: "Sí. Es la práctica más frecuente, porque el abogado que conduce la operación puede firmar y tramitar sin intermediarios." },
+          { q: "¿El poder tiene fecha de vencimiento?", a: "La normativa registral no fija un plazo máximo, pero algunas entidades pueden pedir un poder reciente. Por eso recomendamos otorgarlo cuando la operación esté próxima." },
+          { q: "¿Me sirve un poder general que ya otorgué?", a: "Para inscribir una transferencia, el Reglamento exige poder especial. Un poder general puede servir para otros actos, pero conviene otorgar uno específico para la venta o la compra." },
+        ],
+        cta: {
+          title: "¿Necesita comprar, vender o heredar sin viajar?",
+          text: "Redactamos su poder a la medida de la operación, le indicamos dónde firmarlo y nos encargamos del resto hasta que el título quede a su nombre.",
+          service: "Inversión extranjera",
+        },
+      },
+      en: {
+        title: "How to buy or sell property in the Dominican Republic without travelling: power of attorney from abroad",
+        description:
+          "How to grant a special power of attorney from abroad to buy or sell property in the Dominican Republic: apostille, consulate, translation, Title Registry requirements and taxes.",
+        h1: "How to buy or sell property in the Dominican Republic without travelling",
+        intro: [
+          "Many of our clients who live abroad buy, sell or inherit property in the Dominican Republic without ever travelling. The tool is a special power of attorney: a document by which you authorise someone you trust, usually your lawyer, to sign and handle the process on your behalf.",
+          "For the Title Registry and the tax authority (DGII) to accept it, the power must meet requirements of form and content. These are the points we review in every case.",
+        ],
+        sections: [
+          {
+            h: "1. A special power, not a general one",
+            blocks: [
+              { t: "p", text: "The General Regulation of Title Registries (Resolution 788-2022) provides that registrations are requested by the owner or by a representative holding a special power of attorney. A general power may work for other acts, but a property transfer calls for a power drafted for that specific transaction." },
+              { t: "ul", items: [
+                "Full identification of the grantor and of the attorney-in-fact. For a non-resident foreigner, your passport or official identity document.",
+                "Description of the property by its cadastral designation, municipality, province and registration number, exactly as shown on the certificate of title.",
+                "The authorised acts, stated precisely: signing the contract, receiving or paying the price, paying taxes, filing the transfer and collecting the new certificate of title.",
+                "If you are married, your spouse's participation when the property is marital property or the family home.",
+              ] },
+            ],
+          },
+          {
+            h: "2. Where to sign it: three options",
+            blocks: [
+              { t: "ul", items: [
+                "Before a notary in your country, with an apostille. The Dominican Republic has been a party to the Hague Apostille Convention since 30 August 2009, so a power granted in another member country only needs that country's apostille. The exception is Germany: the apostille is not accepted between the two countries, and the document must be legalised through the consulate.",
+                "In a country that is not a party to the Convention: the power must be legalised through the consulate and endorsed by the Dominican Ministry of Foreign Affairs, under article 21 of Notary Law 140-15.",
+                "Before a Dominican consul. Dominican consuls act as notaries for acts to be carried out in the Dominican Republic (Law 716 of 1944 and Law 140-15). They usually ask for your ID, the details of your attorney-in-fact, a copy of the title and witnesses.",
+              ] },
+            ],
+          },
+          {
+            h: "3. Translation into Spanish",
+            blocks: [
+              { t: "p", text: "Any document in a language other than Spanish must be translated by a competent interpreter to be valid before the Property Registry. In practice, the translation is done by a court-certified interpreter (intérprete judicial) in the Dominican Republic, and the power is filed together with its translation." },
+            ],
+          },
+          {
+            h: "4. Tax authority requirements and transaction taxes",
+            blocks: [
+              { t: "ul", items: [
+                "If the seller is a non-resident acting through an attorney-in-fact, the DGII requires a duly apostilled power (General Rule 03-2024).",
+                "The sale contract must bear signatures certified by a notary, and the notary's signature must be certified by the Attorney General's Office.",
+                "The buyer pays the 3% transfer tax on the property value (Law 173-07). The DGII uses the higher of its recorded value and the contract price, and payment must be made within six months of the transfer to avoid surcharges.",
+                "The seller must be current on the annual property tax (IPI). In 2026, individuals whose total real estate holdings do not exceed RD$10,695,494 are exempt.",
+              ] },
+            ],
+          },
+          {
+            h: "5. How we handle a remote closing",
+            blocks: [
+              { t: "ol", items: [
+                "We verify the title and the legal status of the property before any payment. See [how to verify a property title](/en/blog/verify-property-title-dominican-republic).",
+                "We draft the power for the specific property and transaction, and tell you where and how to sign it in your country.",
+                "You sign it, have it apostilled or legalised, and courier the original to us.",
+                "We sign the contract on your behalf with certified signatures.",
+                "We pay the taxes and file the transfer with the Title Registry.",
+                "We send you the new certificate of title in your name.",
+              ] },
+            ],
+          },
+        ],
+        faq: [
+          { q: "Can my lawyer be my attorney-in-fact?", a: "Yes. It is the most common practice, because the lawyer handling the transaction can sign and file without intermediaries." },
+          { q: "Does the power of attorney expire?", a: "The registry rules set no maximum age, but some institutions may ask for a recent power. We therefore recommend granting it when the transaction is close." },
+          { q: "Can I use a general power of attorney I already have?", a: "To register a transfer, the Regulation requires a special power. A general power may work for other acts, but a specific one for the sale or purchase is advisable." },
+        ],
+        cta: {
+          title: "Need to buy, sell or inherit without travelling?",
+          text: "We draft your power of attorney for the specific transaction, tell you where to sign it and handle everything else until the title is in your name.",
+          service: "Foreign investment services",
+        },
+      },
+      fr: {
+        title: "Acheter ou vendre un bien en République dominicaine sans se déplacer : la procuration depuis l'étranger",
+        description:
+          "Comment établir depuis l'étranger une procuration spéciale pour acheter ou vendre un bien en République dominicaine : apostille, consulat, traduction, exigences du Registre des titres et impôts.",
+        h1: "Acheter ou vendre un bien en République dominicaine sans se déplacer",
+        intro: [
+          "Beaucoup de nos clients qui vivent à l'étranger achètent, vendent ou héritent d'un bien en République dominicaine sans jamais se déplacer. L'outil est la procuration spéciale : l'acte par lequel vous autorisez une personne de confiance, le plus souvent votre avocat, à signer et à mener les démarches en votre nom.",
+          "Pour que le Registre des titres et l'administration fiscale (DGII) l'acceptent, la procuration doit respecter des exigences de forme et de fond. Voici les points que nous vérifions dans chaque dossier.",
+        ],
+        sections: [
+          {
+            h: "1. Une procuration spéciale, pas générale",
+            blocks: [
+              { t: "p", text: "Le Règlement général des Registres des titres (Résolution 788-2022) prévoit que les inscriptions sont demandées par le propriétaire ou par son représentant muni d'une procuration spéciale. Une procuration générale peut servir à d'autres actes, mais un transfert immobilier exige une procuration rédigée pour l'opération concernée." },
+              { t: "ul", items: [
+                "L'identification complète du mandant et du mandataire. Pour un étranger non résident, son passeport ou document officiel d'identité.",
+                "La description du bien par sa désignation cadastrale, sa commune, sa province et son numéro d'inscription, tels qu'ils figurent sur le certificat de titre.",
+                "Les actes autorisés, précisément énumérés : signer le contrat, recevoir ou payer le prix, payer les impôts, déposer le dossier et retirer le nouveau certificat de titre.",
+                "Si vous êtes marié, l'intervention de votre conjoint lorsque le bien est commun ou constitue le logement familial.",
+              ] },
+            ],
+          },
+          {
+            h: "2. Où la signer : trois options",
+            blocks: [
+              { t: "ul", items: [
+                "Devant un notaire de votre pays, avec apostille. La République dominicaine est partie à la Convention de La Haye sur l'apostille depuis le 30 août 2009 : une procuration établie dans un autre État membre n'a besoin que de l'apostille de cet État. Exception : l'Allemagne, où l'apostille n'est pas acceptée entre les deux pays et le document doit être légalisé par la voie consulaire.",
+                "Dans un pays non partie à la Convention : la procuration doit être légalisée par la voie consulaire et visée par le ministère dominicain des Affaires étrangères, conformément à l'article 21 de la loi 140-15 sur le notariat.",
+                "Devant le consul dominicain. Les consuls exercent des fonctions notariales pour les actes destinés à être exécutés en République dominicaine (loi 716 de 1944 et loi 140-15). Ils demandent en général votre pièce d'identité, les coordonnées du mandataire, une copie du titre et des témoins.",
+              ] },
+            ],
+          },
+          {
+            h: "3. La traduction en espagnol",
+            blocks: [
+              { t: "p", text: "Tout document rédigé dans une autre langue que l'espagnol doit être traduit par un interprète compétent pour produire effet devant le Registre immobilier. En pratique, la traduction est faite par un interprète judiciaire en République dominicaine, et la procuration est déposée avec sa traduction." },
+            ],
+          },
+          {
+            h: "4. Les exigences de la DGII et les impôts de l'opération",
+            blocks: [
+              { t: "ul", items: [
+                "Si le vendeur est non résident et agit par mandataire, la DGII exige une procuration dûment apostillée (Norme générale 03-2024).",
+                "Le contrat de vente doit porter des signatures légalisées par un notaire, et la signature du notaire doit être certifiée par le Parquet général (Procuraduría General de la República).",
+                "L'acheteur paie l'impôt de mutation de 3 % de la valeur du bien (loi 173-07). La DGII retient la plus élevée entre la valeur qu'elle a enregistrée et le prix du contrat, et le paiement doit intervenir dans les six mois suivant le transfert pour éviter des majorations.",
+                "Le vendeur doit être à jour de l'impôt sur le patrimoine immobilier (IPI). En 2026, les personnes physiques dont le patrimoine immobilier total ne dépasse pas 10 695 494 RD$ en sont exonérées.",
+              ] },
+            ],
+          },
+          {
+            h: "5. Comment nous menons une signature à distance",
+            blocks: [
+              { t: "ol", items: [
+                "Nous vérifions le titre et la situation juridique du bien avant tout paiement. Voir [comment vérifier le titre d'un bien](/fr/blog/verifier-titre-propriete-republique-dominicaine).",
+                "Nous rédigeons la procuration pour le bien et l'opération concernés, et vous indiquons où et comment la signer dans votre pays.",
+                "Vous la signez, la faites apostiller ou légaliser, et nous envoyez l'original par messagerie.",
+                "Nous signons le contrat en votre nom, avec des signatures légalisées.",
+                "Nous payons les impôts et déposons le dossier au Registre des titres.",
+                "Nous vous adressons le nouveau certificat de titre à votre nom.",
+              ] },
+            ],
+          },
+        ],
+        faq: [
+          { q: "Mon avocat peut-il être mon mandataire ?", a: "Oui. C'est la pratique la plus courante, car l'avocat qui conduit l'opération peut signer et déposer le dossier sans intermédiaire." },
+          { q: "La procuration a-t-elle une date d'expiration ?", a: "La réglementation du registre ne fixe pas de durée maximale, mais certaines institutions peuvent demander une procuration récente. Nous recommandons donc de l'établir lorsque l'opération est proche." },
+          { q: "Puis-je utiliser une procuration générale que j'ai déjà ?", a: "Pour inscrire un transfert, le Règlement exige une procuration spéciale. Une procuration générale peut servir à d'autres actes, mais il est préférable d'en établir une spécifique à la vente ou à l'achat." },
+        ],
+        cta: {
+          title: "Vous devez acheter, vendre ou hériter sans vous déplacer ?",
+          text: "Nous rédigeons votre procuration pour l'opération concernée, vous indiquons où la signer et nous occupons du reste jusqu'à ce que le titre soit à votre nom.",
+          service: "Investissement étranger",
+        },
+      },
+    },
+  },
+
   // ---------------------------------------------------------------- Title check (new, 3 languages)
   {
     key: "titulo",
