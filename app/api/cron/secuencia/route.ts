@@ -121,12 +121,13 @@ export async function GET(request: Request) {
 
   const hoy = today();
   const seen = new Set<string>();
-  const report = { started: 0, sent: 0, skipped: 0, errors: 0 };
+  const report = { started: 0, sent: 0, skipped: 0, errors: 0, lists: [] as string[] };
 
   for (const lang of GUIDE_LANGS) {
-    const listId = Number(process.env[`BREVO_LIST_ID_${lang.toUpperCase()}`]);
-    if (!listId) continue;
+    // Guide lists in Brevo: ES #3, EN #4, FR #5 (overridable by env).
+    const listId = Number(process.env[`BREVO_LIST_ID_${lang.toUpperCase()}`] || { es: 3, en: 4, fr: 5 }[lang]);
     const contacts = await listContacts(apiKey, listId);
+    report.lists.push(`${lang}:${listId}:${contacts.length}`);
 
     for (const c of contacts) {
       const email = c.email?.toLowerCase();
