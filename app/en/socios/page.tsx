@@ -22,7 +22,7 @@ const partners = [
   {
     name: "Aileen Espinosa",
     role: "Managing Partner",
-    image: "/aileen.jpg",
+    image: "/aileen-espinosa-2026.jpg",
     bio: "Aileen Espinosa leads Cabinet Legal with a practice focused on corporate law, business structuring, trademark registration and intellectual property. She advises companies, investors and private clients on high-impact legal decisions, with a strategic, executive and results-oriented approach.",
     focus:
       "Her practice combines business perspective, technical precision and direct involvement in major corporate decisions, as well as the legal protection of trademarks and intangible assets.",
@@ -39,7 +39,7 @@ const partners = [
   {
     name: "Ellis Beato",
     role: "Founding Partner",
-    image: "/ellis-beato.jpg",
+    image: "/ellis-beato-2026.jpg",
     bio: "Ellis Beato leads the business and litigation practices at Cabinet Legal. He advises companies and investors on structuring and negotiating their transactions, and represents them in civil, commercial, labor, administrative and real estate litigation, as well as in resolving complex business disputes, with a rigorous, technical and results-oriented approach.",
     focus:
       "His practice combines the business insight that prevents disputes with the litigation strategy that resolves them when they arise: in-depth legal analysis, firm negotiation and solid execution at every stage.",
@@ -87,7 +87,7 @@ export default function SociosPageEN() {
                   src={partner.image}
                   alt={partner.name}
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                   sizes="(max-width: 768px) 200px, 220px"
                 />
               </div>

@@ -105,8 +105,8 @@ export const FIRMA_COPY: Record<Lang, FirmaCopy> = {
     partnersKicker: "Socios",
     partnersTitle: "Quienes responden por su asunto",
     partners: [
-      { name: "Aileen Espinosa", role: "Socia directora", focus: "Derecho corporativo, estructuración de negocios, marcas y propiedad intelectual.", img: "/aileen.jpg" },
-      { name: "Ellis Beato", role: "Socio fundador", focus: "Negocios, litigación y resolución de conflictos, hasta la Suprema Corte de Justicia y el Tribunal Constitucional.", img: "/ellis-beato.jpg" },
+      { name: "Aileen Espinosa", role: "Socia directora", focus: "Derecho corporativo, estructuración de negocios, marcas y propiedad intelectual.", img: "/aileen-espinosa-2026.jpg" },
+      { name: "Ellis Beato", role: "Socio fundador", focus: "Negocios, litigación y resolución de conflictos, hasta la Suprema Corte de Justicia y el Tribunal Constitucional.", img: "/ellis-beato-2026.jpg" },
     ],
     partnersLink: "Conocer al equipo",
     officeKicker: "Oficina",
@@ -187,8 +187,8 @@ export const FIRMA_COPY: Record<Lang, FirmaCopy> = {
     partnersKicker: "Partners",
     partnersTitle: "The people accountable for your matter",
     partners: [
-      { name: "Aileen Espinosa", role: "Managing partner", focus: "Corporate law, business structuring, trademarks and intellectual property.", img: "/aileen.jpg" },
-      { name: "Ellis Beato", role: "Founding partner", focus: "Business, litigation and dispute resolution, up to the Supreme Court and the Constitutional Court.", img: "/ellis-beato.jpg" },
+      { name: "Aileen Espinosa", role: "Managing partner", focus: "Corporate law, business structuring, trademarks and intellectual property.", img: "/aileen-espinosa-2026.jpg" },
+      { name: "Ellis Beato", role: "Founding partner", focus: "Business, litigation and dispute resolution, up to the Supreme Court and the Constitutional Court.", img: "/ellis-beato-2026.jpg" },
     ],
     partnersLink: "Meet the team",
     officeKicker: "Office",
@@ -269,8 +269,8 @@ export const FIRMA_COPY: Record<Lang, FirmaCopy> = {
     partnersKicker: "Associés",
     partnersTitle: "Ceux qui répondent de votre dossier",
     partners: [
-      { name: "Aileen Espinosa", role: "Associée gérante", focus: "Droit des sociétés, structuration d'affaires, marques et propriété intellectuelle.", img: "/aileen.jpg" },
-      { name: "Ellis Beato", role: "Associé fondateur", focus: "Affaires, contentieux et résolution des litiges, jusqu'à la Cour suprême et au Tribunal constitutionnel.", img: "/ellis-beato.jpg" },
+      { name: "Aileen Espinosa", role: "Associée gérante", focus: "Droit des sociétés, structuration d'affaires, marques et propriété intellectuelle.", img: "/aileen-espinosa-2026.jpg" },
+      { name: "Ellis Beato", role: "Associé fondateur", focus: "Affaires, contentieux et résolution des litiges, jusqu'à la Cour suprême et au Tribunal constitutionnel.", img: "/ellis-beato-2026.jpg" },
     ],
     partnersLink: "Découvrir l'équipe",
     officeKicker: "Bureaux",

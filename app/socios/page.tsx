@@ -22,7 +22,7 @@ const partners = [
   {
     name: "Aileen Espinosa",
     role: "Socia directora",
-    image: "/aileen.jpg",
+    image: "/aileen-espinosa-2026.jpg",
     bio: "Aileen Espinosa lidera Cabinet Legal con una práctica enfocada en derecho corporativo, estructuración de negocios, registro de marcas y propiedad intelectual. Asesora a empresas, inversionistas y clientes privados en la constitución y reorganización de sociedades, la contratación comercial y la protección de sus marcas ante ONAPI.",
     focus:
       "Su práctica combina el conocimiento del negocio del cliente con el rigor técnico del derecho societario, y la acompaña personalmente en las decisiones corporativas y en la protección de sus marcas y activos intangibles.",
@@ -39,7 +39,7 @@ const partners = [
   {
     name: "Ellis Beato",
     role: "Socio fundador",
-    image: "/ellis-beato.jpg",
+    image: "/ellis-beato-2026.jpg",
     bio: "Ellis Beato dirige las prácticas de negocios y de litigación en Cabinet Legal. Asesora a empresas e inversionistas en la estructuración y negociación de sus operaciones, y los representa en litigios civiles, comerciales, laborales, administrativos e inmobiliarios, así como en la resolución de conflictos empresariales complejos, incluidos los recursos ante la Suprema Corte de Justicia y el Tribunal Constitucional.",
     focus:
       "Su práctica une la visión de negocios, que previene el conflicto, con la estrategia procesal que lo resuelve cuando surge: análisis jurídico detallado, negociación firme y seguimiento del expediente en cada etapa.",
@@ -89,7 +89,7 @@ export default function SociosPage() {
                   src={partner.image}
                   alt={partner.name}
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                   sizes="(max-width: 768px) 200px, 220px"
                 />
               </div>
