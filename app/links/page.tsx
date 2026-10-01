@@ -5,7 +5,7 @@ import Image from "next/image";
 // search index: it only exists to route visitors to the right place.
 export const metadata: Metadata = {
   title: "Cabinet Legal · Links",
-  description: "Abogados en Santo Domingo desde 2009. Lawyers in the Dominican Republic. Avocats en République dominicaine.",
+  description: "Abogados de negocios, inversión y litigios en Santo Domingo desde 2009. Business lawyers in the Dominican Republic. Avocats d'affaires en République dominicaine.",
   robots: { index: false, follow: true },
   alternates: { canonical: "https://cabinetlegal.com.do/links" },
 };
@@ -17,17 +17,17 @@ const groups = [
   {
     label: "English",
     links: [
-      { title: "Free guide: buying property in the DR", href: `/en/guia-inversion?${UTM}` },
+      { title: "Free guide: investing in the Dominican Republic", href: `/en/guia-inversion?${UTM}` },
       { title: "Book a consultation", href: `/en/consulta?${UTM}` },
-      { title: "Articles for foreign buyers", href: `/en/blog?${UTM}` },
+      { title: "Articles for investors and businesses", href: `/en/blog?${UTM}` },
     ],
   },
   {
     label: "Français",
     links: [
-      { title: "Guide gratuit : acheter en République dominicaine", href: `/fr/guia-inversion?${UTM}` },
+      { title: "Guide gratuit : investir en République dominicaine", href: `/fr/guia-inversion?${UTM}` },
       { title: "Prendre rendez-vous", href: `/fr/consulta?${UTM}` },
-      { title: "Articles pour les acheteurs étrangers", href: `/fr/blog?${UTM}` },
+      { title: "Articles pour investisseurs et entreprises", href: `/fr/blog?${UTM}` },
     ],
   },
   {
@@ -49,7 +49,7 @@ export default function LinksPage() {
           <h1 className="mt-4 font-serif text-2xl text-[#0f2740]">Cabinet Legal</h1>
           <p className="mt-1 text-sm text-[#8a6d3b]">Santo Domingo · desde 2009</p>
           <p className="mt-3 text-sm leading-relaxed text-[#1f2a36]">
-            Real estate, companies, residency and estates in the Dominican Republic.
+            Business law, investment and litigation in the Dominican Republic.
             <br />
             English · Français · Español
           </p>
