@@ -1,5 +1,6 @@
 import type { Article } from "@/lib/blogTypes";
 import { ARTICLES_NEGOCIOS } from "@/lib/blogArticlesNegocios";
+import { ARTICLES_LITIGIOS } from "@/lib/blogArticlesLitigios";
 
 const LAND = "[Land Consulting DR](https://landconsultingdr.com)";
 
@@ -954,6 +955,7 @@ export const ARTICLES: Article[] = [
     },
   },
   ...ARTICLES_NEGOCIOS,
+  ...ARTICLES_LITIGIOS,
 ];
 
 export function articleByKey(key: string) {
