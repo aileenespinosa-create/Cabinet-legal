@@ -25,6 +25,9 @@ const sourceSans = localFont({
 });
 
 const GA_MEASUREMENT_ID = "G-ZT4997QF5S";
+const ADS_ID = "AW-18537019511";
+const ADS_WHATSAPP = "-GSCCLL0gKodEPfwkYdF";
+const ADS_EMAIL = "XfmUCLX0gKodEPfwkYdF";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cabinetlegal.com.do"),
@@ -125,6 +128,19 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', '${GA_MEASUREMENT_ID}');
+            gtag('config', '${ADS_ID}');
+            document.addEventListener('click', function (e) {
+              var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+              if (!a) return;
+              var h = a.getAttribute('href') || '';
+              if (h.indexOf('wa.me/') !== -1 || h.indexOf('api.whatsapp.com') !== -1) {
+                gtag('event', 'conversion', { send_to: '${ADS_ID}/${ADS_WHATSAPP}' });
+                gtag('event', 'whatsapp_click', { link_url: h });
+              } else if (h.indexOf('mailto:') === 0) {
+                gtag('event', 'conversion', { send_to: '${ADS_ID}/${ADS_EMAIL}' });
+                gtag('event', 'email_click', { link_url: h });
+              }
+            }, true);
           `}
         </Script>
       </body>
