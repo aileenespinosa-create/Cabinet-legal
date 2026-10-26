@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState, type FormEvent, type ReactNode } from "react";
+import { trackLead } from "@/lib/track";
 
 // Wraps the consultation form fields. Sends to our own API (which records the
 // request and emails the firm). If our server cannot be reached, the same form
@@ -60,6 +61,7 @@ export default function ConsultaForm({
     try {
       const res = await fetch("/api/consulta", { method: "POST", body: data });
       if (res.ok) {
+        trackLead("consulta");
         setStatus("done");
         return;
       }

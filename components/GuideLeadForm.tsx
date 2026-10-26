@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 import type { GuideLang } from "@/lib/guide";
 import { GUIDE_COPY } from "@/lib/guideCopy";
+import { trackLead } from "@/lib/track";
 
 type Status = "idle" | "sending" | "sent" | "error";
 
@@ -35,6 +36,7 @@ export default function GuideLeadForm({ lang }: { lang: GuideLang }) {
         }),
       });
       if (res.ok) {
+        trackLead("guia");
         setStatus("sent");
         return;
       }
