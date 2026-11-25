@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     default: "Cabinet Legal",
     template: "%s | Cabinet Legal",
   },
-  description: "Firma de abogados en Santo Domingo, República Dominicana: derecho corporativo, tributario, inmobiliario, sucesiones, marcas, residencia y litigios.",
+  description: "Firma de abogados en Santo Domingo, República Dominicana: litigios, resolución de conflictos, inversión extranjera, derecho corporativo y tributario, sucesiones y marcas.",
   icons: {
     icon: [
       { url: "/icon-16x16.png", sizes: "16x16", type: "image/png" },
@@ -58,6 +58,8 @@ const legalServiceSchema = {
   logo: "https://cabinetlegal.com.do/logo-cabinet-legal.jpg",
   image: "https://cabinetlegal.com.do/hero-legal.jpg",
   email: "info@cabinetlegal.com.do",
+  telephone: "+1-809-221-7768",
+  foundingDate: "2009",
   address: {
     "@type": "PostalAddress",
     streetAddress:
@@ -72,7 +74,25 @@ const legalServiceSchema = {
   },
   priceRange: "$$",
   knowsLanguage: ["es", "en", "fr"],
-  sameAs: [] as string[],
+  sameAs: [
+    "https://www.instagram.com/cabinetlegalrd",
+    "https://www.facebook.com/cabinetlegal/",
+  ],
+  memberOf: {
+    "@type": "Organization",
+    name: "IR Global",
+    url: "https://irglobal.com",
+  },
+  knowsAbout: [
+    "Litigation",
+    "Dispute resolution",
+    "Foreign investment",
+    "Corporate law",
+    "Mergers and acquisitions",
+    "Tax law",
+    "Estate planning and succession",
+    "Trademarks and intellectual property",
+  ],
   founder: [
     {
       "@type": "Person",

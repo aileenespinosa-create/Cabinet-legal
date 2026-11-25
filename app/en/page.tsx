@@ -6,9 +6,9 @@ import GuideBanner from "@/components/GuideBanner";
 import ServicesAccordion from "@/components/ServicesAccordion";
 
 export const metadata: Metadata = {
-  title: "Dominican Republic Law Firm for Foreign Investors & Real Estate",
+  title: "Dominican Republic Law Firm: Litigation, Disputes & Foreign Investment",
   description:
-    "Cabinet Legal advises foreign investors, companies and private clients on real estate purchases, corporate law, M&A, trademarks and litigation in the Dominican Republic.",
+    "Cabinet Legal represents and advises foreign investors, companies and private clients in litigation, dispute resolution, foreign investment, corporate law, M&A and trademarks in the Dominican Republic.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/en",
     languages: {
@@ -40,10 +40,11 @@ export default function HomePageEN() {
             <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
 
             <p className="mt-8 max-w-2xl text-[16px] leading-8 text-[#5f6b76] md:text-[17px]">
-              Individuals, families, companies and investors rely on us to buy
-              and invest safely, structure their businesses, protect their
-              assets and defend their rights: corporate and tax law, real
-              estate, estates, trademarks, residency and litigation. A partner
+              Companies, investors, families and individuals rely on us to
+              defend their rights, resolve their disputes, invest safely and
+              structure their businesses: litigation, foreign investment,
+              corporate and tax law, estates, trademarks and real estate
+              transactions. A partner
               leads your matter and, in most procedures, can act under a power
               of attorney so you never have to travel.
             </p>
@@ -68,10 +69,10 @@ export default function HomePageEN() {
             </div>
 
             <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-[#66717c]">
+              <div>Litigation and dispute resolution</div>
+              <div>Foreign investment</div>
               <div>Corporate law</div>
-              <div>Trademark registration</div>
               <div>Intellectual property</div>
-              <div>Litigation</div>
             </div>
           </div>
 
@@ -159,6 +160,48 @@ export default function HomePageEN() {
 
       <ServicesAccordion lang="en" />
 
+      {/* LITIGATION FEATURE */}
+      <section className="pb-14 md:pb-24">
+        <div className="mx-auto w-full max-w-[1200px] px-6 lg:px-8">
+          <div className="card-legal grid gap-8 p-6 md:grid-cols-[0.9fr_1.1fr] md:p-12">
+            <div>
+              <div className="mb-4 text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
+                Featured service
+              </div>
+              <h2 className="text-3xl font-light tracking-tight text-[#0f2740] md:text-4xl">
+                Litigation and dispute resolution
+              </h2>
+              <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
+            </div>
+
+            <div className="space-y-5 text-base leading-8 text-[#5f6b76] md:text-lg">
+              <p>
+                When a dispute threatens your company, your investment or your assets, a sound litigation strategy is what separates protecting your rights from losing them.
+              </p>
+              <p>
+                We represent companies, investors and individuals in civil, commercial and shareholder disputes, in debt recovery and in the enforcement of foreign judgments, with a partner leading every case.
+              </p>
+
+              <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
+                <Link
+                  href="/en/servicios/litigation"
+                  className="inline-flex items-center justify-center rounded-full px-7 py-3 text-sm font-semibold shadow-sm transition hover:opacity-95"
+                  style={{ backgroundColor: "#0f2740", color: "#ffffff" }}
+                >
+                  View service
+                </Link>
+                <Link
+                  href="/en/consulta"
+                  className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-transparent px-7 py-3 text-sm font-medium text-[#5f6b76] transition hover:border-[#c8a46a] hover:bg-white hover:text-[#0f2740]"
+                >
+                  Request an evaluation
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* TRADEMARK REGISTRATION FEATURE */}
       <section className="pb-14 md:pb-24">
         <div className="mx-auto w-full max-w-[1200px] px-6 lg:px-8">
@@ -220,14 +263,16 @@ export default function HomePageEN() {
 
             <div className="space-y-5 text-base leading-8 text-[#5f6b76] md:text-lg">
               <p>
-                If you&apos;re buying real estate in the Dominican Republic
-                from abroad, the right legal protection is what separates a
-                secure investment from a costly problem.
+                If you invest in the Dominican Republic from abroad, the right
+                legal structure is what separates a protected investment from
+                a costly dispute: the right company, a registered investment
+                and well-drafted contracts.
               </p>
               <p>
-                We structure your purchase, review contracts and guide you
-                through closing, working alongside Land Consulting DR for
-                the technical verification of the property.
+                We set up your company, register your investment, review your
+                contracts and represent you in court if a dispute arises. For
+                real estate transactions we work alongside Land Consulting DR
+                for the technical verification of the property.
               </p>
 
               <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
@@ -260,6 +305,11 @@ export default function HomePageEN() {
             <h2 className="text-3xl font-light tracking-tight text-[#0f2740] md:text-4xl">
               Why work with us?
             </h2>
+            <p className="mt-5 leading-8 text-[#5f6b76]">
+              Founded in 2009 and led by its partners, Ellis Beato and Aileen
+              Espinosa. Member of IR Global, the international network of law
+              firms.
+            </p>
           </div>
 
           <div className="grid gap-4 md:grid-cols-3">

@@ -183,7 +183,8 @@ export default function ConsultaPageEN() {
                   defaultValue="Select an option"
                 >
                   <option disabled>Select an option</option>
-                  <option>Foreign investment / real estate</option>
+                  <option>Foreign investment</option>
+                  <option>Real estate transactions</option>
                   <option>Mergers &amp; acquisitions</option>
                   <option>Company formation</option>
                   <option>Residency &amp; work permits</option>

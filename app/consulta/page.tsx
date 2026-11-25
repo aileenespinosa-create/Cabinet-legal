@@ -171,7 +171,8 @@ export default function ConsultaPage() {
                   defaultValue="Seleccione una opción"
                 >
                   <option disabled>Seleccione una opción</option>
-                  <option>Inversión extranjera / bienes raíces</option>
+                  <option>Inversión extranjera</option>
+                  <option>Operaciones inmobiliarias</option>
                   <option>Fusiones y adquisiciones</option>
                   <option>Formación de empresas</option>
                   <option>Residencia y permisos de trabajo</option>

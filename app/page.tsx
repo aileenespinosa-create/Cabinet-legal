@@ -6,9 +6,9 @@ import GuideBanner from "@/components/GuideBanner";
 import ServicesAccordion from "@/components/ServicesAccordion";
 
 export const metadata: Metadata = {
-  title: "Abogados en República Dominicana, Santo Domingo",
+  title: { absolute: "Abogados en República Dominicana: Litigios e Inversión | Cabinet Legal" },
   description:
-    "Firma de abogados en Santo Domingo desde 2009: derecho corporativo, tributario, inmobiliario, sucesiones, marcas, residencia y litigios. Atención directa de socios.",
+    "Firma de abogados en Santo Domingo desde 2009: litigios y resolución de conflictos, inversión extranjera, derecho corporativo y tributario, sucesiones y marcas. Atención directa de socios.",
   alternates: {
     canonical: "https://cabinetlegal.com.do",
     languages: {
@@ -40,11 +40,12 @@ export default function HomePage() {
             <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
 
             <p className="mt-8 max-w-2xl text-[16px] leading-8 text-[#5f6b76] md:text-[17px]">
-              Personas, familias, empresas e inversionistas confían en
-              nosotros para comprar e invertir con seguridad, estructurar sus
-              negocios, proteger su patrimonio y defender sus derechos:
-              derecho corporativo y tributario, inmobiliario, sucesiones,
-              marcas, residencia y litigios. Un socio dirige su asunto, le
+              Empresas, inversionistas, familias y personas confían en
+              nosotros para defender sus derechos, resolver sus conflictos,
+              invertir con seguridad y estructurar sus negocios: litigios,
+              inversión extranjera, derecho corporativo y tributario,
+              sucesiones, marcas y operaciones inmobiliarias. Un socio dirige
+              su asunto, le
               atiende en español, inglés o francés y, en la mayoría de los
               trámites, puede actuar por poder sin que usted tenga que viajar.
             </p>
@@ -69,17 +70,17 @@ export default function HomePage() {
             </div>
 
             <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-[#66717c]">
+              <Link href="/servicios/litigacion-y-defensa-judicial" className="transition hover:text-[#0f2740]">
+                Litigios y resolución de conflictos
+              </Link>
+              <Link href="/inversion-extranjera" className="transition hover:text-[#0f2740]">
+                Inversión extranjera
+              </Link>
               <Link href="/servicios/derecho-corporativo" className="transition hover:text-[#0f2740]">
                 Derecho corporativo
               </Link>
-              <Link href="/inversion-extranjera" className="transition hover:text-[#0f2740]">
-                Inversión inmobiliaria
-              </Link>
               <Link href="/servicios/planificacion-patrimonial-y-sucesoral" className="transition hover:text-[#0f2740]">
                 Planificación sucesoral
-              </Link>
-              <Link href="/servicios/litigacion-y-defensa-judicial" className="transition hover:text-[#0f2740]">
-                Litigación
               </Link>
             </div>
           </div>
@@ -175,9 +176,10 @@ export default function HomePage() {
               Un socio revisa su caso, no un formulario.
             </h2>
             <p className="mt-5 leading-8 text-[#5f6b76]">
-              Asesoramos a empresas, inversionistas extranjeros y
-              familias en compras de inmuebles, estructuración societaria,
-              registro de marcas y litigios en República Dominicana. Cada
+              Representamos y asesoramos a empresas, inversionistas
+              extranjeros y familias en litigios y resolución de conflictos,
+              inversión, estructuración societaria y registro de marcas en
+              República Dominicana. Cada
               asunto lo dirige un socio, con el apoyo de abogados dedicados
               a cada área de práctica.
             </p>
@@ -186,6 +188,48 @@ export default function HomePage() {
       </section>
 
       <ServicesAccordion lang="es" />
+
+      {/* LITIGIOS DESTACADO */}
+      <section className="pb-14 md:pb-24">
+        <div className="mx-auto w-full max-w-[1200px] px-6 lg:px-8">
+          <div className="card-legal grid gap-8 p-6 md:grid-cols-[0.9fr_1.1fr] md:p-12">
+            <div>
+              <div className="mb-4 text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
+                Servicio destacado
+              </div>
+              <h2 className="text-3xl font-light tracking-tight text-[#0f2740] md:text-4xl">
+                Litigios y resolución de conflictos
+              </h2>
+              <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
+            </div>
+
+            <div className="space-y-5 text-base leading-8 text-[#5f6b76] md:text-lg">
+              <p>
+                Cuando un conflicto amenaza su empresa, su inversión o su patrimonio, una estrategia procesal sólida marca la diferencia entre proteger sus derechos y perderlos.
+              </p>
+              <p>
+                Representamos a empresas, inversionistas y particulares en litigios civiles, comerciales y societarios, en el cobro de créditos y en la ejecución de sentencias extranjeras, con un socio al frente de cada expediente.
+              </p>
+
+              <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
+                <Link
+                  href="/servicios/litigacion-y-defensa-judicial"
+                  className="inline-flex items-center justify-center rounded-full px-7 py-3 text-sm font-semibold shadow-sm transition hover:opacity-95"
+                  style={{ backgroundColor: "#0f2740", color: "#ffffff" }}
+                >
+                  Ver servicio
+                </Link>
+                <Link
+                  href="/consulta"
+                  className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-transparent px-7 py-3 text-sm font-medium text-[#5f6b76] transition hover:border-[#c8a46a] hover:bg-white hover:text-[#0f2740]"
+                >
+                  Solicitar evaluación
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* REGISTRO DE MARCAS DESTACADO */}
       <section className="pb-14 md:pb-24">
@@ -249,15 +293,16 @@ export default function HomePage() {
 
             <div className="space-y-5 text-base leading-8 text-[#5f6b76] md:text-lg">
               <p>
-                Si usted compra un inmueble en República Dominicana desde el
-                extranjero, la revisión del título ante la Jurisdicción
-                Inmobiliaria y un contrato bien redactado separan una
-                inversión segura de un litigio costoso.
+                Si usted invierte en República Dominicana desde el
+                extranjero, la estructura legal correcta separa una inversión
+                protegida de un conflicto costoso: la sociedad adecuada, el
+                registro de la inversión y contratos bien redactados.
               </p>
               <p>
-                Estructuramos su compra, revisamos los contratos y le
-                acompañamos hasta la inscripción en el Registro de Títulos,
-                junto a Land Consulting DR para la verificación técnica de la
+                Constituimos su sociedad, registramos su inversión, revisamos
+                los contratos y le representamos ante los tribunales si surge
+                una disputa. En las operaciones inmobiliarias trabajamos junto
+                a Land Consulting DR para la verificación técnica de la
                 propiedad.
               </p>
 
@@ -291,6 +336,11 @@ export default function HomePage() {
             <h2 className="text-3xl font-light tracking-tight text-[#0f2740] md:text-4xl">
               ¿Por qué trabajar con nosotros?
             </h2>
+            <p className="mt-5 leading-8 text-[#5f6b76]">
+              Firma fundada en 2009 y dirigida por sus socios, Ellis Beato y
+              Aileen Espinosa. Miembro de la red internacional de firmas de
+              abogados IR Global.
+            </p>
           </div>
 
           <div className="grid gap-4 md:grid-cols-3">
@@ -342,35 +392,35 @@ export default function HomePage() {
 
           <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
             <Link
-              href="/blog/comprar-propiedad-republica-dominicana-extranjero"
+              href="/blog/ejecutar-sentencia-extranjera-republica-dominicana-exequatur"
               className="card-legal block p-6 transition hover:-translate-y-[1px] md:p-8"
             >
               <div className="text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
                 Blog
               </div>
               <h3 className="mt-4 text-xl font-semibold text-[#0f2740] md:text-2xl">
-                Cómo comprar propiedad en República Dominicana siendo
-                extranjero
+                Cómo ejecutar una sentencia extranjera en República
+                Dominicana: el exequátur
               </h3>
               <p className="mt-4 leading-7 text-[#5f6b76] md:leading-8">
-                Requisitos, due diligence de título, cierre notarial y
-                errores que debe evitar antes de firmar.
+                Qué debe cumplir una sentencia dictada en otro país para
+                poder ejecutarse sobre bienes del deudor en el país.
               </p>
             </Link>
 
             <Link
-              href="/blog/residencia-por-inversion-republica-dominicana"
+              href="/blog/registro-inversion-extranjera-republica-dominicana"
               className="card-legal block p-6 transition hover:-translate-y-[1px] md:p-8"
             >
               <div className="text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
                 Blog
               </div>
               <h3 className="mt-4 text-xl font-semibold text-[#0f2740] md:text-2xl">
-                Residencia por inversión en República Dominicana: guía 2026
+                Registro de la inversión extranjera en República Dominicana
               </h3>
               <p className="mt-4 leading-7 text-[#5f6b76] md:leading-8">
-                Las tres vías más comunes para obtener la residencia y
-                tiempos realistas del proceso.
+                Por qué registrar su inversión y qué derechos le reconoce la
+                Ley 16-95 al inversionista extranjero.
               </p>
             </Link>
           </div>

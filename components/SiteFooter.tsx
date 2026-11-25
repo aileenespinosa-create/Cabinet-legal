@@ -46,7 +46,7 @@ export default function SiteFooter() {
             <div>
               <span className="text-xs uppercase tracking-[0.16em] text-white/50">{t.phoneLabel}</span>
               <div className="mt-1 flex flex-wrap gap-4">
-                <a href="tel:+18295420615" className="hover:text-[#c8a46a]">+1 829 542 0615</a>
+                <a href="tel:+18092217768" className="hover:text-[#c8a46a]">+1 809 221 7768</a>
                 <a href="https://wa.me/18295420615" target="_blank" rel="noopener noreferrer" className="text-[#c8a46a] hover:underline">WhatsApp →</a>
               </div>
             </div>

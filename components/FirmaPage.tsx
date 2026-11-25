@@ -22,7 +22,7 @@ export default function FirmaPage({ lang }: { lang: Lang }) {
       logo: `${SITE}/logo-cabinet-legal.jpg`,
       foundingDate: "2009",
       email: "info@cabinetlegal.com.do",
-      telephone: "+1-829-542-0615",
+      telephone: "+1-809-221-7768",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Av. Pedro Henríquez Ureña No. 138, Torre Empresarial Reyna II, Suite 203",
@@ -217,7 +217,8 @@ export default function FirmaPage({ lang }: { lang: Lang }) {
             <p className="no-justify font-semibold leading-7 text-[#0f2740]">{t.address}</p>
             <p className="no-justify text-sm uppercase tracking-[0.18em] text-[#8a6a37]">{t.byAppointment}</p>
             <div className="no-justify text-[#5f6b76]">
-              <div>+1 829 542 0615</div>
+              <div>+1 809 221 7768</div>
+              <div>WhatsApp: +1 829 542 0615</div>
               <div>info@cabinetlegal.com.do</div>
             </div>
             <a href={MAPS} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#8a6a37] hover:text-[#0f2740]">

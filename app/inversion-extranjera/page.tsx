@@ -7,9 +7,9 @@ import { buildFaqSchema } from "@/components/faqSchema";
 import GuideBanner from "@/components/GuideBanner";
 
 export const metadata: Metadata = {
-  title: "Abogado inmobiliario en República Dominicana para extranjeros",
+  title: "Abogados para inversionistas extranjeros en República Dominicana",
   description:
-    "Abogado inmobiliario en República Dominicana para extranjeros: debida diligencia de título, contratos, cierre notarial, CONFOTUR y registro de su título.",
+    "Asesoría legal al inversionista extranjero en República Dominicana: estructura de la inversión, contratos, registro de la inversión y operaciones inmobiliarias con debida diligencia de título.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/inversion-extranjera",
     languages: {
@@ -73,7 +73,8 @@ export default function InversionExtranjeraPage() {
               <div className="eyebrow text-white/80">Cabinet Legal</div>
 
               <h1 className="mt-2 text-3xl font-semibold text-white sm:text-4xl md:text-5xl">
-                Abogados para comprar propiedad en República Dominicana
+                Invierta en República Dominicana con la protección legal que
+                su inversión merece
               </h1>
 
               <p className="mt-3 max-w-2xl text-sm text-white/90 md:text-lg">
