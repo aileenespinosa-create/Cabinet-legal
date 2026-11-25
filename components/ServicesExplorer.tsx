@@ -33,7 +33,7 @@ export default function ServicesExplorer({ lang }: { lang: Lang }) {
   const x = current.text[lang];
   const tabs: ["all" | PillarId, string, number][] = [
     ["all", t.all, SERVICES.length],
-    ...(["ni", "pp", "ld"] as PillarId[]).map(
+    ...(["ld", "ni", "pp"] as PillarId[]).map(
       (p) => [p, PILLARS[p][lang], SERVICES.filter((s) => s.pillar === p).length] as ["all" | PillarId, string, number]
     ),
   ];

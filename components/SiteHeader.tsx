@@ -92,7 +92,7 @@ export default function SiteHeader() {
       ? pathname === href || pathname.startsWith(`${href}/`)
       : pathname === href;
   const linkClass = (href: string) => `nav-link ${isActive(href) ? "active-link" : ""}`;
-  const pillars: PillarId[] = ["ni", "pp", "ld"];
+  const pillars: PillarId[] = ["ld", "ni", "pp"];
 
   return (
     <header

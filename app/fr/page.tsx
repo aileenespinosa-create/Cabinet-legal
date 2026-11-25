@@ -6,9 +6,9 @@ import GuideBanner from "@/components/GuideBanner";
 import ServicesAccordion from "@/components/ServicesAccordion";
 
 export const metadata: Metadata = {
-  title: "Cabinet d'Avocats en République Dominicaine pour Investisseurs Étrangers",
+  title: "Cabinet d'Avocats en République Dominicaine : Contentieux et Investissement",
   description:
-    "Cabinet Legal conseille les investisseurs étrangers, entreprises et clients privés en achat immobilier, droit des affaires, fusions-acquisitions, marques et contentieux en République Dominicaine.",
+    "Cabinet Legal représente et conseille les investisseurs étrangers, entreprises et clients privés en contentieux, règlement des litiges, investissement étranger, droit des affaires, fusions-acquisitions et marques en République Dominicaine.",
   alternates: {
     canonical: "https://cabinetlegal.com.do/fr",
     languages: {
@@ -40,11 +40,12 @@ export default function HomePageFR() {
             <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
 
             <p className="mt-8 max-w-2xl text-[16px] leading-8 text-[#5f6b76] md:text-[17px]">
-              Particuliers, familles, entreprises et investisseurs nous font
-              confiance pour acheter et investir en toute sécurité, structurer
-              leurs affaires, protéger leur patrimoine et défendre leurs
-              droits : droit des affaires et fiscal, immobilier, successions,
-              marques, résidence et contentieux. Un associé dirige votre
+              Entreprises, investisseurs, familles et particuliers nous font
+              confiance pour défendre leurs droits, régler leurs litiges,
+              investir en toute sécurité et structurer leurs affaires :
+              contentieux, investissement étranger, droit des affaires et
+              fiscal, successions, marques et opérations immobilières. Un
+              associé dirige votre
               dossier et, pour la plupart des démarches, peut agir par
               procuration sans que vous ayez à voyager.
             </p>
@@ -69,10 +70,10 @@ export default function HomePageFR() {
             </div>
 
             <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-[#66717c]">
+              <div>Contentieux et règlement des litiges</div>
+              <div>Investissement étranger</div>
               <div>Droit des affaires</div>
-              <div>Dépôt de marques</div>
               <div>Propriété intellectuelle</div>
-              <div>Contentieux</div>
             </div>
           </div>
 
@@ -164,6 +165,48 @@ export default function HomePageFR() {
 
       <ServicesAccordion lang="fr" />
 
+      {/* CONTENTIEUX */}
+      <section className="pb-14 md:pb-24">
+        <div className="mx-auto w-full max-w-[1200px] px-6 lg:px-8">
+          <div className="card-legal grid gap-8 p-6 md:grid-cols-[0.9fr_1.1fr] md:p-12">
+            <div>
+              <div className="mb-4 text-[11px] uppercase tracking-[0.24em] text-[#c8a46a]">
+                Service phare
+              </div>
+              <h2 className="text-3xl font-light tracking-tight text-[#0f2740] md:text-4xl">
+                Contentieux et règlement des litiges
+              </h2>
+              <div className="mt-6 h-[1px] w-16 bg-[#c8a46a]" />
+            </div>
+
+            <div className="space-y-5 text-base leading-8 text-[#5f6b76] md:text-lg">
+              <p>
+                Lorsqu&apos;un litige menace votre entreprise, votre investissement ou votre patrimoine, une stratégie contentieuse solide fait la différence entre protéger vos droits et les perdre.
+              </p>
+              <p>
+                Nous représentons entreprises, investisseurs et particuliers dans les litiges civils, commerciaux et entre associés, le recouvrement de créances et l&apos;exécution de jugements étrangers, avec un associé à la tête de chaque dossier.
+              </p>
+
+              <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
+                <Link
+                  href="/fr/servicios/contentieux"
+                  className="inline-flex items-center justify-center rounded-full px-7 py-3 text-sm font-semibold shadow-sm transition hover:opacity-95"
+                  style={{ backgroundColor: "#0f2740", color: "#ffffff" }}
+                >
+                  Voir le service
+                </Link>
+                <Link
+                  href="/fr/consulta"
+                  className="inline-flex items-center justify-center rounded-full border border-[#d7dce2] bg-transparent px-7 py-3 text-sm font-medium text-[#5f6b76] transition hover:border-[#c8a46a] hover:bg-white hover:text-[#0f2740]"
+                >
+                  Demander une évaluation
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SERVICE PHARE */}
       <section className="pb-14 md:pb-24">
         <div className="mx-auto w-full max-w-[1200px] px-6 lg:px-8">
@@ -226,15 +269,18 @@ export default function HomePageFR() {
 
             <div className="space-y-5 text-base leading-8 text-[#5f6b76] md:text-lg">
               <p>
-                Si vous achetez un bien immobilier en République Dominicaine
-                depuis l&apos;étranger, une protection juridique adaptée fait
-                toute la différence entre un investissement sécurisé et un
-                problème coûteux.
+                Si vous investissez en République dominicaine depuis
+                l&apos;étranger, la bonne structure juridique fait la
+                différence entre un investissement protégé et un litige
+                coûteux : la société adaptée, l&apos;enregistrement de
+                l&apos;investissement et des contrats bien rédigés.
               </p>
               <p>
-                Nous structurons votre achat, examinons les contrats et vous
-                accompagnons lors de la clôture, en collaboration avec Land
-                Consulting DR pour la vérification technique du bien.
+                Nous constituons votre société, enregistrons votre
+                investissement, examinons vos contrats et vous représentons
+                devant les tribunaux en cas de litige. Pour les opérations
+                immobilières, nous travaillons avec Land Consulting DR pour la
+                vérification technique du bien.
               </p>
 
               <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
@@ -267,6 +313,11 @@ export default function HomePageFR() {
             <h2 className="text-3xl font-light tracking-tight text-[#0f2740] md:text-4xl">
               Pourquoi travailler avec nous ?
             </h2>
+            <p className="mt-5 leading-8 text-[#5f6b76]">
+              Cabinet fondé en 2009 et dirigé par ses associés, Ellis Beato et
+              Aileen Espinosa. Membre d&apos;IR Global, réseau international
+              de cabinets d&apos;avocats.
+            </p>
           </div>
 
           <div className="grid gap-4 md:grid-cols-3">
